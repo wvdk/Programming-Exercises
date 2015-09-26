@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F460A58E18A96DDC00A3E2A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A58D18A96DDC00A3E2A7 /* Foundation.framework */; };
+		F460A59018A96DDC00A3E2A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A58F18A96DDC00A3E2A7 /* CoreGraphics.framework */; };
+		F460A59218A96DDC00A3E2A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A59118A96DDC00A3E2A7 /* UIKit.framework */; };
+		F460A59418A96DDC00A3E2A7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A59318A96DDC00A3E2A7 /* SpriteKit.framework */; };
+		F460A59A18A96DDC00A3E2A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F460A59818A96DDC00A3E2A7 /* InfoPlist.strings */; };
+		F460A59C18A96DDC00A3E2A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F460A59B18A96DDC00A3E2A7 /* main.m */; };
+		F460A5A018A96DDC00A3E2A7 /* LDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F460A59F18A96DDC00A3E2A7 /* LDCAppDelegate.m */; };
+		F460A5A318A96DDC00A3E2A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460A5A118A96DDC00A3E2A7 /* Main.storyboard */; };
+		F460A5A618A96DDC00A3E2A7 /* LDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F460A5A518A96DDC00A3E2A7 /* LDCViewController.m */; };
+		F460A5A918A96DDC00A3E2A7 /* LDCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F460A5A818A96DDC00A3E2A7 /* LDCMyScene.m */; };
+		F460A5AB18A96DDC00A3E2A7 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F460A5AA18A96DDC00A3E2A7 /* Spaceship.png */; };
+		F460A5AD18A96DDC00A3E2A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F460A5AC18A96DDC00A3E2A7 /* Images.xcassets */; };
+		F460A5B418A96DDC00A3E2A7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A5B318A96DDC00A3E2A7 /* XCTest.framework */; };
+		F460A5B518A96DDC00A3E2A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A58D18A96DDC00A3E2A7 /* Foundation.framework */; };
+		F460A5B618A96DDC00A3E2A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460A59118A96DDC00A3E2A7 /* UIKit.framework */; };
+		F460A5BE18A96DDC00A3E2A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F460A5BC18A96DDC00A3E2A7 /* InfoPlist.strings */; };
+		F460A5C018A96DDC00A3E2A7 /* VolumeVsEdgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F460A5BF18A96DDC00A3E2A7 /* VolumeVsEdgeTests.m */; };
+		F460A5D318A973BA00A3E2A7 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = F460A5D118A973BA00A3E2A7 /* wall.png */; };
+		F460A5D418A973BA00A3E2A7 /* wall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F460A5D218A973BA00A3E2A7 /* wall@2x.png */; };
+		F460A5D718A973EA00A3E2A7 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = F460A5D518A973EA00A3E2A7 /* ball.png */; };
+		F460A5D818A973EA00A3E2A7 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F460A5D618A973EA00A3E2A7 /* ball@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F460A5B718A96DDC00A3E2A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F460A58218A96DDC00A3E2A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F460A58918A96DDC00A3E2A7;
+			remoteInfo = VolumeVsEdge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F460A58A18A96DDC00A3E2A7 /* VolumeVsEdge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeVsEdge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460A58D18A96DDC00A3E2A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F460A58F18A96DDC00A3E2A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F460A59118A96DDC00A3E2A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F460A59318A96DDC00A3E2A7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		F460A59718A96DDC00A3E2A7 /* VolumeVsEdge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeVsEdge-Info.plist"; sourceTree = "<group>"; };
+		F460A59918A96DDC00A3E2A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F460A59B18A96DDC00A3E2A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F460A59D18A96DDC00A3E2A7 /* VolumeVsEdge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolumeVsEdge-Prefix.pch"; sourceTree = "<group>"; };
+		F460A59E18A96DDC00A3E2A7 /* LDCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCAppDelegate.h; sourceTree = "<group>"; };
+		F460A59F18A96DDC00A3E2A7 /* LDCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCAppDelegate.m; sourceTree = "<group>"; };
+		F460A5A218A96DDC00A3E2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F460A5A418A96DDC00A3E2A7 /* LDCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCViewController.h; sourceTree = "<group>"; };
+		F460A5A518A96DDC00A3E2A7 /* LDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCViewController.m; sourceTree = "<group>"; };
+		F460A5A718A96DDC00A3E2A7 /* LDCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCMyScene.h; sourceTree = "<group>"; };
+		F460A5A818A96DDC00A3E2A7 /* LDCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCMyScene.m; sourceTree = "<group>"; };
+		F460A5AA18A96DDC00A3E2A7 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		F460A5AC18A96DDC00A3E2A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F460A5B218A96DDC00A3E2A7 /* VolumeVsEdgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeVsEdgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460A5B318A96DDC00A3E2A7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F460A5BB18A96DDC00A3E2A7 /* VolumeVsEdgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeVsEdgeTests-Info.plist"; sourceTree = "<group>"; };
+		F460A5BD18A96DDC00A3E2A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F460A5BF18A96DDC00A3E2A7 /* VolumeVsEdgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeVsEdgeTests.m; sourceTree = "<group>"; };
+		F460A5D118A973BA00A3E2A7 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		F460A5D218A973BA00A3E2A7 /* wall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wall@2x.png"; sourceTree = "<group>"; };
+		F460A5D518A973EA00A3E2A7 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		F460A5D618A973EA00A3E2A7 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F460A58718A96DDC00A3E2A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A59018A96DDC00A3E2A7 /* CoreGraphics.framework in Frameworks */,
+				F460A59218A96DDC00A3E2A7 /* UIKit.framework in Frameworks */,
+				F460A59418A96DDC00A3E2A7 /* SpriteKit.framework in Frameworks */,
+				F460A58E18A96DDC00A3E2A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460A5AF18A96DDC00A3E2A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5B418A96DDC00A3E2A7 /* XCTest.framework in Frameworks */,
+				F460A5B618A96DDC00A3E2A7 /* UIKit.framework in Frameworks */,
+				F460A5B518A96DDC00A3E2A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F460A58118A96DDC00A3E2A7 = {
+			isa = PBXGroup;
+			children = (
+				F460A59518A96DDC00A3E2A7 /* VolumeVsEdge */,
+				F460A5B918A96DDC00A3E2A7 /* VolumeVsEdgeTests */,
+				F460A58C18A96DDC00A3E2A7 /* Frameworks */,
+				F460A58B18A96DDC00A3E2A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F460A58B18A96DDC00A3E2A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F460A58A18A96DDC00A3E2A7 /* VolumeVsEdge.app */,
+				F460A5B218A96DDC00A3E2A7 /* VolumeVsEdgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F460A58C18A96DDC00A3E2A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F460A58D18A96DDC00A3E2A7 /* Foundation.framework */,
+				F460A58F18A96DDC00A3E2A7 /* CoreGraphics.framework */,
+				F460A59118A96DDC00A3E2A7 /* UIKit.framework */,
+				F460A59318A96DDC00A3E2A7 /* SpriteKit.framework */,
+				F460A5B318A96DDC00A3E2A7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F460A59518A96DDC00A3E2A7 /* VolumeVsEdge */ = {
+			isa = PBXGroup;
+			children = (
+				F460A59E18A96DDC00A3E2A7 /* LDCAppDelegate.h */,
+				F460A59F18A96DDC00A3E2A7 /* LDCAppDelegate.m */,
+				F460A5A118A96DDC00A3E2A7 /* Main.storyboard */,
+				F460A5A418A96DDC00A3E2A7 /* LDCViewController.h */,
+				F460A5A518A96DDC00A3E2A7 /* LDCViewController.m */,
+				F460A5A718A96DDC00A3E2A7 /* LDCMyScene.h */,
+				F460A5A818A96DDC00A3E2A7 /* LDCMyScene.m */,
+				F460A5AA18A96DDC00A3E2A7 /* Spaceship.png */,
+				F460A5D118A973BA00A3E2A7 /* wall.png */,
+				F460A5D218A973BA00A3E2A7 /* wall@2x.png */,
+				F460A5D518A973EA00A3E2A7 /* ball.png */,
+				F460A5D618A973EA00A3E2A7 /* ball@2x.png */,
+				F460A5AC18A96DDC00A3E2A7 /* Images.xcassets */,
+				F460A59618A96DDC00A3E2A7 /* Supporting Files */,
+			);
+			path = VolumeVsEdge;
+			sourceTree = "<group>";
+		};
+		F460A59618A96DDC00A3E2A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F460A59718A96DDC00A3E2A7 /* VolumeVsEdge-Info.plist */,
+				F460A59818A96DDC00A3E2A7 /* InfoPlist.strings */,
+				F460A59B18A96DDC00A3E2A7 /* main.m */,
+				F460A59D18A96DDC00A3E2A7 /* VolumeVsEdge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F460A5B918A96DDC00A3E2A7 /* VolumeVsEdgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F460A5BF18A96DDC00A3E2A7 /* VolumeVsEdgeTests.m */,
+				F460A5BA18A96DDC00A3E2A7 /* Supporting Files */,
+			);
+			path = VolumeVsEdgeTests;
+			sourceTree = "<group>";
+		};
+		F460A5BA18A96DDC00A3E2A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F460A5BB18A96DDC00A3E2A7 /* VolumeVsEdgeTests-Info.plist */,
+				F460A5BC18A96DDC00A3E2A7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F460A58918A96DDC00A3E2A7 /* VolumeVsEdge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F460A5C318A96DDC00A3E2A7 /* Build configuration list for PBXNativeTarget "VolumeVsEdge" */;
+			buildPhases = (
+				F460A58618A96DDC00A3E2A7 /* Sources */,
+				F460A58718A96DDC00A3E2A7 /* Frameworks */,
+				F460A58818A96DDC00A3E2A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeVsEdge;
+			productName = VolumeVsEdge;
+			productReference = F460A58A18A96DDC00A3E2A7 /* VolumeVsEdge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F460A5B118A96DDC00A3E2A7 /* VolumeVsEdgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F460A5C618A96DDC00A3E2A7 /* Build configuration list for PBXNativeTarget "VolumeVsEdgeTests" */;
+			buildPhases = (
+				F460A5AE18A96DDC00A3E2A7 /* Sources */,
+				F460A5AF18A96DDC00A3E2A7 /* Frameworks */,
+				F460A5B018A96DDC00A3E2A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F460A5B818A96DDC00A3E2A7 /* PBXTargetDependency */,
+			);
+			name = VolumeVsEdgeTests;
+			productName = VolumeVsEdgeTests;
+			productReference = F460A5B218A96DDC00A3E2A7 /* VolumeVsEdgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F460A58218A96DDC00A3E2A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LDC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Simon Allardice";
+				TargetAttributes = {
+					F460A5B118A96DDC00A3E2A7 = {
+						TestTargetID = F460A58918A96DDC00A3E2A7;
+					};
+				};
+			};
+			buildConfigurationList = F460A58518A96DDC00A3E2A7 /* Build configuration list for PBXProject "VolumeVsEdge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F460A58118A96DDC00A3E2A7;
+			productRefGroup = F460A58B18A96DDC00A3E2A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F460A58918A96DDC00A3E2A7 /* VolumeVsEdge */,
+				F460A5B118A96DDC00A3E2A7 /* VolumeVsEdgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F460A58818A96DDC00A3E2A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5D418A973BA00A3E2A7 /* wall@2x.png in Resources */,
+				F460A59A18A96DDC00A3E2A7 /* InfoPlist.strings in Resources */,
+				F460A5D318A973BA00A3E2A7 /* wall.png in Resources */,
+				F460A5D818A973EA00A3E2A7 /* ball@2x.png in Resources */,
+				F460A5AD18A96DDC00A3E2A7 /* Images.xcassets in Resources */,
+				F460A5AB18A96DDC00A3E2A7 /* Spaceship.png in Resources */,
+				F460A5A318A96DDC00A3E2A7 /* Main.storyboard in Resources */,
+				F460A5D718A973EA00A3E2A7 /* ball.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460A5B018A96DDC00A3E2A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5BE18A96DDC00A3E2A7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F460A58618A96DDC00A3E2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5A018A96DDC00A3E2A7 /* LDCAppDelegate.m in Sources */,
+				F460A5A618A96DDC00A3E2A7 /* LDCViewController.m in Sources */,
+				F460A5A918A96DDC00A3E2A7 /* LDCMyScene.m in Sources */,
+				F460A59C18A96DDC00A3E2A7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F460A5AE18A96DDC00A3E2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5C018A96DDC00A3E2A7 /* VolumeVsEdgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F460A5B818A96DDC00A3E2A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F460A58918A96DDC00A3E2A7 /* VolumeVsEdge */;
+			targetProxy = F460A5B718A96DDC00A3E2A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F460A59818A96DDC00A3E2A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460A59918A96DDC00A3E2A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F460A5A118A96DDC00A3E2A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460A5A218A96DDC00A3E2A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F460A5BC18A96DDC00A3E2A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460A5BD18A96DDC00A3E2A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F460A5C118A96DDC00A3E2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F460A5C218A96DDC00A3E2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F460A5C418A96DDC00A3E2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeVsEdge/VolumeVsEdge-Prefix.pch";
+				INFOPLIST_FILE = "VolumeVsEdge/VolumeVsEdge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F460A5C518A96DDC00A3E2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeVsEdge/VolumeVsEdge-Prefix.pch";
+				INFOPLIST_FILE = "VolumeVsEdge/VolumeVsEdge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F460A5C718A96DDC00A3E2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeVsEdge.app/VolumeVsEdge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeVsEdge/VolumeVsEdge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VolumeVsEdgeTests/VolumeVsEdgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F460A5C818A96DDC00A3E2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeVsEdge.app/VolumeVsEdge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeVsEdge/VolumeVsEdge-Prefix.pch";
+				INFOPLIST_FILE = "VolumeVsEdgeTests/VolumeVsEdgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F460A58518A96DDC00A3E2A7 /* Build configuration list for PBXProject "VolumeVsEdge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460A5C118A96DDC00A3E2A7 /* Debug */,
+				F460A5C218A96DDC00A3E2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F460A5C318A96DDC00A3E2A7 /* Build configuration list for PBXNativeTarget "VolumeVsEdge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460A5C418A96DDC00A3E2A7 /* Debug */,
+				F460A5C518A96DDC00A3E2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F460A5C618A96DDC00A3E2A7 /* Build configuration list for PBXNativeTarget "VolumeVsEdgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460A5C718A96DDC00A3E2A7 /* Debug */,
+				F460A5C818A96DDC00A3E2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F460A58218A96DDC00A3E2A7 /* Project object */;
+}
