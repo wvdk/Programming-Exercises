@@ -2,7 +2,6 @@
 
 Title | Author | Date completed
 ------------ | ------------------ | -----
-C++ 101 | | 2009
 [On Lisp](http://www.paulgraham.com/onlisp.html) | Paul Graphm | 2011
 [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) | Douglas Crockford | 2013
 [Realm of Racket](http://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp) | M. Felleisen, C. Barski, D. Van Horn | 2012
@@ -17,3 +16,4 @@ C++ 101 | | 2009
 [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html) | H. Abelson, G. Jay Sussman, J. Sussman | 
 [CODE](http://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319) | Charles Petzold |
 [Exercises In Programming Style](http://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371) | Cristina Videira Lopes | 
+[Learn C The Hard Way](http://c.learncodethehardway.org/book/) | Zed Shaw | 
