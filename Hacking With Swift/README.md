@@ -8,7 +8,7 @@ Tutorial 3: Social Media | Skipped
 Tutorial 4: Easy Browser | Skipped
 Tutorial 5: Word Scramble | Skipped
 Tutorial 6: Auto Layout | Skipped
-Tutorial 7: Whitehouse Petitions | Skipped
+Tutorial 7: Whitehouse Petitions | Done 9/27/15
 Tutorial 8: 7 Swifty Words | Skipped
 Tutorial 9: Grand Central Dispatch | To do
 Tutorial 10: Names to Faces | To do
