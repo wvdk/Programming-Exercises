@@ -1,4 +1,4 @@
-Following the "Arduino Projects Book" that came with the (Arduino Starter Kit)[http://www.amazon.com/Arduino-Starter-Official-170-page-Projects/dp/B009UKZV0A/ref=sr_1_3?ie=UTF8&qid=1443435199&sr=8-3&keywords=arduino].
+Following the "Arduino Projects Book" that came with the [Arduino Starter Kit](http://www.amazon.com/Arduino-Starter-Official-170-page-Projects/dp/B009UKZV0A/ref=sr_1_3?ie=UTF8&qid=1443435199&sr=8-3&keywords=arduino).
 
 
 Title | Status
