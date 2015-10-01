@@ -13,7 +13,7 @@ Tutorial 7: Whitehouse Petitions | Done 9/27/15
 Tutorial 8: 7 Swifty Words | Skipped
 Tutorial 9: Grand Central Dispatch | Done 9/28/15
 Tutorial 10: Names to Faces | Done 9/29/15
-Tutorial 11: Pachinko | To do
+Tutorial 11: Pachinko | Under progress
 Tutorial 12: NSUserDefaults | To do
 Tutorial 13: Instafilter | To do
 Tutorial 14: Whack-a-Penguin | To do
