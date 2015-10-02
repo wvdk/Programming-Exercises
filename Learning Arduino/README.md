@@ -5,8 +5,8 @@ Title | Status
 ------|-------
 01 GET TO KNOW YOUR TOOLS an introduction to the concepts you'll need to use this kit | Done 9/27/15
 02 SPACESHIP INTERFACE design to control panel for your startship | Done 9/27/15
-03 LOVE-O-METER measure how hot-blooded you are | To do
-04 COLOR MIXING LAMP produce any color with a lamp that uses light as an input | To do
+03 LOVE-O-METER measure how hot-blooded you are | Done 9/27/15
+04 COLOR MIXING LAMP produce any color with a lamp that uses light as an input | Done 10/1/15
 05 MOOD CUE clue people in to how you're doing | To do
 06 LIGHT THEREMIN create a musical instrument you play by waving your hands | To do
 07 KEYBOARD INSTRUMENT play music and make some noise with this keyboard | To do
