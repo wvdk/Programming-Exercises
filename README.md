@@ -5,6 +5,7 @@ This is where I keep the code I happen to write while working though various pro
 
 Title | Author | Date completed
 ------------ | ------------------ | -----
+[C++ Primer Plus](http://www.amazon.com/Primer-Plus-Edition-Developers-Library/dp/0321776402) | Stephen Prata | 2009
 [On Lisp](http://www.paulgraham.com/onlisp.html) | Paul Graphm | 2011
 [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) | Douglas Crockford | 2013
 [Realm of Racket](http://www.amazon.com/dp/1593274912/ref=cm_sw_su_dp) | M. Felleisen, C. Barski, D. Van Horn | 2012
