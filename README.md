@@ -21,3 +21,6 @@ Title | Author | Date completed
 [CODE](http://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319) | Charles Petzold |
 [Exercises In Programming Style](http://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371) | Cristina Videira Lopes | 
 [Learn C The Hard Way](http://c.learncodethehardway.org/book/) | Zed Shaw | 
+[The Little Schemer - 4th Edition](http://www.amazon.com/The-Little-Schemer-4th-Edition/dp/0262560992) | D. Friedman, M. Felleisen | 
+[The C Programming Language](http://www.amazon.com/The-Programming-Language-Brian-Kernighan/dp/0131103628) | B. Kernighan, D. Ritchie | 
+[Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=tmm_hrd_title_0?_encoding=UTF8&qid=&sr=)| E. Gamma, R. Helm, R. Johnson, J. Vlissides | 
