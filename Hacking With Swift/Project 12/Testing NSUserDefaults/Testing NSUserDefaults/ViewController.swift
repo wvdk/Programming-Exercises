@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         defaults.setObject(["age": 38, "weight": 150], forKey: "PersonInfo")
         
         print(defaults.objectForKey("Description") as? String ?? "Nope...")
+        print(defaults.objectForKey("PersonInfo") as? Dictionary<String, Int> ?? "Failed!")
     }
 
     override func didReceiveMemoryWarning() {
