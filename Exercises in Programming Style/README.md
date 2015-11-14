@@ -1,6 +1,6 @@
 ## Exercises in Programming Style
 by Cristina Videira Lopes
-- http://www.amazon.com/gp/product/1482227371)
+- http://www.amazon.com/gp/product/1482227371
 - https://github.com/crista/exercises-in-programming-style
 
 Title | Status
