@@ -9,12 +9,12 @@ Chapter | Title | Status
 2 | Go Forth | To do
 3 | Monolithic | To do
 4 | Cookbook | To do
-5 | Pipeline | To do
+5 | Pipeline | WIP
 6 | Code Golf | To do
 7 | Infinite Mirror | To do
 8 | Kick Forward | To do
 9 | The One | To do
-10 | Things | To do
+10 | Things | WIP
 11 | Letterbox | To do
 12 | Closed Maps | To do
 13 | Abstract Things | To do
