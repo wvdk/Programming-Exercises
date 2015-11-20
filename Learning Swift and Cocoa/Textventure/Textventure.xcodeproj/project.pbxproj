@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEB4486B1B2E4E990012CA8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4486A1B2E4E990012CA8A /* AppDelegate.swift */; };
+		DEB4486D1B2E4E990012CA8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4486C1B2E4E990012CA8A /* ViewController.swift */; };
+		DEB448701B2E4E990012CA8A /* Textventure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB4486E1B2E4E990012CA8A /* Textventure.xcdatamodeld */; };
+		DEB448721B2E4E990012CA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB448711B2E4E990012CA8A /* Assets.xcassets */; };
+		DEB448751B2E4E990012CA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB448731B2E4E990012CA8A /* Main.storyboard */; };
+		DEB448801B2E4E990012CA8A /* TextventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4487F1B2E4E990012CA8A /* TextventureTests.swift */; };
+		DEB4488B1B2E4E990012CA8A /* TextventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4488A1B2E4E990012CA8A /* TextventureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEB4487C1B2E4E990012CA8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB4485F1B2E4E990012CA8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB448661B2E4E990012CA8A;
+			remoteInfo = Textventure;
+		};
+		DEB448871B2E4E990012CA8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB4485F1B2E4E990012CA8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB448661B2E4E990012CA8A;
+			remoteInfo = Textventure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEB448671B2E4E990012CA8A /* Textventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB4486A1B2E4E990012CA8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEB4486C1B2E4E990012CA8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEB4486F1B2E4E990012CA8A /* Textventure.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Textventure.xcdatamodel; sourceTree = "<group>"; };
+		DEB448711B2E4E990012CA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEB448741B2E4E990012CA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEB448761B2E4E990012CA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB4487B1B2E4E990012CA8A /* TextventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB4487F1B2E4E990012CA8A /* TextventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextventureTests.swift; sourceTree = "<group>"; };
+		DEB448811B2E4E990012CA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB448861B2E4E990012CA8A /* TextventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB4488A1B2E4E990012CA8A /* TextventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextventureUITests.swift; sourceTree = "<group>"; };
+		DEB4488C1B2E4E990012CA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB448641B2E4E990012CA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448781B2E4E990012CA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448831B2E4E990012CA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEB4485E1B2E4E990012CA8A = {
+			isa = PBXGroup;
+			children = (
+				DEB448691B2E4E990012CA8A /* Textventure */,
+				DEB4487E1B2E4E990012CA8A /* TextventureTests */,
+				DEB448891B2E4E990012CA8A /* TextventureUITests */,
+				DEB448681B2E4E990012CA8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB448681B2E4E990012CA8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB448671B2E4E990012CA8A /* Textventure.app */,
+				DEB4487B1B2E4E990012CA8A /* TextventureTests.xctest */,
+				DEB448861B2E4E990012CA8A /* TextventureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB448691B2E4E990012CA8A /* Textventure */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4486A1B2E4E990012CA8A /* AppDelegate.swift */,
+				DEB4486C1B2E4E990012CA8A /* ViewController.swift */,
+				DEB448711B2E4E990012CA8A /* Assets.xcassets */,
+				DEB448731B2E4E990012CA8A /* Main.storyboard */,
+				DEB448761B2E4E990012CA8A /* Info.plist */,
+				DEB4486E1B2E4E990012CA8A /* Textventure.xcdatamodeld */,
+			);
+			path = Textventure;
+			sourceTree = "<group>";
+		};
+		DEB4487E1B2E4E990012CA8A /* TextventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4487F1B2E4E990012CA8A /* TextventureTests.swift */,
+				DEB448811B2E4E990012CA8A /* Info.plist */,
+			);
+			path = TextventureTests;
+			sourceTree = "<group>";
+		};
+		DEB448891B2E4E990012CA8A /* TextventureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4488A1B2E4E990012CA8A /* TextventureUITests.swift */,
+				DEB4488C1B2E4E990012CA8A /* Info.plist */,
+			);
+			path = TextventureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB448661B2E4E990012CA8A /* Textventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB4488F1B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "Textventure" */;
+			buildPhases = (
+				DEB448631B2E4E990012CA8A /* Sources */,
+				DEB448641B2E4E990012CA8A /* Frameworks */,
+				DEB448651B2E4E990012CA8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Textventure;
+			productName = Textventure;
+			productReference = DEB448671B2E4E990012CA8A /* Textventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEB4487A1B2E4E990012CA8A /* TextventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB448921B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "TextventureTests" */;
+			buildPhases = (
+				DEB448771B2E4E990012CA8A /* Sources */,
+				DEB448781B2E4E990012CA8A /* Frameworks */,
+				DEB448791B2E4E990012CA8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB4487D1B2E4E990012CA8A /* PBXTargetDependency */,
+			);
+			name = TextventureTests;
+			productName = TextventureTests;
+			productReference = DEB4487B1B2E4E990012CA8A /* TextventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEB448851B2E4E990012CA8A /* TextventureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB448951B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "TextventureUITests" */;
+			buildPhases = (
+				DEB448821B2E4E990012CA8A /* Sources */,
+				DEB448831B2E4E990012CA8A /* Frameworks */,
+				DEB448841B2E4E990012CA8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB448881B2E4E990012CA8A /* PBXTargetDependency */,
+			);
+			name = TextventureUITests;
+			productName = TextventureUITests;
+			productReference = DEB448861B2E4E990012CA8A /* TextventureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB4485F1B2E4E990012CA8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Wes Van der Klomp";
+				TargetAttributes = {
+					DEB448661B2E4E990012CA8A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					DEB4487A1B2E4E990012CA8A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DEB448661B2E4E990012CA8A;
+					};
+					DEB448851B2E4E990012CA8A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = DEB448661B2E4E990012CA8A;
+					};
+				};
+			};
+			buildConfigurationList = DEB448621B2E4E990012CA8A /* Build configuration list for PBXProject "Textventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEB4485E1B2E4E990012CA8A;
+			productRefGroup = DEB448681B2E4E990012CA8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB448661B2E4E990012CA8A /* Textventure */,
+				DEB4487A1B2E4E990012CA8A /* TextventureTests */,
+				DEB448851B2E4E990012CA8A /* TextventureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB448651B2E4E990012CA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB448721B2E4E990012CA8A /* Assets.xcassets in Resources */,
+				DEB448751B2E4E990012CA8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448791B2E4E990012CA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448841B2E4E990012CA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB448631B2E4E990012CA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB4486D1B2E4E990012CA8A /* ViewController.swift in Sources */,
+				DEB4486B1B2E4E990012CA8A /* AppDelegate.swift in Sources */,
+				DEB448701B2E4E990012CA8A /* Textventure.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448771B2E4E990012CA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB448801B2E4E990012CA8A /* TextventureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB448821B2E4E990012CA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB4488B1B2E4E990012CA8A /* TextventureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEB4487D1B2E4E990012CA8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEB448661B2E4E990012CA8A /* Textventure */;
+			targetProxy = DEB4487C1B2E4E990012CA8A /* PBXContainerItemProxy */;
+		};
+		DEB448881B2E4E990012CA8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEB448661B2E4E990012CA8A /* Textventure */;
+			targetProxy = DEB448871B2E4E990012CA8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEB448731B2E4E990012CA8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB448741B2E4E990012CA8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB4488D1B2E4E990012CA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEB4488E1B2E4E990012CA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DEB448901B2E4E990012CA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Textventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.Textventure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEB448911B2E4E990012CA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Textventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.Textventure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEB448931B2E4E990012CA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.TextventureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textventure.app/Contents/MacOS/Textventure";
+			};
+			name = Debug;
+		};
+		DEB448941B2E4E990012CA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.TextventureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textventure.app/Contents/MacOS/Textventure";
+			};
+			name = Release;
+		};
+		DEB448961B2E4E990012CA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextventureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.TextventureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Textventure;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DEB448971B2E4E990012CA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TextventureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wes.vdk.TextventureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Textventure;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB448621B2E4E990012CA8A /* Build configuration list for PBXProject "Textventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB4488D1B2E4E990012CA8A /* Debug */,
+				DEB4488E1B2E4E990012CA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB4488F1B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "Textventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB448901B2E4E990012CA8A /* Debug */,
+				DEB448911B2E4E990012CA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEB448921B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "TextventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB448931B2E4E990012CA8A /* Debug */,
+				DEB448941B2E4E990012CA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEB448951B2E4E990012CA8A /* Build configuration list for PBXNativeTarget "TextventureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB448961B2E4E990012CA8A /* Debug */,
+				DEB448971B2E4E990012CA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEB4486E1B2E4E990012CA8A /* Textventure.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEB4486F1B2E4E990012CA8A /* Textventure.xcdatamodel */,
+			);
+			currentVersion = DEB4486F1B2E4E990012CA8A /* Textventure.xcdatamodel */;
+			path = Textventure.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEB4485F1B2E4E990012CA8A /* Project object */;
+}

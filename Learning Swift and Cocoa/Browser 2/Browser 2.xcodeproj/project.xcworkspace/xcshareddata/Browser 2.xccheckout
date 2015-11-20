@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69C8525E-FDD1-477A-8BC8-40E4A9A75776</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Browser 2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3D51D728575C09FF0AB4AD6EA4782BB16D939A12</key>
+		<string>https://github.com/CoreSadness/Browser-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Browser 2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3D51D728575C09FF0AB4AD6EA4782BB16D939A12</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CoreSadness/Browser-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3D51D728575C09FF0AB4AD6EA4782BB16D939A12</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3D51D728575C09FF0AB4AD6EA4782BB16D939A12</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Browser%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>

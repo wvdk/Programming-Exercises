@@ -1,0 +1,37 @@
+
+
+
+-       interactive     -
+
+Please enter your full name: Wesley van der Klomp
+
+Please enter your handicap:42
+
+-       non-interactive -
+
+-       displays        -
+
+Name: Wesley van der Klomp
+Handicap: 42
+
+
+
+-       interactive     -
+
+Please enter your full name: John smith
+
+Please enter your handicap:1
+
+-       non-interactive -
+
+-       displays        -
+
+Name: John smith
+Handicap: 1
+
+
+
+-       interactive     -
+
+Please enter your full name:
+Press any key to continue . . .
