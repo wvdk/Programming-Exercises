@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<game PGFVersion="0.13" GSCVersion="0.8.3" title="My Great Project"><instructions>Add game instructions here.</instructions><resolution>0</resolution><prototypes><actor id="id320076"/></prototypes><longDescription>A tabula rasa, a blank slate on which one may create a masterpiece.</longDescription><scenes><scene id="id778804"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">480</real><real id="height">320</real></size><text id="actorTags"></text></attributes></game>

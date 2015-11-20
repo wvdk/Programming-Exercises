@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<game PGFVersion="0.16" GSCVersion="0.8.9" title="The Ridiculous Maze Game"><tags>Maze</tags><resolutionIndependence>1</resolutionIndependence><instructions>Tilt to move.</instructions><resolution>1</resolution><longDescription>The Ridiculous Maze Game is ridiculously hard. This is the ultimate challenge.
-
-Features:
- - Cool retro command Prompt like graphics
- - Over 30 levels
-
-Are you up for the challenge?</longDescription><prototypes><actor id="id524264"/><actor id="id653283"/><actor id="id455776"/><actor id="id208969"/></prototypes><scenes><scene id="id426670"/><scene id="id368925"/><scene id="id305689"/><scene id="id470058"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">320</real><real id="height">480</real></size><text id="actorTags"></text></attributes></game>
