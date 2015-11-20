@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEC3FC841B30F29F00FAEA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FC831B30F29F00FAEA55 /* AppDelegate.swift */; };
+		DEC3FC861B30F29F00FAEA55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC3FC851B30F29F00FAEA55 /* Images.xcassets */; };
+		DEC3FC891B30F29F00FAEA55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC3FC871B30F29F00FAEA55 /* MainMenu.xib */; };
+		DEC3FC951B30F29F00FAEA55 /* Textventure_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FC941B30F29F00FAEA55 /* Textventure_3Tests.swift */; };
+		DEC3FC9F1B30F6C500FAEA55 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FC9E1B30F6C500FAEA55 /* Direction.swift */; };
+		DEC3FCA11B30F70F00FAEA55 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FCA01B30F70F00FAEA55 /* Location.swift */; };
+		DEC3FCA31B30F8A500FAEA55 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FCA21B30F8A500FAEA55 /* Player.swift */; };
+		DEC3FCA51B3238DB00FAEA55 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3FCA41B3238DB00FAEA55 /* Locations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEC3FC8F1B30F29F00FAEA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEC3FC761B30F29F00FAEA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEC3FC7D1B30F29F00FAEA55;
+			remoteInfo = "Textventure 3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEC3FC7E1B30F29F00FAEA55 /* Textventure 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Textventure 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC3FC821B30F29F00FAEA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC3FC831B30F29F00FAEA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEC3FC851B30F29F00FAEA55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEC3FC881B30F29F00FAEA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DEC3FC8E1B30F29F00FAEA55 /* Textventure 3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Textventure 3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC3FC931B30F29F00FAEA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC3FC941B30F29F00FAEA55 /* Textventure_3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textventure_3Tests.swift; sourceTree = "<group>"; };
+		DEC3FC9E1B30F6C500FAEA55 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		DEC3FCA01B30F70F00FAEA55 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DEC3FCA21B30F8A500FAEA55 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DEC3FCA41B3238DB00FAEA55 /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEC3FC7B1B30F29F00FAEA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC3FC8B1B30F29F00FAEA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEC3FC751B30F29F00FAEA55 = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC801B30F29F00FAEA55 /* Textventure 3 */,
+				DEC3FC911B30F29F00FAEA55 /* Textventure 3Tests */,
+				DEC3FC7F1B30F29F00FAEA55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEC3FC7F1B30F29F00FAEA55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC7E1B30F29F00FAEA55 /* Textventure 3.app */,
+				DEC3FC8E1B30F29F00FAEA55 /* Textventure 3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEC3FC801B30F29F00FAEA55 /* Textventure 3 */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC831B30F29F00FAEA55 /* AppDelegate.swift */,
+				DEC3FCA21B30F8A500FAEA55 /* Player.swift */,
+				DEC3FCA01B30F70F00FAEA55 /* Location.swift */,
+				DEC3FCA41B3238DB00FAEA55 /* Locations.swift */,
+				DEC3FC9E1B30F6C500FAEA55 /* Direction.swift */,
+				DEC3FC851B30F29F00FAEA55 /* Images.xcassets */,
+				DEC3FC871B30F29F00FAEA55 /* MainMenu.xib */,
+				DEC3FC811B30F29F00FAEA55 /* Supporting Files */,
+			);
+			path = "Textventure 3";
+			sourceTree = "<group>";
+		};
+		DEC3FC811B30F29F00FAEA55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC821B30F29F00FAEA55 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEC3FC911B30F29F00FAEA55 /* Textventure 3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC941B30F29F00FAEA55 /* Textventure_3Tests.swift */,
+				DEC3FC921B30F29F00FAEA55 /* Supporting Files */,
+			);
+			path = "Textventure 3Tests";
+			sourceTree = "<group>";
+		};
+		DEC3FC921B30F29F00FAEA55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3FC931B30F29F00FAEA55 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEC3FC7D1B30F29F00FAEA55 /* Textventure 3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC3FC981B30F29F00FAEA55 /* Build configuration list for PBXNativeTarget "Textventure 3" */;
+			buildPhases = (
+				DEC3FC7A1B30F29F00FAEA55 /* Sources */,
+				DEC3FC7B1B30F29F00FAEA55 /* Frameworks */,
+				DEC3FC7C1B30F29F00FAEA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Textventure 3";
+			productName = "Textventure 3";
+			productReference = DEC3FC7E1B30F29F00FAEA55 /* Textventure 3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEC3FC8D1B30F29F00FAEA55 /* Textventure 3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC3FC9B1B30F29F00FAEA55 /* Build configuration list for PBXNativeTarget "Textventure 3Tests" */;
+			buildPhases = (
+				DEC3FC8A1B30F29F00FAEA55 /* Sources */,
+				DEC3FC8B1B30F29F00FAEA55 /* Frameworks */,
+				DEC3FC8C1B30F29F00FAEA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEC3FC901B30F29F00FAEA55 /* PBXTargetDependency */,
+			);
+			name = "Textventure 3Tests";
+			productName = "Textventure 3Tests";
+			productReference = DEC3FC8E1B30F29F00FAEA55 /* Textventure 3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEC3FC761B30F29F00FAEA55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Wes Van der Klomp";
+				TargetAttributes = {
+					DEC3FC7D1B30F29F00FAEA55 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DEC3FC8D1B30F29F00FAEA55 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = DEC3FC7D1B30F29F00FAEA55;
+					};
+				};
+			};
+			buildConfigurationList = DEC3FC791B30F29F00FAEA55 /* Build configuration list for PBXProject "Textventure 3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEC3FC751B30F29F00FAEA55;
+			productRefGroup = DEC3FC7F1B30F29F00FAEA55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEC3FC7D1B30F29F00FAEA55 /* Textventure 3 */,
+				DEC3FC8D1B30F29F00FAEA55 /* Textventure 3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEC3FC7C1B30F29F00FAEA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC3FC861B30F29F00FAEA55 /* Images.xcassets in Resources */,
+				DEC3FC891B30F29F00FAEA55 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC3FC8C1B30F29F00FAEA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEC3FC7A1B30F29F00FAEA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC3FCA31B30F8A500FAEA55 /* Player.swift in Sources */,
+				DEC3FC841B30F29F00FAEA55 /* AppDelegate.swift in Sources */,
+				DEC3FCA11B30F70F00FAEA55 /* Location.swift in Sources */,
+				DEC3FCA51B3238DB00FAEA55 /* Locations.swift in Sources */,
+				DEC3FC9F1B30F6C500FAEA55 /* Direction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC3FC8A1B30F29F00FAEA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC3FC951B30F29F00FAEA55 /* Textventure_3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEC3FC901B30F29F00FAEA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEC3FC7D1B30F29F00FAEA55 /* Textventure 3 */;
+			targetProxy = DEC3FC8F1B30F29F00FAEA55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEC3FC871B30F29F00FAEA55 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEC3FC881B30F29F00FAEA55 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEC3FC961B30F29F00FAEA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEC3FC971B30F29F00FAEA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DEC3FC991B30F29F00FAEA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Textventure 3/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEC3FC9A1B30F29F00FAEA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Textventure 3/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEC3FC9C1B30F29F00FAEA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Textventure 3Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textventure 3.app/Contents/MacOS/Textventure 3";
+			};
+			name = Debug;
+		};
+		DEC3FC9D1B30F29F00FAEA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Textventure 3Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Textventure 3.app/Contents/MacOS/Textventure 3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEC3FC791B30F29F00FAEA55 /* Build configuration list for PBXProject "Textventure 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC3FC961B30F29F00FAEA55 /* Debug */,
+				DEC3FC971B30F29F00FAEA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC3FC981B30F29F00FAEA55 /* Build configuration list for PBXNativeTarget "Textventure 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC3FC991B30F29F00FAEA55 /* Debug */,
+				DEC3FC9A1B30F29F00FAEA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEC3FC9B1B30F29F00FAEA55 /* Build configuration list for PBXNativeTarget "Textventure 3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC3FC9C1B30F29F00FAEA55 /* Debug */,
+				DEC3FC9D1B30F29F00FAEA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEC3FC761B30F29F00FAEA55 /* Project object */;
+}

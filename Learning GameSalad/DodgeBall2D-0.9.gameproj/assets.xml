@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assets><actors/><images><file name="BadGuy1.0Left.png"/><file name="BadGuy1.0Right.png"/><file name="Guy1.0Right.png"/><file name="Guy1.0Stand.png"/><file name="SpikeBall.png"/><file name="Guy1.0Left.png"/><file name="Guy1.0Blank.png"/><file name="Guy1.0Down.png"/><file name="Guy1.0Up.png"/></images><behaviors/><sounds><file name="HereHoldThis.ogg"/><file name="GameMenuSong.ogg"/></sounds></assets>

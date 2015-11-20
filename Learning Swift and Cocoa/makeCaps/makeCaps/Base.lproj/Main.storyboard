@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="makeCaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjt-6w-8Uo">
+                                <rect key="frame" x="16" y="28" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j5-gg-4eA">
+                                <rect key="frame" x="16" y="66" width="64" height="30"/>
+                                <state key="normal" title="All Upper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="allUpper:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="reh-GI-PQo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM4-eS-2B8">
+                                <rect key="frame" x="16" y="117" width="95" height="30"/>
+                                <state key="normal" title="Vowels Upper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeVowelsCapsButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0DH-dc-LEY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wx-lZ-0fO">
+                                <rect key="frame" x="16" y="171" width="56" height="30"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reverseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N4p-Pw-HAW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-K7-FWA">
+                                <rect key="frame" x="520" y="66" width="64" height="30"/>
+                                <state key="normal" title="All Lower">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="allLower:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Afg-4c-4QF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jQ-6S-Khv">
+                                <rect key="frame" x="454" y="117" width="130" height="30"/>
+                                <state key="normal" title="Consonants Upper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeConsonantsUpperButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZDl-wf-sfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BM4-eS-2B8" firstAttribute="leading" secondItem="9wx-lZ-0fO" secondAttribute="leading" id="8b1-TT-FCS"/>
+                            <constraint firstItem="dYb-K7-FWA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Adx-cg-CvZ"/>
+                            <constraint firstItem="4j5-gg-4eA" firstAttribute="leading" secondItem="Zjt-6w-8Uo" secondAttribute="leading" id="BWr-Yf-3eC"/>
+                            <constraint firstItem="BM4-eS-2B8" firstAttribute="top" secondItem="4j5-gg-4eA" secondAttribute="bottom" constant="21" id="Dzd-ge-yPh"/>
+                            <constraint firstItem="4j5-gg-4eA" firstAttribute="baseline" secondItem="dYb-K7-FWA" secondAttribute="baseline" id="TdU-x6-1Ym"/>
+                            <constraint firstItem="Zjt-6w-8Uo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="XMC-uM-awU"/>
+                            <constraint firstItem="dYb-K7-FWA" firstAttribute="trailing" secondItem="Zjt-6w-8Uo" secondAttribute="trailing" id="jXn-1R-WVT"/>
+                            <constraint firstItem="4j5-gg-4eA" firstAttribute="top" secondItem="Zjt-6w-8Uo" secondAttribute="bottom" constant="8" symbolic="YES" id="oDc-jP-loP"/>
+                            <constraint firstItem="BM4-eS-2B8" firstAttribute="leading" secondItem="4j5-gg-4eA" secondAttribute="leading" id="snN-j9-Hy9"/>
+                            <constraint firstItem="Zjt-6w-8Uo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tIP-G3-HS2"/>
+                            <constraint firstItem="9jQ-6S-Khv" firstAttribute="baseline" secondItem="BM4-eS-2B8" secondAttribute="baseline" id="v1u-zP-UPi"/>
+                            <constraint firstItem="9wx-lZ-0fO" firstAttribute="top" secondItem="BM4-eS-2B8" secondAttribute="bottom" constant="24" id="vak-Qn-Mae"/>
+                            <constraint firstItem="9jQ-6S-Khv" firstAttribute="trailing" secondItem="dYb-K7-FWA" secondAttribute="trailing" id="xsH-gJ-4IU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="Zjt-6w-8Uo" id="8eu-I7-3I0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

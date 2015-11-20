@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>951F38F3-CC93-4A03-B3B4-E105A27B19D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fib 5</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD476659D7D1CCAF3F8741968B3C789454D8CED8</key>
+		<string>https://github.com/CoreSadness/Fib-5.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fib 5.playground</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD476659D7D1CCAF3F8741968B3C789454D8CED8</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CoreSadness/Fib-5.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD476659D7D1CCAF3F8741968B3C789454D8CED8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD476659D7D1CCAF3F8741968B3C789454D8CED8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fib-5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

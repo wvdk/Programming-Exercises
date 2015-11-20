@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learning_GCD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSE-xQ-Bam">
+                                <rect key="frame" x="208" y="285" width="185" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Run longRunningOperation"/>
+                                <connections>
+                                    <action selector="runThing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIw-E1-adY"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xd3-mC-SO4">
+                                <rect key="frame" x="240" y="28" width="121" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-NX-1SL">
+                                <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="464290569.20208699">
+                                    <!--2015-09-18 17:36:09 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rSE-xQ-Bam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GSR-Dx-ZEY"/>
+                            <constraint firstItem="9bf-NX-1SL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HRu-lx-zhv"/>
+                            <constraint firstItem="xd3-mC-SO4" firstAttribute="centerX" secondItem="rSE-xQ-Bam" secondAttribute="centerX" id="W3H-Oj-rzp"/>
+                            <constraint firstItem="9bf-NX-1SL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YX5-oo-A0q"/>
+                            <constraint firstItem="xd3-mC-SO4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="dsy-Uf-h8O"/>
+                            <constraint firstItem="9bf-NX-1SL" firstAttribute="centerX" secondItem="rSE-xQ-Bam" secondAttribute="centerX" id="snb-61-G3H"/>
+                            <constraint firstItem="rSE-xQ-Bam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zav-3D-HDJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="rSE-xQ-Bam" id="d7R-wS-OF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game PGFVersion="0.13" GSCVersion="0.8.3" title="Menu"><instructions>Use your head.</instructions><resolution>0</resolution><prototypes><actor id="id547486"/></prototypes><longDescription>A all good ol' menu</longDescription><scenes><scene id="id269551"/><scene id="id269812"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">480</real><real id="height">320</real></size><text id="actorTags"></text></attributes></game>

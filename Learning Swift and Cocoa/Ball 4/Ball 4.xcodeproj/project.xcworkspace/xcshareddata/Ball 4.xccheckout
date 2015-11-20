@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BBFA0629-3120-49E7-A7A8-E9847284C152</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ball 4</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF694E2436F8444D27ED38F6F918977BB6E7DB3F</key>
+		<string>https://github.com/CoreSadness/Ball-4.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Ball 4.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF694E2436F8444D27ED38F6F918977BB6E7DB3F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CoreSadness/Ball-4.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF694E2436F8444D27ED38F6F918977BB6E7DB3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF694E2436F8444D27ED38F6F918977BB6E7DB3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ball%204</string>
+		</dict>
+	</array>
+</dict>
+</plist>
