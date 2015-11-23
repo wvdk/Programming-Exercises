@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "5f058ea2a8f8526f47e6b3eb78ed107e"
+build_time: [501624530, 859850000]
+inputs:
+  "/Users/wvdk/Desktop/Programming-Exercises/Exercises in Programming Style/Chapter 32 - Trinity/Exercises 32.1/Exercises 32.1/main.swift": [501624528, 0]
