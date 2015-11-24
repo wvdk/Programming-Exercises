@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDF69C551C03EF8100DC2AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF69C541C03EF8100DC2AA5 /* AppDelegate.swift */; };
+		BDF69C571C03EF8100DC2AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF69C561C03EF8100DC2AA5 /* ViewController.swift */; };
+		BDF69C5A1C03EF8100DC2AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF69C581C03EF8100DC2AA5 /* Main.storyboard */; };
+		BDF69C5C1C03EF8100DC2AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF69C5B1C03EF8100DC2AA5 /* Assets.xcassets */; };
+		BDF69C5F1C03EF8100DC2AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF69C5D1C03EF8100DC2AA5 /* LaunchScreen.storyboard */; };
+		BDF69C671C03EFA300DC2AA5 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = BDF69C661C03EFA300DC2AA5 /* readme.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDF69C511C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View Controller Transitions with Spring Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF69C541C03EF8100DC2AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDF69C561C03EF8100DC2AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDF69C591C03EF8100DC2AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDF69C5B1C03EF8100DC2AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDF69C5E1C03EF8100DC2AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDF69C601C03EF8100DC2AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDF69C661C03EFA300DC2AA5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF69C4E1C03EF8100DC2AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDF69C481C03EF8100DC2AA5 = {
+			isa = PBXGroup;
+			children = (
+				BDF69C661C03EFA300DC2AA5 /* readme.md */,
+				BDF69C531C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial */,
+				BDF69C521C03EF8100DC2AA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF69C521C03EF8100DC2AA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF69C511C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDF69C531C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BDF69C541C03EF8100DC2AA5 /* AppDelegate.swift */,
+				BDF69C561C03EF8100DC2AA5 /* ViewController.swift */,
+				BDF69C581C03EF8100DC2AA5 /* Main.storyboard */,
+				BDF69C5B1C03EF8100DC2AA5 /* Assets.xcassets */,
+				BDF69C5D1C03EF8100DC2AA5 /* LaunchScreen.storyboard */,
+				BDF69C601C03EF8100DC2AA5 /* Info.plist */,
+			);
+			path = "View Controller Transitions with Spring Tutorial";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF69C501C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF69C631C03EF8100DC2AA5 /* Build configuration list for PBXNativeTarget "View Controller Transitions with Spring Tutorial" */;
+			buildPhases = (
+				BDF69C4D1C03EF8100DC2AA5 /* Sources */,
+				BDF69C4E1C03EF8100DC2AA5 /* Frameworks */,
+				BDF69C4F1C03EF8100DC2AA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "View Controller Transitions with Spring Tutorial";
+			productName = "View Controller Transitions with Spring Tutorial";
+			productReference = BDF69C511C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF69C491C03EF8100DC2AA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Wes Van der Klomp";
+				TargetAttributes = {
+					BDF69C501C03EF8100DC2AA5 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = BDF69C4C1C03EF8100DC2AA5 /* Build configuration list for PBXProject "View Controller Transitions with Spring Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF69C481C03EF8100DC2AA5;
+			productRefGroup = BDF69C521C03EF8100DC2AA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF69C501C03EF8100DC2AA5 /* View Controller Transitions with Spring Tutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF69C4F1C03EF8100DC2AA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF69C5F1C03EF8100DC2AA5 /* LaunchScreen.storyboard in Resources */,
+				BDF69C5C1C03EF8100DC2AA5 /* Assets.xcassets in Resources */,
+				BDF69C5A1C03EF8100DC2AA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF69C4D1C03EF8100DC2AA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF69C571C03EF8100DC2AA5 /* ViewController.swift in Sources */,
+				BDF69C671C03EFA300DC2AA5 /* readme.md in Sources */,
+				BDF69C551C03EF8100DC2AA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDF69C581C03EF8100DC2AA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF69C591C03EF8100DC2AA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDF69C5D1C03EF8100DC2AA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDF69C5E1C03EF8100DC2AA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDF69C611C03EF8100DC2AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF69C621C03EF8100DC2AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF69C641C03EF8100DC2AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "View Controller Transitions with Spring Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wes.vdk.View-Controller-Transitions-with-Spring-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDF69C651C03EF8100DC2AA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "View Controller Transitions with Spring Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wes.vdk.View-Controller-Transitions-with-Spring-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF69C4C1C03EF8100DC2AA5 /* Build configuration list for PBXProject "View Controller Transitions with Spring Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF69C611C03EF8100DC2AA5 /* Debug */,
+				BDF69C621C03EF8100DC2AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF69C631C03EF8100DC2AA5 /* Build configuration list for PBXNativeTarget "View Controller Transitions with Spring Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF69C641C03EF8100DC2AA5 /* Debug */,
+				BDF69C651C03EF8100DC2AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDF69C491C03EF8100DC2AA5 /* Project object */;
+}
