@@ -40,7 +40,7 @@
         <!--Pop Up-->
         <scene sceneID="YPe-yh-aec">
             <objects>
-                <viewController title="Pop Up" id="Jwv-Ah-Sa1" sceneMemberID="viewController">
+                <viewController title="Pop Up" id="Jwv-Ah-Sa1" customClass="PopUpViewController" customModule="View_Controller_Transitions_with_Spring_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F2G-Qy-V7i"/>
                         <viewControllerLayoutGuide type="bottom" id="Th1-9B-vmA"/>
@@ -89,6 +89,10 @@
                             <constraint firstItem="Th1-9B-vmA" firstAttribute="top" secondItem="Pr7-Mw-Sda" secondAttribute="bottom" constant="-100" id="bw8-gT-6l9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="f6w-jn-SJf" id="LjX-w5-0Wh"/>
+                        <outlet property="popUpView" destination="Pr7-Mw-Sda" id="W40-lq-xZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mm-kR-Tn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
