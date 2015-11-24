@@ -57,6 +57,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backPressed:" destination="Jwv-Ah-Sa1" eventType="touchUpInside" id="dmO-eW-AwE"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-Mw-Sda" customClass="SpringView" customModule="View_Controller_Transitions_with_Spring_Tutorial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="400" width="600" height="300"/>
@@ -90,7 +93,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="f6w-jn-SJf" id="LjX-w5-0Wh"/>
+                        <outlet property="backButton" destination="f6w-jn-SJf" id="s9m-vd-Rng"/>
                         <outlet property="popUpView" destination="Pr7-Mw-Sda" id="W40-lq-xZY"/>
                     </connections>
                 </viewController>
