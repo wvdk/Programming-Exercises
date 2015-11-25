@@ -9,12 +9,12 @@ Chapter | Title | Status
 2 | Go Forth | To do
 3 | Monolithic | To do
 4 | Cookbook | To do
-5 | Pipeline | WIP
+5 | Pipeline | 11/21/15
 6 | Code Golf | To do
 7 | Infinite Mirror | To do
 8 | Kick Forward | To do
 9 | The One | To do
-10 | Things | WIP
+10 | Things | 11/22/15
 11 | Letterbox | To do
 12 | Closed Maps | To do
 13 | Abstract Things | To do
@@ -36,5 +36,5 @@ Chapter | Title | Status
 29 | Dataspaces  | To do
 30 | Map Reduce | To do
 31 | Double Map Reduce | To do
-32 | Trinity | To do
+32 | Trinity | WIP
 33 | Restful | To do
