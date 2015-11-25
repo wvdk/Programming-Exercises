@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        datePicker.addTarget(self, action: "handleDateChange:", forControlEvents: UIControlEvents.ValueChanged)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func handleDateChange(datePicker: UIDatePicker) {
+        let formater = NSDateFormatter()
+        formater.dateStyle = .MediumStyle
+        formater.timeStyle = .ShortStyle
+        
+        let dateString = formater.stringFromDate(datePicker.date)
+        label.text = dateString
     }
-
 
 }
 
