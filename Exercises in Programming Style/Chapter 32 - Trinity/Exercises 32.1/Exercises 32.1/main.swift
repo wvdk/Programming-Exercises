@@ -8,6 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+// Models the data. In this case, we're only interested in words and their frequencies as an end result.
+class Model {
+    
+}
 
-print("You're path: \(Process.arguments[1])")
+class View {
+    
+}
+
+class Controller {
+    
+}
+
+//let model = Model(pathToFile: Process.arguments[1])
+//let view = View(model: model)
+//let controller = Controller(model: model, view: view)
+//controller.run()
