@@ -61,6 +61,12 @@
             ReferencedContainer = "container:Exercises 32.1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/wvdk/Desktop/Programming-Exercises/Exercises\ in\ Programming\ Style/pride-and-prejudice.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
