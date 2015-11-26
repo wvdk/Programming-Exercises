@@ -19,6 +19,7 @@ Title | Author | Date completed
 [Core Data for iOS and OS X](http://www.lynda.com/iOS-tutorials/Core-Data-iOS-OS-X/101461-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aios%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2) | Simon Allardice | 2015
 [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html) | H. Abelson, G. Jay Sussman, J. Sussman | 
 [CODE](http://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319) | Charles Petzold | Nov 2015
+[Scrum](http://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X) | Jeff Sutherland | 2015
 [Exercises In Programming Style](http://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371) | Cristina Videira Lopes | 
 [Learn C The Hard Way](http://c.learncodethehardway.org/book/) | Zed Shaw | 
 [The Little Schemer - 4th Edition](http://www.amazon.com/The-Little-Schemer-4th-Edition/dp/0262560992) | D. Friedman, M. Felleisen | 
