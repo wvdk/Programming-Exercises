@@ -8,6 +8,8 @@ As per the authors introduction, the following rules must be followed:
 - Do the extra credit but it's alright to skip ones you can't figure out.
 - Always try to figure it out first before trying to get help.
 
+———
+
 - [ ] Preface
 - [ ] Introduction: The Cartesian Dream Of C
 - [ ] Exercise 0: The Setup
