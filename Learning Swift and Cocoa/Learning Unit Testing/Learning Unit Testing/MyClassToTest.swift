@@ -9,5 +9,19 @@
 import UIKit
 
 class MyClassToTest: NSObject {
+    var thisIsAPropertyThatMustExist: String!
+    
+    init(thing: String) {
+        super.init()
+        self.thisIsAPropertyThatMustExist = thing
+    }
+    
+    func thisIsAMethodToTest() -> Bool {
+        if thisIsAPropertyThatMustExist.characters.count < 0 {
+            return true
+        } else {
+            return false
+        }
+    }
 
 }
