@@ -36,5 +36,23 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <!--
+     This disables app transport security and allows non-HTTPS requests.
+     Note: it is not recommended to use non-HTTPS requests for sensitive data. A better
+     approach is to fix the non-secure resources. However, this patch will work in a pinch.
+     To apply the fix in your Ionic/Cordova app, edit the file located here:
+     platforms/ios/MyApp/MyApp-Info.plist
+     And add this XML right before the end of the file inside of the last </dict> entry:
+     
+     PASTE HERE
+     </dict>
+     </plist>
+     -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key><true/>
+    </dict>
+    
 </dict>
 </plist>
