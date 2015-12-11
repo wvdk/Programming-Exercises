@@ -25,8 +25,10 @@ class APIClient: NSObject {
             
             if let json = json {
                 print(json)
+            } else {
+                print("Fail")
             }
-        })
+        }).resume()
         
     }
 
