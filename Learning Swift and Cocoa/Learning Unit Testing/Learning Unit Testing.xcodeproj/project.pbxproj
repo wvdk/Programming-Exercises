@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8DB0A01C1B95A4002DD916 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DB09F1C1B95A4002DD916 /* APIClient.swift */; };
+		BD8DB0A21C1B97B5002DD916 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8DB0A11C1B97B5002DD916 /* APIClientTests.swift */; };
 		BDB74E5D1C1B5F77001889B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74E5C1C1B5F77001889B4 /* AppDelegate.swift */; };
 		BDB74E5F1C1B5F77001889B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74E5E1C1B5F77001889B4 /* ViewController.swift */; };
 		BDB74E621C1B5F77001889B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB74E601C1B5F77001889B4 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD8DB09F1C1B95A4002DD916 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BD8DB0A11C1B97B5002DD916 /* APIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		BDB74E591C1B5F77001889B4 /* Learning Unit Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning Unit Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB74E5C1C1B5F77001889B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB74E5E1C1B5F77001889B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			children = (
 				BDB74E5C1C1B5F77001889B4 /* AppDelegate.swift */,
 				BDB74E7E1C1B61F0001889B4 /* MyClassToTest.swift */,
+				BD8DB09F1C1B95A4002DD916 /* APIClient.swift */,
 				BDB74E5E1C1B5F77001889B4 /* ViewController.swift */,
 				BDB74E601C1B5F77001889B4 /* Main.storyboard */,
 				BDB74E631C1B5F77001889B4 /* Assets.xcassets */,
@@ -95,6 +100,7 @@
 			children = (
 				BDB74E711C1B5F77001889B4 /* Learning_Unit_TestingTests.swift */,
 				BDB74E731C1B5F77001889B4 /* Info.plist */,
+				BD8DB0A11C1B97B5002DD916 /* APIClientTests.swift */,
 			);
 			path = "Learning Unit TestingTests";
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 				BDB74E5F1C1B5F77001889B4 /* ViewController.swift in Sources */,
 				BDB74E5D1C1B5F77001889B4 /* AppDelegate.swift in Sources */,
 				BDB74E7F1C1B61F0001889B4 /* MyClassToTest.swift in Sources */,
+				BD8DB0A01C1B95A4002DD916 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB74E721C1B5F77001889B4 /* Learning_Unit_TestingTests.swift in Sources */,
+				BD8DB0A21C1B97B5002DD916 /* APIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
