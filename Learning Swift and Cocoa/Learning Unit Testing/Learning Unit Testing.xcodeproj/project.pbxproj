@@ -13,6 +13,7 @@
 		BDB74E641C1B5F77001889B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB74E631C1B5F77001889B4 /* Assets.xcassets */; };
 		BDB74E671C1B5F77001889B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB74E651C1B5F77001889B4 /* LaunchScreen.storyboard */; };
 		BDB74E721C1B5F77001889B4 /* Learning_Unit_TestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74E711C1B5F77001889B4 /* Learning_Unit_TestingTests.swift */; };
+		BDB74E7F1C1B61F0001889B4 /* MyClassToTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74E7E1C1B61F0001889B4 /* MyClassToTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BDB74E6D1C1B5F77001889B4 /* Learning Unit TestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning Unit TestingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB74E711C1B5F77001889B4 /* Learning_Unit_TestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_Unit_TestingTests.swift; sourceTree = "<group>"; };
 		BDB74E731C1B5F77001889B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB74E7E1C1B61F0001889B4 /* MyClassToTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClassToTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB74E5C1C1B5F77001889B4 /* AppDelegate.swift */,
+				BDB74E7E1C1B61F0001889B4 /* MyClassToTest.swift */,
 				BDB74E5E1C1B5F77001889B4 /* ViewController.swift */,
 				BDB74E601C1B5F77001889B4 /* Main.storyboard */,
 				BDB74E631C1B5F77001889B4 /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 			files = (
 				BDB74E5F1C1B5F77001889B4 /* ViewController.swift in Sources */,
 				BDB74E5D1C1B5F77001889B4 /* AppDelegate.swift in Sources */,
+				BDB74E7F1C1B61F0001889B4 /* MyClassToTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +390,7 @@
 				BDB74E781C1B5F77001889B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDB74E791C1B5F77001889B4 /* Build configuration list for PBXNativeTarget "Learning Unit TestingTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +399,7 @@
 				BDB74E7B1C1B5F77001889B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
