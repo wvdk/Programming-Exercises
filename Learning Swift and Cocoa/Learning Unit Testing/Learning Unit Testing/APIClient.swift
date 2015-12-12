@@ -17,14 +17,14 @@ class APIClient: NSObject {
     }
     
     func getRawJSON() {
-        
         let url = NSURL(string: "http://api.dronestre.am/data")!
         
         NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) in
-            let json = try? NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+            let json = try? NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSDictionary
             
             if let json = json {
-                print(json)
+                print("Success")
+                self.arrayOfStrikes = json["strike"] as! [AnyObject]
             } else {
                 print("Fail")
             }
