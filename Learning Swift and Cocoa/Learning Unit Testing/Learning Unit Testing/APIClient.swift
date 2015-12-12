@@ -16,7 +16,7 @@ class APIClient: NSObject {
         super.init()
     }
     
-    func getRawJSON() {
+    func getRawJSON(compeletion: () -> ()) {
         let url = NSURL(string: "http://api.dronestre.am/data")!
         
         NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) in
@@ -24,9 +24,11 @@ class APIClient: NSObject {
             
             if let json = json {
                 print("Success")
-                self.arrayOfStrikes = json["strike"] as! [AnyObject]
+                self.arrayOfStrikes = json["strike"] as? [AnyObject]
+                compeletion()
             } else {
                 print("Fail")
+                compeletion()
             }
         }).resume()
         

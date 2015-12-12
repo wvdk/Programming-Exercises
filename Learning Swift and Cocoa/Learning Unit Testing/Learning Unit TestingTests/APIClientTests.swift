@@ -23,15 +23,18 @@ class APIClientTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
+    func testThatArrayOfStrikesExistsAfterCallToGetThem() {
+
+        client.getRawJSON({
+            XCTAssertNotNil(self.client.arrayOfStrikes)
+        })
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceOfGETCall() {
-        // This is an example of a performance test case.
         self.measureBlock {
-            self.client.getRawJSON()
+            self.client.getRawJSON({})
         }
     }
     

@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let client = APIClient()
         
-        client.getRawJSON()
+        client.getRawJSON({
+        
+        })
         
         return true
     }
