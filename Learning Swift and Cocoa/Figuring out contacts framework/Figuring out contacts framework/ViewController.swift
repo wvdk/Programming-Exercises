@@ -7,18 +7,26 @@
 //
 
 import UIKit
-import Contacts
+import ContactsUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CNContactPickerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let store = CNContactStore()
-        store.requestAccessForEntityType(.Contacts, completionHandler: {success, error in
-            print("Success: \(success)")
-        })
+        let contactPicker = CNContactPickerViewController()
+        contactPicker.delegate = self
+        self.presentViewController(contactPicker, animated: true, completion: {})
+    }
+    
+    func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
+        
+        if contact.emailAddresses.first != nil {
+            print(contact.emailAddresses.first!.value)
+        }
+        
+        picker.dismissViewControllerAnimated(false, completion: {})
     }
 
     override func didReceiveMemoryWarning() {
