@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebView_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-cz-hcp">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="iwU-aU-SKw" kind="presentation" id="JFl-Gl-9xV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e8s-cz-hcp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXL-T9-UE8"/>
+                            <constraint firstItem="e8s-cz-hcp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v3b-hM-XDB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="525"/>
+        </scene>
+        <!--Web View View Controller-->
+        <scene sceneID="6Ya-qe-nR9">
+            <objects>
+                <viewController id="iwU-aU-SKw" customClass="WebViewViewController" customModule="WebView_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ies-IK-P5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ne-DB-U9t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dfl-kL-9WJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7e-KP-3dv">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRw-Dm-hQG">
+                                <rect key="frame" x="20" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="back:" destination="iwU-aU-SKw" eventType="touchUpInside" id="nvZ-ZH-Pic"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s7e-KP-3dv" firstAttribute="leading" secondItem="dfl-kL-9WJ" secondAttribute="leading" id="1Bf-Wd-VUW"/>
+                            <constraint firstItem="s7e-KP-3dv" firstAttribute="bottom" secondItem="1Ne-DB-U9t" secondAttribute="top" id="Uyl-IU-sDD"/>
+                            <constraint firstAttribute="trailing" secondItem="s7e-KP-3dv" secondAttribute="trailing" id="bpq-41-SAy"/>
+                            <constraint firstItem="s7e-KP-3dv" firstAttribute="top" secondItem="ies-IK-P5C" secondAttribute="bottom" constant="50" id="ric-WR-Yyl"/>
+                            <constraint firstItem="dRw-Dm-hQG" firstAttribute="top" secondItem="ies-IK-P5C" secondAttribute="bottom" constant="8" symbolic="YES" id="sQs-3v-7Mc"/>
+                            <constraint firstItem="dRw-Dm-hQG" firstAttribute="leading" secondItem="dfl-kL-9WJ" secondAttribute="leadingMargin" id="wuF-jQ-qj3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="s7e-KP-3dv" id="AW8-8y-qBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9T-1S-99m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="525"/>
+        </scene>
+    </scenes>
+</document>
