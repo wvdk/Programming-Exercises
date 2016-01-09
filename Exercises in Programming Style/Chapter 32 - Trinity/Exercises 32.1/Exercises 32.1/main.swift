@@ -18,25 +18,29 @@ class Model {
     }
     
     func update(pathToFile: String) {
+        
+        // First lets get contents of file and strip out the single characters, numbers, and new lines.
         let contentOfFile = try? NSString(contentsOfFile: pathToFile, encoding: NSUTF8StringEncoding).lowercaseString
         let strippedStage1 = contentOfFile?.stringByReplacingOccurrencesOfString("[^a-zA-Z_0-9]+", withString: " ")
         let strippedStage2 = strippedStage1?.stringByReplacingOccurrencesOfString("\n", withString: " ")
+        
 
-        let words: [String] = (strippedStage2?.componentsSeparatedByString(" "))!
-        
-        
+        // Lets filter the stop words out.
+        let allWords: [String] = (strippedStage2?.componentsSeparatedByString(" "))!
         let stopWordsArray: [String]? = self.stopWords?.componentsSeparatedByString(",")
         var filteredWords: [String] = []
         
-        for w in words {
+        for w in allWords {
             if !stopWordsArray!.contains(w) {
                 filteredWords.append(w)
+                
             } else {
                 print("Removed word: \(w)")
             }
         }
         
-        print(filteredWords)
+        // Now lets count the occurrences of each word.
+        
         
     }
     
