@@ -38,9 +38,6 @@ class Model {
         for w in filteredWords {
             frequencies[w] = (frequencies[w] ?? 0) + 1
         }
-        
-        print(frequencies)
-        
     }
     
 }
