@@ -48,7 +48,9 @@ class Controller {
     
 }
 
-let model = Model(pathToFile: Process.arguments[1])
+//let model = Model(pathToFile: Process.arguments[1])
 //let view = View(model: model)
 //let controller = Controller(model: model, view: view)
 //controller.run()
+
+print(readLine())
