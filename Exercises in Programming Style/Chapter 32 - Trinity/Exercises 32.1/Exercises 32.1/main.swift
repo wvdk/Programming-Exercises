@@ -19,23 +19,25 @@ class Model {
     
     func update(pathToFile: String) {
         let contentOfFile = try? NSString(contentsOfFile: pathToFile, encoding: NSUTF8StringEncoding).lowercaseString
-        let stripped = contentOfFile?.stringByReplacingOccurrencesOfString("[^a-zA-Z_0-9]+", withString: " ")
-        let words: [String] = (stripped?.componentsSeparatedByString(" "))!
+        let strippedStage1 = contentOfFile?.stringByReplacingOccurrencesOfString("[^a-zA-Z_0-9]+", withString: " ")
+        let strippedStage2 = strippedStage1?.stringByReplacingOccurrencesOfString("\n", withString: " ")
+
+        let words: [String] = (strippedStage2?.componentsSeparatedByString(" "))!
         
         
-        let stopWordsArray: [String] = (self.stopWords?.componentsSeparatedByString(" "))!
+        let stopWordsArray: [String]? = self.stopWords?.componentsSeparatedByString(",")
         var filteredWords: [String] = []
         
         for w in words {
-            if !stopWordsArray.contains(w) {
+            if !stopWordsArray!.contains(w) {
                 filteredWords.append(w)
             } else {
                 print("Removed word: \(w)")
             }
         }
         
+        print(filteredWords)
         
-        print(stopWordsArray)
     }
     
 }
@@ -48,7 +50,7 @@ class Controller {
     
 }
 
-//let model = Model(pathToFile: Process.arguments[1])
+let model = Model(pathToFile: Process.arguments[1])
 //let view = View(model: model)
 //let controller = Controller(model: model, view: view)
 //controller.run()
