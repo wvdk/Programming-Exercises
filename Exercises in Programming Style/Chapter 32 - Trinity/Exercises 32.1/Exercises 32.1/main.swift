@@ -57,8 +57,9 @@ class View {
         }
         
         let sorted = unsorted.sort { $0.1 > $1.1 }
+
         
-        for (word, number) in sorted {
+        for (word, number) in sorted[0...25] {
             print("\(word) - \(number)")
         }
     }
@@ -74,11 +75,17 @@ class Controller {
         
         view.render()
     }
+    
+    func run() {
+        while true {
+            print("Next file: ")
+            model.update(readLine()!)
+            view.render()
+        }
+    }
 }
 
 let model = Model(pathToFile: Process.arguments[1])
 let view = View(model: model)
-//let controller = Controller(model: model, view: view)
-//controller.run()
-
-print(readLine())
+let controller = Controller(model: model, view: view)
+controller.run()
