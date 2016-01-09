@@ -43,15 +43,41 @@ class Model {
 }
 
 class View {
+    let model: Model!
     
+    init(model: Model) {
+        self.model = model
+    }
+    
+    func render() {
+        var unsorted: [(String, Int)] = []
+        
+        for (word, number) in model.frequencies {
+            unsorted.append(word, number)
+        }
+        
+        let sorted = unsorted.sort { $0.1 > $1.1 }
+        
+        for (word, number) in sorted {
+            print("\(word) - \(number)")
+        }
+    }
 }
 
 class Controller {
+    let model: Model!
+    let view: View!
     
+    init(model: Model, view: View) {
+        self.model = model
+        self.view = view
+        
+        view.render()
+    }
 }
 
 let model = Model(pathToFile: Process.arguments[1])
-//let view = View(model: model)
+let view = View(model: model)
 //let controller = Controller(model: model, view: view)
 //controller.run()
 
