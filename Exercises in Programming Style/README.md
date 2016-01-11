@@ -36,5 +36,5 @@ Chapter | Title | Status
 29 | Dataspaces  | To do
 30 | Map Reduce | To do
 31 | Double Map Reduce | To do
-32 | Trinity | WIP
+32 | Trinity | Jan 2016
 33 | Restful | To do
