@@ -10,9 +10,10 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var countriesInEurope = ["France", "Spain", "Germany"]
-    var countriesInAsia = ["Japan", "China", "India"]
-    var countriesInSouthAmerica = ["Argentina", "Brasil", "Chile"]
+    var countries = [
+        ["France", "Spain", "Germany"],
+        ["Japan", "China", "India"],
+        ["Argentina", "Brasil", "Chile"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +33,11 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return countries.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return countries[section].count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
