@@ -42,18 +42,8 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
-        // Configure the cell...
-        switch indexPath.section {
-        case 0:
-            cell.textLabel?.text = countriesInEurope[indexPath.row]
-        case 1:
-            cell.textLabel?.text = countriesInAsia[indexPath.row]
-        case 2:
-            cell.textLabel?.text = countriesInSouthAmerica[indexPath.row]
-        default:
-            cell.textLabel?.text = "Other"
-        }
+        
+        cell.textLabel?.text = countries[indexPath.section][indexPath.row]
 
         return cell
     }
