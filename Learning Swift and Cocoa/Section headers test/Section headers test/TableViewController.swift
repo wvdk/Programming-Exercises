@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     var countriesInEurope = ["France", "Spain", "Germany"]
     var countriesInAsia = ["Japan", "China", "India"]
-    var countriesInSounthAmerica = ["Argentina", "Brasil", "Chile"]
+    var countriesInSouthAmerica = ["Argentina", "Brasil", "Chile"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class TableViewController: UITableViewController {
         case 1:
             cell.textLabel?.text = countriesInAsia[indexPath.row]
         case 2:
-            cell.textLabel?.text = countriesInSounthAmerica[indexPath.row]
+            cell.textLabel?.text = countriesInSouthAmerica[indexPath.row]
         default:
             cell.textLabel?.text = "Other"
         }
@@ -61,6 +61,10 @@ class TableViewController: UITableViewController {
         switch section {
         case 0:
             return "Europe"
+        case 1:
+            return "Asia"
+        case 2:
+            return "South America"
         default:
             return "Other"
         }
