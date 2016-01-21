@@ -39,15 +39,19 @@ class TableViewController: UITableViewController {
         return 3
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = countriesInEurope[indexPath.row]
+        default:
+            cell.textLabel?.text = "Other"
+        }
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
