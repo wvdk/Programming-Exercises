@@ -46,11 +46,24 @@ class TableViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             cell.textLabel?.text = countriesInEurope[indexPath.row]
+        case 1:
+            cell.textLabel?.text = countriesInAsia[indexPath.row]
+        case 2:
+            cell.textLabel?.text = countriesInSounthAmerica[indexPath.row]
         default:
             cell.textLabel?.text = "Other"
         }
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Europe"
+        default:
+            return "Other"
+        }
     }
 
     /*
