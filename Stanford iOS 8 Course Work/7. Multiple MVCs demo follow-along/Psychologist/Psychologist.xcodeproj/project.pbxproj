@@ -54,14 +54,22 @@
 		BD3A88EB1C698F9E004E0440 /* Psychologist */ = {
 			isa = PBXGroup;
 			children = (
-				BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */,
 				BD3A88EE1C698F9E004E0440 /* ViewController.swift */,
 				BD3A88F01C698F9E004E0440 /* Main.storyboard */,
+				BD3A88FE1C69900A004E0440 /* Supporting Files */,
+			);
+			path = Psychologist;
+			sourceTree = "<group>";
+		};
+		BD3A88FE1C69900A004E0440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */,
 				BD3A88F31C698F9E004E0440 /* Assets.xcassets */,
 				BD3A88F51C698F9E004E0440 /* LaunchScreen.storyboard */,
 				BD3A88F81C698F9E004E0440 /* Info.plist */,
 			);
-			path = Psychologist;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
