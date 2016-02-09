@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD3A88ED1C698F9E004E0440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */; };
-		BD3A88EF1C698F9E004E0440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A88EE1C698F9E004E0440 /* ViewController.swift */; };
+		BD3A88EF1C698F9E004E0440 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */; };
 		BD3A88F21C698F9E004E0440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A88F01C698F9E004E0440 /* Main.storyboard */; };
 		BD3A88F41C698F9E004E0440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3A88F31C698F9E004E0440 /* Assets.xcassets */; };
 		BD3A88F71C698F9E004E0440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A88F51C698F9E004E0440 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		BD3A88E91C698F9E004E0440 /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD3A88EE1C698F9E004E0440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
 		BD3A88F11C698F9E004E0440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD3A88F31C698F9E004E0440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3A88F61C698F9E004E0440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		BD3A88EB1C698F9E004E0440 /* Psychologist */ = {
 			isa = PBXGroup;
 			children = (
-				BD3A88EE1C698F9E004E0440 /* ViewController.swift */,
+				BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */,
 				BD3A88F01C698F9E004E0440 /* Main.storyboard */,
 				BD3A88FE1C69900A004E0440 /* Supporting Files */,
 			);
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3A88EF1C698F9E004E0440 /* ViewController.swift in Sources */,
+				BD3A88EF1C698F9E004E0440 /* PsychologistViewController.swift in Sources */,
 				BD3A88ED1C698F9E004E0440 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
