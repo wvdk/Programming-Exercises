@@ -18,22 +18,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoD-wp-g03">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xoD-wp-g03">
                                 <rect key="frame" x="20" y="28" width="560" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7R-0U-gxQ">
+                                <rect key="frame" x="230" y="279" width="141" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="20k-o4-90N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Dancing Tree"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="20k-o4-90N"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-oZ-uOJ">
+                                <rect key="frame" x="234" y="230" width="132" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="uXi-Dd-fiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Golden Bear"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uXi-Dd-fiW"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5m-wn-eoM">
+                                <rect key="frame" x="254" y="328" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="5dW-7e-w1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Buckeye"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5dW-7e-w1w"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xoD-wp-g03" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0QT-Kj-4nT"/>
+                            <constraint firstItem="H5m-wn-eoM" firstAttribute="top" secondItem="v7R-0U-gxQ" secondAttribute="bottom" constant="8" symbolic="YES" id="859-gk-WGa"/>
                             <constraint firstItem="xoD-wp-g03" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Jag-nH-jxX"/>
                             <constraint firstItem="xoD-wp-g03" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xb4-t0-ffq"/>
+                            <constraint firstItem="v7R-0U-gxQ" firstAttribute="top" secondItem="gFs-oZ-uOJ" secondAttribute="bottom" constant="8" symbolic="YES" id="a9Y-LR-SgC"/>
+                            <constraint firstItem="v7R-0U-gxQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dkp-qU-0AA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xoD-wp-g03" secondAttribute="bottom" constant="494" id="dln-Jd-gnA"/>
+                            <constraint firstItem="H5m-wn-eoM" firstAttribute="centerX" secondItem="v7R-0U-gxQ" secondAttribute="centerX" id="fCq-6S-RBx"/>
+                            <constraint firstItem="v7R-0U-gxQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hI2-h4-evN"/>
+                            <constraint firstItem="v7R-0U-gxQ" firstAttribute="centerX" secondItem="xoD-wp-g03" secondAttribute="centerX" id="kRT-ww-AXc"/>
+                            <constraint firstItem="gFs-oZ-uOJ" firstAttribute="centerX" secondItem="v7R-0U-gxQ" secondAttribute="centerX" id="yi3-Vs-4u7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="kRT-ww-AXc"/>
                                 <exclude reference="dln-Jd-gnA"/>
                             </mask>
                         </variation>
