@@ -28,11 +28,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         print("didRegisterForRemoteNotificationsWithDeviceToken")
-
-//        let installation = PFInstallation.currentInstallation()
-//        installation.setDeviceTokenFromData(deviceToken)
-//        installation.channels = ["global"]
-//        installation.saveInBackground()
+        let tokenString = convertDeviceTokenToString(deviceToken)
+        
+        print("Token: \(tokenString)")
+    }
+    
+    private func convertDeviceTokenToString(deviceToken:NSData) -> String {
+        //  Convert binary Device Token to a String (and remove the <,> and white space charaters).
+        var deviceTokenStr = deviceToken.description.stringByReplacingOccurrencesOfString(">", withString: "", options: .CaseInsensitiveSearch, range: nil)
+        deviceTokenStr = deviceTokenStr.stringByReplacingOccurrencesOfString("<", withString: "", options: .CaseInsensitiveSearch, range: nil)
+        deviceTokenStr = deviceTokenStr.stringByReplacingOccurrencesOfString(" ", withString: "", options: .CaseInsensitiveSearch, range: nil)
+        
+        // Our API returns token in all uppercase, regardless how it was originally sent.
+        // To make the two consistent, I am uppercasing the token string here.
+        deviceTokenStr = deviceTokenStr.uppercaseString
+        return deviceTokenStr
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        // display the userInfo
+        if let notification = userInfo["aps"] as? NSDictionary,
+            let alert = notification["alert"] as? String {
+                let alertCtrl = UIAlertController(title: "Time Entry", message: alert as String, preferredStyle: UIAlertControllerStyle.Alert)
+                alertCtrl.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                // Find the presented VC...
+                var presentedVC = self.window?.rootViewController
+                while (presentedVC!.presentedViewController != nil)  {
+                    presentedVC = presentedVC!.presentedViewController
+                }
+                presentedVC!.presentViewController(alertCtrl, animated: true, completion: nil)
+                
+                // call the completion handler
+                // -- pass in NoData, since no new data was fetched from the server.
+                completionHandler(UIBackgroundFetchResult.NoData)
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
