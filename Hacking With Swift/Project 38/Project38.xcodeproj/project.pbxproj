@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0DEB831C72949E0064DAA8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BD0DEB821C72949E0064DAA8 /* README.md */; };
 		BD3FB2FC1C7282680053B11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FB2FB1C7282680053B11F /* AppDelegate.swift */; };
 		BD3FB2FE1C7282680053B11F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FB2FD1C7282680053B11F /* MasterViewController.swift */; };
 		BD3FB3001C7282680053B11F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FB2FF1C7282680053B11F /* DetailViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0DEB821C72949E0064DAA8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD3FB2F81C7282680053B11F /* Project38.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project38.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3FB2FB1C7282680053B11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD3FB2FD1C7282680053B11F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				BD3FB30F1C72831A0053B11F /* SwiftyJSON.swift */,
 				BD3FB2FB1C7282680053B11F /* AppDelegate.swift */,
 				BD3FB2FD1C7282680053B11F /* MasterViewController.swift */,
+				BD0DEB821C72949E0064DAA8 /* README.md */,
 				BD3FB3111C7284C20053B11F /* Project38.xcdatamodeld */,
 				BD3FB2FF1C7282680053B11F /* DetailViewController.swift */,
 				BD3FB3011C7282680053B11F /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0DEB831C72949E0064DAA8 /* README.md in Sources */,
 				BD3FB3001C7282680053B11F /* DetailViewController.swift in Sources */,
 				BD3FB3131C7284C20053B11F /* Project38.xcdatamodeld in Sources */,
 				BD3FB2FE1C7282680053B11F /* MasterViewController.swift in Sources */,
