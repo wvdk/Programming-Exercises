@@ -13,6 +13,7 @@
 		BD3FB3031C7282680053B11F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3FB3011C7282680053B11F /* Main.storyboard */; };
 		BD3FB3051C7282680053B11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3FB3041C7282680053B11F /* Assets.xcassets */; };
 		BD3FB3081C7282680053B11F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3FB3061C7282680053B11F /* LaunchScreen.storyboard */; };
+		BD3FB3101C72831A0053B11F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3FB30F1C72831A0053B11F /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD3FB3041C7282680053B11F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3FB3071C7282680053B11F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3FB3091C7282680053B11F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3FB30F1C72831A0053B11F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		BD3FB2FA1C7282680053B11F /* Project38 */ = {
 			isa = PBXGroup;
 			children = (
+				BD3FB30F1C72831A0053B11F /* SwiftyJSON.swift */,
 				BD3FB2FB1C7282680053B11F /* AppDelegate.swift */,
 				BD3FB2FD1C7282680053B11F /* MasterViewController.swift */,
 				BD3FB2FF1C7282680053B11F /* DetailViewController.swift */,
@@ -141,6 +144,7 @@
 				BD3FB3001C7282680053B11F /* DetailViewController.swift in Sources */,
 				BD3FB2FE1C7282680053B11F /* MasterViewController.swift in Sources */,
 				BD3FB2FC1C7282680053B11F /* AppDelegate.swift in Sources */,
+				BD3FB3101C72831A0053B11F /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +294,7 @@
 				BD3FB30E1C7282680053B11F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
