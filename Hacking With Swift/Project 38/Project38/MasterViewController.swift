@@ -13,7 +13,7 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
-
+    var managedObjectContext: NSManagedObjectContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,8 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        startCoreData()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -81,7 +83,38 @@ class MasterViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
-
+    
+    // MARK: -  Core Data Stuff
+    
+    func startCoreData() {
+        // Load our data model we just created from the application bundle and create a NSManagedObjectModel object from it.
+        let modelURL = NSBundle.mainBundle().URLForResource("Project38", withExtension: "momd")!
+        let managedObjectModel = NSManagedObjectModel(contentsOfURL: modelURL)!
+        
+        // Create an NSPersistentStoreCoordinator object, which is responsible for reading from and writing to disk.
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
+        
+        // Set up an NSURL pointing to the database on disk where our actual saved objects live. This will be an SQLite database named Project38.sqlite.
+        let url = getDocumentsDirectory().URLByAppendingPathComponent("Project38.sqlite")
+        
+        do {
+            // Load that database into the NSPersistentStoreCoordinator so it knows where we want it to save. If it doesn't exist, it will be created automatically.
+            try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+            
+            // Create an NSManagedObjectContext and point it at the persistent store coordinator.
+            let managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+            
+            managedObjectContext.persistentStoreCoordinator = coordinator
+        } catch {
+            print("Fauled to initialize the application's saved data")
+            return
+        }
+    }
+    
+    func getDocumentsDirectory() -> NSURL {
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        return urls[0]
+    }
 
 }
 
