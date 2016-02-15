@@ -111,6 +111,18 @@ class MasterViewController: UITableViewController {
         }
     }
     
+    func saveContext() {
+        if managedObjectContext.hasChanges {
+            do {
+                try managedObjectContext.save()
+            } catch {
+                print("Errors when trying to save: \(error)")
+            }
+        }
+    }
+    
+    // MARK: - Misc.
+    
     func getDocumentsDirectory() -> NSURL {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[0]
