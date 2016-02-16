@@ -104,7 +104,7 @@ class MasterViewController: UITableViewController {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
             
             // Create an NSManagedObjectContext and point it at the persistent store coordinator.
-            let managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+            managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
             
             managedObjectContext.persistentStoreCoordinator = coordinator
         } catch {
