@@ -26,6 +26,8 @@ class MasterViewController: UITableViewController {
         }
         
         startCoreData()
+        
+        performSelectorInBackground("fetchCommits", withObject: nil)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -126,6 +128,24 @@ class MasterViewController: UITableViewController {
     func getDocumentsDirectory() -> NSURL {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[0]
+    }
+    
+    func fetchCommits() {
+        if let data = NSData(contentsOfURL: NSURL(string: "https://api.github.com/repos/apple/swift/commits?per_page=100")!) {
+            let jsonCommits = JSON(data: data)
+            let jsonCommitArray = jsonCommits.arrayValue
+            
+            print("Recieved \(jsonCommitArray.count) new commits.")
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                for jsonCommit in jsonCommitArray {
+                    // stuff
+                }
+                
+                self.saveContext()
+            })
+        }
+    
     }
 
 }
