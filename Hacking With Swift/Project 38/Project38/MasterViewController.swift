@@ -125,6 +125,22 @@ class MasterViewController: UITableViewController {
         }
     }
     
+    func loadSavedData() {
+        let fetch = NSFetchRequest(entityName: "Commit")
+        let sort = NSSortDescriptor(key: "date", ascending: false)
+        fetch.sortDescriptors = [sort]
+        
+        do {
+            if let commits = try managedObjectContext.executeFetchRequest(fetch) as? [Commit] {
+                print("Got \(commits.count) commits from saved data.")
+                objects = commits
+                tableView.reloadData()
+            }
+        } catch {
+            print("Fetch failed.")
+        }
+    }
+    
     // MARK: - Misc.
     
     func getDocumentsDirectory() -> NSURL {
