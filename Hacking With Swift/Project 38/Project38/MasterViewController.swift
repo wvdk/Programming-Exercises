@@ -28,6 +28,8 @@ class MasterViewController: UITableViewController {
         
         startCoreData()
         
+        loadSavedData()
+        
         performSelectorInBackground("fetchCommits", withObject: nil)
     }
 
@@ -163,6 +165,7 @@ class MasterViewController: UITableViewController {
                 }
                 
                 self.saveContext()
+                self.loadSavedData()
             })
         }
     }
