@@ -111,6 +111,8 @@ class MasterViewController: UITableViewController {
             managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
             
             managedObjectContext.persistentStoreCoordinator = coordinator
+            
+            managedObjectContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         } catch {
             print("Fauled to initialize the application's saved data")
             return
