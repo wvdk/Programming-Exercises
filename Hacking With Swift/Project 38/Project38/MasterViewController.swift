@@ -14,6 +14,7 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
     var managedObjectContext: NSManagedObjectContext!
+    let dateFormatISO8601 = "yyyy-MM-dd'T'HH:mm:ss'Z'"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -139,13 +140,25 @@ class MasterViewController: UITableViewController {
             
             dispatch_async(dispatch_get_main_queue(), {
                 for jsonCommit in jsonCommitArray {
-                    // stuff
+                    if let commit = NSEntityDescription.insertNewObjectForEntityForName("Commit", inManagedObjectContext: self.managedObjectContext) as? Commit {
+                        self.configureCommit(commit, usingJSON: jsonCommit)
+                    }
                 }
                 
                 self.saveContext()
             })
         }
+    }
     
+    func configureCommit(commit: Commit, usingJSON json: JSON) {
+        commit.sha = json["sha"].stringValue
+        commit.message = json["commit"]["message"].stringValue
+        commit.url = json["html_url"].stringValue
+        
+        let formatter = NSDateFormatter()
+        formatter.timeZone = NSTimeZone(name: "UTC")
+        formatter.dateFormat = dateFormatISO8601
+        commit.date = formatter.dateFromString(json["commit"]["committer"]["date"].stringValue) ?? NSDate()
     }
 
 }
