@@ -22,12 +22,14 @@ class FaceView: UIView {
         }
     }
     
+    var scale: CGFloat = 0.9
+    
     var faceCenter: CGPoint {
         return convertPoint(center, fromCoordinateSpace: superview!)
     }
     
     var faceRadius: CGFloat {
-        return min(bounds.size.width, bounds.size.height) / 2
+        return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
     
     override func drawRect(rect: CGRect) {
