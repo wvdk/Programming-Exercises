@@ -41,6 +41,9 @@
                             <constraint firstItem="uxt-e2-yAd" firstAttribute="bottom" secondItem="hKG-Co-tpS" secondAttribute="top" id="ruJ-Qf-RXz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="uxt-e2-yAd" id="u1N-Rg-Mdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8A1-A7-71f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
