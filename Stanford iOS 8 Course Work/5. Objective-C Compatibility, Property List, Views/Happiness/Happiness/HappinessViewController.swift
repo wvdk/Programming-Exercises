@@ -10,9 +10,17 @@ import UIKit
 
 class HappinessViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    // Model
+    var happiness: Int = 50 { // 0 is very sad, 100 is super happy
+        didSet {
+            happiness = min(max(happiness, 0), 100)
+            print("happiness = \(happiness)")
+            updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
     }
 
 }
