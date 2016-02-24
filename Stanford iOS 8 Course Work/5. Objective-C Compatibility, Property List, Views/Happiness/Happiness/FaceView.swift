@@ -11,24 +11,21 @@ import UIKit
 @IBDesignable
 class FaceView: UIView {
     
-    var lineWidth: CGFloat = 3 {
+    @IBInspectable var lineWidth: CGFloat = 3 {
         didSet {
             setNeedsDisplay()
         }
     }
-    
-    var color: UIColor = UIColor.blueColor() {
+    @IBInspectable var color: UIColor = UIColor.blueColor() {
         didSet {
             setNeedsDisplay()
         }
     }
-    
-    var scale: CGFloat = 0.9
+    @IBInspectable var scale: CGFloat = 0.9
     
     var faceCenter: CGPoint {
         return convertPoint(center, fromCoordinateSpace: superview!)
     }
-    
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
