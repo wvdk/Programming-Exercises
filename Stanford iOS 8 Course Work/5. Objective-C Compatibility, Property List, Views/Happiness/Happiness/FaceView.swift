@@ -25,7 +25,11 @@ class FaceView: UIView {
             setNeedsDisplay()
         }
     }
-    @IBInspectable var scale: CGFloat = 0.9
+    @IBInspectable var scale: CGFloat = 0.9 {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     var faceCenter: CGPoint {
         return convertPoint(center, fromCoordinateSpace: superview!)
@@ -35,6 +39,13 @@ class FaceView: UIView {
     }
     
     weak var dataSource: FaceViewDataSource?
+    
+    func scale(gesture: UIPinchGestureRecognizer) {
+        if gesture.state == .Changed {            
+            scale *= gesture.scale
+            gesture.scale = 1
+        }
+    }
     
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
