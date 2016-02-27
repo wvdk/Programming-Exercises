@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ykF-9B-sKk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -89,6 +89,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+        <!--Happiness View Controller-->
+        <scene sceneID="nnO-D7-WAL">
+            <objects>
+                <viewController id="FHU-BY-Ppt" customClass="HappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yhl-zX-SBO"/>
+                        <viewControllerLayoutGuide type="bottom" id="euV-x2-xRn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XPB-bg-87U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FCU-2p-UQv" customClass="FaceView" customModule="Psychologist" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="chI-DW-BF3" appends="YES" id="2Lz-oK-das"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FCU-2p-UQv" secondAttribute="trailing" id="06d-ao-sdj"/>
+                            <constraint firstItem="FCU-2p-UQv" firstAttribute="leading" secondItem="XPB-bg-87U" secondAttribute="leading" id="Rbj-d9-JbJ"/>
+                            <constraint firstItem="FCU-2p-UQv" firstAttribute="top" secondItem="XPB-bg-87U" secondAttribute="top" id="SSt-Yp-XbL"/>
+                            <constraint firstItem="FCU-2p-UQv" firstAttribute="bottom" secondItem="euV-x2-xRn" secondAttribute="top" id="pVc-8s-k9w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="FCU-2p-UQv" id="fo4-2E-Rtv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77o-Ny-Ath" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="chI-DW-BF3">
+                    <connections>
+                        <action selector="changeHappiness:" destination="FHU-BY-Ppt" id="Mgh-iL-v6h"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="440" y="1151"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="CoJ-ce-gEb">
+            <objects>
+                <splitViewController id="ykF-9B-sKk" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="masterViewController" id="Mrz-OL-ugq"/>
+                        <segue destination="FHU-BY-Ppt" kind="relationship" relationship="detailViewController" id="zRb-Y6-q7p"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HM-pe-pJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-376" y="677"/>
         </scene>
     </scenes>
 </document>

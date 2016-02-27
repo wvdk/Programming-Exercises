@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD18D6251C8225C40074F243 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD18D6231C8225C40074F243 /* HappinessViewController.swift */; };
+		BD18D6261C8225C40074F243 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD18D6241C8225C40074F243 /* FaceView.swift */; };
 		BD3A88ED1C698F9E004E0440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */; };
 		BD3A88EF1C698F9E004E0440 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */; };
 		BD3A88F21C698F9E004E0440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3A88F01C698F9E004E0440 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD18D6231C8225C40074F243 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		BD18D6241C8225C40074F243 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		BD3A88E91C698F9E004E0440 /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A88EC1C698F9E004E0440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				BD3A88EE1C698F9E004E0440 /* PsychologistViewController.swift */,
 				BD3A88F01C698F9E004E0440 /* Main.storyboard */,
+				BD18D6231C8225C40074F243 /* HappinessViewController.swift */,
+				BD18D6241C8225C40074F243 /* FaceView.swift */,
 				BD3A88FE1C69900A004E0440 /* Supporting Files */,
 			);
 			path = Psychologist;
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3A88EF1C698F9E004E0440 /* PsychologistViewController.swift in Sources */,
+				BD18D6251C8225C40074F243 /* HappinessViewController.swift in Sources */,
 				BD3A88ED1C698F9E004E0440 /* AppDelegate.swift in Sources */,
+				BD18D6261C8225C40074F243 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +302,7 @@
 				BD3A88FD1C698F9E004E0440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
