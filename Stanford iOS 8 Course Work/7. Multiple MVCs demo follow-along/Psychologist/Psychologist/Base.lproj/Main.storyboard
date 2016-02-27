@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Psychologist View Controller-->
+        <!--Psychologist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PsychologistViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xoD-wp-g03">
-                                <rect key="frame" x="20" y="28" width="560" height="36"/>
+                                <rect key="frame" x="20" y="72" width="560" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,6 +36,9 @@
                                         <exclude reference="20k-o4-90N"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="FHU-BY-Ppt" kind="showDetail" identifier="happy" id="bE1-VP-zqH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-oZ-uOJ">
                                 <rect key="frame" x="234" y="230" width="132" height="41"/>
@@ -49,6 +52,9 @@
                                         <exclude reference="uXi-Dd-fiW"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="FHU-BY-Ppt" kind="showDetail" identifier="sad" id="lN3-CI-cma"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5m-wn-eoM">
                                 <rect key="frame" x="254" y="328" width="92" height="41"/>
@@ -62,6 +68,9 @@
                                         <exclude reference="5dW-7e-w1w"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="FHU-BY-Ppt" kind="showDetail" identifier="meh" id="h2U-J0-n69"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -85,10 +94,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Psychologist" id="e4W-HP-uGv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="429"/>
+            <point key="canvasLocation" x="1252" y="429"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="nnO-D7-WAL">
@@ -148,7 +158,7 @@
             <objects>
                 <splitViewController id="ykF-9B-sKk" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="masterViewController" id="Mrz-OL-ugq"/>
+                        <segue destination="RY0-6M-zu7" kind="relationship" relationship="masterViewController" id="Mrz-OL-ugq"/>
                         <segue destination="FHU-BY-Ppt" kind="relationship" relationship="detailViewController" id="zRb-Y6-q7p"/>
                     </connections>
                 </splitViewController>
@@ -156,5 +166,26 @@
             </objects>
             <point key="canvasLocation" x="-376" y="677"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oGS-Np-aPo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RY0-6M-zu7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0eF-08-Wkg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gPm-EB-Isa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P78-Nr-gkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="h2U-J0-n69"/>
+    </inferredMetricsTieBreakers>
 </document>
