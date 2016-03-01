@@ -20,7 +20,7 @@ Title | Author | Date completed
 [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sicp/full-text/book/book.html) | H. Abelson, G. Jay Sussman, J. Sussman | 
 [CODE](http://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319) | Charles Petzold | Nov 2015
 [Scrum](http://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X) | Jeff Sutherland | 2015
-[Exercises In Programming Style](http://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371) | Cristina Videira Lopes | 
+[Exercises In Programming Style](http://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371) | Cristina Videira Lopes | Feb 2016
 [Learn C The Hard Way](http://c.learncodethehardway.org/book/) | Zed Shaw | 
 [The Little Schemer - 4th Edition](http://www.amazon.com/The-Little-Schemer-4th-Edition/dp/0262560992) | D. Friedman, M. Felleisen | 
 [The C Programming Language](http://www.amazon.com/The-Programming-Language-Brian-Kernighan/dp/0131103628) | B. Kernighan, D. Ritchie | 
