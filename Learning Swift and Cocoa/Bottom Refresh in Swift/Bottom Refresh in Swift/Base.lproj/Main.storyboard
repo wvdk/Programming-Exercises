@@ -50,7 +50,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="activityIndicatorView" destination="zoh-LY-sr1" id="SRl-cL-dpi"/>
+                                    <outlet property="activityIndicator" destination="zoh-LY-sr1" id="MHj-n1-mod"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zZ-H6-Bvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="801"/>
+            <point key="canvasLocation" x="602" y="926"/>
         </scene>
     </scenes>
 </document>
