@@ -22,8 +22,10 @@ struct Items {
         } else {
             self.fetchInProgress = true
             
+            let time = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 1 * Int64(NSEC_PER_SEC))
+            
             // This simulates a background fetch by delaying for a second
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 10), dispatch_get_main_queue(), {
+            dispatch_after(time, dispatch_get_main_queue(), {
                 let paths = self.generateSomeItems()
                 
                 self.fetchInProgress = false
