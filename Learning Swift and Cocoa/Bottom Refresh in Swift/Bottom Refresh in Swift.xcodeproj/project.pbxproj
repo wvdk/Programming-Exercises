@@ -13,6 +13,7 @@
 		BD6A13DD1C9B89D6001C08E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6A13DC1C9B89D6001C08E7 /* Assets.xcassets */; };
 		BD6A13E01C9B89D6001C08E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6A13DE1C9B89D6001C08E7 /* LaunchScreen.storyboard */; };
 		BD6A13E81C9B8A4A001C08E7 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = BD6A13E71C9B8A4A001C08E7 /* readme.md */; };
+		BD74F6D61CA1DC4300D359FF /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74F6D51CA1DC4300D359FF /* Items.swift */; };
 		BD85EA681C9F6D0C00767446 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85EA671C9F6D0C00767446 /* LoadingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		BD6A13DF1C9B89D6001C08E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD6A13E11C9B89D6001C08E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD6A13E71C9B8A4A001C08E7 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		BD74F6D51CA1DC4300D359FF /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		BD85EA671C9F6D0C00767446 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			children = (
 				BD6A13D51C9B89D6001C08E7 /* AppDelegate.swift */,
 				BD6A13D71C9B89D6001C08E7 /* ViewController.swift */,
+				BD74F6D51CA1DC4300D359FF /* Items.swift */,
 				BD85EA671C9F6D0C00767446 /* LoadingTableViewCell.swift */,
 				BD6A13D91C9B89D6001C08E7 /* Main.storyboard */,
 				BD6A13DC1C9B89D6001C08E7 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD74F6D61CA1DC4300D359FF /* Items.swift in Sources */,
 				BD6A13D81C9B89D6001C08E7 /* ViewController.swift in Sources */,
 				BD6A13E81C9B8A4A001C08E7 /* readme.md in Sources */,
 				BD85EA681C9F6D0C00767446 /* LoadingTableViewCell.swift in Sources */,

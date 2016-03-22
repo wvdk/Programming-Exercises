@@ -10,6 +10,6 @@ import UIKit
 
 class LoadingTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var activityIndication: UIActivityIndicatorView!
 
 }
