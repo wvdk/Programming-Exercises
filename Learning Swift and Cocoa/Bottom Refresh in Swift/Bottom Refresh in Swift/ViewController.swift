@@ -23,19 +23,18 @@ class ViewController: UITableViewController {
             cell.textLabel!.text = items.allItems[indexPath.row]
             
             return cell
-        } else {
-            
-            print("Loading !!!!!!!!!")
-            
+        } else {            
             let cell = tableView.dequeueReusableCellWithIdentifier("Loading", forIndexPath: indexPath) as! LoadingTableViewCell
 
             cell.activityIndication.startAnimating()
             
-//            items.fetchMoreData({
-//                self.tableView.beginUpdates()
-//                self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.items.allItems.count, inSection: 0)], withRowAnimation: .Top)
-//                self.tableView.endUpdates()
-//            })
+            items.fetchMoreData({newValue, newIndexPaths in
+                self.items = newValue
+                
+                self.tableView.beginUpdates()
+                self.tableView.insertRowsAtIndexPaths(newIndexPaths, withRowAnimation: .Top)
+                self.tableView.endUpdates()
+            })
             
             return cell
         }
