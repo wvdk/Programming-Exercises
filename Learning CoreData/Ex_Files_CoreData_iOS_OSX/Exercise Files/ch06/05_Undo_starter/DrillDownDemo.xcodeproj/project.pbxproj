@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CB090B915FEABB600F05F30 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB090B815FEABB600F05F30 /* Author.m */; };
+		6CB090BD15FEABC000F05F30 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB090BC15FEABC000F05F30 /* Course.m */; };
+		F4FCCF2B15FE82E2005220BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4FCCF2A15FE82E2005220BF /* Cocoa.framework */; };
+		F4FCCF3515FE82E2005220BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4FCCF3315FE82E2005220BF /* InfoPlist.strings */; };
+		F4FCCF3715FE82E2005220BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FCCF3615FE82E2005220BF /* main.m */; };
+		F4FCCF3B15FE82E2005220BF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4FCCF3915FE82E2005220BF /* Credits.rtf */; };
+		F4FCCF3E15FE82E2005220BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FCCF3D15FE82E2005220BF /* AppDelegate.m */; };
+		F4FCCF4115FE82E3005220BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FCCF3F15FE82E3005220BF /* MainMenu.xib */; };
+		F4FCCF4415FE82E3005220BF /* DrillDownDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4FCCF4215FE82E3005220BF /* DrillDownDemo.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CB090B715FEABB600F05F30 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		6CB090B815FEABB600F05F30 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		6CB090BB15FEABC000F05F30 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		6CB090BC15FEABC000F05F30 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		F4FCCF2615FE82E2005220BF /* DrillDownDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillDownDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4FCCF2A15FE82E2005220BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F4FCCF2D15FE82E2005220BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F4FCCF2E15FE82E2005220BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F4FCCF2F15FE82E2005220BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4FCCF3215FE82E2005220BF /* DrillDownDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrillDownDemo-Info.plist"; sourceTree = "<group>"; };
+		F4FCCF3415FE82E2005220BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4FCCF3615FE82E2005220BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4FCCF3815FE82E2005220BF /* DrillDownDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrillDownDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F4FCCF3A15FE82E2005220BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F4FCCF3C15FE82E2005220BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4FCCF3D15FE82E2005220BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4FCCF4015FE82E3005220BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F4FCCF4315FE82E3005220BF /* DrillDownDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrillDownDemo.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4FCCF2315FE82E2005220BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FCCF2B15FE82E2005220BF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4FCCF1B15FE82E2005220BF = {
+			isa = PBXGroup;
+			children = (
+				6CB090BB15FEABC000F05F30 /* Course.h */,
+				6CB090BC15FEABC000F05F30 /* Course.m */,
+				6CB090B715FEABB600F05F30 /* Author.h */,
+				6CB090B815FEABB600F05F30 /* Author.m */,
+				F4FCCF3015FE82E2005220BF /* DrillDownDemo */,
+				F4FCCF2915FE82E2005220BF /* Frameworks */,
+				F4FCCF2715FE82E2005220BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4FCCF2715FE82E2005220BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4FCCF2615FE82E2005220BF /* DrillDownDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4FCCF2915FE82E2005220BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4FCCF2A15FE82E2005220BF /* Cocoa.framework */,
+				F4FCCF2C15FE82E2005220BF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4FCCF2C15FE82E2005220BF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4FCCF2D15FE82E2005220BF /* AppKit.framework */,
+				F4FCCF2E15FE82E2005220BF /* CoreData.framework */,
+				F4FCCF2F15FE82E2005220BF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F4FCCF3015FE82E2005220BF /* DrillDownDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F4FCCF3C15FE82E2005220BF /* AppDelegate.h */,
+				F4FCCF3D15FE82E2005220BF /* AppDelegate.m */,
+				F4FCCF3F15FE82E3005220BF /* MainMenu.xib */,
+				F4FCCF4215FE82E3005220BF /* DrillDownDemo.xcdatamodeld */,
+				F4FCCF3115FE82E2005220BF /* Supporting Files */,
+			);
+			path = DrillDownDemo;
+			sourceTree = "<group>";
+		};
+		F4FCCF3115FE82E2005220BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4FCCF3215FE82E2005220BF /* DrillDownDemo-Info.plist */,
+				F4FCCF3315FE82E2005220BF /* InfoPlist.strings */,
+				F4FCCF3615FE82E2005220BF /* main.m */,
+				F4FCCF3815FE82E2005220BF /* DrillDownDemo-Prefix.pch */,
+				F4FCCF3915FE82E2005220BF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4FCCF2515FE82E2005220BF /* DrillDownDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4FCCF4715FE82E3005220BF /* Build configuration list for PBXNativeTarget "DrillDownDemo" */;
+			buildPhases = (
+				F4FCCF2215FE82E2005220BF /* Sources */,
+				F4FCCF2315FE82E2005220BF /* Frameworks */,
+				F4FCCF2415FE82E2005220BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrillDownDemo;
+			productName = DrillDownDemo;
+			productReference = F4FCCF2615FE82E2005220BF /* DrillDownDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4FCCF1D15FE82E2005220BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Simon Allardice";
+			};
+			buildConfigurationList = F4FCCF2015FE82E2005220BF /* Build configuration list for PBXProject "DrillDownDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4FCCF1B15FE82E2005220BF;
+			productRefGroup = F4FCCF2715FE82E2005220BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4FCCF2515FE82E2005220BF /* DrillDownDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4FCCF2415FE82E2005220BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FCCF3515FE82E2005220BF /* InfoPlist.strings in Resources */,
+				F4FCCF3B15FE82E2005220BF /* Credits.rtf in Resources */,
+				F4FCCF4115FE82E3005220BF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4FCCF2215FE82E2005220BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FCCF3715FE82E2005220BF /* main.m in Sources */,
+				F4FCCF3E15FE82E2005220BF /* AppDelegate.m in Sources */,
+				F4FCCF4415FE82E3005220BF /* DrillDownDemo.xcdatamodeld in Sources */,
+				6CB090B915FEABB600F05F30 /* Author.m in Sources */,
+				6CB090BD15FEABC000F05F30 /* Course.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4FCCF3315FE82E2005220BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4FCCF3415FE82E2005220BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4FCCF3915FE82E2005220BF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4FCCF3A15FE82E2005220BF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F4FCCF3F15FE82E3005220BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4FCCF4015FE82E3005220BF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4FCCF4515FE82E3005220BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4FCCF4615FE82E3005220BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4FCCF4815FE82E3005220BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrillDownDemo/DrillDownDemo-Prefix.pch";
+				INFOPLIST_FILE = "DrillDownDemo/DrillDownDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4FCCF4915FE82E3005220BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrillDownDemo/DrillDownDemo-Prefix.pch";
+				INFOPLIST_FILE = "DrillDownDemo/DrillDownDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4FCCF2015FE82E2005220BF /* Build configuration list for PBXProject "DrillDownDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FCCF4515FE82E3005220BF /* Debug */,
+				F4FCCF4615FE82E3005220BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4FCCF4715FE82E3005220BF /* Build configuration list for PBXNativeTarget "DrillDownDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FCCF4815FE82E3005220BF /* Debug */,
+				F4FCCF4915FE82E3005220BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4FCCF4215FE82E3005220BF /* DrillDownDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4FCCF4315FE82E3005220BF /* DrillDownDemo.xcdatamodel */,
+			);
+			currentVersion = F4FCCF4315FE82E3005220BF /* DrillDownDemo.xcdatamodel */;
+			path = DrillDownDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4FCCF1D15FE82E2005220BF /* Project object */;
+}

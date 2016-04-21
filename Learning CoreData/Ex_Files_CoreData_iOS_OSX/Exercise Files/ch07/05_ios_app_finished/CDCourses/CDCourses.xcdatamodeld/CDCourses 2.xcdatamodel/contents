@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" defaultValueString="AUTHOR" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" defaultValueString="Developer" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" defaultValueString="TITLE" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="0" positionY="0" width="128" height="105"/>
+    </elements>
+</model>

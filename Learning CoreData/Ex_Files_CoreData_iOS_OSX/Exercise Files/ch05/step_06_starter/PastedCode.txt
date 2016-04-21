@@ -1,0 +1,32 @@
+// 1: pasted code for startEditing method
+
+    titleField.enabled = YES;
+    authorField.enabled = YES;
+    dateField.enabled = YES;
+    
+    titleField.borderStyle = UITextBorderStyleRoundedRect;
+    authorField.borderStyle = UITextBorderStyleRoundedRect;
+    dateField.borderStyle = UITextBorderStyleRoundedRect;
+    
+    editButton.hidden = YES;
+    doneButton.hidden = NO;
+
+
+// 2: pasted code for doneEditing method
+
+    titleField.enabled = NO;
+    authorField.enabled = NO;
+    dateField.enabled = NO;
+    
+    titleField.borderStyle = UITextBorderStyleNone;
+    authorField.borderStyle = UITextBorderStyleNone;
+    dateField.borderStyle = UITextBorderStyleNone;
+    
+    editButton.hidden = NO;
+    doneButton.hidden = YES;
+    
+    _currentCourse.title = titleField.text;
+    _currentCourse.author = authorField.text;
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    _currentCourse.releaseDate = [df dateFromString:dateField.text];
