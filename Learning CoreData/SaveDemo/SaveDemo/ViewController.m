@@ -7,12 +7,43 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
-@implementation ViewController
+@implementation ViewController {
+     NSManagedObjectContext *moc;
+}
+
+- (IBAction)createObject:(id)sender {
+    
+    
+    NSManagedObject *myMO = [NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:moc];
+    
+    [myMO setValue:@"Core Data 101" forKey:@"Title"];
+    [myMO setValue:@"Wes" forKey:@"Author"];
+    [myMO setValue:[NSDate date] forKey:@"releaseDate"];
+    
+//    NSError *error = nil;
+    
+//    if () {
+//        NSLog(@"Ahhh! %@", error);
+//    }
+
+//    [moc save];
+    
+    NSError *error = nil;
+    if (![moc save:&error])
+    {
+                NSLog(@"Ahhh! %@", error);
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    moc = [(AppDelegate *)[[NSApplication sharedApplication] delegate] managedObjectContext];
+    
+
+    
     // Do any additional setup after loading the view.
 }
 
