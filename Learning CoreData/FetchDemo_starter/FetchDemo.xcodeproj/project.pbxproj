@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4C7BBCC15FBB10100218EFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C7BBCB15FBB10100218EFD /* Cocoa.framework */; };
+		F4C7BBD615FBB10100218EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4C7BBD415FBB10100218EFD /* InfoPlist.strings */; };
+		F4C7BBD815FBB10100218EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7BBD715FBB10100218EFD /* main.m */; };
+		F4C7BBDC15FBB10100218EFD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4C7BBDA15FBB10100218EFD /* Credits.rtf */; };
+		F4C7BBDF15FBB10100218EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7BBDE15FBB10100218EFD /* AppDelegate.m */; };
+		F4C7BBE215FBB10100218EFD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C7BBE015FBB10100218EFD /* MainMenu.xib */; };
+		F4C7BBE515FBB10100218EFD /* FetchDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C7BBE315FBB10100218EFD /* FetchDemo.xcdatamodeld */; };
+		F4C7BBED15FBB1AC00218EFD /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7BBEC15FBB1AC00218EFD /* Course.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4C7BBC715FBB10100218EFD /* FetchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C7BBCB15FBB10100218EFD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F4C7BBCE15FBB10100218EFD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F4C7BBCF15FBB10100218EFD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F4C7BBD015FBB10100218EFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4C7BBD315FBB10100218EFD /* FetchDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FetchDemo-Info.plist"; sourceTree = "<group>"; };
+		F4C7BBD515FBB10100218EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4C7BBD715FBB10100218EFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4C7BBD915FBB10100218EFD /* FetchDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F4C7BBDB15FBB10100218EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F4C7BBDD15FBB10100218EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4C7BBDE15FBB10100218EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4C7BBE115FBB10100218EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F4C7BBE415FBB10100218EFD /* FetchDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FetchDemo.xcdatamodel; sourceTree = "<group>"; };
+		F4C7BBEB15FBB1AC00218EFD /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		F4C7BBEC15FBB1AC00218EFD /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C7BBC415FBB10100218EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C7BBCC15FBB10100218EFD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4C7BBBC15FBB10100218EFD = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBD115FBB10100218EFD /* FetchDemo */,
+				F4C7BBCA15FBB10100218EFD /* Frameworks */,
+				F4C7BBC815FBB10100218EFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C7BBC815FBB10100218EFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBC715FBB10100218EFD /* FetchDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C7BBCA15FBB10100218EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBCB15FBB10100218EFD /* Cocoa.framework */,
+				F4C7BBCD15FBB10100218EFD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C7BBCD15FBB10100218EFD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBCE15FBB10100218EFD /* AppKit.framework */,
+				F4C7BBCF15FBB10100218EFD /* CoreData.framework */,
+				F4C7BBD015FBB10100218EFD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F4C7BBD115FBB10100218EFD /* FetchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBDD15FBB10100218EFD /* AppDelegate.h */,
+				F4C7BBDE15FBB10100218EFD /* AppDelegate.m */,
+				F4C7BBE015FBB10100218EFD /* MainMenu.xib */,
+				F4C7BBE315FBB10100218EFD /* FetchDemo.xcdatamodeld */,
+				F4C7BBEB15FBB1AC00218EFD /* Course.h */,
+				F4C7BBEC15FBB1AC00218EFD /* Course.m */,
+				F4C7BBD215FBB10100218EFD /* Supporting Files */,
+			);
+			path = FetchDemo;
+			sourceTree = "<group>";
+		};
+		F4C7BBD215FBB10100218EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C7BBD315FBB10100218EFD /* FetchDemo-Info.plist */,
+				F4C7BBD415FBB10100218EFD /* InfoPlist.strings */,
+				F4C7BBD715FBB10100218EFD /* main.m */,
+				F4C7BBD915FBB10100218EFD /* FetchDemo-Prefix.pch */,
+				F4C7BBDA15FBB10100218EFD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C7BBC615FBB10100218EFD /* FetchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C7BBE815FBB10100218EFD /* Build configuration list for PBXNativeTarget "FetchDemo" */;
+			buildPhases = (
+				F4C7BBC315FBB10100218EFD /* Sources */,
+				F4C7BBC415FBB10100218EFD /* Frameworks */,
+				F4C7BBC515FBB10100218EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchDemo;
+			productName = FetchDemo;
+			productReference = F4C7BBC715FBB10100218EFD /* FetchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C7BBBE15FBB10100218EFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Simon;
+			};
+			buildConfigurationList = F4C7BBC115FBB10100218EFD /* Build configuration list for PBXProject "FetchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4C7BBBC15FBB10100218EFD;
+			productRefGroup = F4C7BBC815FBB10100218EFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C7BBC615FBB10100218EFD /* FetchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C7BBC515FBB10100218EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C7BBD615FBB10100218EFD /* InfoPlist.strings in Resources */,
+				F4C7BBDC15FBB10100218EFD /* Credits.rtf in Resources */,
+				F4C7BBE215FBB10100218EFD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C7BBC315FBB10100218EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C7BBD815FBB10100218EFD /* main.m in Sources */,
+				F4C7BBDF15FBB10100218EFD /* AppDelegate.m in Sources */,
+				F4C7BBE515FBB10100218EFD /* FetchDemo.xcdatamodeld in Sources */,
+				F4C7BBED15FBB1AC00218EFD /* Course.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4C7BBD415FBB10100218EFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C7BBD515FBB10100218EFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4C7BBDA15FBB10100218EFD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C7BBDB15FBB10100218EFD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F4C7BBE015FBB10100218EFD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C7BBE115FBB10100218EFD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C7BBE615FBB10100218EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4C7BBE715FBB10100218EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4C7BBE915FBB10100218EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FetchDemo/FetchDemo-Prefix.pch";
+				INFOPLIST_FILE = "FetchDemo/FetchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4C7BBEA15FBB10100218EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FetchDemo/FetchDemo-Prefix.pch";
+				INFOPLIST_FILE = "FetchDemo/FetchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C7BBC115FBB10100218EFD /* Build configuration list for PBXProject "FetchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C7BBE615FBB10100218EFD /* Debug */,
+				F4C7BBE715FBB10100218EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C7BBE815FBB10100218EFD /* Build configuration list for PBXNativeTarget "FetchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C7BBE915FBB10100218EFD /* Debug */,
+				F4C7BBEA15FBB10100218EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4C7BBE315FBB10100218EFD /* FetchDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4C7BBE415FBB10100218EFD /* FetchDemo.xcdatamodel */,
+			);
+			currentVersion = F4C7BBE415FBB10100218EFD /* FetchDemo.xcdatamodel */;
+			path = FetchDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4C7BBBE15FBB10100218EFD /* Project object */;
+}
