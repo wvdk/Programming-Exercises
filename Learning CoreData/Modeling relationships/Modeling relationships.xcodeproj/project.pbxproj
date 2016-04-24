@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE4300BB1CCD3D45001AF372 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4300BA1CCD3D45001AF372 /* main.m */; };
+		DE4300BE1CCD3D45001AF372 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4300BD1CCD3D45001AF372 /* AppDelegate.m */; };
+		DE4300C11CCD3D45001AF372 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4300C01CCD3D45001AF372 /* ViewController.m */; };
+		DE4300C41CCD3D45001AF372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4300C21CCD3D45001AF372 /* Main.storyboard */; };
+		DE4300C71CCD3D45001AF372 /* Modeling_relationships.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE4300C51CCD3D45001AF372 /* Modeling_relationships.xcdatamodeld */; };
+		DE4300C91CCD3D45001AF372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4300C81CCD3D45001AF372 /* Assets.xcassets */; };
+		DE4300CC1CCD3D45001AF372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4300CA1CCD3D45001AF372 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE4300B61CCD3D45001AF372 /* Modeling relationships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modeling relationships.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4300BA1CCD3D45001AF372 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE4300BC1CCD3D45001AF372 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE4300BD1CCD3D45001AF372 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE4300BF1CCD3D45001AF372 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE4300C01CCD3D45001AF372 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE4300C31CCD3D45001AF372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE4300C61CCD3D45001AF372 /* Modeling_relationships.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modeling_relationships.xcdatamodel; sourceTree = "<group>"; };
+		DE4300C81CCD3D45001AF372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE4300CB1CCD3D45001AF372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE4300CD1CCD3D45001AF372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE4300B31CCD3D45001AF372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE4300AD1CCD3D45001AF372 = {
+			isa = PBXGroup;
+			children = (
+				DE4300B81CCD3D45001AF372 /* Modeling relationships */,
+				DE4300B71CCD3D45001AF372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE4300B71CCD3D45001AF372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE4300B61CCD3D45001AF372 /* Modeling relationships.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE4300B81CCD3D45001AF372 /* Modeling relationships */ = {
+			isa = PBXGroup;
+			children = (
+				DE4300BC1CCD3D45001AF372 /* AppDelegate.h */,
+				DE4300BD1CCD3D45001AF372 /* AppDelegate.m */,
+				DE4300BF1CCD3D45001AF372 /* ViewController.h */,
+				DE4300C01CCD3D45001AF372 /* ViewController.m */,
+				DE4300C21CCD3D45001AF372 /* Main.storyboard */,
+				DE4300C81CCD3D45001AF372 /* Assets.xcassets */,
+				DE4300CA1CCD3D45001AF372 /* LaunchScreen.storyboard */,
+				DE4300CD1CCD3D45001AF372 /* Info.plist */,
+				DE4300C51CCD3D45001AF372 /* Modeling_relationships.xcdatamodeld */,
+				DE4300B91CCD3D45001AF372 /* Supporting Files */,
+			);
+			path = "Modeling relationships";
+			sourceTree = "<group>";
+		};
+		DE4300B91CCD3D45001AF372 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE4300BA1CCD3D45001AF372 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE4300B51CCD3D45001AF372 /* Modeling relationships */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE4300D01CCD3D45001AF372 /* Build configuration list for PBXNativeTarget "Modeling relationships" */;
+			buildPhases = (
+				DE4300B21CCD3D45001AF372 /* Sources */,
+				DE4300B31CCD3D45001AF372 /* Frameworks */,
+				DE4300B41CCD3D45001AF372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Modeling relationships";
+			productName = "Modeling relationships";
+			productReference = DE4300B61CCD3D45001AF372 /* Modeling relationships.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE4300AE1CCD3D45001AF372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wvdk;
+				TargetAttributes = {
+					DE4300B51CCD3D45001AF372 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DE4300B11CCD3D45001AF372 /* Build configuration list for PBXProject "Modeling relationships" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE4300AD1CCD3D45001AF372;
+			productRefGroup = DE4300B71CCD3D45001AF372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE4300B51CCD3D45001AF372 /* Modeling relationships */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE4300B41CCD3D45001AF372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4300CC1CCD3D45001AF372 /* LaunchScreen.storyboard in Resources */,
+				DE4300C91CCD3D45001AF372 /* Assets.xcassets in Resources */,
+				DE4300C41CCD3D45001AF372 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE4300B21CCD3D45001AF372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4300C11CCD3D45001AF372 /* ViewController.m in Sources */,
+				DE4300BE1CCD3D45001AF372 /* AppDelegate.m in Sources */,
+				DE4300C71CCD3D45001AF372 /* Modeling_relationships.xcdatamodeld in Sources */,
+				DE4300BB1CCD3D45001AF372 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE4300C21CCD3D45001AF372 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4300C31CCD3D45001AF372 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE4300CA1CCD3D45001AF372 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4300CB1CCD3D45001AF372 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE4300CE1CCD3D45001AF372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE4300CF1CCD3D45001AF372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE4300D11CCD3D45001AF372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Modeling relationships/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wvdk.Modeling-relationships";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE4300D21CCD3D45001AF372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Modeling relationships/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wvdk.Modeling-relationships";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE4300B11CCD3D45001AF372 /* Build configuration list for PBXProject "Modeling relationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE4300CE1CCD3D45001AF372 /* Debug */,
+				DE4300CF1CCD3D45001AF372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE4300D01CCD3D45001AF372 /* Build configuration list for PBXNativeTarget "Modeling relationships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE4300D11CCD3D45001AF372 /* Debug */,
+				DE4300D21CCD3D45001AF372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE4300C51CCD3D45001AF372 /* Modeling_relationships.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE4300C61CCD3D45001AF372 /* Modeling_relationships.xcdatamodel */,
+			);
+			currentVersion = DE4300C61CCD3D45001AF372 /* Modeling_relationships.xcdatamodel */;
+			path = Modeling_relationships.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DE4300AE1CCD3D45001AF372 /* Project object */;
+}
