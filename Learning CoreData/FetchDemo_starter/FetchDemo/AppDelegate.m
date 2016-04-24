@@ -191,15 +191,7 @@
 
 - (IBAction)fetchObjects:(id)sender {
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
-    
-    [fetchRequest setEntity:entity];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"author LIKE[cd] '*vid*'"];
-    
-    [fetchRequest setPredicate:predicate];
+    NSFetchRequest *fetchRequest = [[self managedObjectModel] fetchRequestTemplateForName:@"AllEssential"];
 
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"releaseDate"
                                                                    ascending:NO];
