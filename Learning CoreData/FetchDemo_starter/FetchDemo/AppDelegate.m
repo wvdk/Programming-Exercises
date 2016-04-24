@@ -191,6 +191,31 @@
 
 - (IBAction)fetchObjects:(id)sender {
     
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext:[self managedObjectContext]];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"author LIKE[cd] '*vid*'"];
+    
+    [fetchRequest setPredicate:predicate];
+
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"releaseDate"
+                                                                   ascending:NO];
+    
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObjects:sortDescriptor, nil]];
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [[self managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"Error: %@", error);
+    }
+    
+    for (Course *c in fetchedObjects) {
+        NSLog(@"Course: %@ by author %@", c.title, c.author);
+    }
+    
     
 }
 
