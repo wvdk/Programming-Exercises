@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <ChartViewDelegate>
+
+@property (weak, nonatomic) IBOutlet BarChartView *barChartView;
 
 @end
 
@@ -19,9 +21,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Chart View Delegate Methods
+
+- (void) chartValueSelected:(ChartViewBase *)chartView entry:(ChartDataEntry *)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight *)highlight {
+    NSLog(@"Value selected.");
 }
 
 @end
