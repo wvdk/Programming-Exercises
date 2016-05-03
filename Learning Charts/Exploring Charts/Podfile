@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'Exploring Charts' do
+	pod 'Charts', '~> 2.2.4'
+end
