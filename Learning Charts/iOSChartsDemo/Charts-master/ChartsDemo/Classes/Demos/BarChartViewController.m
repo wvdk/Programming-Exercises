@@ -53,7 +53,7 @@
     _chartView.drawBarShadowEnabled = NO;
     _chartView.drawValueAboveBarEnabled = YES;
     
-    _chartView.maxVisibleValueCount = 80;
+    _chartView.maxVisibleValueCount = 60;
     
     ChartXAxis *xAxis = _chartView.xAxis;
     xAxis.labelPosition = XAxisLabelPositionBottom;
@@ -63,29 +63,29 @@
     
     ChartYAxis *leftAxis = _chartView.leftAxis;
     leftAxis.labelFont = [UIFont systemFontOfSize:10.f];
-    leftAxis.labelCount = 20;
+    leftAxis.labelCount = 8;
     leftAxis.valueFormatter = [[NSNumberFormatter alloc] init];
     leftAxis.valueFormatter.maximumFractionDigits = 1;
-    leftAxis.valueFormatter.negativePrefix = @"$";
-    leftAxis.valueFormatter.positivePrefix = @"$";
+    leftAxis.valueFormatter.negativeSuffix = @" $";
+    leftAxis.valueFormatter.positiveSuffix = @" $";
     leftAxis.labelPosition = YAxisLabelPositionOutsideChart;
     leftAxis.spaceTop = 0.15;
     leftAxis.axisMinValue = 0.0; // this replaces startAtZero = YES
     
-//    ChartYAxis *rightAxis = _chartView.rightAxis;
-//    rightAxis.enabled = NO;
-//    rightAxis.drawGridLinesEnabled = NO;
-//    rightAxis.labelFont = [UIFont systemFontOfSize:10.f];
-//    rightAxis.labelCount = 8;
-//    rightAxis.valueFormatter = leftAxis.valueFormatter;
-//    rightAxis.spaceTop = 0.15;
-//    rightAxis.axisMinValue = 10.0; // this replaces startAtZero = YES
+    ChartYAxis *rightAxis = _chartView.rightAxis;
+    rightAxis.enabled = YES;
+    rightAxis.drawGridLinesEnabled = NO;
+    rightAxis.labelFont = [UIFont systemFontOfSize:10.f];
+    rightAxis.labelCount = 8;
+    rightAxis.valueFormatter = leftAxis.valueFormatter;
+    rightAxis.spaceTop = 0.15;
+    rightAxis.axisMinValue = 0.0; // this replaces startAtZero = YES
     
-//    _chartView.legend.position = ChartLegendPositionBelowChartLeft;
-//    _chartView.legend.form = ChartLegendFormSquare;
-//    _chartView.legend.formSize = 9.0;
-//    _chartView.legend.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f];
-//    _chartView.legend.xEntrySpace = 4.0;
+    _chartView.legend.position = ChartLegendPositionBelowChartLeft;
+    _chartView.legend.form = ChartLegendFormSquare;
+    _chartView.legend.formSize = 9.0;
+    _chartView.legend.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f];
+    _chartView.legend.xEntrySpace = 4.0;
     
     _sliderX.value = 11.0;
     _sliderY.value = 50.0;
