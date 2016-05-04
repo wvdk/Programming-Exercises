@@ -52,14 +52,10 @@
     NSMutableArray<ChartDataEntry *> *dataEntries = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < dataPoints.count; i++) {
-        
-        NSNumber * n = [NSNumber numberWithInteger:i];
-        
+        NSNumber *n = [NSNumber numberWithInteger:i];
         NSNumber *value = [values objectAtIndex:n.unsignedIntegerValue];
         
         BarChartDataEntry *entry = [[BarChartDataEntry alloc] initWithValue:value.doubleValue xIndex:n.unsignedIntegerValue];
-        
-        NSLog(entry.description);
         
         [dataEntries addObject:entry];
         
@@ -69,10 +65,6 @@
     // Create DataSet and add dataEntries
     
     BarChartDataSet *dataSet = [[BarChartDataSet alloc] initWithYVals:dataEntries label:@"Units Sold"];
-    
-    
-    
-    NSLog(dataSet.description);
     
     // Create a ChartData object with dataSet and add to barChartView
     
