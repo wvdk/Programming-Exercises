@@ -109,34 +109,33 @@
     [self setDataCount:(_sliderX.value + 1) range:_sliderY.value];
 }
 
-- (void)setDataCount:(int)count range:(double)range
-{
+- (void)setDataCount:(int)count range:(double)range {
+    
     NSMutableArray *xVals = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < count; i++)
-    {
+    for (int i = 0; i < count; i++) {
         [xVals addObject:months[i % 12]];
     }
     
     NSMutableArray *yVals = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < count; i++)
-    {
+    for (int i = 0; i < count; i++) {
         double mult = (range + 1);
         double val =  (double) (arc4random_uniform(mult));
+        
         [yVals addObject:[[BarChartDataEntry alloc] initWithValue:val xIndex:i]];
     }
     
     BarChartDataSet *set1 = nil;
-    if (_chartView.data.dataSetCount > 0)
-    {
+    
+    if (_chartView.data.dataSetCount > 0) {
         set1 = (BarChartDataSet *)_chartView.data.dataSets[0];
         set1.yVals = yVals;
+        
         _chartView.data.xValsObjc = xVals;
+        
         [_chartView notifyDataSetChanged];
-    }
-    else
-    {
+    } else {
         set1 = [[BarChartDataSet alloc] initWithYVals:yVals label:@"DataSet"];
         set1.barSpace = 0.35;
         [set1 setColors:ChartColorTemplates.material];
