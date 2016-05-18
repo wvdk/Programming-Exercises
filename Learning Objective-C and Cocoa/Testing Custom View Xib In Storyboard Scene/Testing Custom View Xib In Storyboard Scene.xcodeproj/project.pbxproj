@@ -13,6 +13,10 @@
 		DE3069E21CED0F5500BFB21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3069E01CED0F5500BFB21D /* Main.storyboard */; };
 		DE3069E41CED0F5500BFB21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3069E31CED0F5500BFB21D /* Assets.xcassets */; };
 		DE3069E71CED0F5500BFB21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3069E51CED0F5500BFB21D /* LaunchScreen.storyboard */; };
+		DE3069EF1CED10E100BFB21D /* MyLittleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3069EE1CED10E100BFB21D /* MyLittleView.xib */; };
+		DE3069F21CED112600BFB21D /* MyLittleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3069F11CED112600BFB21D /* MyLittleView.m */; };
+		DE8C82BC1CED174F0049E40E /* ReuseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C82BB1CED174F0049E40E /* ReuseableView.m */; };
+		DE8C82BE1CED17600049E40E /* ReuseableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE8C82BD1CED17600049E40E /* ReuseableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		DE3069E31CED0F5500BFB21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3069E61CED0F5500BFB21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE3069E81CED0F5500BFB21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE3069EE1CED10E100BFB21D /* MyLittleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLittleView.xib; sourceTree = "<group>"; };
+		DE3069F01CED112600BFB21D /* MyLittleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLittleView.h; sourceTree = "<group>"; };
+		DE3069F11CED112600BFB21D /* MyLittleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLittleView.m; sourceTree = "<group>"; };
+		DE8C82BA1CED174F0049E40E /* ReuseableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReuseableView.h; sourceTree = "<group>"; };
+		DE8C82BB1CED174F0049E40E /* ReuseableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReuseableView.m; sourceTree = "<group>"; };
+		DE8C82BD1CED17600049E40E /* ReuseableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReuseableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,12 @@
 				DE3069DB1CED0F5500BFB21D /* AppDelegate.m */,
 				DE3069DD1CED0F5500BFB21D /* ViewController.h */,
 				DE3069DE1CED0F5500BFB21D /* ViewController.m */,
+				DE8C82BA1CED174F0049E40E /* ReuseableView.h */,
+				DE8C82BB1CED174F0049E40E /* ReuseableView.m */,
+				DE8C82BD1CED17600049E40E /* ReuseableView.xib */,
+				DE3069EE1CED10E100BFB21D /* MyLittleView.xib */,
+				DE3069F01CED112600BFB21D /* MyLittleView.h */,
+				DE3069F11CED112600BFB21D /* MyLittleView.m */,
 				DE3069E01CED0F5500BFB21D /* Main.storyboard */,
 				DE3069E31CED0F5500BFB21D /* Assets.xcassets */,
 				DE3069E51CED0F5500BFB21D /* LaunchScreen.storyboard */,
@@ -136,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8C82BE1CED17600049E40E /* ReuseableView.xib in Resources */,
+				DE3069EF1CED10E100BFB21D /* MyLittleView.xib in Resources */,
 				DE3069E71CED0F5500BFB21D /* LaunchScreen.storyboard in Resources */,
 				DE3069E41CED0F5500BFB21D /* Assets.xcassets in Resources */,
 				DE3069E21CED0F5500BFB21D /* Main.storyboard in Resources */,
@@ -149,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3069F21CED112600BFB21D /* MyLittleView.m in Sources */,
 				DE3069DF1CED0F5500BFB21D /* ViewController.m in Sources */,
+				DE8C82BC1CED174F0049E40E /* ReuseableView.m in Sources */,
 				DE3069DC1CED0F5500BFB21D /* AppDelegate.m in Sources */,
 				DE3069D91CED0F5500BFB21D /* main.m in Sources */,
 			);
@@ -300,6 +320,7 @@
 				DE3069ED1CED0F5500BFB21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
