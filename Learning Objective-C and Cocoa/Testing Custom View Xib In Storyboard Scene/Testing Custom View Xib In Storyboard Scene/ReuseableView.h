@@ -10,6 +10,6 @@
 
 @interface ReuseableView : UIView
 
-@property (strong, nonatomic) IBOutlet UIView *view;
+@property (strong, nonatomic) IBOutlet IBInspectable UIView *view;
 
 @end

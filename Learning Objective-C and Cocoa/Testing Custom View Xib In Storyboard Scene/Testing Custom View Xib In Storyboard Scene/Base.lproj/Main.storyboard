@@ -18,14 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x08-4Z-Wzd" customClass="MyLittleView">
-                                <rect key="frame" x="180" y="20" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="128"/>
+                                <color key="backgroundColor" red="0.61389988113759775" green="1" blue="0.60372734099790737" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="WHi-Go-RYu"/>
                                     <constraint firstAttribute="width" constant="240" id="ujs-Rz-0Gh"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ujs-Rz-0Gh"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAe-to-ptl" customClass="ReuseableView">
-                                <rect key="frame" x="180" y="156" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="156" width="600" height="128"/>
                                 <color key="backgroundColor" red="0.67350960900000001" green="0.90468749999999998" blue="0.86045539000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -34,6 +40,7 @@
                             <constraint firstItem="gAe-to-ptl" firstAttribute="leading" secondItem="x08-4Z-Wzd" secondAttribute="leading" id="4x5-WR-Plw"/>
                             <constraint firstItem="gAe-to-ptl" firstAttribute="trailing" secondItem="x08-4Z-Wzd" secondAttribute="trailing" id="Zx4-YS-3vB"/>
                             <constraint firstItem="x08-4Z-Wzd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="axY-uT-xg0"/>
+                            <constraint firstItem="x08-4Z-Wzd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iPY-LO-oEb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gAe-to-ptl" secondAttribute="bottom" constant="316" id="nc9-io-sde"/>
                             <constraint firstItem="x08-4Z-Wzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="osc-X4-PNi"/>
                             <constraint firstItem="gAe-to-ptl" firstAttribute="top" secondItem="x08-4Z-Wzd" secondAttribute="bottom" constant="8" symbolic="YES" id="qEZ-Ld-kpd"/>
