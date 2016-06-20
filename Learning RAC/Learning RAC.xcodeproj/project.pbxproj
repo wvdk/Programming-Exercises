@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E99AB6F270E17ABA9194005 /* libPods-Learning RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0062D42C886070A5F0863 /* libPods-Learning RAC.a */; };
 		DE2F64791D1894AA0007625B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F64781D1894AA0007625B /* main.m */; };
 		DE2F647C1D1894AA0007625B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F647B1D1894AA0007625B /* AppDelegate.m */; };
 		DE2F647F1D1894AA0007625B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F647E1D1894AA0007625B /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00302FCB6E4D2572B4FAC713 /* Pods-Learning RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning RAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learning RAC/Pods-Learning RAC.release.xcconfig"; sourceTree = "<group>"; };
+		83A21752D009007F4E1965FD /* Pods-Learning RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning RAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learning RAC/Pods-Learning RAC.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE0062D42C886070A5F0863 /* libPods-Learning RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Learning RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2F64741D1894AA0007625B /* Learning RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning RAC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2F64781D1894AA0007625B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE2F647A1D1894AA0007625B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E99AB6F270E17ABA9194005 /* libPods-Learning RAC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DABA6A187232EDC9425D3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0062D42C886070A5F0863 /* libPods-Learning RAC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		604D12F8614A1CEEDB71A7FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83A21752D009007F4E1965FD /* Pods-Learning RAC.debug.xcconfig */,
+				00302FCB6E4D2572B4FAC713 /* Pods-Learning RAC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE2F646B1D1894AA0007625B = {
 			isa = PBXGroup;
 			children = (
 				DE2F64761D1894AA0007625B /* Learning RAC */,
 				DE2F64751D1894AA0007625B /* Products */,
+				604D12F8614A1CEEDB71A7FF /* Pods */,
+				22DABA6A187232EDC9425D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE2F648B1D1894AA0007625B /* Build configuration list for PBXNativeTarget "Learning RAC" */;
 			buildPhases = (
+				EF2093F48F1264587D267FFB /* 📦 Check Pods Manifest.lock */,
 				DE2F64701D1894AA0007625B /* Sources */,
 				DE2F64711D1894AA0007625B /* Frameworks */,
 				DE2F64721D1894AA0007625B /* Resources */,
+				25A87276AF68BF23B5227EF7 /* 📦 Embed Pods Frameworks */,
+				891C7B2728732DEA9157C8C8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A87276AF68BF23B5227EF7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learning RAC/Pods-Learning RAC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891C7B2728732DEA9157C8C8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learning RAC/Pods-Learning RAC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2093F48F1264587D267FFB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE2F64701D1894AA0007625B /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		DE2F648C1D1894AA0007625B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A21752D009007F4E1965FD /* Pods-Learning RAC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Learning RAC/Info.plist";
@@ -272,6 +348,7 @@
 		};
 		DE2F648D1D1894AA0007625B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00302FCB6E4D2572B4FAC713 /* Pods-Learning RAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Learning RAC/Info.plist";
@@ -300,6 +377,7 @@
 				DE2F648D1D1894AA0007625B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
