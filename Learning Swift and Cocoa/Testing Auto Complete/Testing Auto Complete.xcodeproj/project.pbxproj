@@ -12,6 +12,7 @@
 		DE278A2D1D2AE0A30003E23B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE278A2B1D2AE0A30003E23B /* Main.storyboard */; };
 		DE278A2F1D2AE0A30003E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE278A2E1D2AE0A30003E23B /* Assets.xcassets */; };
 		DE278A321D2AE0A30003E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE278A301D2AE0A30003E23B /* LaunchScreen.storyboard */; };
+		DE278A3A1D2AE1CE0003E23B /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE278A391D2AE1CE0003E23B /* AutoCompleteTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DE278A2E1D2AE0A30003E23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE278A311D2AE0A30003E23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE278A331D2AE0A30003E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE278A391D2AE1CE0003E23B /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				DE278A271D2AE0A30003E23B /* AppDelegate.swift */,
 				DE278A291D2AE0A30003E23B /* ViewController.swift */,
 				DE278A2B1D2AE0A30003E23B /* Main.storyboard */,
+				DE278A391D2AE1CE0003E23B /* AutoCompleteTextField.swift */,
 				DE278A2E1D2AE0A30003E23B /* Assets.xcassets */,
 				DE278A301D2AE0A30003E23B /* LaunchScreen.storyboard */,
 				DE278A331D2AE0A30003E23B /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE278A3A1D2AE1CE0003E23B /* AutoCompleteTextField.swift in Sources */,
 				DE278A2A1D2AE0A30003E23B /* ViewController.swift in Sources */,
 				DE278A281D2AE0A30003E23B /* AppDelegate.swift in Sources */,
 			);
