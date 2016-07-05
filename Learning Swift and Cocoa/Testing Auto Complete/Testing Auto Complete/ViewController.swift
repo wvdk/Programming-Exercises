@@ -9,19 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var textField: AutoCompleteTextField!
+    let masterList = ["test", "food", "stuff", "word", "test 2", "test 3", "Goodbye", "Go", "Hello"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        textField.maximumAutoCompleteCount = 20
+        textField.autoCompleteTableHeight = 300
+        
+        textField.onTextChange = {[weak self] text in
+            self?.fetchAutocompletePlaces(text)
+        }
     }
+    
+    private func fetchAutocompletePlaces(keyword:String) {
+        textField.autoCompleteStrings = masterList.filter() {item -> Bool in
+            let stringMatch = item.lowercaseString.rangeOfString(keyword.lowercaseString)
+            return stringMatch != nil ? true : false
+        }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
