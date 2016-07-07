@@ -24,17 +24,26 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye2-yR-KTq">
                                         <rect key="frame" x="8" y="8" width="30" height="30"/>
                                         <state key="normal" title="Red"/>
+                                        <connections>
+                                            <action selector="makeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yas-Ir-Bkp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeB-Rr-05z">
                                         <rect key="frame" x="265" y="8" width="31" height="30"/>
                                         <state key="normal" title="Blue"/>
+                                        <connections>
+                                            <action selector="makeBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDp-fb-JpI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-2x-ciK">
                                         <rect key="frame" x="510" y="8" width="42" height="30"/>
                                         <state key="normal" title="Green"/>
+                                        <connections>
+                                            <action selector="makeGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="beu-jr-43i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.85144412879999998" green="0.84768145449999999" blue="0.84253174770000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="aeB-Rr-05z" firstAttribute="baseline" secondItem="ye2-yR-KTq" secondAttribute="baseline" id="KMa-nP-caA"/>
                                     <constraint firstItem="aCg-2x-ciK" firstAttribute="trailing" secondItem="UD8-Wc-gaN" secondAttribute="trailingMargin" id="N4d-W0-OUt"/>
@@ -53,6 +62,9 @@
                             <constraint firstItem="UD8-Wc-gaN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="eLK-B5-6Pe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorBox" destination="UD8-Wc-gaN" id="E9l-yu-EtI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
