@@ -24,9 +24,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye2-yR-KTq">
                                         <rect key="frame" x="8" y="8" width="30" height="30"/>
                                         <state key="normal" title="Red"/>
-                                        <connections>
-                                            <action selector="makeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yas-Ir-Bkp"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeB-Rr-05z">
                                         <rect key="frame" x="265" y="8" width="31" height="30"/>

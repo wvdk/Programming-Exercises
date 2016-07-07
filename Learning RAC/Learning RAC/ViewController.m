@@ -20,10 +20,10 @@
 
 @implementation ViewController
 
-- (IBAction)makeRed:(id)sender {
-    NSLog(@"Make the damn thing red.");
-    _colorBox.backgroundColor = UIColor.redColor;
-}
+//- (IBAction)makeRed:(id)sender {
+//    NSLog(@"Make the damn thing red.");
+//    _colorBox.backgroundColor = UIColor.redColor;
+//}
 
 - (IBAction)makeBlue:(id)sender {
     NSLog(@"Make the damn thing blue.");
@@ -40,7 +40,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    RACSignal *redButtonPress = [_redButton rac_command];
+    
+    RACSignal *makeRed = [_redButton rac_signalForControlEvents:UIControlEventTouchUpInside];
+    
+    [makeRed subscribeNext:^(id sender) {
+        NSLog(@"red button was pressed!");
+        _colorBox.backgroundColor = UIColor.redColor;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
