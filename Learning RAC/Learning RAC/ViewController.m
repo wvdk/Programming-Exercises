@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *greenButton;
+@property (weak, nonatomic) IBOutlet UIButton *blueButton;
+@property (weak, nonatomic) IBOutlet UIButton *redButton;
 @property (weak, nonatomic) IBOutlet UIView *colorBox;
 
 @end
@@ -35,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    RACSignal *redButtonPress = [_redButton rac_command];
 }
 
 - (void)didReceiveMemoryWarning {

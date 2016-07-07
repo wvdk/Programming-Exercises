@@ -63,7 +63,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueButton" destination="aeB-Rr-05z" id="mF7-WA-rCW"/>
                         <outlet property="colorBox" destination="UD8-Wc-gaN" id="E9l-yu-EtI"/>
+                        <outlet property="greenButton" destination="aCg-2x-ciK" id="SOx-vR-6H6"/>
+                        <outlet property="redButton" destination="ye2-yR-KTq" id="Ha5-2b-t7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
