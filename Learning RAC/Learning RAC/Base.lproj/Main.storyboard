@@ -28,16 +28,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeB-Rr-05z">
                                         <rect key="frame" x="265" y="8" width="31" height="30"/>
                                         <state key="normal" title="Blue"/>
-                                        <connections>
-                                            <action selector="makeBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDp-fb-JpI"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-2x-ciK">
                                         <rect key="frame" x="510" y="8" width="42" height="30"/>
                                         <state key="normal" title="Green"/>
-                                        <connections>
-                                            <action selector="makeGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="beu-jr-43i"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85144412879999998" green="0.84768145449999999" blue="0.84253174770000006" alpha="1" colorSpace="calibratedRGB"/>

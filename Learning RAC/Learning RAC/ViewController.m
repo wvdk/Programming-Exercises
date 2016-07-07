@@ -20,26 +20,13 @@
 
 @implementation ViewController
 
-//- (IBAction)makeRed:(id)sender {
-//    NSLog(@"Make the damn thing red.");
-//    _colorBox.backgroundColor = UIColor.redColor;
+//- (IBAction)makeGreen:(id)sender {
+//    NSLog(@"Make the damn thing green.");
+//    _colorBox.backgroundColor = UIColor.greenColor;
 //}
-
-- (IBAction)makeBlue:(id)sender {
-    NSLog(@"Make the damn thing blue.");
-    _colorBox.backgroundColor = UIColor.blueColor;
-}
-
-- (IBAction)makeGreen:(id)sender {
-    NSLog(@"Make the damn thing green.");
-    _colorBox.backgroundColor = UIColor.greenColor;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
     
     RACSignal *makeRed = [_redButton rac_signalForControlEvents:UIControlEventTouchUpInside];
     
@@ -47,11 +34,16 @@
         NSLog(@"red button was pressed!");
         _colorBox.backgroundColor = UIColor.redColor;
     }];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [[_blueButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(id sender) {
+        NSLog(@"blue button was pressed!");
+        _colorBox.backgroundColor = UIColor.blueColor;
+    }];
+    
+    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(id sender) {
+        NSLog(@"green!");
+        _colorBox.backgroundColor = UIColor.greenColor;
+    }];
 }
 
 @end
