@@ -20,10 +20,10 @@
 
 @implementation ViewController
 
-//- (IBAction)makeGreen:(id)sender {
-//    NSLog(@"Make the damn thing green.");
-//    _colorBox.backgroundColor = UIColor.greenColor;
-//}
+- (void)makeTheBoxGreen:(id) sender {
+    NSLog(@"green!");
+    _colorBox.backgroundColor = UIColor.greenColor;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,10 +40,16 @@
         _colorBox.backgroundColor = UIColor.blueColor;
     }];
     
-    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(id sender) {
-        NSLog(@"green!");
-        _colorBox.backgroundColor = UIColor.greenColor;
+    RACSignal *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence.signal;
+    
+    // Outputs: A B C D E F G H I
+    [letters subscribeNext:^(NSString *x) {
+        NSLog(@"%@", x);
     }];
+    
+//    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:[makeTheBoxGreen:sender]];
 }
+
+
 
 @end
