@@ -7,6 +7,7 @@
 //
 
 #import "FakeSigninViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface FakeSigninViewController ()
 
@@ -21,7 +22,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    RACSignal *formValid = [RACSignal combineLatest:@[
+        self.usernameTextField.rac_textSignal,
+        self.passwordTextField.rac_textSignal
+    ]
+    reduce:^(NSString *firstName, NSString *lastName, NSString *email, NSString *reEmail) {
+        return @(firstName.length > 0 && lastName.length > 0 && email.length > 0 && reEmail.length > 0 && [email isEqual:reEmail]);
+    }];
+    
+    RAC(self.attemptLoginButton.enabled) = formValid;
+
+//    RACSignal *validCredentialsEntered = [RACSignal combineLatest:@[
+//        self.attemptLoginButton.rac_command.executionSignals
+//    ]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
