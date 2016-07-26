@@ -14,6 +14,7 @@
 		DE2F64821D1894AA0007625B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F64801D1894AA0007625B /* Main.storyboard */; };
 		DE2F64841D1894AA0007625B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2F64831D1894AA0007625B /* Assets.xcassets */; };
 		DE2F64871D1894AA0007625B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F64851D1894AA0007625B /* LaunchScreen.storyboard */; };
+		DE5548131D47E98A00939009 /* FakeSigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5548121D47E98A00939009 /* FakeSigninViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		DE2F64831D1894AA0007625B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2F64861D1894AA0007625B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE2F64881D1894AA0007625B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5548111D47E98A00939009 /* FakeSigninViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSigninViewController.h; sourceTree = "<group>"; };
+		DE5548121D47E98A00939009 /* FakeSigninViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSigninViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				DE2F647D1D1894AA0007625B /* ViewController.h */,
 				DE2F647E1D1894AA0007625B /* ViewController.m */,
 				DE2F64801D1894AA0007625B /* Main.storyboard */,
+				DE5548111D47E98A00939009 /* FakeSigninViewController.h */,
+				DE5548121D47E98A00939009 /* FakeSigninViewController.m */,
 				DE2F64831D1894AA0007625B /* Assets.xcassets */,
 				DE2F64851D1894AA0007625B /* LaunchScreen.storyboard */,
 				DE2F64881D1894AA0007625B /* Info.plist */,
@@ -227,6 +232,7 @@
 				DE2F647F1D1894AA0007625B /* ViewController.m in Sources */,
 				DE2F647C1D1894AA0007625B /* AppDelegate.m in Sources */,
 				DE2F64791D1894AA0007625B /* main.m in Sources */,
+				DE5548131D47E98A00939009 /* FakeSigninViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *blueButton;
 @property (weak, nonatomic) IBOutlet UIButton *redButton;
 @property (weak, nonatomic) IBOutlet UIView *colorBox;
+@property (weak, nonatomic) IBOutlet UIButton *killGreenButtonButton;
 
 @end
 
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /////////////////////////////
+    ///////////////////////////////////////////////
     //: ## Making my first signal
     
     RACSignal *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence.signal;
@@ -54,11 +55,26 @@
     //: ### Green button
 
     void (^makeBoxGreen)(id) = ^void(id x) {
-        NSLog(@"asdasdsadaad");
+        NSLog(@"Green, man. Green.");
         _colorBox.backgroundColor = UIColor.greenColor;
     };
     
-    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:makeBoxGreen completed:^(void){}];
+    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:makeBoxGreen completed:^(void){
+        NSLog(@"That's all folks. No more green for you.");
+    }];
+
+    ///////////////////////////////////////////////
+    //: ## Lets try breaking things and see what happens
+    
+
+    
+//    [_killGreenButtonButton rac_signalForControlEvents:UIContProlEventTouchDown] subscribe:<#(id<RACSubscriber>)#>
+    
+    
+    
+    
+    
+    
 }
 
 @end
