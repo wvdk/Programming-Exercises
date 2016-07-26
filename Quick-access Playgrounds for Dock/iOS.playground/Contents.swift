@@ -1,28 +1,36 @@
-//: This is a general purpose iOS playground for testing / messing around in Swift
-
 import UIKit
-import XCPlayground
+import SceneKit
+import SpriteKit
 
-let myView = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-myView.backgroundColor = UIColor.redColor()
+let mainView = SCNView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
+let mainScene = SCNScene()
 
+mainView.scene = mainScene
 
+let ball = SCNSphere()
+let node = SCNNode(geometry: ball)
 
+mainView.scene?.rootNode.addChildNode(node)
+mainView.backgroundColor = UIColor.redColor()
 
-class CustomView: UIView {
-    override func drawRect(rect: CGRect) {
-        StyleKitName.drawMyFirstCanvas(hVal: 10.0)
-    }
-}
+mainScene
 
-let myView2 = CustomView(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
-
-myView2.backgroundColor = UIColor.blueColor()
-
-
+mainView
 
 
+let spriteView = SKView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+let spriteScene = SKScene()
 
+spriteView.presentScene(spriteScene)
+
+let circle = SKShapeNode(circleOfRadius: 50.0)
+
+
+
+spriteView.scene?.addChild(circle)
+spriteView.backgroundColor = UIColor.redColor()
+
+spriteScene
 
 
 

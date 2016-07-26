@@ -9,7 +9,7 @@ public class StepsEntry {
         self.time = NSDate()
     }
 }
-//
+
 //func createLotsOfRandomStepsEntries() -> [StepsEntry] {
 //    let numberOfEntries = 1000
 //    
