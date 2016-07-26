@@ -20,36 +20,45 @@
 
 @implementation ViewController
 
-- (void)makeTheBoxGreen:(id) sender {
-    NSLog(@"green!");
-    _colorBox.backgroundColor = UIColor.greenColor;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /////////////////////////////
+    //: ## Making my first signal
+    
+    RACSignal *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence.signal;
+    
+    [letters subscribeNext:^(NSString *x) {
+        NSLog(@"Letters: %@", x);
+    }];
+    
+    ///////////////////////////////////////////////
+    //: ## Three ways to make a signal for a button
+    
+    //: ### Red button
     
     RACSignal *makeRed = [_redButton rac_signalForControlEvents:UIControlEventTouchUpInside];
     
     [makeRed subscribeNext:^(id sender) {
-        NSLog(@"red button was pressed!");
+        NSLog(@"Red button was pressed!");
         _colorBox.backgroundColor = UIColor.redColor;
     }];
     
+    //: ### Blue button
+    
     [[_blueButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(id sender) {
-        NSLog(@"blue button was pressed!");
+        NSLog(@"Blue button was pressed!");
         _colorBox.backgroundColor = UIColor.blueColor;
     }];
     
-    RACSignal *letters = [@"A B C D E F G H I" componentsSeparatedByString:@" "].rac_sequence.signal;
+    //: ### Green button
+
+    void (^makeBoxGreen)(id) = ^void(id x) {
+        NSLog(@"asdasdsadaad");
+        _colorBox.backgroundColor = UIColor.greenColor;
+    };
     
-    // Outputs: A B C D E F G H I
-    [letters subscribeNext:^(NSString *x) {
-        NSLog(@"%@", x);
-    }];
-    
-//    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:[makeTheBoxGreen:sender]];
+    [[_greenButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:makeBoxGreen completed:^(void){}];
 }
-
-
 
 @end
