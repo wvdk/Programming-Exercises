@@ -29,7 +29,7 @@
     ]
     reduce:^(NSString *firstName, NSString *lastName, NSString *email, NSString *reEmail) {
         return @(firstName.length > 0 && lastName.length > 0 && email.length > 0 && reEmail.length > 0 && [email isEqual:reEmail]);
-    }]; 
+    }];
     
     RAC(self.attemptLoginButton.enabled) = formValid;
 
