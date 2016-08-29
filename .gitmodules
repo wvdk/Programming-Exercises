@@ -1,0 +1,3 @@
+[submodule "Tic-Tac-Toe"]
+	path = Tic-Tac-Toe
+	url = https://github.com/wvdk/Minimax-Tic-Tac-Toe-for-iOS.git
