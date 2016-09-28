@@ -13,9 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        
         return true
     }
 
@@ -31,6 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+//        let newWindow = UIWindow(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+//        self.window = newWindow
+        
+        window?.rootViewController = UIStoryboard(name: "FakePin", bundle: nil).instantiateInitialViewController()
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

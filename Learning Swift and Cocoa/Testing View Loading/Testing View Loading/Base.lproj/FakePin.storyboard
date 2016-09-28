@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zy4-py-WeW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fake Pin View Controller-->
+        <scene sceneID="Vab-O5-EI1">
+            <objects>
+                <viewController id="zy4-py-WeW" customClass="FakePinViewController" customModule="Testing_View_Loading" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rRG-Xz-dfU"/>
+                        <viewControllerLayoutGuide type="bottom" id="aEj-hc-9b1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="69l-vN-FCi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fake PIN enter screen." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz0-b2-NOH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-eK-btK">
+                                <state key="normal" title="Press this button to close"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="zy4-py-WeW" eventType="touchUpInside" id="mNB-an-tCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lz0-b2-NOH" firstAttribute="top" secondItem="rRG-Xz-dfU" secondAttribute="bottom" constant="36" id="360-tE-yVR"/>
+                            <constraint firstItem="H0o-eK-btK" firstAttribute="centerX" secondItem="69l-vN-FCi" secondAttribute="centerX" id="Cgo-Fo-dpB"/>
+                            <constraint firstItem="Lz0-b2-NOH" firstAttribute="centerX" secondItem="69l-vN-FCi" secondAttribute="centerX" id="HSH-7K-tcq"/>
+                            <constraint firstItem="H0o-eK-btK" firstAttribute="top" secondItem="Lz0-b2-NOH" secondAttribute="bottom" constant="34" id="WfE-tw-uw6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PY2-ib-uYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="109"/>
+        </scene>
+    </scenes>
+</document>
