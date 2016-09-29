@@ -9,15 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, FakePinViewControllerDelegate {
 
     var window: UIWindow?
+    
+    var savedVCStack: UIViewController?
+    
+    func closePinVC() {
+        window?.rootViewController = savedVCStack
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-//        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        
+        // First lets try to make the main window half the screen
         return true
     }
 
@@ -34,12 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         
-//        let newWindow = UIWindow(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let storyboard = UIStoryboard(name: "FakePin", bundle: nil)
+
+        let vc = storyboard.instantiateViewController(withIdentifier: "fake") as! FakePinViewController
         
-//        self.window = newWindow
-        
-        window?.rootViewController = UIStoryboard(name: "FakePin", bundle: nil).instantiateInitialViewController()
-        
+        vc.delegate = self
+
+        self.savedVCStack = self.window?.rootViewController
+        self.window?.rootViewController = vc
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

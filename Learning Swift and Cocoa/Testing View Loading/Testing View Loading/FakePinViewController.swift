@@ -8,12 +8,18 @@
 
 import UIKit
 
-class FakePinViewController: UIViewController {
+protocol FakePinViewControllerDelegate {
+    func closePinVC()
+}
 
+class FakePinViewController: UIViewController {
+    
+    var delegate: FakePinViewControllerDelegate?
+    
     @IBAction func buttonPressed(_ sender: AnyObject) {
-    
-        
-    
+        if delegate != nil {
+            delegate?.closePinVC()
+        }
     }
 
 }

@@ -13,7 +13,7 @@
 		DE8459B61D9B450700B6DE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8459B51D9B450700B6DE36 /* Assets.xcassets */; };
 		DE8459B91D9B450700B6DE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8459B71D9B450700B6DE36 /* LaunchScreen.storyboard */; };
 		DE9B4CA31D9C33FD00AA8CD8 /* FakePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B4CA21D9C33FD00AA8CD8 /* FakePinViewController.swift */; };
-		DE9B4CA71D9C438000AA8CD8 /* FakePin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9B4CA51D9C438000AA8CD8 /* FakePin.storyboard */; };
+		DE9B4CAA1D9C762E00AA8CD8 /* FakePin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9B4CA81D9C762E00AA8CD8 /* FakePin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		DE8459B81D9B450700B6DE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE8459BA1D9B450700B6DE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9B4CA21D9C33FD00AA8CD8 /* FakePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePinViewController.swift; sourceTree = "<group>"; };
-		DE9B4CA61D9C438000AA8CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FakePin.storyboard; sourceTree = "<group>"; };
+		DE9B4CA91D9C762E00AA8CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FakePin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				DE8459AE1D9B450700B6DE36 /* AppDelegate.swift */,
-				DE9B4CA51D9C438000AA8CD8 /* FakePin.storyboard */,
 				DE8459B01D9B450700B6DE36 /* ViewController.swift */,
+				DE9B4CA81D9C762E00AA8CD8 /* FakePin.storyboard */,
 				DE8459B21D9B450700B6DE36 /* Main.storyboard */,
 				DE9B4CA21D9C33FD00AA8CD8 /* FakePinViewController.swift */,
 				DE8459B51D9B450700B6DE36 /* Assets.xcassets */,
@@ -133,7 +133,7 @@
 				DE8459B91D9B450700B6DE36 /* LaunchScreen.storyboard in Resources */,
 				DE8459B61D9B450700B6DE36 /* Assets.xcassets in Resources */,
 				DE8459B41D9B450700B6DE36 /* Main.storyboard in Resources */,
-				DE9B4CA71D9C438000AA8CD8 /* FakePin.storyboard in Resources */,
+				DE9B4CAA1D9C762E00AA8CD8 /* FakePin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,10 +169,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		DE9B4CA51D9C438000AA8CD8 /* FakePin.storyboard */ = {
+		DE9B4CA81D9C762E00AA8CD8 /* FakePin.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE9B4CA61D9C438000AA8CD8 /* Base */,
+				DE9B4CA91D9C762E00AA8CD8 /* Base */,
 			);
 			name = FakePin.storyboard;
 			sourceTree = "<group>";
