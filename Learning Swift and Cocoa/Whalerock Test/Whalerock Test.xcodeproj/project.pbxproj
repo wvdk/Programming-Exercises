@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE14D07B1DB180C600B1E2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14D07A1DB180C600B1E2A2 /* AppDelegate.swift */; };
+		DE14D0801DB180C600B1E2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE14D07E1DB180C600B1E2A2 /* Main.storyboard */; };
+		DE14D0821DB180C600B1E2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE14D0811DB180C600B1E2A2 /* Assets.xcassets */; };
+		DE14D0851DB180C600B1E2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE14D0831DB180C600B1E2A2 /* LaunchScreen.storyboard */; };
+		DE14D08D1DB1811700B1E2A2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14D08C1DB1811700B1E2A2 /* SwiftyJSON.swift */; };
+		DE14D08F1DB1816600B1E2A2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14D08E1DB1816600B1E2A2 /* CollectionViewController.swift */; };
+		DE14D0911DB1856D00B1E2A2 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14D0901DB1856D00B1E2A2 /* Sticker.swift */; };
+		DE14D0931DB18B9500B1E2A2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE14D0921DB18B9500B1E2A2 /* CollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE14D0771DB180C600B1E2A2 /* Whalerock Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whalerock Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE14D07A1DB180C600B1E2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE14D07F1DB180C600B1E2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE14D0811DB180C600B1E2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE14D0841DB180C600B1E2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE14D0861DB180C600B1E2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE14D08C1DB1811700B1E2A2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "Whalerock Test/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		DE14D08E1DB1816600B1E2A2 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		DE14D0901DB1856D00B1E2A2 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		DE14D0921DB18B9500B1E2A2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE14D0741DB180C500B1E2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE14D06E1DB180C500B1E2A2 = {
+			isa = PBXGroup;
+			children = (
+				DE14D08C1DB1811700B1E2A2 /* SwiftyJSON.swift */,
+				DE14D0791DB180C600B1E2A2 /* Whalerock Test */,
+				DE14D0781DB180C600B1E2A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE14D0781DB180C600B1E2A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE14D0771DB180C600B1E2A2 /* Whalerock Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE14D0791DB180C600B1E2A2 /* Whalerock Test */ = {
+			isa = PBXGroup;
+			children = (
+				DE14D07A1DB180C600B1E2A2 /* AppDelegate.swift */,
+				DE14D07E1DB180C600B1E2A2 /* Main.storyboard */,
+				DE14D0921DB18B9500B1E2A2 /* CollectionViewCell.swift */,
+				DE14D08E1DB1816600B1E2A2 /* CollectionViewController.swift */,
+				DE14D0811DB180C600B1E2A2 /* Assets.xcassets */,
+				DE14D0831DB180C600B1E2A2 /* LaunchScreen.storyboard */,
+				DE14D0861DB180C600B1E2A2 /* Info.plist */,
+				DE14D0901DB1856D00B1E2A2 /* Sticker.swift */,
+			);
+			path = "Whalerock Test";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE14D0761DB180C500B1E2A2 /* Whalerock Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE14D0891DB180C600B1E2A2 /* Build configuration list for PBXNativeTarget "Whalerock Test" */;
+			buildPhases = (
+				DE14D0731DB180C500B1E2A2 /* Sources */,
+				DE14D0741DB180C500B1E2A2 /* Frameworks */,
+				DE14D0751DB180C500B1E2A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whalerock Test";
+			productName = "Whalerock Test";
+			productReference = DE14D0771DB180C600B1E2A2 /* Whalerock Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE14D06F1DB180C500B1E2A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Wesley Van der Klomp";
+				TargetAttributes = {
+					DE14D0761DB180C500B1E2A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE14D0721DB180C500B1E2A2 /* Build configuration list for PBXProject "Whalerock Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE14D06E1DB180C500B1E2A2;
+			productRefGroup = DE14D0781DB180C600B1E2A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE14D0761DB180C500B1E2A2 /* Whalerock Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE14D0751DB180C500B1E2A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE14D0851DB180C600B1E2A2 /* LaunchScreen.storyboard in Resources */,
+				DE14D0821DB180C600B1E2A2 /* Assets.xcassets in Resources */,
+				DE14D0801DB180C600B1E2A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE14D0731DB180C500B1E2A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE14D0931DB18B9500B1E2A2 /* CollectionViewCell.swift in Sources */,
+				DE14D08F1DB1816600B1E2A2 /* CollectionViewController.swift in Sources */,
+				DE14D0911DB1856D00B1E2A2 /* Sticker.swift in Sources */,
+				DE14D08D1DB1811700B1E2A2 /* SwiftyJSON.swift in Sources */,
+				DE14D07B1DB180C600B1E2A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE14D07E1DB180C600B1E2A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE14D07F1DB180C600B1E2A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE14D0831DB180C600B1E2A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE14D0841DB180C600B1E2A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE14D0871DB180C600B1E2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE14D0881DB180C600B1E2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE14D08A1DB180C600B1E2A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Whalerock Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asd.Whalerock-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE14D08B1DB180C600B1E2A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Whalerock Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asd.Whalerock-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE14D0721DB180C500B1E2A2 /* Build configuration list for PBXProject "Whalerock Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE14D0871DB180C600B1E2A2 /* Debug */,
+				DE14D0881DB180C600B1E2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE14D0891DB180C600B1E2A2 /* Build configuration list for PBXNativeTarget "Whalerock Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE14D08A1DB180C600B1E2A2 /* Debug */,
+				DE14D08B1DB180C600B1E2A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE14D06F1DB180C500B1E2A2 /* Project object */;
+}
