@@ -1,0 +1,1 @@
+Following along with [Linked List - Implementation in C/C++ on YouTube](https://www.youtube.com/watch?v=vcQIFT79_50)
