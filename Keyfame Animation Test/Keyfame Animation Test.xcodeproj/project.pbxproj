@@ -13,6 +13,7 @@
 		DE397C8F1E46869C0041A854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE397C8D1E46869C0041A854 /* Main.storyboard */; };
 		DE397C911E46869C0041A854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE397C901E46869C0041A854 /* Assets.xcassets */; };
 		DE397C941E46869C0041A854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE397C921E46869C0041A854 /* LaunchScreen.storyboard */; };
+		DE397C9D1E46870A0041A854 /* SPAnimatedShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DE397C901E46869C0041A854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE397C931E46869C0041A854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE397C951E46869C0041A854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE397C9B1E46870A0041A854 /* SPAnimatedShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAnimatedShapeView.h; sourceTree = "<group>"; };
+		DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAnimatedShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				DE397C8A1E46869C0041A854 /* ViewController.h */,
 				DE397C8B1E46869C0041A854 /* ViewController.m */,
 				DE397C8D1E46869C0041A854 /* Main.storyboard */,
+				DE397C9B1E46870A0041A854 /* SPAnimatedShapeView.h */,
+				DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */,
 				DE397C901E46869C0041A854 /* Assets.xcassets */,
 				DE397C921E46869C0041A854 /* LaunchScreen.storyboard */,
 				DE397C951E46869C0041A854 /* Info.plist */,
@@ -152,6 +157,7 @@
 			files = (
 				DE397C8C1E46869C0041A854 /* ViewController.m in Sources */,
 				DE397C891E46869C0041A854 /* AppDelegate.m in Sources */,
+				DE397C9D1E46870A0041A854 /* SPAnimatedShapeView.m in Sources */,
 				DE397C861E46869C0041A854 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
