@@ -23,3 +23,19 @@ let dialObj = DialView()
 
 
 ////////////////////////////////////////
+
+
+let myArray: [Any] = [1, "Array", false]
+
+myArray.first
+
+
+
+
+
+///////////////////////////
+// Let's play around with closures.
+
+// I want to understand the pitfalls of referance loops everyone is always talking about.
+
+
