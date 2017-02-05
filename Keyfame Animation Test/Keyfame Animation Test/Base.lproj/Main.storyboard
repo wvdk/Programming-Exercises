@@ -36,18 +36,29 @@
                                     <constraint firstAttribute="width" constant="240" id="o53-YT-UnZ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-Xq-Yxw" customClass="LearningCoreAnimationView" customModule="Keyfame_Animation_Test" customModuleProvider="target">
+                                <rect key="frame" x="130" y="144" width="115" height="111"/>
+                                <color key="backgroundColor" red="0.53333333329999999" green="0.8980392157" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="IbW-eS-HHG"/>
+                                    <constraint firstAttribute="height" constant="111" id="oGW-m3-yc1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BnN-N3-hIV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MAp-jd-ate"/>
                             <constraint firstItem="VXQ-sc-dOi" firstAttribute="centerX" secondItem="BnN-N3-hIV" secondAttribute="centerX" id="Ofa-Ag-xtS"/>
+                            <constraint firstItem="bXy-Xq-Yxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNM-MF-a2d"/>
                             <constraint firstItem="VXQ-sc-dOi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bhr-Z9-L7B"/>
+                            <constraint firstItem="VXQ-sc-dOi" firstAttribute="top" secondItem="bXy-Xq-Yxw" secondAttribute="bottom" constant="14" id="wdu-gc-0Q0"/>
                             <constraint firstItem="BnN-N3-hIV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zH8-Sn-Ge0"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
