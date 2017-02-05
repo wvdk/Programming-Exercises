@@ -24,11 +24,13 @@
     if (!self.shapeLayer)
     {
         self.shapeLayer = [[CAShapeLayer alloc] init];
-        self.shapeLayer.bounds = CGRectMake(0, 0, 100, 100);     // layer is 100x100 in size
-        self.shapeLayer.position = self.center;                  // and is centered in the view
+        self.shapeLayer.bounds = CGRectMake(0, 0, 100, 100);
+        self.shapeLayer.anchorPoint = CGPointMake(0.0f, 0.0f);
+        self.shapeLayer.position = CGPointMake(0, 0);
         self.shapeLayer.strokeColor = [UIColor blueColor].CGColor;
         self.shapeLayer.fillColor = [UIColor redColor].CGColor;
         self.shapeLayer.lineWidth = 3.f;
+        self.shapeLayer.backgroundColor = [UIColor greenColor].CGColor;
         
         [self.layer addSublayer:self.shapeLayer];
     }

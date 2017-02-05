@@ -22,23 +22,22 @@ class LearningCoreAnimationView: UIView {
         self.layer.addSublayer(toyBallLayer)
     }
     
-    private func changeToCircle() {
-        toyBallLayer.cornerRadius = 15
-        toyIsSquare = false
-    }
-    
-    private func changeToSquare() {
-        toyBallLayer.cornerRadius = 0
-        toyIsSquare = true
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("LearningCoreAnimationView Touched")
         if toyIsSquare == true {
-            changeToCircle()
+            toyBallLayer.cornerRadius = 15
+            toyIsSquare = false
         } else {
-            changeToSquare()
+            toyBallLayer.cornerRadius = 0
+            toyIsSquare = true
         }
     }
-
+    
+    @IBAction func moveBallRight() {
+        toyBallLayer.position = CGPoint(x: self.frame.width - 20, y: 20)
+    }
+    
+    @IBAction func moveBallLeft() {
+        toyBallLayer.position = CGPoint(x: 20, y: 20)
+    }
 }
