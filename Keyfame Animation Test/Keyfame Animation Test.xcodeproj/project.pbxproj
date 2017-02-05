@@ -15,6 +15,7 @@
 		DE397C941E46869C0041A854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE397C921E46869C0041A854 /* LaunchScreen.storyboard */; };
 		DE397C9D1E46870A0041A854 /* SPAnimatedShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */; };
 		DE944E831E46DD7300E74BC7 /* LearningCoreAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE944E821E46DD7300E74BC7 /* LearningCoreAnimationView.swift */; };
+		DE944E851E47B8CB00E74BC7 /* RocketLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE944E841E47B8CB00E74BC7 /* RocketLaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAnimatedShapeView.m; sourceTree = "<group>"; };
 		DE944E811E46DD7300E74BC7 /* Keyfame Animation Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keyfame Animation Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE944E821E46DD7300E74BC7 /* LearningCoreAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningCoreAnimationView.swift; sourceTree = "<group>"; };
+		DE944E841E47B8CB00E74BC7 /* RocketLaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketLaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				DE397C8B1E46869C0041A854 /* ViewController.m */,
 				DE944E821E46DD7300E74BC7 /* LearningCoreAnimationView.swift */,
 				DE397C8D1E46869C0041A854 /* Main.storyboard */,
+				DE944E841E47B8CB00E74BC7 /* RocketLaunchView.swift */,
 				DE397C9B1E46870A0041A854 /* SPAnimatedShapeView.h */,
 				DE397C9C1E46870A0041A854 /* SPAnimatedShapeView.m */,
 				DE397C901E46869C0041A854 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				DE397C8C1E46869C0041A854 /* ViewController.m in Sources */,
 				DE944E831E46DD7300E74BC7 /* LearningCoreAnimationView.swift in Sources */,
 				DE397C891E46869C0041A854 /* AppDelegate.m in Sources */,
+				DE944E851E47B8CB00E74BC7 /* RocketLaunchView.swift in Sources */,
 				DE397C9D1E46870A0041A854 /* SPAnimatedShapeView.m in Sources */,
 				DE397C861E46869C0041A854 /* main.m in Sources */,
 			);

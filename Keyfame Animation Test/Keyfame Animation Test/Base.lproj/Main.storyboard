@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,18 +18,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnN-N3-hIV">
-                                <rect key="frame" x="159" y="481" width="57" height="30"/>
+                                <rect key="frame" x="131.5" y="382" width="57" height="30"/>
                                 <state key="normal" title="Animate"/>
                                 <connections>
                                     <action selector="animate:" destination="VXQ-sc-dOi" eventType="touchUpInside" id="ocU-rK-pM6"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXy-Xq-Yxw" customClass="LearningCoreAnimationView" customModule="Keyfame_Animation_Test" customModuleProvider="target">
-                                <rect key="frame" x="130" y="50" width="115" height="111"/>
+                                <rect key="frame" x="102.5" y="50" width="115" height="111"/>
                                 <color key="backgroundColor" red="0.53333333329999999" green="0.8980392157" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="I0A-ST-Laq"/>
@@ -37,36 +37,46 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP7-RH-f2r">
-                                <rect key="frame" x="278" y="90.5" width="30" height="30"/>
+                                <rect key="frame" x="250.5" y="90.5" width="30" height="30"/>
                                 <state key="normal" title="&gt;"/>
                                 <connections>
                                     <action selector="moveBallRight" destination="bXy-Xq-Yxw" eventType="touchUpInside" id="N7L-Ir-KCS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-gf-USv">
-                                <rect key="frame" x="67" y="90.5" width="30" height="30"/>
+                                <rect key="frame" x="39.5" y="90.5" width="30" height="30"/>
                                 <state key="normal" title="&lt;"/>
                                 <connections>
                                     <action selector="moveBallLeft" destination="bXy-Xq-Yxw" eventType="touchUpInside" id="QAr-Pn-u5e"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXQ-sc-dOi" customClass="SPAnimatedShapeView">
-                                <rect key="frame" x="68" y="519" width="240" height="128"/>
+                                <rect key="frame" x="40.5" y="420" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.74874689809422201" green="0.89006586833771284" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="WHt-OG-tdE"/>
                                     <constraint firstAttribute="width" constant="240" id="o53-YT-UnZ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-wI-2Ya" customClass="RocketLaunchView" customModule="Keyfame_Animation_Test" customModuleProvider="target">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.25384676395939088" green="0.25384676395939088" blue="0.25384676395939088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="NWF-xV-Rqa"/>
+                                    <constraint firstAttribute="height" constant="128" id="UNJ-2f-t8E"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qBB-wI-2Ya" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CeK-kF-bEM"/>
                             <constraint firstItem="bXy-Xq-Yxw" firstAttribute="leading" secondItem="hbI-gf-USv" secondAttribute="trailing" constant="33" id="CiN-ve-SFW"/>
                             <constraint firstItem="bXy-Xq-Yxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IYI-xB-7qW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VXQ-sc-dOi" secondAttribute="bottom" constant="20" id="O0b-CO-ayb"/>
                             <constraint firstItem="VXQ-sc-dOi" firstAttribute="centerX" secondItem="BnN-N3-hIV" secondAttribute="centerX" id="Ofa-Ag-xtS"/>
                             <constraint firstItem="hbI-gf-USv" firstAttribute="centerY" secondItem="bXy-Xq-Yxw" secondAttribute="centerY" id="Q4o-ZD-vCs"/>
                             <constraint firstItem="KP7-RH-f2r" firstAttribute="leading" secondItem="bXy-Xq-Yxw" secondAttribute="trailing" constant="33" id="WXS-P1-9Uj"/>
+                            <constraint firstItem="qBB-wI-2Ya" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixA-ZG-wyB"/>
                             <constraint firstItem="VXQ-sc-dOi" firstAttribute="top" secondItem="BnN-N3-hIV" secondAttribute="bottom" constant="8" id="rFF-Ac-yDf"/>
                             <constraint firstItem="KP7-RH-f2r" firstAttribute="centerY" secondItem="bXy-Xq-Yxw" secondAttribute="centerY" id="vbd-GH-AgF"/>
                             <constraint firstItem="BnN-N3-hIV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zH8-Sn-Ge0"/>
