@@ -29,6 +29,8 @@ class RocketLaunchView: UIView {
         self.layer.addSublayer(planetLayer)
         
         self.clipsToBounds = true
+        
+        StyleKit.drawRocket()
     }
 
 }
