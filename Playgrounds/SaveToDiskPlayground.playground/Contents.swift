@@ -5,8 +5,6 @@ import PlaygroundSupport
 
 var str = "Hello, playground"
 
-let path = "\(NSHomeDirectory())/Desktop/file.txt"
+FileManager.simpleSaveToDesktop(fileName: "NewFile.txt", content: str)
 
-File.save(path: path, content: str)
-
-File.open(path: path)
+FileManager.simpleReadFromDesktop(fileName: "NewFile.txt")
