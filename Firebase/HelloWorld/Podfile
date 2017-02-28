@@ -7,4 +7,5 @@ target 'HelloWorld' do
 
   # Pods for HelloWorld
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end
