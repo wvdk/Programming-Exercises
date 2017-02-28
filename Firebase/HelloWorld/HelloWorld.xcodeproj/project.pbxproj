@@ -12,6 +12,7 @@
 		DE980A911E664013000679EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE980A8F1E664013000679EC /* Main.storyboard */; };
 		DE980A931E664013000679EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE980A921E664013000679EC /* Assets.xcassets */; };
 		DE980A961E664013000679EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE980A941E664013000679EC /* LaunchScreen.storyboard */; };
+		DE980A9E1E664041000679EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE980A9D1E664041000679EC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DE980A921E664013000679EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE980A951E664013000679EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE980A971E664013000679EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE980A9D1E664041000679EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DE980A921E664013000679EC /* Assets.xcassets */,
 				DE980A941E664013000679EC /* LaunchScreen.storyboard */,
 				DE980A971E664013000679EC /* Info.plist */,
+				DE980A9D1E664041000679EC /* GoogleService-Info.plist */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE980A961E664013000679EC /* LaunchScreen.storyboard in Resources */,
+				DE980A9E1E664041000679EC /* GoogleService-Info.plist in Resources */,
 				DE980A931E664013000679EC /* Assets.xcassets in Resources */,
 				DE980A911E664013000679EC /* Main.storyboard in Resources */,
 			);
