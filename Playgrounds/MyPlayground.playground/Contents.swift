@@ -41,9 +41,63 @@
 
 ///////////////////
 
-var a = UInt32.max
-print(a)
+//var a = UInt32.max
+//print(a)
+//
+//var b = UInt64.max
+//print(b)
 
-var b = UInt64.max
-print(b)
+//let plane = 339.58 / 2
+//
+//let hotel =  187.58 / 2
+//
+//let museum = 7.12
+//
+//let total = plane + hotel + museum
+
+
+
+//print("Hello")
+//
+//func nextLetterInAlphabet(letter: String) -> String? {
+//    
+//    let alphabet = ["a", "b", "c", "d"]
+//
+//    
+//    if let indexOfA = alphabet.index(of: letter) {
+//        return alphabet[indexOfA + 1]
+//    }
+//    
+//    return nil
+//    
+//}
+//
+//nextLetterInAlphabet(letter: "b")
+
+////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+struct TypeWithMethod {
+    func thisIsAMethod() {
+        print("hi")
+    }
+}
+
+extension TypeWithMethod {
+    func thisIsAMethod2() {
+        print("bye")
+    }
+}
+
+// It appears you cannot override a method with an extension. That makes sense. You can subclass, or use protocols for similar stuff.
+
+
+
+
+
 
