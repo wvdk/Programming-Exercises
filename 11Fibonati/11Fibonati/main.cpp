@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main () {
@@ -18,11 +19,15 @@ int main () {
     cout << "How many Fibonacci numbers do you want?\n";
     cin >> stopAtNumber;
     cout << "Your sequence:\n";
+
+    
+    vector<int> results(stopAtNumber, 0);
     
     for (int n = 0; n < stopAtNumber; n++) {
         nextNumber = lastNumber + lastLastNumber;
-        
-        cout << nextNumber << "\n";
+                
+        // Save this number to my results.
+        results[n] = nextNumber;
         
         if (lastLastNumber == 0) {
             lastLastNumber = 1;
@@ -30,6 +35,10 @@ int main () {
             lastLastNumber = lastNumber;
             lastNumber = nextNumber;
         }
+    }
+    
+    for (int i = 0; i < stopAtNumber; i++) {
+        cout << results[i] << "\n";
     }
     
     return 0;
