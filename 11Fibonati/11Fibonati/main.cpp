@@ -19,7 +19,6 @@ int main () {
     cout << "How many Fibonacci numbers do you want?\n";
     cin >> stopAtNumber;
     cout << "Your sequence:\n";
-
     
     vector<int> results(stopAtNumber, 0);
     
