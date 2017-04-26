@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FailedToMakeMove: ErrorProtocol {
+enum FailedToMakeMove: Error {
     case GameIsOver
     case NotAValidMove
 }
@@ -42,7 +42,7 @@ class GameManager {
             
             self.gameState = gameState.newGameStateAfter(move: newMove)
         
-            NotificationCenter.default().post(name: "doneThinking" as NSNotification.Name, object: nil)
+//            NotificationCenter.default.post(name: "doneThinking" as NSNotification.Name, object: nil)
         } else {
             print("could not find a move to make")
         }
