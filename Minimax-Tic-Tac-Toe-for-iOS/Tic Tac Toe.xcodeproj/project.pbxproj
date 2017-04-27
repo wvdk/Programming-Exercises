@@ -97,15 +97,15 @@
 				DE1098411CD6A6BA00C9AE5A /* AppDelegate.swift */,
 				DE1098611CD6AC3F00C9AE5A /* TicTacToeViewController.swift */,
 				DED1E8C41CDC03CA00025DDC /* GameManager.swift */,
-				DE1098451CD6A6BA00C9AE5A /* Main.storyboard */,
-				DE1098481CD6A6BA00C9AE5A /* Assets.xcassets */,
-				DE10984A1CD6A6BA00C9AE5A /* LaunchScreen.storyboard */,
-				DE10984D1CD6A6BA00C9AE5A /* Info.plist */,
 				DED1E8BA1CDC02A500025DDC /* Player.swift */,
 				DED1E8BC1CDC02FE00025DDC /* Move.swift */,
 				DED1E8BE1CDC033800025DDC /* Tile.swift */,
 				DED1E8C01CDC035700025DDC /* BoardLayout.swift */,
 				DED1E8C21CDC039300025DDC /* GameState.swift */,
+				DE1098451CD6A6BA00C9AE5A /* Main.storyboard */,
+				DE1098481CD6A6BA00C9AE5A /* Assets.xcassets */,
+				DE10984A1CD6A6BA00C9AE5A /* LaunchScreen.storyboard */,
+				DE10984D1CD6A6BA00C9AE5A /* Info.plist */,
 			);
 			path = "Tic Tac Toe";
 			sourceTree = "<group>";

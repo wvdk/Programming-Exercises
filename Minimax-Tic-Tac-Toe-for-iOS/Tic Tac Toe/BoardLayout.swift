@@ -19,7 +19,7 @@ func ==(lhs: BoardLayout, rhs: BoardLayout) -> Bool {
 }
 
 struct BoardLayout {
-    var tiles: [Tile] // Should only be 9 of them, but not currently enforcing that in any way...
+    var tiles: [Tile]
     
     init () {
         var newtiles: [Tile] = []

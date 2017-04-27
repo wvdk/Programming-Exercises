@@ -18,7 +18,8 @@ func ==(lhs: GameState, rhs: GameState) -> Bool {
     }
 }
 
-struct GameState { // This should have nothing to do with the Computer/Human dynamic. Should simply function as a general repersentation of the state of a tic tac toe game between two players.
+/// A general repersentation of the state of a tic tac toe game between two players.
+struct GameState {
     let boardLayout: BoardLayout
     let playerX: Player
     let playerO: Player
