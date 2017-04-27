@@ -18,6 +18,44 @@ class GameManager {
     var computerPlayer: Player!
     var humanPlayer: Player!
     
+    //        func makeMoveWith(tile: Tile, atLocation: Int) {
+    //            let move = Move(player: gameManager.humanPlayer, location: atLocation)
+    //
+    //            do {
+    //                try gameManager.takeUserMove(move: move)
+    //
+    //                if gameManager.humanPlayer == .X {
+    //                    sender.setImage(UIImage(named: "X"), for: UIControlState.focused)
+    //                } else if gameManager.humanPlayer == .O {
+    //                    sender.setImage(UIImage(named: "O"), for: UIControlState.focused)
+    //                }
+    //
+    //                self.computerThinkingActivityIndicator.startAnimating()
+    //                self.computerThinkingActivityIndicator.isHidden = false
+    //
+    //                DispatchQueue.global().async(execute: {
+    //                    do {
+    //                        try self.gameManager.computerMakeMove()
+    //                    } catch {
+    //                        print("Could not make a move.")
+    //                    }
+    //
+    //                    DispatchQueue.main.async(execute: {
+    //                        self.computerThinkingActivityIndicator.stopAnimating()
+    //                        self.computerThinkingActivityIndicator.isHidden = true
+    //                    })
+    //                })
+    //
+    //            } catch FailedToMakeMove.NotAValidMove {
+    //                // Lets do nothing. User should already know why nothing happens when they tap a tile that's already been played.
+    //                print("Invalid move selected. Doing nothing.")
+    //            } catch FailedToMakeMove.GameIsOver {
+    //                print("Can't make a move, the game is over.")
+    //            } catch {
+    //                print("Unknown error.")
+    //            }
+    //        }
+    
     func takeUserMove(move: Move) throws {
         guard gameState.isValidMove(move: move) else {
             throw FailedToMakeMove.NotAValidMove
