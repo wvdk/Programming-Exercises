@@ -13,10 +13,21 @@ enum FailedToMakeMove: Error {
     case NotAValidMove
 }
 
-class GameManager {
-    var gameState: GameState!
-    var computerPlayer: Player!
-    var humanPlayer: Player!
+struct GameManager {
+//    var gameState: GameState
+//    var computerPlayer: Player
+//    var humanPlayer: Player
+//    
+//    init(gameState: GameState, computerWillPlayAs: Player) {
+//        self.gameState = gameState
+//        computerPlayer = computerWillPlayAs
+//        
+//        if computerWillPlayAs == .O {
+//            humanPlayer = .X
+//        } else {
+//            humanPlayer = .O
+//        }
+//    }
     
     //        func makeMoveWith(tile: Tile, atLocation: Int) {
     //            let move = Move(player: gameManager.humanPlayer, location: atLocation)
@@ -56,93 +67,39 @@ class GameManager {
     //            }
     //        }
     
-    func takeUserMove(move: Move) throws {
-        guard gameState.isValidMove(move: move) else {
-            throw FailedToMakeMove.NotAValidMove
-        }
-        
-        guard gameState.theEnd() == false else {
-            throw FailedToMakeMove.GameIsOver
-        }
-        
-        self.gameState = self.gameState.newGameStateAfter(move: move)
-        
-        print("Move: \(move)")
-    }
+//    func takeUserMoveTo(location: Int) throws {
+//        
+//        let move = Move(player: humanPlayer, location: location)
+//        
+//        guard gameState.isValidMove(move: move) else {
+//            throw FailedToMakeMove.NotAValidMove
+//        }
+//        
+//        guard gameState.theEnd() == false else {
+//            throw FailedToMakeMove.GameIsOver
+//        }
+//        
+//        self.gameState = self.gameState.newGameStateAfter(move: move)
+//        
+//        print("Move: \(move)")
+//    }
+//    
+//    func computerMakeMove() throws {
+//        guard gameState.theEnd() == false else {
+//            throw FailedToMakeMove.GameIsOver
+//        }
+//        
+//        if let newScoreMovePair = self.findBestMoveIn(gameState: self.gameState) {
+//            let newMove = newScoreMovePair.move
+//            
+//            self.gameState = gameState.newGameStateAfter(move: newMove)
+//        
+////            NotificationCenter.default.post(name: "doneThinking" as NSNotification.Name, object: nil)
+//        } else {
+//            print("could not find a move to make")
+//        }
+//    }
     
-    func computerMakeMove() throws {
-        guard gameState.theEnd() == false else {
-            throw FailedToMakeMove.GameIsOver
-        }
-        
-        if let newScoreMovePair = self.findBestMoveIn(gameState: self.gameState) {
-            let newMove = newScoreMovePair.move
-            
-            self.gameState = gameState.newGameStateAfter(move: newMove)
-        
-//            NotificationCenter.default.post(name: "doneThinking" as NSNotification.Name, object: nil)
-        } else {
-            print("could not find a move to make")
-        }
-    }
     
-    private func findBestMoveIn(gameState: GameState) -> (move: Move, score: Int)? {
-        var listOfScoreMovePairs: [(Int, Move)] = []
-        
-        if let allPossibleMoves = gameState.allPossibleFutureMoves() {
-            for move in allPossibleMoves {
-                let score = self.getScoreFor(move: move)
-                
-                listOfScoreMovePairs.append((score, move))
-            }
-        }
-        
-        if listOfScoreMovePairs.count > 0 {
-            var bestMoveFound: Move?
-            var maxScoreFound = 0
-            for scoreMovePair in listOfScoreMovePairs {
-                if scoreMovePair.0 > maxScoreFound {
-                    maxScoreFound = scoreMovePair.0
-                    bestMoveFound = scoreMovePair.1
-                }
-            }
-            
-            return (bestMoveFound!, maxScoreFound)
-        } else {
-            return nil
-        }
-    }
-    
-    private func getScoreFor(move: Move) -> Int {
-        if gameState.isValidMove(move: move) {
-            let possibleGameState = self.gameState.newGameStateAfter(move: move)
-            
-            if possibleGameState.theEnd() {
-                
-                if possibleGameState.isDraw() {
-                    return 0
-                }
-                
-                if possibleGameState.playerOwins() {
-                    if  possibleGameState.playerO == self.computerPlayer {
-                        return 10
-                    } else {
-                        return -10
-                    }
-                }
-                
-                if possibleGameState.playerXwins() {
-                    if  possibleGameState.playerX == self.computerPlayer {
-                        return 10
-                    } else {
-                        return -10
-                    }
-                }
-            } else {
-                return findBestMoveIn(gameState: possibleGameState)!.score
-            }
-        }
-        
-        return -999
-    }
+
 }

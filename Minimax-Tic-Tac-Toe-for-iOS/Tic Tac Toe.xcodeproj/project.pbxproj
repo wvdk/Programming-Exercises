@@ -13,6 +13,9 @@
 		DE10984C1CD6A6BA00C9AE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE10984A1CD6A6BA00C9AE5A /* LaunchScreen.storyboard */; };
 		DE1098621CD6AC3F00C9AE5A /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1098611CD6AC3F00C9AE5A /* TicTacToeViewController.swift */; };
 		DE40E2081CDFDE4B008AC400 /* tile_numbers_key.png in Resources */ = {isa = PBXBuildFile; fileRef = DE40E2071CDFDE4B008AC400 /* tile_numbers_key.png */; };
+		DE75114E1EB18CFF00D1214A /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE75114D1EB18CFF00D1214A /* Brain.swift */; };
+		DE7511501EB1900A00D1214A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE75114F1EB1900A00D1214A /* Location.swift */; };
+		DE7511521EB192DA00D1214A /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7511511EB192DA00D1214A /* BrainTests.swift */; };
 		DE7F3E841CED61B9006051E0 /* GameStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F3E831CED61B9006051E0 /* GameStateTests.swift */; };
 		DED1E8BB1CDC02A500025DDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1E8BA1CDC02A500025DDC /* Player.swift */; };
 		DED1E8BD1CDC02FE00025DDC /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1E8BC1CDC02FE00025DDC /* Move.swift */; };
@@ -41,6 +44,9 @@
 		DE10984D1CD6A6BA00C9AE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1098611CD6AC3F00C9AE5A /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		DE40E2071CDFDE4B008AC400 /* tile_numbers_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile_numbers_key.png; sourceTree = "<group>"; };
+		DE75114D1EB18CFF00D1214A /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		DE75114F1EB1900A00D1214A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DE7511511EB192DA00D1214A /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		DE7F3E811CED61B9006051E0 /* Tic Tac ToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic Tac ToeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7F3E831CED61B9006051E0 /* GameStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateTests.swift; sourceTree = "<group>"; };
 		DE7F3E851CED61B9006051E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 				DE1098411CD6A6BA00C9AE5A /* AppDelegate.swift */,
 				DE1098611CD6AC3F00C9AE5A /* TicTacToeViewController.swift */,
 				DED1E8C41CDC03CA00025DDC /* GameManager.swift */,
+				DE75114D1EB18CFF00D1214A /* Brain.swift */,
+				DE75114F1EB1900A00D1214A /* Location.swift */,
 				DED1E8BA1CDC02A500025DDC /* Player.swift */,
 				DED1E8BC1CDC02FE00025DDC /* Move.swift */,
 				DED1E8BE1CDC033800025DDC /* Tile.swift */,
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7F3E831CED61B9006051E0 /* GameStateTests.swift */,
+				DE7511511EB192DA00D1214A /* BrainTests.swift */,
 				DE7F3E851CED61B9006051E0 /* Info.plist */,
 			);
 			path = "Tic Tac ToeTests";
@@ -228,6 +237,8 @@
 			files = (
 				DED1E8C31CDC039300025DDC /* GameState.swift in Sources */,
 				DED1E8C51CDC03CA00025DDC /* GameManager.swift in Sources */,
+				DE7511501EB1900A00D1214A /* Location.swift in Sources */,
+				DE75114E1EB18CFF00D1214A /* Brain.swift in Sources */,
 				DED1E8BD1CDC02FE00025DDC /* Move.swift in Sources */,
 				DE1098421CD6A6BA00C9AE5A /* AppDelegate.swift in Sources */,
 				DED1E8BF1CDC033800025DDC /* Tile.swift in Sources */,
@@ -241,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7511521EB192DA00D1214A /* BrainTests.swift in Sources */,
 				DE7F3E841CED61B9006051E0 /* GameStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,18 +8,18 @@
 
 import Foundation
 
-extension Move: Equatable {}
+//extension Move: Equatable {}
 
-func ==(lhs: Move, rhs: Move) -> Bool {
-    if lhs.player == rhs.player && lhs.location == rhs.location {
-        return true
-    } else {
-        return false
-    }
-}
-
-struct Move {
-    let player: Player
-    let location: Int
-}
+//func ==(lhs: Move, rhs: Move) -> Bool {
+//    if lhs.player == rhs.player && lhs.location == rhs.location {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
+//
+//struct Move {
+//    let player: Player
+//    let location: Int
+//}
 
