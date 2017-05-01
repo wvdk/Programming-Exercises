@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE28191B1EB7C9EF00784A1A /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DE28191A1EB7C9EF00784A1A /* Notes.rtf */; };
 		DEE20E811EB7C00700FA87B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E801EB7C00700FA87B8 /* AppDelegate.swift */; };
 		DEE20E831EB7C00700FA87B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE20E821EB7C00700FA87B8 /* ViewController.swift */; };
 		DEE20E861EB7C00700FA87B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE20E841EB7C00700FA87B8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE28191A1EB7C9EF00784A1A /* Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		DEE20E7D1EB7C00700FA87B8 /* Learning AVAudioSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning AVAudioSession.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE20E801EB7C00700FA87B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE20E821EB7C00700FA87B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				DEE20E801EB7C00700FA87B8 /* AppDelegate.swift */,
 				DEE20E821EB7C00700FA87B8 /* ViewController.swift */,
+				DE28191A1EB7C9EF00784A1A /* Notes.rtf */,
 				DEE20E841EB7C00700FA87B8 /* Main.storyboard */,
 				DEE20E871EB7C00700FA87B8 /* Assets.xcassets */,
 				DEE20E891EB7C00700FA87B8 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			files = (
 				DEE20E8B1EB7C00700FA87B8 /* LaunchScreen.storyboard in Resources */,
 				DEE20E881EB7C00700FA87B8 /* Assets.xcassets in Resources */,
+				DE28191B1EB7C9EF00784A1A /* Notes.rtf in Resources */,
 				DEE20E861EB7C00700FA87B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				DEE20E911EB7C00700FA87B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
