@@ -22,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         try! audioSession.setCategory(AVAudioSessionCategoryPlayback)
         
-        test
-        
         return true
     }
 

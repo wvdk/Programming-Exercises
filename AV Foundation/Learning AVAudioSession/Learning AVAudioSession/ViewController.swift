@@ -10,19 +10,36 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var captureSession = AVCaptureSession()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        // Do any additional setup after loading the view, typically from a nib.
+        // Set up capture session
+        captureSession.sessionPreset = AVCaptureSessionPresetHigh
+        
+        // Add video device
+        let camera = AVCaptureDevice.defaultDevice(withDeviceType: AVCaptureDeviceType.builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: AVCaptureDevicePosition.back)
+        
+        do {
+            let videoInput = try AVCaptureDeviceInput(device: camera)
+            
+            if captureSession.canAddInput(videoInput) {
+                captureSession.addInput(videoInput)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        
+        // Add audio device
+        
+        // Add output
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
