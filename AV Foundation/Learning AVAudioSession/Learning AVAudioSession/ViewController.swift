@@ -36,6 +36,18 @@ class ViewController: UIViewController {
         
         // Add audio device
         
+        let mic = AVCaptureDevice.defaultDevice(withDeviceType: AVCaptureDeviceType.builtInMicrophone, mediaType: AVMediaTypeAudio, position: .unspecified)
+        
+        do {
+            let micInput = try AVCaptureDeviceInput(device: mic)
+            
+            if captureSession.canAddInput(micInput) {
+                captureSession.addInput(micInput)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
         // Add output
         
         
