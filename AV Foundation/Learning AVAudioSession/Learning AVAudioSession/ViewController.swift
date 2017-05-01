@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Set up capture session
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
         
@@ -49,6 +48,9 @@ class ViewController: UIViewController {
         }
         
         // Add output
+        
+        // Start session
+        captureSession.startRunning()
         
         
     }

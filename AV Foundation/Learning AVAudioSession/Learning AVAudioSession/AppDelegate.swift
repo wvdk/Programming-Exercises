@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let audioSession = AVAudioSession.sharedInstance()
         
-        try! audioSession.setCategory(AVAudioSessionCategoryPlayback)
+//        try! audioSession.setCategory(AVAudioSessionCategoryPlayback)
         
         return true
     }
