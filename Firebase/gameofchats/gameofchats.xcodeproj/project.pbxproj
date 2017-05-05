@@ -302,6 +302,7 @@
 				DE19D1101EBD218D00A930CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
