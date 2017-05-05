@@ -12,13 +12,15 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var captureSession = AVCaptureSession()
+    
+    var movieOutput = AVCaptureMovieFileOutput()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set up capture session
         captureSession.sessionPreset = AVCaptureSessionPresetHigh
-        
+
         // Add video device
         let camera = AVCaptureDevice.defaultDevice(withDeviceType: AVCaptureDeviceType.builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: AVCaptureDevicePosition.back)
         
@@ -32,9 +34,7 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
         
-        
         // Add audio device
-        
         let mic = AVCaptureDevice.defaultDevice(withDeviceType: AVCaptureDeviceType.builtInMicrophone, mediaType: AVMediaTypeAudio, position: .unspecified)
         
         do {
@@ -46,8 +46,11 @@ class ViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
-        
+
         // Add output
+        if captureSession.canAddOutput(movieOutput) {
+            captureSession.addOutput(movieOutput)
+        }
         
         // Start session
         captureSession.startRunning()
