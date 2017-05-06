@@ -4,21 +4,59 @@ import UIKit
 
 var str = "Hello, playground"
 
-let numberOfItems = 10
-let heightOfContainer = 600
-let widthOfContainer = 400
-let heightOfItem = heightOfContainer / numberOfItems
-
-let containerView = UIView(frame: CGRect(x: 0, y: 0, width: widthOfContainer, height: heightOfContainer))
-containerView.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
-
-var items: [UIView] = []
-
-for i in 0...numberOfItems {
-    let newView = UIView(frame: CGRect(x: 0, y: heightOfItem * i, width: widthOfContainer, height: heightOfItem))
+class Stack: UIView {
     
-    newView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(CGFloat(Double(i) * 0.1))
+    var numberOfItems = 10 {
+        didSet {
+            createSubviews()
+        }
+    }
     
-    containerView.addSubview(newView)
+    var heightOfContainer = 0
+    var widthOfContainer = 0
+    var heightOfItem = 0
+    
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        heightOfContainer = Int(frame.height)
+        widthOfContainer = Int(frame.width)
+        heightOfItem = heightOfContainer / numberOfItems
+        
+        createSubviews()
+    }
+
+    
+    func createSubviews() {
+
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: widthOfContainer, height: heightOfContainer))
+        containerView.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+        
+        for i in 0...numberOfItems {
+            let newView = UIView(frame: CGRect(x: 0, y: heightOfItem * i, width: widthOfContainer, height: heightOfItem))
+            
+            let d = heightOfContainer / i
+            
+//            newView.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(CGFloat((d * 0.1) / heightOfContainer))
+            
+            containerView.addSubview(newView)
+            
+        }
+        
+        
+        self.addSubview(containerView)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
 }
+
+let stack = Stack(frame: CGRect(x: 0, y: 0, width: 400, height: 200))
+
+stack.numberOfItems = 5
+
+
+
