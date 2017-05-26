@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     var inactiveQueue: DispatchQueue!
     
     func concurrentQueues() {
-        let anotherQueue = DispatchQueue(label: "com.appcoda.anotherQueue", qos: .utility)
+        let anotherQueue = DispatchQueue(label: "com.appcoda.anotherQueue", qos: .utility, attributes: .concurrent)
         
         anotherQueue.async {
             for i in 1...10 {
