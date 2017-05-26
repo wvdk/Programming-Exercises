@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-         simpleQueues()
+//         simpleQueues()
         
-        // queuesWithQoS()
+         queuesWithQoS()
         
         /*
          concurrentQueues()
@@ -42,15 +42,39 @@ class ViewController: UIViewController {
         
         let queue = DispatchQueue(label: "wes.vdk.simpleQueue")
         
-        queue.sync {
+        queue.async {
             for i in 1...10 {
                 print("🔴 ", i)
             }
         }
         
+        for i in 101...110 {
+            print("🔵 ", i)
+        }
+        
     }
     
     func queuesWithQoS() {
+        
+        let queue1 = DispatchQueue(label: "wes.vdk.queue1", qos: DispatchQoS.background)
+        let queue2 = DispatchQueue(label: "wes.vdk.queue2", qos: DispatchQoS.userInteractive)
+        
+        queue1.async {
+            for i in 1...10 {
+                print("🔴 ", i)
+            }
+        }
+        
+        queue2.async {
+            for i in 101...110 {
+                print("🔵 ", i)
+            }
+        }
+        
+        for i in 1000..<1010 {
+            print("Ⓜ️", i)
+        }
+
         
     }
     
