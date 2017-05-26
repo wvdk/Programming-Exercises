@@ -22,14 +22,14 @@ class ViewController: UIViewController {
         
 //         simpleQueues()
         
-         queuesWithQoS()
+//         queuesWithQoS()
         
-        /*
+        
          concurrentQueues()
-         if let queue = inactiveQueue {
+    
+        if let queue = inactiveQueue {
             queue.activate()
          }
-         */
         
         // queueWithDelay()
         
@@ -79,8 +79,27 @@ class ViewController: UIViewController {
     }
     
     var inactiveQueue: DispatchQueue!
+    
     func concurrentQueues() {
+        let anotherQueue = DispatchQueue(label: "com.appcoda.anotherQueue", qos: .utility)
         
+        anotherQueue.async {
+            for i in 1...10 {
+                print("🔴 ", i)
+            }
+        }
+        
+        anotherQueue.async {
+            for i in 101...110 {
+                print("🔵 ", i)
+            }
+        }
+        
+        anotherQueue.async {
+            for i in 1001...1010 {
+                print("⚫️ ", i)
+            }
+        }
     }
     
     func queueWithDelay() {
