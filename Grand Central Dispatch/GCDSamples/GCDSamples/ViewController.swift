@@ -130,8 +130,26 @@ class ViewController: UIViewController {
     
     func useWorkItem() {
         
+        var val = 10
+        
         let workItem = DispatchWorkItem.init { 
             print("this is a work item")
+            
+            val += 5
+        }
+        
+        let queue = DispatchQueue.global()
+        
+        queue.async {
+            workItem.perform()
+        }
+        
+        queue.async(execute: workItem)
+        
+//        workItem.perform()
+        
+        workItem.notify(queue: DispatchQueue.main) { 
+            print("value = ", val)
         }
         
     }
