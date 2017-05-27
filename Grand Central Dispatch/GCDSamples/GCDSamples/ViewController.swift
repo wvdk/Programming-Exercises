@@ -6,6 +6,8 @@
 //  Copyright © 2016 Appcoda. All rights reserved.
 //
 
+// http://www.appcoda.com/grand-central-dispatch/
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -21,21 +23,14 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
 //         simpleQueues()
-        
 //         queuesWithQoS()
-        
-        
-         concurrentQueues()
-    
-        if let queue = inactiveQueue {
-            queue.activate()
-         }
-        
-        // queueWithDelay()
-        
-        // fetchImage()
-        
-        // useWorkItem()
+//         concurrentQueues()
+//        if let queue = inactiveQueue {
+//            queue.activate()
+//         }
+         queueWithDelay()
+//         fetchImage()
+//         useWorkItem()
     }
     
     func simpleQueues() {
@@ -104,7 +99,8 @@ class ViewController: UIViewController {
     }
     
     func queueWithDelay() {
-        
+        let delayQueue = DispatchQueue(label: "wes.vdk.delayqueue", qos: .userInitiated)
+
     }
     
     func fetchImage() {
