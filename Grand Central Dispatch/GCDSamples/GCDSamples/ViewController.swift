@@ -28,8 +28,8 @@ class ViewController: UIViewController {
 //        if let queue = inactiveQueue {
 //            queue.activate()
 //         }
-         queueWithDelay()
-//         fetchImage()
+//         queueWithDelay()
+         fetchImage()
 //         useWorkItem()
     }
     
@@ -111,6 +111,20 @@ class ViewController: UIViewController {
     }
     
     func fetchImage() {
+
+        let imageURL: URL = URL(string: "http://www.appcoda.com/wp-content/uploads/2015/12/blog-logo-dark-400.png")!
+        
+        (URLSession(configuration: URLSessionConfiguration.default)).dataTask(with: imageURL, completionHandler: { (imageData, response, error) in
+            
+            if let data = imageData {
+                print("Did download image data")
+                
+                DispatchQueue.main.async {
+                    self.imageView.image = UIImage(data: data)
+                }
+                
+            }
+        }).resume()
         
     }
     
