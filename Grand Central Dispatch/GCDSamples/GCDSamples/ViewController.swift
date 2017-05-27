@@ -29,8 +29,8 @@ class ViewController: UIViewController {
 //            queue.activate()
 //         }
 //         queueWithDelay()
-         fetchImage()
-//         useWorkItem()
+//         fetchImage()
+         useWorkItem()
     }
     
     func simpleQueues() {
@@ -129,6 +129,10 @@ class ViewController: UIViewController {
     }
     
     func useWorkItem() {
+        
+        let workItem = DispatchWorkItem.init { 
+            print("this is a work item")
+        }
         
     }
     
