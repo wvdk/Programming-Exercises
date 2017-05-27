@@ -100,7 +100,14 @@ class ViewController: UIViewController {
     
     func queueWithDelay() {
         let delayQueue = DispatchQueue(label: "wes.vdk.delayqueue", qos: .userInitiated)
-
+        
+        print(Date())
+        
+        let additionalTime: DispatchTimeInterval = .seconds(2)
+        
+        delayQueue.asyncAfter(deadline: .now() + additionalTime) { 
+            print(Date())
+        }
     }
     
     func fetchImage() {
