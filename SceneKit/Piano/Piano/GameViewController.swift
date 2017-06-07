@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
         let scnView = self.view as! SCNView
         
         scnView.scene = scene
-//        scnView.allowsCameraControl = true
+        scnView.allowsCameraControl = true
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
@@ -45,12 +45,12 @@ class GameViewController: UIViewController {
             
             // highlight it
             SCNTransaction.begin()
-            SCNTransaction.animationDuration = 0.5
+            SCNTransaction.animationDuration = 0.1
             
             // on completion - unhighlight
             SCNTransaction.completionBlock = {
                 SCNTransaction.begin()
-                SCNTransaction.animationDuration = 0.5
+                SCNTransaction.animationDuration = 0.1
                 
                 material.emission.contents = UIColor.black
                 
