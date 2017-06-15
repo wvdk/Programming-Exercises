@@ -7,6 +7,8 @@ let arrivalToVNO = formatter.date(from: "2017-06-27T10:50:00+0200")!
 
 extension Date {
     
+    // Thanks to https://stackoverflow.com/questions/27182023/getting-the-difference-between-two-nsdates-in-months-days-hours-minutes-seconds
+    
     /// Returns the amount of days from another date
     func days(from date: Date) -> Int {
         return Calendar.current.dateComponents([.day], from: date, to: self).day ?? 0
