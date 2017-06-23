@@ -34,3 +34,6 @@ extension Date {
 let now = Date()
 
 arrivalToVNO.hours(from: now)
+
+
+
