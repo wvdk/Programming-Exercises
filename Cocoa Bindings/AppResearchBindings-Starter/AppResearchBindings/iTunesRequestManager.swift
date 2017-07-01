@@ -23,7 +23,7 @@
 import Cocoa
 
 struct iTunesRequestManager {
-  static func getSearchResults(_ query: String, results: Int, langString :String, completionHandler: @escaping ([[String : AnyObject]], NSError?) -> Void) {
+  static func getSearchResults(_ query: String, results: Int, langString: String, completionHandler: @escaping ([[String : AnyObject]], NSError?) -> Void) {
     var urlComponents = URLComponents(string: "https://itunes.apple.com/search")
     let termQueryItem = URLQueryItem(name: "term", value: query)
     let limitQueryItem = URLQueryItem(name: "limit", value: "\(results)")
