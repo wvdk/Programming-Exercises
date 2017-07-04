@@ -11,7 +11,8 @@ import SpriteKit
 
 class ColorSelectionInterface: SKNode {
     
-    private var buttons: [SKNode] = []
+    private var buttons: [ColorSelectionButton] = []
+    private var currentlySelectedButton: ColorSelectionButton!
     
     override init() {
         super.init()
@@ -32,8 +33,12 @@ class ColorSelectionInterface: SKNode {
         buttons.append(yellowButton)
         
         for button in buttons {
+            button.delegate = self
+            
             addChild(button)
         }
+        
+        currentlySelectedButton = blueButton
         
         isUserInteractionEnabled = true
         

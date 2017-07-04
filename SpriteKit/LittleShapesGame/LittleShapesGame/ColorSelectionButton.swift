@@ -12,6 +12,7 @@ import SpriteKit
 class ColorSelectionButton: SKShapeNode {
     
     var selected = false
+    var delegate: ButtonSelectionDelegate?
     
     override init() {
         super.init()
@@ -29,14 +30,18 @@ class ColorSelectionButton: SKShapeNode {
     }
     
     override func mouseDown(with event: NSEvent) {
-        if selected {
-            lineWidth = 0.0
-            
-            selected = false
+        if let delegate = delegate {
+            delegate.attemptingSelection(of: self)
         } else {
-            lineWidth = 1.0
-            
-            selected = true
+            if selected {
+                lineWidth = 0.0
+                
+                selected = false
+            } else {
+                lineWidth = 1.0
+                
+                selected = true
+            }
         }
     }
     
