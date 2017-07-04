@@ -14,6 +14,7 @@
 		DEBC7CB11F0BA0DB002D700D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CB01F0BA0DB002D700D /* ViewController.swift */; };
 		DEBC7CB31F0BA0DB002D700D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBC7CB21F0BA0DB002D700D /* Assets.xcassets */; };
 		DEBC7CB61F0BA0DB002D700D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBC7CB41F0BA0DB002D700D /* Main.storyboard */; };
+		DEBC7CBF1F0BEAA5002D700D /* ColorSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DEBC7CB51F0BA0DB002D700D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEBC7CB71F0BA0DB002D700D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBC7CB81F0BA0DB002D700D /* LittleShapesGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LittleShapesGame.entitlements; sourceTree = "<group>"; };
+		DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DEBC7CAA1F0BA0DB002D700D /* GameScene.sks */,
 				DEBC7CAC1F0BA0DB002D700D /* Actions.sks */,
 				DEBC7CAE1F0BA0DB002D700D /* GameScene.swift */,
+				DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */,
 				DEBC7CB01F0BA0DB002D700D /* ViewController.swift */,
 				DEBC7CB21F0BA0DB002D700D /* Assets.xcassets */,
 				DEBC7CB41F0BA0DB002D700D /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				DEBC7CB11F0BA0DB002D700D /* ViewController.swift in Sources */,
 				DEBC7CAF1F0BA0DB002D700D /* GameScene.swift in Sources */,
+				DEBC7CBF1F0BEAA5002D700D /* ColorSelectionButton.swift in Sources */,
 				DEBC7CA91F0BA0DB002D700D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
