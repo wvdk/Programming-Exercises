@@ -20,16 +20,19 @@ class ColorSelectionInterface: SKNode {
         let blueButton = ColorSelectionButton()
         blueButton.fillColor = SKColor.blue
         blueButton.position = CGPoint(x: 0, y: 45)
+        blueButton.name = "blue"
         buttons.append(blueButton)
         
         let redButton = ColorSelectionButton()
         redButton.fillColor = SKColor.red
         redButton.position = CGPoint(x: 0, y: 0)
+        redButton.name = "red"
         buttons.append(redButton)
         
         let yellowButton = ColorSelectionButton()
         yellowButton.fillColor = SKColor.yellow
         yellowButton.position = CGPoint(x: 0, y: -45)
+        yellowButton.name = "yellow"
         buttons.append(yellowButton)
         
         for button in buttons {
@@ -53,6 +56,9 @@ class ColorSelectionInterface: SKNode {
 extension ColorSelectionInterface: ButtonSelectionDelegate {
     func attemptingSelection(of button: ColorSelectionButton) {
         button.selected = true
+        
+        
+        
         currentlySelectedButton = button
     }
 }
