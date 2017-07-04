@@ -67,20 +67,8 @@ class GameScene: SKScene {
         self.touchUp(atPoint: event.location(in: self))
     }
     
-//    override func keyDown(with event: NSEvent) {
-//        switch event.keyCode {
-//        case 0x31:
-//        default:
-//            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
-//        }
-//    }
-    
     func addColorSelectionOverlay() {
         let r = ColorSelectionButton()
         self.addChild(r)
-    }
-    
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
     }
 }
