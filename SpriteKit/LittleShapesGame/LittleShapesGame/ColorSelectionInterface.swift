@@ -13,8 +13,24 @@ class ColorSelectionInterface: SKNode {
     override init() {
         super.init()
         
-        addChild(ColorSelectionButton())
+        let blueButton = ColorSelectionButton()
+        blueButton.fillColor = SKColor.blue
+        blueButton.position = CGPoint(x: 0, y: 45)
+        addChild(blueButton)
+        
+        let redButton = ColorSelectionButton()
+        redButton.fillColor = SKColor.red
+        redButton.position = CGPoint(x: 0, y: 0)
+        addChild(redButton)
+        
+        let yellowButton = ColorSelectionButton()
+        yellowButton.fillColor = SKColor.yellow
+        yellowButton.position = CGPoint(x: 0, y: -45)
+        addChild(yellowButton)
+        
         isUserInteractionEnabled = true
+        
+        zPosition = 1
     }
     
     required init?(coder aDecoder: NSCoder) {
