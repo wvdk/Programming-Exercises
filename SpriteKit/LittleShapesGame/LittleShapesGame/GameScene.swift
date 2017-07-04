@@ -76,11 +76,6 @@ class GameScene: SKScene {
 //    }
     
     func addColorSelectionOverlay() {
-//        let red = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 10, height: 10))
-//        red.fillColor = SKColor.red
-//        red.lineWidth = 0.0
-//        self.addChild(red)
-        
         let r = ColorSelectionButton()
         self.addChild(r)
     }
