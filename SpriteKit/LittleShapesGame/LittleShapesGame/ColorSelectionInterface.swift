@@ -55,10 +55,17 @@ class ColorSelectionInterface: SKNode {
 
 extension ColorSelectionInterface: ButtonSelectionDelegate {
     func attemptingSelection(of button: ColorSelectionButton) {
-        button.selected = true
+        if let name = button.name {
+            
+            for buttonFromList in buttons {
+                if buttonFromList.name == name {
+                    buttonFromList.selected = true
+                    currentlySelectedButton = buttonFromList
+                } else {
+                    buttonFromList.selected = false
+                }
+            }
+        }
         
-        
-        
-        currentlySelectedButton = button
     }
 }
