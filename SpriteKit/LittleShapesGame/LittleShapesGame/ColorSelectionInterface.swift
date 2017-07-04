@@ -49,3 +49,10 @@ class ColorSelectionInterface: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+extension ColorSelectionInterface: ButtonSelectionDelegate {
+    func attemptingSelection(of button: ColorSelectionButton) {
+        button.selected = true
+        currentlySelectedButton = button
+    }
+}
