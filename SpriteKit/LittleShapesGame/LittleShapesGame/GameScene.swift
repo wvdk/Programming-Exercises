@@ -30,11 +30,20 @@ class GameScene: SKScene {
         if let spinnyNode = self.spinnyNode {
             spinnyNode.lineWidth = 2.5
             
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
+            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi * -1), duration: 1)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
+        
+        
+        
+        
+        
+        addColorSelectionOverlay()
+        
+        
+        
     }
     
     
@@ -85,6 +94,12 @@ class GameScene: SKScene {
         }
     }
     
+    func addColorSelectionOverlay() {
+        let red = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 10, height: 10))
+        red.fillColor = SKColor.red
+        red.lineWidth = 0.0
+        self.addChild(red)
+    }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
