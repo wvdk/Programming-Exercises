@@ -11,7 +11,16 @@ import SpriteKit
 
 class ColorSelectionButton: SKShapeNode {
     
-    var selected = false
+    var selected: Bool = false {
+        willSet {
+            if newValue == true {
+                lineWidth = 1.0
+            } else {
+                lineWidth = 0.0
+            }
+        }
+    }
+    
     var delegate: ButtonSelectionDelegate?
     
     override init() {
