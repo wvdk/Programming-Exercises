@@ -57,6 +57,7 @@ extension ColorSelectionInterface: ButtonSelectionDelegate {
     func attemptingSelection(of button: ColorSelectionButton) {
         if let name = button.name {
             
+            // Make sure only one button is selected at a time
             for buttonFromList in buttons {
                 if buttonFromList.name == name {
                     buttonFromList.selected = true
