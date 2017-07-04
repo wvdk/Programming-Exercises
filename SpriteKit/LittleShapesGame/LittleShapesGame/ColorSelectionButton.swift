@@ -14,9 +14,18 @@ class ColorSelectionButton: SKShapeNode {
         super.init()
         
         let rect = CGRect(x: 0, y: 0, width: 30, height: 30)
-        self.path = CGPath(rect: rect, transform: nil)
-        self.fillColor = SKColor.red
-        self.lineWidth = 0.0
+        path = CGPath(rect: rect, transform: nil)
+        fillColor = SKColor.red
+        lineWidth = 0.0
+        isUserInteractionEnabled = true
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        lineWidth = 1.0
+    }
+    
+    override func touchesBegan(with event: NSEvent) {
+        print(event)
     }
     
     required init?(coder aDecoder: NSCoder) {
