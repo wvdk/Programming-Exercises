@@ -68,7 +68,7 @@ class GameScene: SKScene {
     }
     
     func addColorSelectionOverlay() {
-        let r = ColorSelectionButton()
-        self.addChild(r)
+        let foo = ColorSelectionInterface()
+        self.addChild(foo)
     }
 }
