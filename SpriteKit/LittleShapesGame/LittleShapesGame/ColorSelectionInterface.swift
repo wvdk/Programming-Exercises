@@ -67,6 +67,5 @@ extension ColorSelectionInterface: ButtonSelectionDelegate {
                 }
             }
         }
-        
     }
 }
