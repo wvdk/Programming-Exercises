@@ -17,6 +17,7 @@
 		DEBC7CBF1F0BEAA5002D700D /* ColorSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */; };
 		DEBC7CC11F0BF504002D700D /* ColorSelectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC01F0BF504002D700D /* ColorSelectionInterface.swift */; };
 		DEBC7CC31F0BFB96002D700D /* ButtonSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC21F0BFB96002D700D /* ButtonSelectionDelegate.swift */; };
+		DEBC7CC51F0CE3D3002D700D /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC41F0CE3D3002D700D /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionButton.swift; sourceTree = "<group>"; };
 		DEBC7CC01F0BF504002D700D /* ColorSelectionInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionInterface.swift; sourceTree = "<group>"; };
 		DEBC7CC21F0BFB96002D700D /* ButtonSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectionDelegate.swift; sourceTree = "<group>"; };
+		DEBC7CC41F0CE3D3002D700D /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DEBC7CAA1F0BA0DB002D700D /* GameScene.sks */,
 				DEBC7CAC1F0BA0DB002D700D /* Actions.sks */,
 				DEBC7CAE1F0BA0DB002D700D /* GameScene.swift */,
+				DEBC7CC41F0CE3D3002D700D /* ColorWheel.swift */,
 				DEBC7CBE1F0BEAA5002D700D /* ColorSelectionButton.swift */,
 				DEBC7CC01F0BF504002D700D /* ColorSelectionInterface.swift */,
 				DEBC7CC21F0BFB96002D700D /* ButtonSelectionDelegate.swift */,
@@ -157,6 +160,7 @@
 				DEBC7CC31F0BFB96002D700D /* ButtonSelectionDelegate.swift in Sources */,
 				DEBC7CAF1F0BA0DB002D700D /* GameScene.swift in Sources */,
 				DEBC7CBF1F0BEAA5002D700D /* ColorSelectionButton.swift in Sources */,
+				DEBC7CC51F0CE3D3002D700D /* ColorWheel.swift in Sources */,
 				DEBC7CC11F0BF504002D700D /* ColorSelectionInterface.swift in Sources */,
 				DEBC7CA91F0BA0DB002D700D /* AppDelegate.swift in Sources */,
 			);
