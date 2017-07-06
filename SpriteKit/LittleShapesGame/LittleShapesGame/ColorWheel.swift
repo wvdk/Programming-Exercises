@@ -32,6 +32,9 @@ class ColorWheel: SKNode {
         bluePart.lineWidth = 0.0
         
         addChild(bluePart)
+        
+        let spriteNode = SKSpriteNode(imageNamed: "ColorWheel")
+        addChild(spriteNode)
     }
     
     required init?(coder aDecoder: NSCoder) {
