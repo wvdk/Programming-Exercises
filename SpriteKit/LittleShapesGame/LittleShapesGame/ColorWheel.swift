@@ -28,7 +28,7 @@ class ColorWheel: SKNode {
                        endAngle: CGFloat(3.0 * M_PI_2),
                        clockwise: false)
         
-        let bluePart = SKShapeNode(path: path)
+//        let bluePart = SKShapeNode(path: path)
     }
     
     required init?(coder aDecoder: NSCoder) {

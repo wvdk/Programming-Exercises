@@ -18,6 +18,7 @@
 		DEBC7CC11F0BF504002D700D /* ColorSelectionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC01F0BF504002D700D /* ColorSelectionInterface.swift */; };
 		DEBC7CC31F0BFB96002D700D /* ButtonSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC21F0BFB96002D700D /* ButtonSelectionDelegate.swift */; };
 		DEBC7CC51F0CE3D3002D700D /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC41F0CE3D3002D700D /* ColorWheel.swift */; };
+		DEBC7CC71F0E1576002D700D /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC7CC61F0E1576002D700D /* NSBezierPath+cgPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DEBC7CC01F0BF504002D700D /* ColorSelectionInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionInterface.swift; sourceTree = "<group>"; };
 		DEBC7CC21F0BFB96002D700D /* ButtonSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSelectionDelegate.swift; sourceTree = "<group>"; };
 		DEBC7CC41F0CE3D3002D700D /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		DEBC7CC61F0E1576002D700D /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DEBC7CB41F0BA0DB002D700D /* Main.storyboard */,
 				DEBC7CB71F0BA0DB002D700D /* Info.plist */,
 				DEBC7CB81F0BA0DB002D700D /* LittleShapesGame.entitlements */,
+				DEBC7CC61F0E1576002D700D /* NSBezierPath+cgPath.swift */,
 			);
 			path = LittleShapesGame;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				DEBC7CAF1F0BA0DB002D700D /* GameScene.swift in Sources */,
 				DEBC7CBF1F0BEAA5002D700D /* ColorSelectionButton.swift in Sources */,
 				DEBC7CC51F0CE3D3002D700D /* ColorWheel.swift in Sources */,
+				DEBC7CC71F0E1576002D700D /* NSBezierPath+cgPath.swift in Sources */,
 				DEBC7CC11F0BF504002D700D /* ColorSelectionInterface.swift in Sources */,
 				DEBC7CA91F0BA0DB002D700D /* AppDelegate.swift in Sources */,
 			);
