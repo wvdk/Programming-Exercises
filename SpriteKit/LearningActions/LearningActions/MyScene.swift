@@ -11,4 +11,9 @@ import SpriteKit
 
 class MyScene: SKScene {
     
+    override func didMove(to view: SKView) {
+        let player = childNode(withName: "Player")
+        player?.run(SKAction.fadeOut(withDuration: 3))
+    }
+    
 }
