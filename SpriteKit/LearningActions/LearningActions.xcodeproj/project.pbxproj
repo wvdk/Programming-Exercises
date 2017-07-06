@@ -17,6 +17,9 @@
 		DE62BF651F0E2C3900517337 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF641F0E2C3900517337 /* MyParticle.sks */; };
 		DE62BF681F0E2D4100517337 /* SceneKit Particle System.scnp in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF661F0E2D4100517337 /* SceneKit Particle System.scnp */; };
 		DE62BF691F0E2D4100517337 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF671F0E2D4100517337 /* spark.png */; };
+		DE62BF6B1F0E5CD400517337 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6A1F0E5CD400517337 /* Fire.sks */; };
+		DE62BF6D1F0E5CE900517337 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6C1F0E5CE900517337 /* Smoke.sks */; };
+		DE62BF6F1F0E5D0300517337 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6E1F0E5D0300517337 /* Spark.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		DE62BF641F0E2C3900517337 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		DE62BF661F0E2D4100517337 /* SceneKit Particle System.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "SceneKit Particle System.scnp"; sourceTree = "<group>"; };
 		DE62BF671F0E2D4100517337 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		DE62BF6A1F0E5CD400517337 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		DE62BF6C1F0E5CE900517337 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		DE62BF6E1F0E5D0300517337 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				DE62BF5D1F0E27FA00517337 /* Info.plist */,
 				DE62BF5E1F0E27FA00517337 /* LearningActions.entitlements */,
 				DE62BF641F0E2C3900517337 /* MyParticle.sks */,
+				DE62BF6A1F0E5CD400517337 /* Fire.sks */,
+				DE62BF6C1F0E5CE900517337 /* Smoke.sks */,
+				DE62BF6E1F0E5D0300517337 /* Spark.sks */,
 				DE62BF661F0E2D4100517337 /* SceneKit Particle System.scnp */,
 				DE62BF671F0E2D4100517337 /* spark.png */,
 			);
@@ -140,12 +149,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE62BF511F0E27FA00517337 /* GameScene.sks in Resources */,
+				DE62BF6F1F0E5D0300517337 /* Spark.sks in Resources */,
 				DE62BF591F0E27FA00517337 /* Assets.xcassets in Resources */,
 				DE62BF531F0E27FA00517337 /* Actions.sks in Resources */,
 				DE62BF691F0E2D4100517337 /* spark.png in Resources */,
 				DE62BF5C1F0E27FA00517337 /* Main.storyboard in Resources */,
+				DE62BF6B1F0E5CD400517337 /* Fire.sks in Resources */,
 				DE62BF681F0E2D4100517337 /* SceneKit Particle System.scnp in Resources */,
 				DE62BF651F0E2C3900517337 /* MyParticle.sks in Resources */,
+				DE62BF6D1F0E5CE900517337 /* Smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
