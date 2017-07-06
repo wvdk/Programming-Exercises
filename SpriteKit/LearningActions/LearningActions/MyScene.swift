@@ -11,9 +11,14 @@ import SpriteKit
 
 class MyScene: SKScene {
     
+    var player: SKShapeNode!
+    
     override func didMove(to view: SKView) {
-        let player = childNode(withName: "Player")
-        player?.run(SKAction.fadeOut(withDuration: 3))
+        player = childNode(withName: "Player") as! SKShapeNode
+    }
+    
+    override func keyDown(with event: NSEvent) {
+        player.run(SKAction(named: "Jump")!)
     }
     
 }
