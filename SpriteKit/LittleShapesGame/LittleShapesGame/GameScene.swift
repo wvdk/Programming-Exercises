@@ -18,8 +18,8 @@ class GameScene: SKScene {
         let colorSelectionInterface = ColorSelectionInterface()
         self.addChild(colorSelectionInterface)
         
-        let colorWheel = ColorWheel()
-        addChild(colorWheel)
+//        let colorWheel = ColorWheel()
+//        addChild(colorWheel)
         
         let w = (self.size.width + self.size.height) * 0.05
         self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
