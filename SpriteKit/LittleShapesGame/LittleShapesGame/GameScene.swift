@@ -15,8 +15,11 @@ class GameScene: SKScene {
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
+        let colorSelectionInterface = ColorSelectionInterface()
+        self.addChild(colorSelectionInterface)
         
-        addColorSelectionOverlay()
+        let colorWheel = ColorWheel()
+        addChild(colorWheel)
         
         let w = (self.size.width + self.size.height) * 0.05
         self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
@@ -67,8 +70,4 @@ class GameScene: SKScene {
         self.touchUp(atPoint: event.location(in: self))
     }
     
-    func addColorSelectionOverlay() {
-        let foo = ColorSelectionInterface()
-        self.addChild(foo)
-    }
 }

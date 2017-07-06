@@ -29,6 +29,8 @@ class ColorWheel: SKNode {
                        clockwise: false)
         
         let bluePart = SKShapeNode(path: path.cgPath)
+        
+        addChild(bluePart)
     }
     
     required init?(coder aDecoder: NSCoder) {
