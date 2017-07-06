@@ -29,6 +29,8 @@ class ColorWheel: SKNode {
                        clockwise: false)
         
         let bluePart = SKShapeNode(path: path.cgPath)
+        bluePart.fillColor = SKColor.blue
+        bluePart.lineWidth = 2.0
         
         addChild(bluePart)
     }
