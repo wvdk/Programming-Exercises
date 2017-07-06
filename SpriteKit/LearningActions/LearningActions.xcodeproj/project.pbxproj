@@ -18,6 +18,7 @@
 		DE62BF6D1F0E5CE900517337 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6C1F0E5CE900517337 /* Smoke.sks */; };
 		DE62BF6F1F0E5D0300517337 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6E1F0E5D0300517337 /* Spark.sks */; };
 		DE62BF731F0E5E7900517337 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF721F0E5E7900517337 /* MyScene.sks */; };
+		DE62BF7A1F0E661D00517337 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62BF791F0E661D00517337 /* MyScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		DE62BF6C1F0E5CE900517337 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
 		DE62BF6E1F0E5D0300517337 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
 		DE62BF721F0E5E7900517337 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
+		DE62BF791F0E661D00517337 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				DE62BF521F0E27FA00517337 /* Actions.sks */,
 				DE62BF721F0E5E7900517337 /* MyScene.sks */,
 				DE62BF541F0E27FA00517337 /* GameScene.swift */,
+				DE62BF791F0E661D00517337 /* MyScene.swift */,
 				DE62BF561F0E27FA00517337 /* ViewController.swift */,
 				DE62BF581F0E27FA00517337 /* Assets.xcassets */,
 				DE62BF5A1F0E27FA00517337 /* Main.storyboard */,
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE62BF7A1F0E661D00517337 /* MyScene.swift in Sources */,
 				DE62BF571F0E27FA00517337 /* ViewController.swift in Sources */,
 				DE62BF551F0E27FA00517337 /* GameScene.swift in Sources */,
 				DE62BF4F1F0E27FA00517337 /* AppDelegate.swift in Sources */,
