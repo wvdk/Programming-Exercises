@@ -18,17 +18,17 @@ class ColorWheel: SKNode {
         path.line(to: NSPoint(x: 0, y: -160))
         path.appendArc(withCenter: NSPoint.zero,
                        radius: 160.0,
-                       startAngle: CGFloat(3.0 * M_PI_2),
+                       startAngle: CGFloat(3.0 * (Double.pi / 2.0)),
                        endAngle: CGFloat(0),
                        clockwise: true)
         path.line(to: NSPoint(x: 200, y: 0))
         path.appendArc(withCenter: NSPoint.zero,
                        radius: 200,
                        startAngle: CGFloat(3.0),
-                       endAngle: CGFloat(3.0 * M_PI_2),
+                       endAngle: CGFloat(3.0 * (Double.pi / 2.0)),
                        clockwise: false)
         
-//        let bluePart = SKShapeNode(path: path)
+        let bluePart = SKShapeNode(path: path.cgPath)
     }
     
     required init?(coder aDecoder: NSCoder) {
