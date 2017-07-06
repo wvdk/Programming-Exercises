@@ -19,6 +19,7 @@
 		DE62BF6F1F0E5D0300517337 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF6E1F0E5D0300517337 /* Spark.sks */; };
 		DE62BF731F0E5E7900517337 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE62BF721F0E5E7900517337 /* MyScene.sks */; };
 		DE62BF7A1F0E661D00517337 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62BF791F0E661D00517337 /* MyScene.swift */; };
+		DEC935951F0E6DBB00FD2793 /* Ring.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEC935941F0E6DBB00FD2793 /* Ring.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DE62BF6E1F0E5D0300517337 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
 		DE62BF721F0E5E7900517337 /* MyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyScene.sks; sourceTree = "<group>"; };
 		DE62BF791F0E661D00517337 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
+		DEC935941F0E6DBB00FD2793 /* Ring.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ring.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				DE62BF4E1F0E27FA00517337 /* AppDelegate.swift */,
 				DE62BF521F0E27FA00517337 /* Actions.sks */,
 				DE62BF791F0E661D00517337 /* MyScene.swift */,
+				DEC935941F0E6DBB00FD2793 /* Ring.sks */,
 				DE62BF721F0E5E7900517337 /* MyScene.sks */,
 				DE62BF541F0E27FA00517337 /* GameScene.swift */,
 				DE62BF561F0E27FA00517337 /* ViewController.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC935951F0E6DBB00FD2793 /* Ring.sks in Resources */,
 				DE62BF6F1F0E5D0300517337 /* Spark.sks in Resources */,
 				DE62BF591F0E27FA00517337 /* Assets.xcassets in Resources */,
 				DE62BF531F0E27FA00517337 /* Actions.sks in Resources */,
@@ -343,6 +347,7 @@
 				DE62BF631F0E27FA00517337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
