@@ -18,7 +18,23 @@ class MyScene: SKScene {
     }
     
     override func keyDown(with event: NSEvent) {
-        player.run(SKAction(named: "Jump")!)
+        if let characters = event.characters {
+            switch characters {
+            case " ", "w":
+                print("Space or W")
+                player.run(SKAction(named: "Jump")!)
+            case "a":
+                print("D")
+                player.run(SKAction(named: "Move Left")!)
+            case "d":
+                print("D")
+                player.run(SKAction(named: "Move Right")!)
+            default:
+                print("Other")
+            }
+        }
+        
+        
     }
     
 }
