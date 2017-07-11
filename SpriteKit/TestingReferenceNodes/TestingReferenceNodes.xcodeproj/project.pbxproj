@@ -65,10 +65,10 @@
 			children = (
 				DE5117991F14E0DB0048FA1C /* AppDelegate.swift */,
 				DE51179B1F14E0DB0048FA1C /* GameScene.sks */,
+				DE51179F1F14E0DB0048FA1C /* GameScene.swift */,
 				DE5117AF1F14E1590048FA1C /* Button.sks */,
 				DE5117B11F14E1780048FA1C /* Button.swift */,
 				DE51179D1F14E0DB0048FA1C /* Actions.sks */,
-				DE51179F1F14E0DB0048FA1C /* GameScene.swift */,
 				DE5117A11F14E0DB0048FA1C /* ViewController.swift */,
 				DE5117A31F14E0DB0048FA1C /* Assets.xcassets */,
 				DE5117A51F14E0DB0048FA1C /* Main.storyboard */,
@@ -323,6 +323,7 @@
 				DE5117AE1F14E0DB0048FA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
