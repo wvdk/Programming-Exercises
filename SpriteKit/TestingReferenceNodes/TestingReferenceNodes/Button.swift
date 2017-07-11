@@ -10,5 +10,9 @@ import Cocoa
 import SpriteKit
 
 class Button: SKSpriteNode {
-
+    
+    override func touchesBegan(with event: NSEvent) {
+        print("touch")
+    }
+    
 }
