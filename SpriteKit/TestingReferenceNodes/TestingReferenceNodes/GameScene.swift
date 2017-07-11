@@ -45,7 +45,7 @@ class GameScene: SKScene {
 //            self.addChild(n)
 //        }
 //    }
-//    
+//
 //    func touchMoved(toPoint pos : CGPoint) {
 //        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
 //            n.position = pos
@@ -53,7 +53,7 @@ class GameScene: SKScene {
 //            self.addChild(n)
 //        }
 //    }
-//    
+//
 //    func touchUp(atPoint pos : CGPoint) {
 //        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
 //            n.position = pos
@@ -61,19 +61,19 @@ class GameScene: SKScene {
 //            self.addChild(n)
 //        }
 //    }
-//    
+//
 //    override func mouseDown(with event: NSEvent) {
 //        self.touchDown(atPoint: event.location(in: self))
 //    }
-//    
+//
 //    override func mouseDragged(with event: NSEvent) {
 //        self.touchMoved(toPoint: event.location(in: self))
 //    }
-//    
+//
 //    override func mouseUp(with event: NSEvent) {
 //        self.touchUp(atPoint: event.location(in: self))
 //    }
-//    
+//
 //    override func keyDown(with event: NSEvent) {
 //        switch event.keyCode {
 //        case 0x31:
@@ -84,8 +84,8 @@ class GameScene: SKScene {
 //            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
 //        }
 //    }
-//    
-//    
+//
+//
 //    override func update(_ currentTime: TimeInterval) {
 //        // Called before each frame is rendered
 //    }

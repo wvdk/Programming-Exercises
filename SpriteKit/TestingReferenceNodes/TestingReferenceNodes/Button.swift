@@ -15,4 +15,8 @@ class Button: SKSpriteNode {
         print("touch")
     }
     
+    override func mouseDown(with event: NSEvent) {
+        print("click")
+    }
+    
 }
