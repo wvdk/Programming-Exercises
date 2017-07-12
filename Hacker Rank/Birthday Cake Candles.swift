@@ -11,7 +11,7 @@ import Foundation
 var n = Int(readLine()!)!
 
 // read array and map the elements to integer
-var arr = readLine()!.characters.split(separator: " ", maxSplits: 100, omittingEmptySubsequences: false).map{Int(String($0))!}
+var arr = readLine()!.characters.split(separator: " ", maxSplits: 100000, omittingEmptySubsequences: false).map{Int(String($0))!}
 
 ////////////////////////
 
