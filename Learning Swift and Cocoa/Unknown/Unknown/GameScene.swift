@@ -12,55 +12,30 @@ import GameplayKit
 class GameScene: SKScene {
     
     private var player : SKSpriteNode?
-    private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
-        
         player = childNode(withName: "//Player") as? SKSpriteNode
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
     }
     
+    override func update(_ currentTime: TimeInterval) {
+        // Called before each frame is rendered
+    }
     
-    func touchDown(atPoint pos : CGPoint) {
+    func touchDown(atPoint pos: CGPoint) {
         print("Touch down")
         
         if let player = player {
             player.run(SKAction(named: "Pulse")!)
-        }
-        
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
+            player.position = pos
         }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
+        
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
+        
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -87,7 +62,4 @@ class GameScene: SKScene {
 //    }
     
     
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-    }
 }
