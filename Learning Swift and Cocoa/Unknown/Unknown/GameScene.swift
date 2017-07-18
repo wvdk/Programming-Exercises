@@ -11,27 +11,22 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var player: SKSpriteNode?
+    private var player: SKSpriteNode!
     
     override func didMove(to view: SKView) {
         player = childNode(withName: "//Player") as? SKSpriteNode
     }
     
     override func mouseDown(with event: NSEvent) {
-        if let player = player {
-            player.position = event.location(in: self)
-        }
+        player.position = event.location(in: self)
     }
     
     override func mouseDragged(with event: NSEvent) {
-        if let player = player {
-            player.position = event.location(in: self)
-        }
+        player.position = event.location(in: self)
     }
     
     override func mouseUp(with event: NSEvent) {
-        if let player = player {
-            player.run(SKAction(named: "Pulse")!)
-        }
+        player.run(SKAction(named: "Pulse")!)
     }
+    
 }
