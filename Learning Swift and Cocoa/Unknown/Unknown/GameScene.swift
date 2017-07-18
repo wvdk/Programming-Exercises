@@ -16,12 +16,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.player = self.childNode(withName: "//Player") as? SKSpriteNode
-        if let player = self.player {
-            player.alpha = 0.0
-            player.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        player = childNode(withName: "//Player") as? SKSpriteNode
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -40,6 +35,10 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint) {
         print("Touch down")
+        
+        if let player = player {
+            player.run(SKAction(named: "Pulse")!)
+        }
         
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
