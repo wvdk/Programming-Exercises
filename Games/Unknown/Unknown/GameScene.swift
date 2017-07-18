@@ -37,8 +37,9 @@ class GameScene: SKScene {
         
         let playerPhysicsBody = SKPhysicsBody()
         playerPhysicsBody.categoryBitMask = playerCatagory
+        playerPhysicsBody.affectedByGravity = false
         player.physicsBody = playerPhysicsBody
-            
+        
         createSpikeysAllOver()
     }
     
@@ -47,6 +48,10 @@ class GameScene: SKScene {
             if let newSpikey = spikey.copy() as? SKSpriteNode {
                 newSpikey.position = randomPointWithinViewFrame
                 newSpikey.name = "Spikey"
+                let spikeyPhysicsBody = SKPhysicsBody()
+                spikeyPhysicsBody.categoryBitMask = spikeyCatagory
+                spikeyPhysicsBody.affectedByGravity = false
+                newSpikey.physicsBody = spikeyPhysicsBody
                 
                 self.addChild(newSpikey)
             }
