@@ -16,9 +16,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         player = childNode(withName: "//Player") as? SKSpriteNode
-        
         spikey = SKSpriteNode(imageNamed: "Spikey")
         
+        spikey.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 2)))
         
         createSpikeysAllOver()
     }
