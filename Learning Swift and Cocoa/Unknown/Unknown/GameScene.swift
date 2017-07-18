@@ -19,15 +19,19 @@ class GameScene: SKScene {
     
     override func mouseDown(with event: NSEvent) {
         if let player = player {
-            player.run(SKAction(named: "Pulse")!)
             player.position = event.location(in: self)
         }
     }
     
     override func mouseDragged(with event: NSEvent) {
-        
+        if let player = player {
+            player.position = event.location(in: self)
+        }
     }
     
     override func mouseUp(with event: NSEvent) {
+        if let player = player {
+            player.run(SKAction(named: "Pulse")!)
+        }
     }
 }
