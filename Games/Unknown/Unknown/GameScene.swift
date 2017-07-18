@@ -35,10 +35,17 @@ class GameScene: SKScene {
         
         spikey.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 2)))
         
+        physicsWorld.contactDelegate = self
+        
         let playerPhysicsBody = SKPhysicsBody()
         playerPhysicsBody.categoryBitMask = playerCatagory
         playerPhysicsBody.affectedByGravity = false
         player.physicsBody = playerPhysicsBody
+        
+//        player.physicsBody?.collisionBitMask = arrowCategory | ballCategory
+        player.physicsBody?.contactTestBitMask = playerCatagory | spikeyCatagory
+        
+//        let playersCollisionBitMask = player.physicsBody!.collisionBitMask
         
         createSpikeysAllOver()
     }
@@ -74,4 +81,10 @@ class GameScene: SKScene {
         player.run(SKAction(named: "Pulse")!)
     }
     
+}
+
+extension GameScene: SKPhysicsContactDelegate {
+    func didBegin(_ contact: SKPhysicsContact) {
+        print("contact found")
+    }
 }
