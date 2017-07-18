@@ -9,6 +9,10 @@
 import SpriteKit
 import GameplayKit
 
+
+let spikeyCatagory: UInt32 = 1
+let playerCatagory: UInt32 = 2
+
 class GameScene: SKScene {
     
     private var player: SKSpriteNode!
@@ -31,6 +35,10 @@ class GameScene: SKScene {
         
         spikey.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 2)))
         
+        let playerPhysicsBody = SKPhysicsBody()
+        playerPhysicsBody.categoryBitMask = playerCatagory
+        player.physicsBody = playerPhysicsBody
+            
         createSpikeysAllOver()
     }
     
