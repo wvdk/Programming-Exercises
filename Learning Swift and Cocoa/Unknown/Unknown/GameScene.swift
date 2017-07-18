@@ -34,13 +34,14 @@ class GameScene: SKScene {
         createSpikeysAllOver()
     }
     
-    func createSpikeysAllOver() {
-        addChild(spikey)
-//        if let newSpikey = spikey.copy() as? SKSpriteNode {
-//            newSpikey.position = randomPointWithinViewFrame
-//
-//            self.addChild(newSpikey)
-//        }
+    func createSpikeysAllOver() { 
+        for _ in 0...10 {
+            if let newSpikey = spikey.copy() as? SKSpriteNode {
+                newSpikey.position = randomPointWithinViewFrame
+                
+                self.addChild(newSpikey)
+            }
+        }
     }
     
     override func mouseDown(with event: NSEvent) {
