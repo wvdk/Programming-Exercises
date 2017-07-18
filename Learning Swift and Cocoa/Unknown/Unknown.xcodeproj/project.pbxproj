@@ -27,6 +27,7 @@
 		DE4A1E9F1F1E033200718D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE4A1EA11F1E033200718D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE4A1EA21F1E033200718D1D /* Unknown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Unknown.entitlements; sourceTree = "<group>"; };
+		DE4A1EA81F1E071100718D1D /* Unknown Desgins.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unknown Desgins.sketch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		DE4A1E911F1E033200718D1D /* Unknown */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A1EA81F1E071100718D1D /* Unknown Desgins.sketch */,
 				DE4A1E921F1E033200718D1D /* AppDelegate.swift */,
 				DE4A1E941F1E033200718D1D /* GameScene.sks */,
 				DE4A1E961F1E033200718D1D /* Actions.sks */,
