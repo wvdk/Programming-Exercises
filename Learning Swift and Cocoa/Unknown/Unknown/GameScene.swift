@@ -13,6 +13,11 @@ class GameScene: SKScene {
     
     private var player: SKSpriteNode!
     private var spikey: SKSpriteNode!
+    private var randomPointWithingViewFrame: CGPoint {
+        get {
+            return CGPoint(x: 0, y: 0)
+        }
+    }
     
     override func didMove(to view: SKView) {
         player = childNode(withName: "//Player") as? SKSpriteNode
@@ -24,7 +29,12 @@ class GameScene: SKScene {
     }
     
     func createSpikeysAllOver() {
-        addChild(spikey)
+        
+        if let newSpikey = spikey.copy() as? SKSpriteNode {
+            newSpikey.position = randomPointWithingViewFrame
+            
+            self.addChild(newSpikey)
+        }
     }
     
     override func mouseDown(with event: NSEvent) {
