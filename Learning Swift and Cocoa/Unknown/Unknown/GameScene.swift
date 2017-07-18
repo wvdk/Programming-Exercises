@@ -12,9 +12,19 @@ import GameplayKit
 class GameScene: SKScene {
     
     private var player: SKSpriteNode!
+    private var spikey: SKSpriteNode!
     
     override func didMove(to view: SKView) {
         player = childNode(withName: "//Player") as? SKSpriteNode
+        
+        spikey = SKSpriteNode(imageNamed: "Spikey")
+        
+        
+        createSpikeysAllOver()
+    }
+    
+    func createSpikeysAllOver() {
+        addChild(spikey)
     }
     
     override func mouseDown(with event: NSEvent) {
