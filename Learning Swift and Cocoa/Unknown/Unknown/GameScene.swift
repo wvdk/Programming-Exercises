@@ -11,16 +11,16 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
+    private var player : SKSpriteNode?
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
         
         // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
+        self.player = self.childNode(withName: "//Player") as? SKSpriteNode
+        if let player = self.player {
+            player.alpha = 0.0
+            player.run(SKAction.fadeIn(withDuration: 2.0))
         }
         
         // Create shape node to use during mouse interaction
@@ -39,6 +39,8 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
+        print("Touch down")
+        
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.green
@@ -74,16 +76,16 @@ class GameScene: SKScene {
         self.touchUp(atPoint: event.location(in: self))
     }
     
-    override func keyDown(with event: NSEvent) {
-        switch event.keyCode {
-        case 0x31:
-            if let label = self.label {
-                label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-            }
-        default:
-            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
-        }
-    }
+//    override func keyDown(with event: NSEvent) {
+//        switch event.keyCode {
+//        case 0x31:
+//            if let label = self.label {
+//                label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+//            }
+//        default:
+//            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+//        }
+//    }
     
     
     override func update(_ currentTime: TimeInterval) {
