@@ -26,7 +26,7 @@ class GameScene: SKScene {
     }
     
     override func didMove(to view: SKView) {
-        player = childNode(withName: "//Player") as? SKSpriteNode
+        player = childNode(withName: "Player") as? SKSpriteNode
         spikey = SKSpriteNode(imageNamed: "Spikey")
         
         spikey.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 2)))
@@ -38,6 +38,7 @@ class GameScene: SKScene {
         for _ in 0...10 {
             if let newSpikey = spikey.copy() as? SKSpriteNode {
                 newSpikey.position = randomPointWithinViewFrame
+                newSpikey.name = "Spikey"
                 
                 self.addChild(newSpikey)
             }
@@ -46,7 +47,10 @@ class GameScene: SKScene {
     
     override func mouseDown(with event: NSEvent) {
         player.position = event.location(in: self)
-        spikey.position = randomPointWithinViewFrame
+        
+        enumerateChildNodes(withName: "Spikey") { (node, _) in
+            node.position = self.randomPointWithinViewFrame
+        }
     }
     
     override func mouseDragged(with event: NSEvent) {
