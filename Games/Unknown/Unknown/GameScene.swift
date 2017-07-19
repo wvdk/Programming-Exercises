@@ -37,15 +37,14 @@ class GameScene: SKScene {
         
         physicsWorld.contactDelegate = self
         
-        let playerPhysicsBody = SKPhysicsBody()
+        let playerPhysicsBody = SKPhysicsBody(rectangleOf: player.frame.size)
         playerPhysicsBody.categoryBitMask = playerCatagory
         playerPhysicsBody.affectedByGravity = false
         player.physicsBody = playerPhysicsBody
-        
-//        player.physicsBody?.collisionBitMask = arrowCategory | ballCategory
+        playerPhysicsBody.usesPreciseCollisionDetection = true
         player.physicsBody?.contactTestBitMask = playerCatagory | spikeyCatagory
         
-//        let playersCollisionBitMask = player.physicsBody!.collisionBitMask
+//        physicsWorld.coll
         
         createSpikeysAllOver()
     }
@@ -55,7 +54,7 @@ class GameScene: SKScene {
             if let newSpikey = spikey.copy() as? SKSpriteNode {
                 newSpikey.position = randomPointWithinViewFrame
                 newSpikey.name = "Spikey"
-                let spikeyPhysicsBody = SKPhysicsBody()
+                let spikeyPhysicsBody = SKPhysicsBody(circleOfRadius: newSpikey.frame.size.width / 2)
                 spikeyPhysicsBody.categoryBitMask = spikeyCatagory
                 spikeyPhysicsBody.affectedByGravity = false
                 newSpikey.physicsBody = spikeyPhysicsBody
