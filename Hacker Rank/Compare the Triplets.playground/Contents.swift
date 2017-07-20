@@ -1,7 +1,9 @@
 import Cocoa
 
-func compareTriplets() {
-    
+typealias Triplet = (Int, Int, Int)
+
+func compareTriplets(a: Triplet, b: Triplet) -> (aScore: Int, bScore: Int){
+    return (0, 0)
 }
 
 func parseThenCompareTriplets(rawInput: String) -> String {
