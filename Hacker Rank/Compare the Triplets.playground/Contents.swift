@@ -52,6 +52,13 @@ func output(result: Score) -> String {
     return "\(result.0) \(result.1)"
 }
 
+func getInput() -> String {
+    let line1 = readLine()!
+    let line2 = readLine()!
+    
+    return "\(line1)\n\(line2)"
+}
+
 //: ### Tests
 
 let sampleInput = "5 6 7\n3 6 10"
