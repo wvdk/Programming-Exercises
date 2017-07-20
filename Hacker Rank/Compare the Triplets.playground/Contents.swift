@@ -1,5 +1,8 @@
 import Cocoa
 
+//: # [Hacker Rank: Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)
+
+
 //: ### Types
 
 typealias Triplet = (Int, Int, Int)
@@ -8,7 +11,10 @@ typealias Score = (Int, Int)
 //: ### Functions
 
 func compareTriplets(a: Triplet, b: Triplet) -> Score {
-    return (1, 1)
+    
+    
+    
+    return (0, 0)
 }
 
 func parse(rawInput: String) -> (a: Triplet, b: Triplet) {
