@@ -1,7 +1,11 @@
+//: # Compare the Triplets
+//:
+//: [From HackerRank](https://www.hackerrank.com/challenges/compare-the-triplets)
+//:
+//: ![problem](./problem.png)
+
+
 import Cocoa
-
-//: # [Hacker Rank: Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets)
-
 
 //: ### Types
 
