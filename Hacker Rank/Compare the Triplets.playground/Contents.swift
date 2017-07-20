@@ -2,7 +2,7 @@
 //:
 //: [From HackerRank](https://www.hackerrank.com/challenges/compare-the-triplets)
 //:
-//: ![problem](./problem.png)
+//: ![problem](problem.png)
 
 
 import Cocoa
