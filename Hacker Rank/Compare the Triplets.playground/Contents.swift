@@ -15,10 +15,27 @@ typealias Score = (Int, Int)
 //: ### Functions
 
 func compareTriplets(a: Triplet, b: Triplet) -> Score {
+    var aScore = 0, bScore = 0
     
+    if a.0 > b.0   {
+        aScore += 1
+    } else if a.0 < b.0 {
+        bScore += 1
+    }
     
+    if  a.1 > b.1  {
+        aScore += 1
+    } else if a.1 < b.1 {
+        bScore += 1
+    }
     
-    return (0, 0)
+    if a.2 > b.2  {
+        aScore += 1
+    } else if a.2 < b.2 {
+        bScore += 1
+    }
+    
+    return (aScore, bScore)
 }
 
 func parse(rawInput: String) -> (a: Triplet, b: Triplet) {
