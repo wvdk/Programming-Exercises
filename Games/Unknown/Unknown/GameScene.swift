@@ -44,8 +44,6 @@ class GameScene: SKScene {
         playerPhysicsBody.usesPreciseCollisionDetection = true
         player.physicsBody?.contactTestBitMask = playerCatagory | spikeyCatagory
         
-//        physicsWorld.coll
-        
         createSpikeysAllOver()
     }
     
