@@ -12,18 +12,14 @@ func doesIntersect(kangarooA: Kangaroo, kangarooB: Kangaroo) -> Bool {
     
     var kangarooACurrentX = kangarooA.x
     var kangarooBCurrentX = kangarooB.x
-
-    var n = 0
-    var foundResult = false
-    while n <= 10000 && foundResult == false {
-        kangarooACurrentX += kangarooA.v
-        kangarooBCurrentX += kangarooB.v
-
+    
+    for _ in 0...10000 {
         if kangarooACurrentX == kangarooBCurrentX {
             return true
         }
         
-        n += 1
+        kangarooACurrentX += kangarooA.v
+        kangarooBCurrentX += kangarooB.v
     }
     
     return false
@@ -48,5 +44,6 @@ let sampleInput1 = "0 2 5 3"
 let sampleOutput1 = "NO"
 
 let parsedInput1 = parse(input: sampleInput1)
-doesIntersect(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
+//doesIntersect(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
+
 
