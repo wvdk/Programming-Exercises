@@ -9,7 +9,6 @@ typealias Kangaroo = (x: Int, v: Int)
 // Functions
 
 func doesIntersect(kangarooA: Kangaroo, kangarooB: Kangaroo) -> Bool {
-    
     var kangarooACurrentX = kangarooA.x
     var kangarooBCurrentX = kangarooB.x
     
@@ -49,7 +48,6 @@ func getInputFromStandardIn() -> (kangarooA: Kangaroo, kangarooB: Kangaroo){
 }
 
 // Tests
-
 
 let sampleInput0 = "0 3 4 2"
 let sampleOutput0 = "YES"
