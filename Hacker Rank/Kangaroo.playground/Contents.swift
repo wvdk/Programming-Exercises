@@ -66,8 +66,10 @@ let parsedInput1 = parse(input: sampleInput1)
 doesIntersect(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
 doesIntersectAlt(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
 
-// Commandline version
+let sampleInput2 = "9798 2 6667 33"
+let sampleOutput2 = "YES"
 
-// Read array and map the elements to integer
-//var arr = readLine()!.characters.split(" ").map{Int(String($0))!}
+let parsedInput2 = parse(input: sampleInput2)
+doesIntersect(kangarooA: parsedInput2.kangarooA, kangarooB: parsedInput2.kangarooB)
+doesIntersectAlt(kangarooA: parsedInput2.kangarooA, kangarooB: parsedInput2.kangarooB)
 
