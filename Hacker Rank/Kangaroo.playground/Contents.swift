@@ -44,7 +44,12 @@ func parse(input: String) -> (kangarooA: Kangaroo, kangarooB: Kangaroo) {
     return (kangarooA: (x: a[0], v: a[1]), kangarooB: (x: a[2], v: a[3]))
 }
 
+func getInputFromStandardIn() -> (kangarooA: Kangaroo, kangarooB: Kangaroo){
+    return parse(input: readLine()!)
+}
+
 // Tests
+
 
 let sampleInput0 = "0 3 4 2"
 let sampleOutput0 = "YES"
@@ -61,4 +66,8 @@ let parsedInput1 = parse(input: sampleInput1)
 doesIntersect(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
 doesIntersectAlt(kangarooA: parsedInput1.kangarooA, kangarooB: parsedInput1.kangarooB)
 
+// Commandline version
+
+// Read array and map the elements to integer
+//var arr = readLine()!.characters.split(" ").map{Int(String($0))!}
 
