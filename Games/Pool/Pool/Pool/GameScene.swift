@@ -9,8 +9,8 @@
 import SpriteKit
 import GameplayKit
 
-let ballCollisionCategory = 1
-let queCollisionCategory = 2
+let ballCollisionCategory = UInt32(1)
+let queCollisionCategory = UInt32(2)
 
 class GameScene: SKScene {
     
@@ -20,6 +20,13 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         que = childNode(withName: "Que") as? SKSpriteNode
         whiteBall = childNode(withName: "White Ball") as? SKSpriteNode
+        
+        if let que = que {
+            que.physicsBody = SKPhysicsBody(rectangleOf: que.size)
+            que.physicsBody?.affectedByGravity = false
+            
+            que.physicsBody?.collisionBitMask = queCollisionCategory
+        }
         
         physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         
