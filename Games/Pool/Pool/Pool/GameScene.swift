@@ -9,6 +9,9 @@
 import SpriteKit
 import GameplayKit
 
+let ballCollisionCategory = 1
+let queCollisionCategory = 2
+
 class GameScene: SKScene {
     
     var que: SKSpriteNode?
