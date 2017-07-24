@@ -11,11 +11,12 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    
     var que: SKSpriteNode?
+    var whiteBall: SKSpriteNode?
     
     override func didMove(to view: SKView) {
         que = childNode(withName: "Que") as? SKSpriteNode
+        whiteBall = childNode(withName: "White Ball")
     }
     
     
