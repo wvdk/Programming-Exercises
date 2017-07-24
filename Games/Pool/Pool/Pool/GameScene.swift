@@ -11,17 +11,24 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    
+    var que: SKSpriteNode?
+    
     override func didMove(to view: SKView) {
-        
+        que = childNode(withName: "Que") as? SKSpriteNode
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-        
+        if let que = que {
+            que.position = pos
+        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        
+        if let que = que {
+            que.position = pos
+        }
     }
     
     func touchUp(atPoint pos : CGPoint) {
