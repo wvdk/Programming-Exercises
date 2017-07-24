@@ -16,7 +16,13 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         que = childNode(withName: "Que") as? SKSpriteNode
-        whiteBall = childNode(withName: "White Ball")
+        whiteBall = childNode(withName: "White Ball") as? SKSpriteNode
+        
+        physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        
+        if let whiteBall = whiteBall {
+            whiteBall.physicsBody = SKPhysicsBody(circleOfRadius: whiteBall.size.width)
+        }
     }
     
     
