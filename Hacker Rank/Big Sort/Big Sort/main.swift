@@ -33,7 +33,28 @@ import Foundation
 
 let n = Int(readLine()!.trimmingCharacters(in: .whitespacesAndNewlines))!
 
-for _ in 0...n {
-    print(readLine()!)
+var unsorted: [Double] = []
+
+for _ in 1...n {
+    let i = readLine(strippingNewline: true)!.trimmingCharacters(in: .whitespacesAndNewlines)
+    
+    if let unwrappedI = Double(i) {
+        unsorted.append(unwrappedI)
+    }
 }
+
+let sorted = unsorted.sorted { (a, b) -> Bool in
+    if a < b {
+        return true
+    } else {
+        return false
+    }
+}
+
+for number in sorted {
+    print(number)
+}
+
+
+
 
