@@ -15,11 +15,6 @@ print("Hello! Input something...")
 //3
 //4
 
-var input = ""
-while let inputLine = readLine() {
-    input += inputLine
-    print(input)
+let allLines = AnyIterator { readLine() }.map{ $0 }
 
-}
-
-print(input)
+print(allLines)
