@@ -25,16 +25,11 @@
 
 import Foundation
 
-let v = readLine()!
-let n = readLine()!
-let ar = readLine()!
-v
-let vAsInt = Int(v)!
-let arAsArray = ar.characters.split(separator: " ").map { Int(String($0))! }
+let v = Int(readLine()!.trimmingCharacters(in: .whitespacesAndNewlines))!
+let n = Int(readLine()!.trimmingCharacters(in: .whitespacesAndNewlines))!
+let arString = readLine()!
+let ar = arString.characters.split(separator: " ").map { Int(String($0))! }
 
-let indexOfV = arAsArray.index(of: vAsInt)?.description
+print(ar.index(of: v)!)
 
-print(indexOfV)
-
-//print(arAsArray.index(of: Int(v)!))
 
