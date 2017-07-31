@@ -31,29 +31,36 @@
 
 import Foundation
 
+typealias pair = (String, Double)
+
 let n = Int(readLine()!.trimmingCharacters(in: .whitespacesAndNewlines))!
 
-var unsorted: [Double] = []
+var unsorted: [pair] = []
 
 for _ in 1...n {
     let i = readLine(strippingNewline: true)!.trimmingCharacters(in: .whitespacesAndNewlines)
     
-    if let unwrappedI = Double(i) {
-        unsorted.append(unwrappedI)
-    }
+    let newPair = (i, Double(i)!)
+    
+    unsorted.append(newPair)
 }
 
 let sorted = unsorted.sorted { (a, b) -> Bool in
-    if a < b {
+    if a.1 < b.1 {
         return true
     } else {
         return false
     }
 }
 
-for number in sorted {
-    print(number)
+for pair in sorted {
+    print(pair.0)
 }
+
+
+
+
+
 
 
 
