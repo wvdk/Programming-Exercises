@@ -42,10 +42,11 @@ for _ in 1...n {
 }
 
 let sorted = unsorted.sorted { (a, b) -> Bool in
-    if a < b {
-        return true
-    } else {
-        return false
+    
+    switch a.compare(b, options: .numeric, range: nil, locale: nil) {
+    case .orderedAscending: return true
+    case .orderedSame: return true
+    case .orderedDescending: return false
     }
 }
 
