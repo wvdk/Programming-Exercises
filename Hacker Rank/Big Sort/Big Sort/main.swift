@@ -31,18 +31,14 @@
 
 import Foundation
 
-typealias pair = (String, Double)
-
 let n = Int(readLine()!.trimmingCharacters(in: .whitespacesAndNewlines))!
 
-var unsorted: [pair] = []
+var unsorted: [String] = []
 
 for _ in 1...n {
     let i = readLine(strippingNewline: true)!.trimmingCharacters(in: .whitespacesAndNewlines)
     
-    let newPair = (i, Double(i)!)
-    
-    unsorted.append(newPair)
+    unsorted.append(i)
 }
 
 let sorted = unsorted.sorted { (a, b) -> Bool in
@@ -53,8 +49,8 @@ let sorted = unsorted.sorted { (a, b) -> Bool in
     }
 }
 
-for pair in sorted {
-    print(pair.0)
+for a in sorted {
+    print(a)
 }
 
 
