@@ -42,7 +42,7 @@ for _ in 1...n {
 }
 
 let sorted = unsorted.sorted { (a, b) -> Bool in
-    if a.1 < b.1 {
+    if a < b {
         return true
     } else {
         return false
