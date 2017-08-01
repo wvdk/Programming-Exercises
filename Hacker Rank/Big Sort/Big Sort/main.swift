@@ -43,11 +43,19 @@ for _ in 1...n {
 
 let sorted = unsorted.sorted { (a, b) -> Bool in
     
-    switch a.compare(b, options: .numeric, range: nil, locale: nil) {
-    case .orderedAscending: return true
-    case .orderedSame: return true
-    case .orderedDescending: return false
+    if a.characters.count > b.characters.count {
+        return true
+    } else if a.characters.count < b.characters.count {
+        return false
     }
+    
+    for i in 0...Int(a.characters.count) {
+        if Int(a.characters[i])! > Int(b.characters[i]) {
+            
+        }
+    }
+    
+    
 }
 
 for a in sorted {
