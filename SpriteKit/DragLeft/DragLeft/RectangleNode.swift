@@ -14,7 +14,7 @@ class RectangleNode: SKShapeNode {
     /// Defines the point in the node's frame that should act as the center point for the node’s position.
     ///
     /// A value of (0.0, 0.0) is the top left and (1.0, 1.0) is bottom right. Defaults to 0.5, 0.5 which dead center. Set `anchorPoint`, then set the `position` property to see effects. Works much like `SKSpriteNode`'s implementation, so see "Using the Anchor Point to Move the Sprite Node’s Frame" in `SKSpriteNode` documentation.
-    var anchorPoint = CGPoint(x: 1.0, y: 1.0)
+    var anchorPoint = CGPoint(x: 0.0, y: 0.5)
     
     /// Creates an instance with line width and stoke color set to reasonable defaults.
     override init() {
@@ -36,10 +36,10 @@ class RectangleNode: SKShapeNode {
             let y = newValue.y
             let width = frame.size.width
             let height = frame.size.height
-            let xOffset = width * anchorPoint.x
-            let yOffset = height * anchorPoint.y
-            let xAdjusted = x + xOffset
-            let yAdjusted = y + yOffset
+            let xOffset = (width * anchorPoint.x) / 2
+            let yOffset = (height * anchorPoint.y) / 2
+            let xAdjusted = x - xOffset / 2
+            let yAdjusted = y - yOffset
             
             super.position = CGPoint(x: xAdjusted, y: yAdjusted)
         }

@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var rectNode = RectangleNode(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
+    private var rectNode = RectangleNode(rectOf: CGSize.init(width: 200, height: 100), cornerRadius: 0)
     
     var topLeftPoint: CGPoint!
     var bottomLeftPoint: CGPoint!
