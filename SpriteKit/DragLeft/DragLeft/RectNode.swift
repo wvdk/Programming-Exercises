@@ -29,7 +29,7 @@ class RectNode: SKShapeNode {
         super.init(coder: aDecoder)
     }
     
-    ///
+    /// The position of the node in its parent's coordinate system, taking `anchorPoint` into account.
     override var position: CGPoint {
         set {
             super.position = CGPoint(x: self.position.x - self.frame.size.width * self.anchorPoint.x, y: self.position.y - self.frame.size.height * self.anchorPoint.y)
