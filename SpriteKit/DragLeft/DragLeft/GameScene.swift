@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var rectNode: RectNode!
+    private var rectNode = RectangleNode(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
     
     var topLeftPoint: CGPoint!
     var bottomLeftPoint: CGPoint!
@@ -26,8 +26,6 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         topLeftPoint = CGPoint(x: ((view.frame.width / 2) * -1) + 30, y: ((view.frame.height / 2) * -1) + 30)
-        
-        rectNode = RectNode(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
         
         rectNode.lineWidth = 10
         rectNode.anchorPoint = CGPoint(x: 0.0, y: 0.0)
