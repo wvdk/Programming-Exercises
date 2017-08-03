@@ -43,8 +43,5 @@ class GameScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         rectNode.run(SKAction(named: "ReturnToCenter")!)
     }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 
-    }
 }
