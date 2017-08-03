@@ -12,28 +12,24 @@ import GameplayKit
 class GameScene: SKScene {
     
     private var spinnyNode : SKShapeNode?
-    
-    @objc func sliding(gesture: UIGestureRecognizer) {
-        
-    }
+    private var rectNode: SKShapeNode?
     
     override func didMove(to view: SKView) {
         
-//        let gesture = UIGestureRecognizer(target: self, action: #selector(sliding(gesture:)))
+        self.rectNode = SKShapeNode.init(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
         
+        let w = CGFloat(20)
+        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: 0)
         
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-//            spinnyNode.run(SKAction(named: "Grow")!)
-        }
+//        if let spinnyNode = self.spinnyNode {
+//            spinnyNode.lineWidth = 2.5
+//
+//            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
+//            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
+//                                              SKAction.fadeOut(withDuration: 0.5),
+//                                              SKAction.removeFromParent()]))
+////            spinnyNode.run(SKAction(named: "Grow")!)
+//        }
     }
     
     
@@ -43,6 +39,8 @@ class GameScene: SKScene {
             n.strokeColor = SKColor.green
             self.addChild(n)
         }
+        
+        self.addChild(rectNode!.copy() as! SKShapeNode)
     }
     
     func touchMoved(toPoint pos : CGPoint) {
