@@ -19,30 +19,25 @@ class GameScene: SKScene {
     var bottomRightPoint: CGPoint!
 
     override func didMove(to view: SKView) {
-//        topLeftPoint = CGPoint(x: ((view.frame.width / 2) * -1) + 30, y: ((view.frame.height / 2) * -1) + 30)
+
+        // TODO: Initialize values for corner points.
+        
+        addChild(rectNode)
+
     }
 
     // MARK: - Handle touches
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            let pos = touch.previousLocation(in: self)
             
-//            let rect = CGRect(x: Int(topLeftPoint.x), y: Int(topLeftPoint.y), width: Int(pos.x), height: Int(pos.y))
+            rectNode.position = touch.location(in: self)
             
-//            rectNode.position = topLeftPoint
-//            rectNode.path = CGPath(rect: rect, transform: nil)
-            
-            addChild(rectNode)
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-//            let
-//            let rect = CGRect(x: Int(topLeftPoint.x), y: Int(topLeftPoint.y), width: Int(pos.x), height: Int(pos.y))
-//
-//            rectNode.path = CGPath(rect: rect, transform: nil)
         
         }
     }
