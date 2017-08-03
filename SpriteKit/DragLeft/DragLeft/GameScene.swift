@@ -37,9 +37,7 @@ class GameScene: SKScene {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
-        
-        }
+
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
