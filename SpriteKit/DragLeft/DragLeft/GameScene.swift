@@ -13,10 +13,17 @@ class GameScene: SKScene {
     
     private var rectNode: SKShapeNode!
     
+    var topLeftPoint: CGPoint!
+    
     override func didMove(to view: SKView) {
+        topLeftPoint = CGPoint(x: (frame.width / 2) * -1, y: frame.height / 2)
+        
         self.rectNode = SKShapeNode.init(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
         
         rectNode.lineWidth = 10
+//        rectNode.anchor
+        let testSpriteNode = SKSpriteNode()
+        testSpriteNode.anchorPoint
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -24,6 +31,7 @@ class GameScene: SKScene {
         
         let rect = CGRect(x: 0, y: 0, width: Int(pos.x), height: Int(pos.y))
         
+//        rectNode.position = topLeftPoint
         rectNode.path = CGPath(rect: rect, transform: nil)
     }
     
