@@ -1,5 +1,5 @@
 //
-//  RectNode.swift
+//  RectangleNode.swift
 //  DragLeft
 //
 //  Created by Wesley Van der Klomp on 8/3/17.
@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class RectNode: SKShapeNode {
+class RectangleNode: SKShapeNode {
     
     /// Defines the point in the node's frame that should act as the center point for the node’s position.
     ///
