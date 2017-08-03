@@ -14,26 +14,36 @@ class GameScene: SKScene {
     private var rectNode: RectNode!
     
     var topLeftPoint: CGPoint!
+    var bottomLeftPoint: CGPoint!
+    var topRightPoint: CGPoint!
+    var bottomRightPoint: CGPoint!
+
+    func makeRectConnecting(pointA: CGPoint, pointB: CGPoint) -> CGRect {
+        var rect = CGRect(x: 0, y: 0, width: 0, height: 0)
+        
+        return rect
+    }
     
     override func didMove(to view: SKView) {
-        topLeftPoint = CGPoint(x: (frame.width / 2) * -1, y: frame.height / 2)
+        topLeftPoint = CGPoint(x: ((view.frame.width / 2) * -1) + 30, y: ((view.frame.height / 2) * -1) + 30)
         
         rectNode = RectNode(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
         
         rectNode.lineWidth = 10
+        rectNode.anchorPoint = CGPoint(x: 0.0, y: 0.0)
     }
     
     func touchDown(atPoint pos : CGPoint) {
         addChild(rectNode)
         
-        let rect = CGRect(x: 0, y: 0, width: Int(pos.x), height: Int(pos.y))
-        
-//        rectNode.position = topLeftPoint
+        let rect = CGRect(x: Int(topLeftPoint.x), y: Int(topLeftPoint.y), width: Int(pos.x), height: Int(pos.y))
+
+        rectNode.position = topLeftPoint
         rectNode.path = CGPath(rect: rect, transform: nil)
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        let rect = CGRect(x: 0, y: 0, width: Int(pos.x), height: Int(pos.y))
+        let rect = CGRect(x: Int(topLeftPoint.x), y: Int(topLeftPoint.y), width: Int(pos.x), height: Int(pos.y))
         
         rectNode.path = CGPath(rect: rect, transform: nil)
     }
