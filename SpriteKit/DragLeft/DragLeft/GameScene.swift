@@ -18,14 +18,8 @@ class GameScene: SKScene {
     var topRightPoint: CGPoint!
     var bottomRightPoint: CGPoint!
 
-    func makeRectConnecting(pointA: CGPoint, pointB: CGPoint) -> CGRect {
-        var rect = CGRect(x: 0, y: 0, width: 0, height: 0)
-        
-        return rect
-    }
-    
     override func didMove(to view: SKView) {
-        topLeftPoint = CGPoint(x: ((view.frame.width / 2) * -1) + 30, y: ((view.frame.height / 2) * -1) + 30)
+//        topLeftPoint = CGPoint(x: ((view.frame.width / 2) * -1) + 30, y: ((view.frame.height / 2) * -1) + 30)
         
         rectNode.lineWidth = 10
         rectNode.anchorPoint = CGPoint(x: 0.0, y: 0.0)
