@@ -16,21 +16,25 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         self.rectNode = SKShapeNode.init(rectOf: CGSize.init(width: 100, height: 30), cornerRadius: 0)
         
-        self.addChild(rectNode)
+        rectNode.lineWidth = 10
     }
     
     func touchDown(atPoint pos : CGPoint) {
-    
+        addChild(rectNode)
+        
+        let rect = CGRect(x: 0, y: 0, width: Int(pos.x), height: Int(pos.y))
+        
+        rectNode.path = CGPath(rect: rect, transform: nil)
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        let rect = CGRect(x: 0, y: 0, width: 10 + Int(pos.x), height: 10 + Int(pos.y))
+        let rect = CGRect(x: 0, y: 0, width: Int(pos.x), height: Int(pos.y))
         
         rectNode.path = CGPath(rect: rect, transform: nil)
     }
     
     func touchUp(atPoint pos : CGPoint) {
-
+        rectNode.removeFromParent()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
