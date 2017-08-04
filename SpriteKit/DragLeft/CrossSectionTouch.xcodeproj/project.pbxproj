@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE1005461F33053600773149 /* DragLeft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragLeft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1005461F33053600773149 /* CrossSectionTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossSectionTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1005491F33053600773149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE10054B1F33053700773149 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		DE10054D1F33053700773149 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		DE1005471F33053600773149 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE1005461F33053600773149 /* DragLeft.app */,
+				DE1005461F33053600773149 /* CrossSectionTouch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE1005451F33053600773149 /* DragLeft */ = {
+		DE1005451F33053600773149 /* CrossSectionTouch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE10055E1F33053700773149 /* Build configuration list for PBXNativeTarget "DragLeft" */;
+			buildConfigurationList = DE10055E1F33053700773149 /* Build configuration list for PBXNativeTarget "CrossSectionTouch" */;
 			buildPhases = (
 				DE1005421F33053600773149 /* Sources */,
 				DE1005431F33053600773149 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = DragLeft;
+			name = CrossSectionTouch;
 			productName = DragLeft;
-			productReference = DE1005461F33053600773149 /* DragLeft.app */;
+			productReference = DE1005461F33053600773149 /* CrossSectionTouch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE1005411F33053600773149 /* Build configuration list for PBXProject "DragLeft" */;
+			buildConfigurationList = DE1005411F33053600773149 /* Build configuration list for PBXProject "CrossSectionTouch" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE1005451F33053600773149 /* DragLeft */,
+				DE1005451F33053600773149 /* CrossSectionTouch */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE1005411F33053600773149 /* Build configuration list for PBXProject "DragLeft" */ = {
+		DE1005411F33053600773149 /* Build configuration list for PBXProject "CrossSectionTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE10055C1F33053700773149 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE10055E1F33053700773149 /* Build configuration list for PBXNativeTarget "DragLeft" */ = {
+		DE10055E1F33053700773149 /* Build configuration list for PBXNativeTarget "CrossSectionTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE10055F1F33053700773149 /* Debug */,
