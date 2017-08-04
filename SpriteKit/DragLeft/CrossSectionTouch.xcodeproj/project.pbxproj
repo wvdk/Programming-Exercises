@@ -48,7 +48,7 @@
 		DE10053D1F33053600773149 = {
 			isa = PBXGroup;
 			children = (
-				DE1005481F33053600773149 /* DragLeft */,
+				DE1005481F33053600773149 /* CrossSectionTouch */,
 				DE1005471F33053600773149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE1005481F33053600773149 /* DragLeft */ = {
+		DE1005481F33053600773149 /* CrossSectionTouch */ = {
 			isa = PBXGroup;
 			children = (
 				DE1005491F33053600773149 /* AppDelegate.swift */,
@@ -76,7 +76,7 @@
 				DE1005581F33053700773149 /* LaunchScreen.storyboard */,
 				DE10055B1F33053700773149 /* Info.plist */,
 			);
-			path = DragLeft;
+			path = CrossSectionTouch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
