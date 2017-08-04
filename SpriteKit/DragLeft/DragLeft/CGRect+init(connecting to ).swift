@@ -10,7 +10,7 @@ import CoreGraphics
 
 extension CGRect {
     
-    /// Creates an instance of a rectangle with two of it's corners located at the a and b points.
+    /// Creates a rectangle with corners reaching from `pointA` to `pointB`.
     init(connecting pointA: CGPoint, to pointB: CGPoint) {
         let width =  pointB.x - pointA.x
         let height =  pointB.y - pointA.y
