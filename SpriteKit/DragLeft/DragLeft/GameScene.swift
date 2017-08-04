@@ -54,11 +54,14 @@ class GameScene: SKScene {
         let offSet = CGFloat(10)
         
         let topLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offSet, y: point.y + offSet)
-        
+        let topRightRectNodesOffsettedEndPoint = CGPoint(x: point.x +  offSet, y: point.y + offSet)
+        let bottomLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offSet, y: point.y - offSet)
+        let bottomRightRectNodesOffsettedEndPoint = CGPoint(x: point.x + offSet, y: point.y - offSet)
+
         topLeftRectNode.path =  CGPath(rect: CGRect(connecting: topLeftPoint, to: topLeftRectNodesOffsettedEndPoint), transform: nil)
-        topRightRectNode.path =  CGPath(rect: CGRect(connecting: topRightPoint, to: point), transform: nil)
-        bottomLeftRectNode.path =  CGPath(rect: CGRect(connecting: bottomLeftPoint, to: point), transform: nil)
-        bottomRightRectNode.path =  CGPath(rect: CGRect(connecting: bottomRightPoint, to: point), transform: nil)
+        topRightRectNode.path =  CGPath(rect: CGRect(connecting: topRightPoint, to: topRightRectNodesOffsettedEndPoint), transform: nil)
+        bottomLeftRectNode.path =  CGPath(rect: CGRect(connecting: bottomLeftPoint, to: bottomLeftRectNodesOffsettedEndPoint), transform: nil)
+        bottomRightRectNode.path =  CGPath(rect: CGRect(connecting: bottomRightPoint, to: bottomRightRectNodesOffsettedEndPoint), transform: nil)
     }
     
     // MARK: - Handle touches
