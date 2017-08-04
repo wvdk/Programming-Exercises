@@ -27,6 +27,9 @@ class GameScene: SKScene {
         let bottom = (height / 2) * -1
         
         topLeftPoint = CGPoint(x: leftSide, y: top)
+        topRightPoint = CGPoint(x: rightSide, y: top)
+        bottomLeftPoint = CGPoint(x: leftSide, y: bottom)
+        bottomRightPoint = CGPoint(x: rightSide, y: bottom)
 
         
         let firstPoint = topLeftPoint!
