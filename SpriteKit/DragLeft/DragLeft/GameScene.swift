@@ -11,14 +11,17 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var rectNode = RectangleNode(rectOf: CGSize(width: 200, height: 100), cornerRadius: 0)
+    var topLeftRectNode: RectangleNode!
     
     var topLeftPoint: CGPoint!
     var bottomLeftPoint: CGPoint!
     var topRightPoint: CGPoint!
     var bottomRightPoint: CGPoint!
+    var centerPoint: CGPoint!
 
     override func didMove(to view: SKView) {
+        
+        // Initialize corner point values
         let width = frame.width
         let height = frame.height
         let leftSide = (width / 2) * -1
@@ -30,16 +33,13 @@ class GameScene: SKScene {
         topRightPoint = CGPoint(x: rightSide, y: top)
         bottomLeftPoint = CGPoint(x: leftSide, y: bottom)
         bottomRightPoint = CGPoint(x: rightSide, y: bottom)
+        centerPoint = CGPoint(x: 0, y: 0)
 
+        // Set up rects
         
-        let firstPoint = topLeftPoint!
-        let secondPoint = CGPoint(x: 0, y: 0)
-        let rect = CGRect(connecting: firstPoint, to: secondPoint)
-        let path = CGPath(rect: rect, transform: nil)
+        topLeftRectNode = RectangleNode(rect: CGRect(connecting: topLeftPoint, to: centerPoint))
         
-        rectNode.path = path
-        
-        addChild(rectNode)
+        addChild(topLeftRectNode)
     }
 
     // MARK: - Handle touches
@@ -51,7 +51,7 @@ class GameScene: SKScene {
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
             let path = CGPath(rect: rect, transform: nil)
             
-            rectNode.path = path
+            topLeftRectNode.path = path
         }
     }
     
@@ -62,12 +62,12 @@ class GameScene: SKScene {
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
             let path = CGPath(rect: rect, transform: nil)
             
-            rectNode.path = path
+            topLeftRectNode.path = path
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        rectNode.run(SKAction(named: "ReturnToCenter")!)
+//        topLeftRectNode.run(SKAction(named: "ReturnToCenter")!)
     }
 
 }
