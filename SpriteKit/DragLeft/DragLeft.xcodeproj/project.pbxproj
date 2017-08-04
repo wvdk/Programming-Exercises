@@ -16,6 +16,7 @@
 		DE1005571F33053700773149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1005561F33053700773149 /* Assets.xcassets */; };
 		DE10055A1F33053700773149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1005581F33053700773149 /* LaunchScreen.storyboard */; };
 		DE5BF2871F33376500DDBB8F /* RectangleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF2861F33376500DDBB8F /* RectangleNode.swift */; };
+		DEB16E941F3453750046005B /* CGRect+init(connecting to ).swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB16E931F3453750046005B /* CGRect+init(connecting to ).swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DE1005591F33053700773149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE10055B1F33053700773149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5BF2861F33376500DDBB8F /* RectangleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleNode.swift; sourceTree = "<group>"; };
+		DEB16E931F3453750046005B /* CGRect+init(connecting to ).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+init(connecting to ).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DE1005511F33053700773149 /* GameViewController.swift */,
 				DE10054F1F33053700773149 /* GameScene.swift */,
 				DE5BF2861F33376500DDBB8F /* RectangleNode.swift */,
+				DEB16E931F3453750046005B /* CGRect+init(connecting to ).swift */,
 				DE10054B1F33053700773149 /* GameScene.sks */,
 				DE10054D1F33053700773149 /* Actions.sks */,
 				DE1005531F33053700773149 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 				DE5BF2871F33376500DDBB8F /* RectangleNode.swift in Sources */,
 				DE1005521F33053700773149 /* GameViewController.swift in Sources */,
 				DE10054A1F33053600773149 /* AppDelegate.swift in Sources */,
+				DEB16E941F3453750046005B /* CGRect+init(connecting to ).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
