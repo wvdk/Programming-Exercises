@@ -50,27 +50,24 @@ class GameScene: SKScene {
         addChild(bottomRightRectNode)
     }
 
+    func updateRects(using point: CGPoint) {
+        topLeftRectNode.path =  CGPath(rect: CGRect(connecting: topLeftPoint, to: point), transform: nil)
+        topRightRectNode.path =  CGPath(rect: CGRect(connecting: topRightPoint, to: point), transform: nil)
+        bottomLeftRectNode.path =  CGPath(rect: CGRect(connecting: bottomLeftPoint, to: point), transform: nil)
+        bottomRightRectNode.path =  CGPath(rect: CGRect(connecting: bottomRightPoint, to: point), transform: nil)
+    }
+    
     // MARK: - Handle touches
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            let firstPoint = topLeftPoint!
-            let secondPoint = touch.location(in: self)
-            let rect = CGRect(connecting: firstPoint, to: secondPoint)
-            let path = CGPath(rect: rect, transform: nil)
-            
-            topLeftRectNode.path = path
+            updateRects(using: touch.location(in: self))
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            let firstPoint = topLeftPoint!
-            let secondPoint = touch.location(in: self)
-            let rect = CGRect(connecting: firstPoint, to: secondPoint)
-            let path = CGPath(rect: rect, transform: nil)
-            
-            topLeftRectNode.path = path
+            updateRects(using: touch.location(in: self))
         }
     }
 
