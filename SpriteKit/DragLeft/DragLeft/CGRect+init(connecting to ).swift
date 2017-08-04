@@ -11,11 +11,11 @@ import CoreGraphics
 extension CGRect {
     
     /// Creates a rectangle with corners reaching from `pointA` to `pointB`.
-    init(connecting pointA: CGPoint, to pointB: CGPoint) {
-        let width =  pointB.x - pointA.x
-        let height =  pointB.y - pointA.y
+    init(cornersSpanning from: CGPoint, to: CGPoint) {
+        let width =  to.x - from.x
+        let height =  to.y - from.y
         
-        self.init(x: pointA.x, y: pointA.y, width: width, height: height)
+        self.init(x: from.x, y: from.y, width: width, height: height)
     }
     
 }
