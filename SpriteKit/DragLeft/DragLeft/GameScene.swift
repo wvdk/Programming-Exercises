@@ -30,7 +30,13 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            rectNode.position = touch.location(in: self)
+            
+            let firstPoint = CGPoint(x: 100, y: 100)
+            let secondPoint = CGPoint(x: 500, y: 200)
+            let rect = CGRect(connecting: firstPoint, to: secondPoint)
+            let path = CGPath(rect: rect, transform: nil)
+            
+            rectNode.path = path
         }
     }
     
