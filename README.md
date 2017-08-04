@@ -4,6 +4,11 @@ It's a dumping ground and extremely disorganized by design. I don't recommend yo
 
 ---
 
+## Demos
+
+CrossSectionTouch (Swift, SpriteKit):
+![CrossSectionTouch]()
+
 ## Reading List (incomplete)
 
 Title | Author | Date completed
@@ -28,3 +33,8 @@ Title | Author | Date completed
 [The Little Schemer - 4th Edition](http://www.amazon.com/The-Little-Schemer-4th-Edition/dp/0262560992) | D. Friedman, M. Felleisen | 
 [The C Programming Language](http://www.amazon.com/The-Programming-Language-Brian-Kernighan/dp/0131103628) | B. Kernighan, D. Ritchie | 
 [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=tmm_hrd_title_0?_encoding=UTF8&qid=&sr=)| E. Gamma, R. Helm, R. Johnson, J. Vlissides | 
+
+
+
+
+
