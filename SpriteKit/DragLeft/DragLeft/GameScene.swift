@@ -39,10 +39,10 @@ class GameScene: SKScene {
         centerPoint = CGPoint(x: 0, y: 0)
 
         // Initialize rects
-        topLeftRectNode = RectangleNode(rect: CGRect(connecting: topLeftPoint, to: centerPoint))
-        topRightRectNode = RectangleNode(rect: CGRect(connecting: topRightPoint, to: centerPoint))
-        bottomLeftRectNode = RectangleNode(rect: CGRect(connecting: bottomLeftPoint, to: centerPoint))
-        bottomRightRectNode = RectangleNode(rect: CGRect(connecting: bottomRightPoint, to: centerPoint))
+        topLeftRectNode = RectangleNode(rect:CGRect(cornersSpanning: topLeftPoint, to: centerPoint) )
+        topRightRectNode = RectangleNode(rect: CGRect(cornersSpanning: topRightPoint, to: centerPoint))
+        bottomLeftRectNode = RectangleNode(rect: CGRect(cornersSpanning: bottomLeftPoint, to: centerPoint))
+        bottomRightRectNode = RectangleNode(rect: CGRect(cornersSpanning: bottomRightPoint, to: centerPoint))
 
         addChild(topLeftRectNode)
         addChild(topRightRectNode)
@@ -58,10 +58,10 @@ class GameScene: SKScene {
         let bottomLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offset, y: point.y - offset)
         let bottomRightRectNodesOffsettedEndPoint = CGPoint(x: point.x + offset, y: point.y - offset)
 
-        topLeftRectNode.path =  CGPath(rect: CGRect(connecting: topLeftPoint, to: topLeftRectNodesOffsettedEndPoint), transform: nil)
-        topRightRectNode.path =  CGPath(rect: CGRect(connecting: topRightPoint, to: topRightRectNodesOffsettedEndPoint), transform: nil)
-        bottomLeftRectNode.path =  CGPath(rect: CGRect(connecting: bottomLeftPoint, to: bottomLeftRectNodesOffsettedEndPoint), transform: nil)
-        bottomRightRectNode.path =  CGPath(rect: CGRect(connecting: bottomRightPoint, to: bottomRightRectNodesOffsettedEndPoint), transform: nil)
+        topLeftRectNode.path =  CGPath(rect: CGRect(cornersSpanning: topLeftPoint, to: topLeftRectNodesOffsettedEndPoint), transform: nil)
+        topRightRectNode.path =  CGPath(rect: CGRect(cornersSpanning: topRightPoint, to: topRightRectNodesOffsettedEndPoint), transform: nil)
+        bottomLeftRectNode.path =  CGPath(rect: CGRect(cornersSpanning: bottomLeftPoint, to: bottomLeftRectNodesOffsettedEndPoint), transform: nil)
+        bottomRightRectNode.path =  CGPath(rect: CGRect(cornersSpanning: bottomRightPoint, to: bottomRightRectNodesOffsettedEndPoint), transform: nil)
     }
     
     // MARK: - Handle touches
