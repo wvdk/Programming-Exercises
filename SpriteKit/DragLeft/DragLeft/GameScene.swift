@@ -51,12 +51,12 @@ class GameScene: SKScene {
     }
 
     func updateRects(using point: CGPoint) {
-        let offSet = CGFloat(20)
+        let offset = CGFloat(20)
         
-        let topLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offSet, y: point.y + offSet)
-        let topRightRectNodesOffsettedEndPoint = CGPoint(x: point.x +  offSet, y: point.y + offSet)
-        let bottomLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offSet, y: point.y - offSet)
-        let bottomRightRectNodesOffsettedEndPoint = CGPoint(x: point.x + offSet, y: point.y - offSet)
+        let topLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offset, y: point.y + offset)
+        let topRightRectNodesOffsettedEndPoint = CGPoint(x: point.x +  offset, y: point.y + offset)
+        let bottomLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offset, y: point.y - offset)
+        let bottomRightRectNodesOffsettedEndPoint = CGPoint(x: point.x + offset, y: point.y - offset)
 
         topLeftRectNode.path =  CGPath(rect: CGRect(connecting: topLeftPoint, to: topLeftRectNodesOffsettedEndPoint), transform: nil)
         topRightRectNode.path =  CGPath(rect: CGRect(connecting: topRightPoint, to: topRightRectNodesOffsettedEndPoint), transform: nil)
