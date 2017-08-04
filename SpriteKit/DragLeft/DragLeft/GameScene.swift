@@ -51,7 +51,7 @@ class GameScene: SKScene {
     }
 
     func updateRects(using point: CGPoint) {
-        let offSet = CGFloat(10)
+        let offSet = CGFloat(20)
         
         let topLeftRectNodesOffsettedEndPoint = CGPoint(x: point.x - offSet, y: point.y + offSet)
         let topRightRectNodesOffsettedEndPoint = CGPoint(x: point.x +  offSet, y: point.y + offSet)
