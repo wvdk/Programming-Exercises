@@ -12,7 +12,10 @@ import GameplayKit
 class GameScene: SKScene {
     
     var topLeftRectNode: RectangleNode!
-    
+    var topRightRectNode: RectangleNode!
+    var bottomLeftRectNode: RectangleNode!
+    var bottomRightRectNode: RectangleNode!
+
     var topLeftPoint: CGPoint!
     var bottomLeftPoint: CGPoint!
     var topRightPoint: CGPoint!
@@ -35,11 +38,16 @@ class GameScene: SKScene {
         bottomRightPoint = CGPoint(x: rightSide, y: bottom)
         centerPoint = CGPoint(x: 0, y: 0)
 
-        // Set up rects
-        
+        // Initialize rects
         topLeftRectNode = RectangleNode(rect: CGRect(connecting: topLeftPoint, to: centerPoint))
-        
+        topRightRectNode = RectangleNode(rect: CGRect(connecting: topRightPoint, to: centerPoint))
+        bottomLeftRectNode = RectangleNode(rect: CGRect(connecting: bottomLeftPoint, to: centerPoint))
+        bottomRightRectNode = RectangleNode(rect: CGRect(connecting: bottomRightPoint, to: centerPoint))
+
         addChild(topLeftRectNode)
+        addChild(topRightRectNode)
+        addChild(bottomLeftRectNode)
+        addChild(bottomRightRectNode)
     }
 
     // MARK: - Handle touches
