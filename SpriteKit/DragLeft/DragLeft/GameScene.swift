@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var rectNode = RectangleNode(rectOf: CGSize.init(width: 200, height: 100), cornerRadius: 0)
+    private var rectNode = RectangleNode(rectOf: CGSize(width: 200, height: 100), cornerRadius: 0)
     
     var topLeftPoint: CGPoint!
     var bottomLeftPoint: CGPoint!
@@ -29,7 +29,6 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            
             let firstPoint = CGPoint(x: 0, y: 0)
             let secondPoint = touch.location(in: self)
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
@@ -41,7 +40,6 @@ class GameScene: SKScene {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            
             let firstPoint = CGPoint(x: 0, y: 0)
             let secondPoint = touch.location(in: self)
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
