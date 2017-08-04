@@ -7,7 +7,7 @@ It's a dumping ground and extremely disorganized by design. I don't recommend yo
 ## Demos
 
 CrossSectionTouch (Swift, SpriteKit):
-![CrossSectionTouch]()
+![CrossSectionTouch](./Demos/CrossSectionTouch.gif)
 
 ## Reading List (incomplete)
 
