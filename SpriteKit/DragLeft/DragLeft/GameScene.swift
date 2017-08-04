@@ -19,8 +19,22 @@ class GameScene: SKScene {
     var bottomRightPoint: CGPoint!
 
     override func didMove(to view: SKView) {
+        let width = frame.width
+        let height = frame.height
+        let leftSide = (width / 2) * -1
+        let rightSide = width / 2
+        let top = height / 2
+        let bottom = (height / 2) * -1
+        
+        topLeftPoint = CGPoint(x: leftSide, y: top)
 
-        // TODO: Initialize values for corner points.
+        
+        let firstPoint = topLeftPoint!
+        let secondPoint = CGPoint(x: 0, y: 0)
+        let rect = CGRect(connecting: firstPoint, to: secondPoint)
+        let path = CGPath(rect: rect, transform: nil)
+        
+        rectNode.path = path
         
         addChild(rectNode)
     }
@@ -29,7 +43,7 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            let firstPoint = CGPoint(x: 0, y: 0)
+            let firstPoint = topLeftPoint!
             let secondPoint = touch.location(in: self)
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
             let path = CGPath(rect: rect, transform: nil)
@@ -40,7 +54,7 @@ class GameScene: SKScene {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            let firstPoint = CGPoint(x: 0, y: 0)
+            let firstPoint = topLeftPoint!
             let secondPoint = touch.location(in: self)
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
             let path = CGPath(rect: rect, transform: nil)
