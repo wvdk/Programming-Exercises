@@ -12,8 +12,8 @@ extension CGRect {
     
     /// Creates an instance of a rectangle with two of it's corners located at the a and b points.
     init(connecting pointA: CGPoint, to pointB: CGPoint) {
-        let width =  pointA.x - pointB.x
-        let height = pointB.x - pointB.x
+        let width =  pointB.x - pointA.x
+        let height =  pointB.y - pointA.y
         
         self.init(x: pointA.x, y: pointA.y, width: width, height: height)
     }

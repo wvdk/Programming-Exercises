@@ -22,6 +22,14 @@ class GameScene: SKScene {
 
         // TODO: Initialize values for corner points.
         
+        
+        let firstPoint = CGPoint(x: 0, y: 0)
+        let secondPoint = CGPoint(x: 30, y: 300)
+        let rect = CGRect(connecting: firstPoint, to: secondPoint)
+        let path = CGPath(rect: rect, transform: nil)
+        
+        rectNode.path = path
+        
         addChild(rectNode)
 
     }
