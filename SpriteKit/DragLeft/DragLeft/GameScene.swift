@@ -31,8 +31,8 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             
-            let firstPoint = CGPoint(x: 100, y: 100)
-            let secondPoint = CGPoint(x: 500, y: 200)
+            let firstPoint = CGPoint(x: 0, y: 0)
+            let secondPoint = touch.location(in: self)
             let rect = CGRect(connecting: firstPoint, to: secondPoint)
             let path = CGPath(rect: rect, transform: nil)
             
