@@ -65,9 +65,5 @@ class GameScene: SKScene {
             topLeftRectNode.path = path
         }
     }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        topLeftRectNode.run(SKAction(named: "ReturnToCenter")!)
-    }
 
 }
