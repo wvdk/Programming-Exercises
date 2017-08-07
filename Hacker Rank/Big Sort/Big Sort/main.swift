@@ -44,17 +44,32 @@ for _ in 1...n {
 let sorted = unsorted.sorted { (a, b) -> Bool in
     
     if a.characters.count > b.characters.count {
-        return true
-    } else if a.characters.count < b.characters.count {
         return false
-    }
-    
-    for i in 0...Int(a.characters.count) {
-        if Int(a.characters[i])! > Int(b.characters[i]) {
+    } else if a.characters.count < b.characters.count {
+        return true
+    } else { // they have same number of characters
+        
+        let numberOfChars = a.characters.count
+        
+        for i in 0..<numberOfChars {
+            let aIndex = a.index(a.startIndex, offsetBy: i)
+            let aChar = a[aIndex]
+            let aInt = Int(String(aChar))!
             
+            let bIndex = b.index(b.startIndex, offsetBy: i)
+            let bChar = b[bIndex]
+            let bInt = Int(String(bChar))!
+
+            if aInt > bInt {
+                return false
+            } else if aInt < bInt {
+                return true
+            }
         }
+        
+        
+        return false // only happens if numbers are exactly the same
     }
-    
     
 }
 
