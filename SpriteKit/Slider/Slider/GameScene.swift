@@ -17,6 +17,9 @@ class GameScene: SKScene {
         
         addChild(knob.node)
         
+        let sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
+        
+        addChild(sliderTrack.node)
     }
     
     override func mouseDown(with event: NSEvent) {
