@@ -14,11 +14,12 @@ struct SliderTrack {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
     var node: SKShapeNode {
-        let rect = CGRect(x: position.x, y: position.y, width: 100, height: 10)
+        let width = 200
+        let height = 10
+        let rect = CGRect(x: position.x - CGFloat(width / 2), y: position.y - CGFloat(height / 2), width: 200, height: 10)
         let n = SKShapeNode(rect: rect, cornerRadius: 4)
         
         n.fillColor = SKColor.white
-        n.position = position
         
         return n
     }
