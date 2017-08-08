@@ -20,6 +20,10 @@ class GameScene: SKScene {
         let sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
         
         addChild(sliderTrack.node)
+        
+        let label = Label(text: "123", position: CGPoint(x: 0, y: 100))
+        
+        addChild(label.node)
     }
     
     override func mouseDown(with event: NSEvent) {
