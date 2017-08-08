@@ -16,6 +16,7 @@ struct Knob {
     var node: SKShapeNode {
         let n = SKShapeNode(circleOfRadius: 30)
         
+        n.fillColor = SKColor.white
         n.position = position
         
         return n
