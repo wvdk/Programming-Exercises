@@ -14,6 +14,7 @@
 		DE4086261F39F31100F1AF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4086251F39F31100F1AF36 /* ViewController.swift */; };
 		DE4086281F39F31100F1AF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4086271F39F31100F1AF36 /* Assets.xcassets */; };
 		DE40862B1F39F31100F1AF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4086291F39F31100F1AF36 /* Main.storyboard */; };
+		DE4086341F39F38F00F1AF36 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4086331F39F38F00F1AF36 /* Knob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DE40862A1F39F31100F1AF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE40862C1F39F31100F1AF36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE40862D1F39F31100F1AF36 /* Slider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Slider.entitlements; sourceTree = "<group>"; };
+		DE4086331F39F38F00F1AF36 /* Knob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DE40861F1F39F31100F1AF36 /* GameScene.sks */,
 				DE4086211F39F31100F1AF36 /* Actions.sks */,
 				DE4086231F39F31100F1AF36 /* GameScene.swift */,
+				DE4086331F39F38F00F1AF36 /* Knob.swift */,
 				DE4086251F39F31100F1AF36 /* ViewController.swift */,
 				DE4086271F39F31100F1AF36 /* Assets.xcassets */,
 				DE4086291F39F31100F1AF36 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 				DE4086261F39F31100F1AF36 /* ViewController.swift in Sources */,
 				DE4086241F39F31100F1AF36 /* GameScene.swift in Sources */,
 				DE40861E1F39F31100F1AF36 /* AppDelegate.swift in Sources */,
+				DE4086341F39F38F00F1AF36 /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
