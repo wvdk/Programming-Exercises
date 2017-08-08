@@ -13,6 +13,10 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        let knob = Knob(position: CGPoint(x: 0, y: 0))
+        
+        addChild(knob.node)
+        
     }
     
     override func mouseDown(with event: NSEvent) {
