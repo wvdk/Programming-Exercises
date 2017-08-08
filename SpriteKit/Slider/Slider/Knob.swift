@@ -16,6 +16,8 @@ struct Knob {
     var node: SKShapeNode {
         let n = SKShapeNode(circleOfRadius: 30)
         
+        n.position = position
+        
         return n
     }
     
