@@ -22,11 +22,15 @@ class GameScene: SKScene {
     }
     
     override func mouseDown(with event: NSEvent) {
-        knob.position = event.locationInWindow
+        let xPosition = event.locationInWindow.x
+        
+        knob.position.x = xPosition
     }
     
     override func mouseDragged(with event: NSEvent) {
-        knob.position = event.locationInWindow
+        let xPosition = event.locationInWindow.x
+        
+        knob.position.x = xPosition
     }
     
     override func mouseUp(with event: NSEvent) {
