@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var sliderKnob = Knob(position: CGPoint(x: 0, y: 0))
+    var sliderKnob = SliderKnob(position: CGPoint(x: 0, y: 0))
     var sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
     var label = Label(text: "123", position: CGPoint(x: 0, y: 100))
 
