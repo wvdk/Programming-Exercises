@@ -26,5 +26,6 @@ struct SliderTrack {
     
     /// The position of the knob in it's parents coordinate system. Also used to calculate the slider's value.
     var position: CGPoint
+    
 }
 
