@@ -22,6 +22,7 @@ struct Knob {
         }
     }
     
+    /// Creates a knob at `position`.
     init(position: CGPoint) {
         self.position = position
         
@@ -29,8 +30,5 @@ struct Knob {
         
         node.fillColor = SKColor.white
         node.position = position
-    
     }
-    
-    
 }
