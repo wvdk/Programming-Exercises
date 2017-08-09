@@ -11,9 +11,9 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    let knob = Knob(position: CGPoint(x: 0, y: 0))
-    let sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
-    let label = Label(text: "123", position: CGPoint(x: 0, y: 100))
+    var knob = Knob(position: CGPoint(x: 0, y: 0))
+    var sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
+    var label = Label(text: "123", position: CGPoint(x: 0, y: 100))
 
     override func didMove(to view: SKView) {
         addChild(knob.node)
@@ -22,7 +22,9 @@ class GameScene: SKScene {
     }
     
     override func mouseDown(with event: NSEvent) {
-        print("Mouse Down.")        
+        print("Mouse Down.")
+        
+        knob.position = event.locationInWindow
     }
     
     override func mouseDragged(with event: NSEvent) {
