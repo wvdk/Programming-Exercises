@@ -11,12 +11,12 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var knob = Knob(position: CGPoint(x: 0, y: 0))
+    var sliderKnob = Knob(position: CGPoint(x: 0, y: 0))
     var sliderTrack = SliderTrack(position: CGPoint(x: 0, y: 0))
     var label = Label(text: "123", position: CGPoint(x: 0, y: 100))
 
     override func didMove(to view: SKView) {
-        addChild(knob.node)
+        addChild(sliderKnob.node)
         addChild(sliderTrack.node)
         addChild(label.node)
     }
@@ -24,17 +24,17 @@ class GameScene: SKScene {
     override func mouseDown(with event: NSEvent) {
         let xPosition = event.locationInWindow.x
         
-        knob.position.x = xPosition
+        sliderKnob.position.x = xPosition
     }
     
     override func mouseDragged(with event: NSEvent) {
         let xPosition = event.locationInWindow.x
         
-        knob.position.x = xPosition
+        sliderKnob.position.x = xPosition
     }
     
     override func mouseUp(with event: NSEvent) {
-        knob.position = CGPoint(x: 0, y: 0)
+        sliderKnob.position = CGPoint(x: 0, y: 0)
     }
     
 }

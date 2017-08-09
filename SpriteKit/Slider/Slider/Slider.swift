@@ -11,7 +11,7 @@ import SpriteKit
 
 struct Slider {
     
-    private let knob: Knob
+    private let knob: SliderKnob
     private let SliderTrack: SliderTrack
     
 }

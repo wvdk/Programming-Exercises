@@ -1,5 +1,5 @@
 //
-//  Knob.swift
+//  SliderKnob.swift
 //  Slider
 //
 //  Created by Wesley Van der Klomp on 8/8/17.
@@ -10,7 +10,7 @@ import Cocoa
 import SpriteKit
 
 /// The part of a slider than the user clicks on and drags in order to change the value.
-struct Knob {
+struct SliderKnob {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
     let node: SKShapeNode
