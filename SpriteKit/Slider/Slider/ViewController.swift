@@ -18,12 +18,12 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         if let view = self.skView {
-            if let scene = SKScene(fileNamed: "GameScene") {
-                scene.scaleMode = .aspectFit
-                
-                view.presentScene(scene)
-            }
+            let scene = GameScene(size: view.frame.size)
             
+            scene.backgroundColor = SKColor.red
+            scene.scaleMode = .aspectFit
+            
+            view.presentScene(scene)
             view.ignoresSiblingOrder = true
             view.showsFPS = true
             view.showsNodeCount = true
