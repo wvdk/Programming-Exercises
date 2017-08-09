@@ -11,8 +11,8 @@ enum ArithmeticExpression {
 let five = ArithmeticExpression.number(5)
 let four = ArithmeticExpression.number(4)
 let two = ArithmeticExpression.number(2)
-let sumOfFourAndFive = ArithmeticExpression.addition(four, five)
-let productOfSumOfFourAndFiveTimesTwo = ArithmeticExpression.multiplication(sumOfFourAndFive, two)
+let sumOfFourAndFive = ArithmeticExpression.addition(four, five) // 4 + 5
+let productOfSumOfFourAndFiveTimesTwo = ArithmeticExpression.multiplication(sumOfFourAndFive, two) // (4 + 5) * 2
 
 func evaluate(_ expression: ArithmeticExpression) -> Int {
     switch expression {
