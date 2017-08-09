@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DE40861E1F39F31100F1AF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40861D1F39F31100F1AF36 /* AppDelegate.swift */; };
 		DE4086201F39F31100F1AF36 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE40861F1F39F31100F1AF36 /* GameScene.sks */; };
-		DE4086221F39F31100F1AF36 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE4086211F39F31100F1AF36 /* Actions.sks */; };
 		DE4086241F39F31100F1AF36 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4086231F39F31100F1AF36 /* GameScene.swift */; };
 		DE4086261F39F31100F1AF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4086251F39F31100F1AF36 /* ViewController.swift */; };
 		DE4086281F39F31100F1AF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4086271F39F31100F1AF36 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		DE40861A1F39F31100F1AF36 /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE40861D1F39F31100F1AF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE40861F1F39F31100F1AF36 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DE4086211F39F31100F1AF36 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		DE4086231F39F31100F1AF36 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DE4086251F39F31100F1AF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE4086271F39F31100F1AF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			children = (
 				DE40861D1F39F31100F1AF36 /* AppDelegate.swift */,
 				DE40861F1F39F31100F1AF36 /* GameScene.sks */,
-				DE4086211F39F31100F1AF36 /* Actions.sks */,
 				DE4086231F39F31100F1AF36 /* GameScene.swift */,
 				DE4086331F39F38F00F1AF36 /* Knob.swift */,
 				DE4086351F39F8FC00F1AF36 /* SliderTrack.swift */,
@@ -141,7 +138,6 @@
 			files = (
 				DE4086201F39F31100F1AF36 /* GameScene.sks in Resources */,
 				DE4086281F39F31100F1AF36 /* Assets.xcassets in Resources */,
-				DE4086221F39F31100F1AF36 /* Actions.sks in Resources */,
 				DE40862B1F39F31100F1AF36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
