@@ -14,3 +14,15 @@ let two = ArithmeticExpression.number(2)
 let sumOfFourAndFive = ArithmeticExpression.addition(four, five)
 let productOfSumOfFourAndFiveTimesTwo = ArithmeticExpression.multiplication(sumOfFourAndFive, two)
 
+func evaluate(_ expression: ArithmeticExpression) -> Int {
+    switch expression {
+    case .number(let n):
+        return n
+    case .addition(let leftExpression, let rightExpression):
+        return evaluate(leftExpression) + evaluate(rightExpression)
+    case .multiplication(let leftExpression, let rightExpression):
+        return evaluate(leftExpression) * evaluate(rightExpression)
+    }
+}
+
+evaluate(productOfSumOfFourAndFiveTimesTwo)
