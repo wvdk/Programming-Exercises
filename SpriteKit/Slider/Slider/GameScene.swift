@@ -29,9 +29,12 @@ class GameScene: SKScene {
     
     override func mouseDragged(with event: NSEvent) {
         print("Mouse Dragged.")
+        knob.position = event.locationInWindow
     }
     
     override func mouseUp(with event: NSEvent) {
         print("Mouse Up.")
+        
+        knob.position = CGPoint(x: 0, y: 0)
     }
 }
