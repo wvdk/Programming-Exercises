@@ -13,20 +13,23 @@ import SpriteKit
 struct Knob {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
-    var node: SKShapeNode {
-        let n = SKShapeNode(circleOfRadius: 30)
-        
-        n.fillColor = SKColor.white
-        n.position = position
-        
-        return n
-    }
+    let node: SKShapeNode
     
     /// The position of the knob in it's parents coordinate system. Also used to calculate the slider's value.
     var position: CGPoint {
         didSet {
             node.position = position
         }
+    }
+    
+    init(position: CGPoint) {
+        self.position = position
+        
+        node = SKShapeNode(circleOfRadius: 30)
+        
+        node.fillColor = SKColor.white
+        node.position = position
+    
     }
     
     
