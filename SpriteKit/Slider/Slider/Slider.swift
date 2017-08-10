@@ -40,4 +40,10 @@ struct Slider {
         node.addChild(track.node)
     }
     
+    func mouseDragged(with event: NSEvent) {
+        //        let xPosition = event.locationInWindow.x
+        //
+        //        slider.position.x = xPosition
+    }
+    
 }

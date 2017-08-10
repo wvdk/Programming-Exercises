@@ -32,7 +32,7 @@ class GameScene: SKScene {
     override func mouseDragged(with event: NSEvent) {
 //        let xPosition = event.locationInWindow.x
 //
-//        sliderKnob.position.x = xPosition
+//        slider.position.x = xPosition
     }
     
     override func mouseUp(with event: NSEvent) {
