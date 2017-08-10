@@ -40,5 +40,10 @@ struct SliderTrack {
         node.position = position
     }
     
+    /// Creates a track at `position` of (0, 0).
+    init() {
+        self.init(position: CGPoint(x: 0, y: 0))
+    }
+    
 }
 
