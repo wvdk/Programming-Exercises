@@ -21,4 +21,10 @@ class SliderNode: SKShapeNode {
         }
     }
     
+    override func mouseDragged(with event: NSEvent) {
+        if let owner = owner {
+            owner.dragging(currentPoint: event.location(in: owner.node))
+        }
+    }
+    
 }
