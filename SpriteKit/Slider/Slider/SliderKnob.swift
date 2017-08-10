@@ -26,9 +26,6 @@ class SliderKnob {
     
     /// Constrained on the x axis, so it only moves right to left.
     func move(to point: CGPoint) {
-        
-        print("there has been a click at \(point)")
-        
         position = CGPoint(x: point.x, y: position.y)
     }
     

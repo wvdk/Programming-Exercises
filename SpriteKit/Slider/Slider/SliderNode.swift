@@ -9,13 +9,15 @@
 import Foundation
 import SpriteKit
 
+/// A SKShapeNode subclass for handling user interaction and passing that event info to `owner`.
 class SliderNode: SKShapeNode {
     
+    /// A reverence to the object that owns this object.
     var owner: Slider? = nil
     
-    override func mouseDown(with event: NSEvent) {
-        print("mouseDown, SliderNode")
-        
+    // MARK: NSResponder methods
+    
+    override func mouseDown(with event: NSEvent) {        
         if let owner = owner {
             owner.click(at: event.location(in: owner.node))
         }
