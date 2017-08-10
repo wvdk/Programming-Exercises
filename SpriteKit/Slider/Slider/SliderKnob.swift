@@ -24,11 +24,6 @@ class SliderKnob {
         }
     }
     
-    /// Constrained on the x axis, so it only moves right to left.
-    func move(to point: CGPoint) {
-        position = CGPoint(x: point.x, y: position.y)
-    }
-    
     /// Creates a knob at `position`.
     init(position: CGPoint) {
         self.position = position
@@ -42,6 +37,11 @@ class SliderKnob {
     /// Creates a knob at `position` of (0, 0).
     convenience init() {
         self.init(position: CGPoint(x: 0, y: 0))
+    }
+    
+    /// Constrained on the x axis, so it only moves right or left.
+    func move(to point: CGPoint) {
+        position = CGPoint(x: point.x, y: position.y)
     }
     
 }
