@@ -50,6 +50,7 @@ struct Slider {
         track.position = center
         
         node.isUserInteractionEnabled = true
+        node.owner = self
         
         node.addChild(track.node)
         node.addChild(knob.node)

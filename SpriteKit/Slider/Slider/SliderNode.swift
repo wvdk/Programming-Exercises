@@ -16,9 +16,9 @@ class SliderNode: SKShapeNode {
     override func mouseDown(with event: NSEvent) {
         print("mouseDown, SliderNode")
         
-//        if let owner = owner {
-//            owner.moveKnob(to: event.location(in: owner.node))
-//        }
+        if let owner = owner {
+            owner.click(at: event.location(in: owner.node))
+        }
     }
     
 }
