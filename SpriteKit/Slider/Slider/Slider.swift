@@ -60,4 +60,7 @@ struct Slider {
         knob.move(to: point)
     }
     
+    func dragging(currentPoint: CGPoint) {
+        knob.move(to: currentPoint)
+    }
 }
