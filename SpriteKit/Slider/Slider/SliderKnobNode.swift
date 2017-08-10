@@ -17,6 +17,9 @@ class SliderKnobNode: SKShapeNode {
         print("mouseDown, SliderKnobNode")
         
         if let owner = owner {
+            let point = event.location(in: self)
+//            let pointIn = self.con
+            
             owner.move(to: event.location(in: owner.node))
         }
     }
