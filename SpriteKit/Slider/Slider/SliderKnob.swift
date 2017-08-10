@@ -24,12 +24,17 @@ class SliderKnob {
         }
     }
     
+    func click(at point: CGPoint) {
+        print("there has been a click at \(point)")
+    }
+    
     /// Creates a knob at `position`.
     init(position: CGPoint) {
         self.position = position
         
         node = SliderKnobNode(circleOfRadius: 30)
         
+        node.owner = self
         node.isUserInteractionEnabled = true
         node.fillColor = SKColor.white
         node.position = position

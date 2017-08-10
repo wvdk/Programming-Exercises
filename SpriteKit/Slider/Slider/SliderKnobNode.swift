@@ -10,7 +10,15 @@ import Foundation
 import SpriteKit
 
 class SliderKnobNode: SKShapeNode {
+    
+    var owner: SliderKnob? = nil
+
     override func mouseDown(with event: NSEvent) {
-        print("Mouse down on SliderKnobNode")
+        print("mouseDown, SliderKnobNode")
+        
+        if let owner = owner {
+            owner.click(at: event.location(in: self))
+        }
     }
+    
 }
