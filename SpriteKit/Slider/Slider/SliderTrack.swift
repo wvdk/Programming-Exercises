@@ -15,19 +15,30 @@ struct SliderTrack {
     /// An SKShapeNode for adding to a SpriteKit scene.
     ///
     /// Things like position, size, or color are all updated automatically when you change the properties of a `SliderTrack` instance. So you should rarely need to set properties of this `node` property directly.
-    var node: SKShapeNode {
+    var node: SKShapeNode
+    
+    /// The position of the knob in it's parents coordinate system. Also used to calculate the slider's value.
+    var position: CGPoint  {
+        didSet {
+            node.position = position
+        }
+    }
+    
+    /// Creates a track at `position`.
+    init(position: CGPoint) {
+        self.position = position
+        
         let width = 200
         let height = 10
         let rect = CGRect(x: position.x - CGFloat(width / 2), y: position.y - CGFloat(height / 2), width: 200, height: 10)
-        let n = SKShapeNode(rect: rect, cornerRadius: 4)
         
-        n.fillColor = SKColor.white
+        node = SKShapeNode(rect: rect, cornerRadius: 4)
         
-        return n
+        node.fillColor = SKColor.white
+        node.isUserInteractionEnabled = true
+        node.fillColor = SKColor.white
+        node.position = position
     }
-    
-    /// The position of the knob in it's parents coordinate system. Also used to calculate the slider's value.
-    var position: CGPoint
     
 }
 
