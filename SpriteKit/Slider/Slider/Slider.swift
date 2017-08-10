@@ -24,10 +24,10 @@ struct Slider {
     
     var value: Int
     
-    /// An SKNode for adding to a SpriteKit scene.
+    /// A SliderNode (subclass of SKShapeNode) for adding to a SpriteKit scene.
     ///
     /// Things like position, size, or color are all updated automatically when you change the properties of a `Slider` instance. So you should rarely need to set properties of this `node` property directly.
-    let node: SKNode
+    let node: SliderNode
     
     /// Creates a Slider which containts a knob and track. Default value is 50.
     init() {
@@ -35,7 +35,7 @@ struct Slider {
         track = SliderTrack(position: CGPoint(x: 0, y: 0))
         position = CGPoint(x: 0, y: 0)
         value = 50
-        node = SKNode()
+        node = SliderNode()
         
         node.addChild(track.node)
         node.addChild(knob.node)
