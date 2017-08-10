@@ -15,16 +15,18 @@ struct Slider {
     private let knob: SliderKnob
     private let track: SliderTrack
     
+    /// The position of the slider in it's parents coordinate system.
     var position: CGPoint {
         didSet {
             node.position = position
         }
     }
     
-//    var valueRange: Range<Int>
-    
     var value: Int
     
+    /// An SKNode for adding to a SpriteKit scene.
+    ///
+    /// Things like position, size, or color are all updated automatically when you change the properties of a `Slider` instance. So you should rarely need to set properties of this `node` property directly.
     let node: SKNode
     
     init() {

@@ -13,6 +13,8 @@ import SpriteKit
 struct SliderTrack {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
+    ///
+    /// Things like position, size, or color are all updated automatically when you change the properties of a `SliderTrack` instance. So you should rarely need to set properties of this `node` property directly.
     var node: SKShapeNode {
         let width = 200
         let height = 10
