@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-class SliderKnobNode: SKNode {
+class SliderKnobNode: SKShapeNode {
     override func mouseDown(with event: NSEvent) {
         print("Mouse down on SliderKnobNode")
     }
