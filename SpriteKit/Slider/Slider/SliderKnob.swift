@@ -44,4 +44,9 @@ class SliderKnob {
         node.position = position
     }
     
+    /// Creates a knob at `position` of (0, 0).
+    convenience init() {
+        self.init(position: CGPoint(x: 0, y: 0))
+    }
+    
 }
