@@ -29,6 +29,7 @@ struct Slider {
     /// Things like position, size, or color are all updated automatically when you change the properties of a `Slider` instance. So you should rarely need to set properties of this `node` property directly.
     let node: SKNode
     
+    /// Creates a Slider which containts a knob and track. Default value is 50.
     init() {
         knob = SliderKnob(position: CGPoint(x: 0, y: 0))
         track = SliderTrack(position: CGPoint(x: 0, y: 0))
