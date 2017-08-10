@@ -11,4 +11,14 @@ import SpriteKit
 
 class SliderNode: SKShapeNode {
     
+    var owner: Slider? = nil
+    
+    override func mouseDown(with event: NSEvent) {
+        print("mouseDown, SliderNode")
+        
+//        if let owner = owner {
+//            owner.moveKnob(to: event.location(in: owner.node))
+//        }
+    }
+    
 }
