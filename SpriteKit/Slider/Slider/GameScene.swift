@@ -12,10 +12,14 @@ import GameplayKit
 class GameScene: SKScene {
     
     var label = Label(text: "123", position: CGPoint(x: 0, y: 100))
-    
     var slider = Slider()
 
+
     override func didMove(to view: SKView) {
+        let p = CGPoint(x: frame.width / 2, y: frame.height / 2)
+
+        label.position = p
+        
         addChild(label.node)
         addChild(slider.node)
     }
