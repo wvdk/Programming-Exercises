@@ -26,6 +26,8 @@ class SliderKnob {
     
     func click(at point: CGPoint) {
         print("there has been a click at \(point)")
+        
+        
     }
     
     /// Creates a knob at `position`.

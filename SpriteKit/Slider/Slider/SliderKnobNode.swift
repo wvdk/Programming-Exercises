@@ -17,7 +17,7 @@ class SliderKnobNode: SKShapeNode {
         print("mouseDown, SliderKnobNode")
         
         if let owner = owner {
-            owner.click(at: event.location(in: self))
+            owner.click(at: event.location(in: owner.node))
         }
     }
     

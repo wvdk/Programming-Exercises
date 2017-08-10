@@ -36,8 +36,8 @@ struct Slider {
         value = 50
         node = SKNode()
         
-        node.addChild(knob.node)
         node.addChild(track.node)
+        node.addChild(knob.node)
     }
     
     func mouseDragged(with event: NSEvent) {
