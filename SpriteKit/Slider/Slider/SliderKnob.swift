@@ -10,7 +10,7 @@ import Cocoa
 import SpriteKit
 
 /// The part of a slider than the user clicks on and drags in order to change the value.
-struct SliderKnob {
+class SliderKnob {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
     ///
