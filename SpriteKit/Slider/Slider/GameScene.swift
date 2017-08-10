@@ -16,9 +16,8 @@ class GameScene: SKScene {
 
 
     override func didMove(to view: SKView) {
-        let p = CGPoint(x: frame.width / 2, y: frame.height / 2)
-
-        label.position = p
+        label.position = CGPoint(x: frame.width / 2, y: frame.height / 2 + 100)
+        slider.position = CGPoint(x: frame.width / 2, y: frame.height / 2)
         
         addChild(label.node)
         addChild(slider.node)
