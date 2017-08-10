@@ -55,4 +55,8 @@ struct Slider {
         node.addChild(knob.node)
     }
     
+    func click(at point: CGPoint) {
+        knob.move(to: point)
+    }
+    
 }
