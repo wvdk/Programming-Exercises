@@ -29,40 +29,28 @@ struct Slider {
     /// Things like position, size, or color are all updated automatically when you change the properties of a `Slider` instance. So you should rarely need to set properties of this `node` property directly.
     let node: SliderNode
     
+    /// The size of the slider.
+    let size: CGSize // TODO: Add didSet that updates the nodes
     
-    
-    
-    let size: CGSize
-    
+    /// Calculated center point of the slider.
     private var center: CGPoint {
         return CGPoint(x: size.width / 2, y: size.height / 2)
     }
     
-    
     /// Creates a Slider which containts a knob and track. Default value is 50.
     init() {
-
         position = CGPoint(x: 0, y: 0)
         value = 50
         size = CGSize(width: 300, height: 100)
-        
         knob = SliderKnob()
-        
         track = SliderTrack()
-        
-        
         node = SliderNode(rect: CGRect(origin: position, size: size))
         
         knob.position = center
         track.position = center
         
-        
-        
         node.addChild(track.node)
         node.addChild(knob.node)
-        
-        
-        print(node.frame)
     }
     
 }
