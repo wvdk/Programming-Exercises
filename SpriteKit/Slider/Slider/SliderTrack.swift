@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 /// The line for showing the angle the user my drag the knob along.
-struct SliderTrack {
+class SliderTrack {
     
     /// An SKShapeNode for adding to a SpriteKit scene.
     ///
@@ -41,7 +41,7 @@ struct SliderTrack {
     }
     
     /// Creates a track at `position` of (0, 0).
-    init() {
+    convenience init() {
         self.init(position: CGPoint(x: 0, y: 0))
     }
     
