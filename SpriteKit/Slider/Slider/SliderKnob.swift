@@ -38,7 +38,6 @@ class SliderKnob {
         
         node = SliderKnobNode(circleOfRadius: 30)
         
-        node.owner = self
         node.isUserInteractionEnabled = true
         node.fillColor = SKColor.white
         node.position = position
