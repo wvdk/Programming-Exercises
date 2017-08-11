@@ -92,13 +92,19 @@ struct Slider {
         
         knob.position = CGPoint(x: newX, y: oldY)
         
+        for pair in targetActions {
+            print(pair)
+        }
+        
         // TESTING:
         print("Slider value: \(value)")
     }
     
     /// ...
-    func addTargetAction(target: AnyClass, action: Selector) {
-    
+    mutating func addTargetAction(target: AnyClass, action: Selector) {
+        let pair: TargetActionPair = (target: target, action: action)
+        
+        targetActions.append(pair)
     }
     
 }
