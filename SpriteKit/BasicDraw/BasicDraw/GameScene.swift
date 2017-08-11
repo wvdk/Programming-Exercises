@@ -13,6 +13,11 @@ class GameScene: SKScene {
 
     override func didMove(to view: SKView) {
 
+        
+        let square = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        addChild(square)
+        
     }
     
     override func mouseDown(with event: NSEvent) {
