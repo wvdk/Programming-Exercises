@@ -71,10 +71,10 @@ struct Slider {
         let knobRadius = knob.radius
         
         // Constrain knob to stay inside of slider's bounds
-        if newX < 0 {
-            newX = 0
-        } else if newX > size.width {
-            newX = size.width
+        if newX < (0 + knobRadius) {
+            newX = 0 + knobRadius
+        } else if newX > (size.width - knobRadius) {
+            newX = size.width - knobRadius
         }
         
         knob.position = CGPoint(x: newX, y: oldY)
