@@ -92,4 +92,8 @@ struct Slider {
         print("Slider value: \(value)")
     }
     
+    func addTargetAction(target: AnyClass, action: Selector) {
+    
+    }
+    
 }
