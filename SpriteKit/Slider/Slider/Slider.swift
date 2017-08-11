@@ -45,6 +45,10 @@ struct Slider {
     
     private let track = SliderTrack()
     
+    private typealias TargetActionPair = (target: AnyClass, action: Selector)
+    
+    private var targetActions: [TargetActionPair] = []
+    
     /// Creates a Slider which containts a knob and track.
     init() {
         node = SliderNode(rect: CGRect(origin: position, size: size))
@@ -92,6 +96,7 @@ struct Slider {
         print("Slider value: \(value)")
     }
     
+    /// ...
     func addTargetAction(target: AnyClass, action: Selector) {
     
     }
