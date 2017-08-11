@@ -35,7 +35,6 @@ class SliderTrack {
         node = SKShapeNode(rect: rect, cornerRadius: 4)
         
         node.fillColor = SKColor.white
-        node.isUserInteractionEnabled = true
         node.fillColor = SKColor.white
         node.position = position
     }
