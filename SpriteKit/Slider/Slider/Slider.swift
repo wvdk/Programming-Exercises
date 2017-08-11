@@ -45,9 +45,9 @@ class Slider {
     
     private let track = SliderTrack()
     
-    private typealias TargetActionPair = (target: Any, action: Selector)
+    private typealias ValueChangeHandler = (Double) -> ()
     
-    private var targetActions: [TargetActionPair] = []
+    private var valueChangeHandlers: [ValueChangeHandler] = []
     
     /// Creates a Slider which containts a knob and track.
     init() {
@@ -92,8 +92,8 @@ class Slider {
         
         knob.position = CGPoint(x: newX, y: oldY)
         
-        for pair in targetActions {
-            print(pair)
+        for handler in valueChangeHandlers {
+            handler(value)
         }
         
         // TESTING:
@@ -101,10 +101,8 @@ class Slider {
     }
     
     /// ...
-    func addTargetAction(target: Any, action: Selector) {
-        let pair: TargetActionPair = (target: target, action: action)
-        
-        targetActions.append(pair)
+    func addValueChangeHandler(handler: @escaping (Double) -> ()) {
+        valueChangeHandlers.append(handler)
     }
     
 }
