@@ -23,13 +23,13 @@ class GameScene: SKScene {
         label.position = CGPoint(x: center.x, y: center.y + 100)
         slider.position = CGPoint(x: center.x - slider.size.width / 2, y: center.y - slider.size.height / 2)
         
-//        slider.addTargetAction(target: self, action: #selector(updateLabel(value:)))
+        slider.addTargetAction(target: self, action: Selector("updateLabel(value:)"))
         
         addChild(label.node)
         addChild(slider.node)
     }
     
-    func updateLabel(value: Double) {
+    @objc func updateLabel(value: Double) {
         print("Updating label with value: \(value)")
         
         label.text = value.description

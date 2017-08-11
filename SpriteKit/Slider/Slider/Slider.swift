@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 /// A user interface which the user can select and drag a knob to change a value.
-struct Slider {
+class Slider {
     
     /// A SliderNode (subclass of SKShapeNode) for adding to a SpriteKit scene.
     ///
@@ -45,7 +45,7 @@ struct Slider {
     
     private let track = SliderTrack()
     
-    private typealias TargetActionPair = (target: AnyClass, action: Selector)
+    private typealias TargetActionPair = (target: Any, action: Selector)
     
     private var targetActions: [TargetActionPair] = []
     
@@ -101,7 +101,7 @@ struct Slider {
     }
     
     /// ...
-    mutating func addTargetAction(target: AnyClass, action: Selector) {
+    func addTargetAction(target: Any, action: Selector) {
         let pair: TargetActionPair = (target: target, action: action)
         
         targetActions.append(pair)
