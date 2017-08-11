@@ -47,6 +47,8 @@ struct Slider {
         knob.position = center
         track.position = center
         
+        track.size = CGSize(width: self.size.width, height: 10)
+        
         node.isUserInteractionEnabled = true
         node.owner = self
         

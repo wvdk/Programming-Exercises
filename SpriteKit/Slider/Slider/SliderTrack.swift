@@ -52,7 +52,6 @@ class SliderTrack {
         
         node.fillColor = SKColor.white
         node.fillColor = SKColor.white
-        node.position = position
     }
     
 }
