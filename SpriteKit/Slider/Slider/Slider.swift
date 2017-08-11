@@ -44,6 +44,8 @@ struct Slider {
     init() {
         node = SliderNode(rect: CGRect(origin: position, size: size))
         
+        node.lineWidth = 0.0
+        
         knob.position = center
         track.position = center
         

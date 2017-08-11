@@ -24,6 +24,7 @@ struct Label {
         
         n.text = text
         n.position = position
+        n.fontColor = .black
         
         return n
     }

@@ -20,7 +20,7 @@ class ViewController: NSViewController {
         if let view = self.skView {
             let scene = GameScene(size: view.frame.size)
             
-            scene.backgroundColor = SKColor.red
+            scene.backgroundColor = .white
             scene.scaleMode = .aspectFit
             
             view.presentScene(scene)
