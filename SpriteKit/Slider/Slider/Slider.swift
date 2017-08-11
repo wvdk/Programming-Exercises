@@ -31,6 +31,11 @@ struct Slider {
         }
     }
     
+    /// The value of the slider, which is changed by dragging the knob: Ranges from 0.0 to 1.0.
+    var value: Double {
+        return Double(knob.position.x / size.width)
+    }
+    
     /// Calculated center point of the slider.
     private var center: CGPoint {
         return CGPoint(x: size.width / 2, y: size.height / 2)
@@ -82,6 +87,9 @@ struct Slider {
         }
         
         knob.position = CGPoint(x: newX, y: oldY)
+        
+        // TESTING:
+        print("Slider value: \(value)")
     }
     
 }
