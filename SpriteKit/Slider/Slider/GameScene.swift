@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var label = Label()
+    var label = SKLabelNode(text: "Test")
     var slider = Slider()
     
     /// Calculated center point of the scene.
@@ -20,6 +20,8 @@ class GameScene: SKScene {
     }
 
     override func didMove(to view: SKView) {
+        label.fontColor = .red
+        
         label.position = CGPoint(x: center.x, y: center.y + 100)
         slider.position = CGPoint(x: center.x - slider.size.width / 2, y: center.y - slider.size.height / 2)
         
@@ -29,7 +31,7 @@ class GameScene: SKScene {
             self.label.text = newValue.description
         })
         
-        addChild(label.node)
+        addChild(label)
         addChild(slider.node)
     }
     
