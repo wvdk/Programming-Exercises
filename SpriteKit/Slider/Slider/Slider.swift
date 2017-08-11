@@ -56,20 +56,27 @@ struct Slider {
     
     /// Handles when the user clicks on the slider. Called from `SliderNode`.
     func click(at point: CGPoint) {
-        moveKnob(point: point)
+        moveKnob(to: point)
     }
     
     /// Handles when the user drags mouse on the slider. Called from `SliderNode`.
     func dragging(currentPoint: CGPoint) {
-        moveKnob(point: currentPoint)
+        moveKnob(to: currentPoint)
     }
     
     /// Handles all movement of knob.
-    func moveKnob(point: CGPoint) {
-        let knobOriginalPosition = knob.position
-        let knobNewPosition = CGPoint(x: point.x, y: knobOriginalPosition.y)
+    func moveKnob(to point: CGPoint) {
+        let oldY = knob.position.y
+        var newX = point.x
         
-        knob.position = knobNewPosition
+        // Constrain knob to stay inside of slider's bounds
+        if newX < 0 {
+            newX = 0
+        } else if newX > size.width {
+            newX = size.width
+        }
+        
+        knob.position = CGPoint(x: newX, y: oldY)
     }
     
 }
