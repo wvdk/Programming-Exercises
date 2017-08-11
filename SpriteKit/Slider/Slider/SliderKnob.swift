@@ -15,7 +15,7 @@ class SliderKnob {
     /// An SKShapeNode for adding to a SpriteKit scene.
     ///
     /// Things like position, size, or color are all updated automatically when you change the properties of a `SliderKnob` instance. So you should rarely need to set properties of this `node` property directly.
-    let node: SKShapeNode
+    var node: SKShapeNode
     
     /// The position of the knob in it's parents coordinate system. Also used to calculate the slider's value.
     var position: CGPoint {
@@ -24,11 +24,18 @@ class SliderKnob {
         }
     }
     
+    /// The radius of the knob.
+    var radius = CGFloat(20) {
+        didSet {
+            node = SKShapeNode(circleOfRadius: radius)
+        }
+    }
+    
     /// Creates a knob at `position`.
     init(position: CGPoint) {
         self.position = position
         
-        node = SKShapeNode(circleOfRadius: 30)
+        node = SKShapeNode(circleOfRadius: radius)
         
         node.fillColor = SKColor.white
         node.position = position

@@ -68,6 +68,7 @@ struct Slider {
     func moveKnob(to point: CGPoint) {
         let oldY = knob.position.y
         var newX = point.x
+        let knobRadius = knob.radius
         
         // Constrain knob to stay inside of slider's bounds
         if newX < 0 {
