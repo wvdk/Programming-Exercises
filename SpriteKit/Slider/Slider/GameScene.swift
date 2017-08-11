@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var label = Label(text: "123", position: CGPoint(x: 0, y: 100))
+    var label = Label()
     var slider = Slider()
     
     /// Calculated center point of the scene.
