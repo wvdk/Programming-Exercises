@@ -23,9 +23,9 @@ struct Slider {
             node.position = position
         }
     }
-    
+ 
     /// The size of the slider.
-    let size = CGSize(width: 300, height: 100) {
+    var size = CGSize(width: 300, height: 100) {
         didSet {
              // TODO: update the nodes with new size
         }
