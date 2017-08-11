@@ -25,8 +25,11 @@ struct Slider {
     }
     
     /// The size of the slider.
-    let size = CGSize(width: 300, height: 100)
-    // TODO: Add didSet that updates the nodes
+    let size = CGSize(width: 300, height: 100) {
+        didSet {
+             // TODO: update the nodes with new size
+        }
+    }
     
     /// Calculated center point of the slider.
     private var center: CGPoint {
@@ -52,9 +55,6 @@ struct Slider {
     }
     
     func click(at point: CGPoint) {
-        
-        
-        
         let knobOriginalPosition = knob.position
         let knobNewPosition = CGPoint(x: point.x, y: knobOriginalPosition.y)
         
@@ -67,4 +67,5 @@ struct Slider {
         
         knob.position = knobNewPosition
     }
+    
 }
