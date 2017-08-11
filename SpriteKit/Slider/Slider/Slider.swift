@@ -18,31 +18,27 @@ struct Slider {
     let node: SliderNode
     
     /// The position of the slider in it's parents coordinate system.
-    var position: CGPoint {
+    var position = CGPoint(x: 0, y: 0) {
         didSet {
             node.position = position
         }
     }
     
     /// The size of the slider.
-    let size: CGSize // TODO: Add didSet that updates the nodes
+    let size = CGSize(width: 300, height: 100)
+    // TODO: Add didSet that updates the nodes
     
     /// Calculated center point of the slider.
     private var center: CGPoint {
         return CGPoint(x: size.width / 2, y: size.height / 2)
     }
     
-    private let knob: SliderKnob
+    private let knob = SliderKnob()
     
-    private let track: SliderTrack
+    private let track = SliderTrack()
     
     /// Creates a Slider which containts a knob and track.
     init() {
-        position = CGPoint(x: 0, y: 0)
-
-        size = CGSize(width: 300, height: 100)
-        knob = SliderKnob()
-        track = SliderTrack()
         node = SliderNode(rect: CGRect(origin: position, size: size))
         
         knob.position = center
@@ -56,6 +52,9 @@ struct Slider {
     }
     
     func click(at point: CGPoint) {
+        
+        
+        
         let knobOriginalPosition = knob.position
         let knobNewPosition = CGPoint(x: point.x, y: knobOriginalPosition.y)
         
