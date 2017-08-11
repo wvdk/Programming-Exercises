@@ -23,20 +23,4 @@ class GameScene: SKScene {
         addChild(slider.node)
     }
     
-    override func mouseDown(with event: NSEvent) {
-//        let xPosition = event.locationInWindow.x
-//
-//        sliderKnob.position.x = xPosition
-    }
-    
-    override func mouseDragged(with event: NSEvent) {
-//        let xPosition = event.locationInWindow.x
-//
-//        slider.position.x = xPosition
-    }
-    
-    override func mouseUp(with event: NSEvent) {
-//        sliderKnob.position = CGPoint(x: 0, y: 0)
-    }
-    
 }
