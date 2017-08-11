@@ -56,10 +56,16 @@ struct Slider {
     }
     
     func click(at point: CGPoint) {
-        knob.move(to: point)
+        let knobOriginalPosition = knob.position
+        let knobNewPosition = CGPoint(x: point.x, y: knobOriginalPosition.y)
+        
+        knob.position = knobNewPosition
     }
     
     func dragging(currentPoint: CGPoint) {
-        knob.move(to: currentPoint)
+        let knobOriginalPosition = knob.position
+        let knobNewPosition = CGPoint(x: currentPoint.x, y: knobOriginalPosition.y)
+        
+        knob.position = knobNewPosition
     }
 }

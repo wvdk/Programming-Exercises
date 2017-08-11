@@ -39,9 +39,4 @@ class SliderKnob {
         self.init(position: CGPoint(x: 0, y: 0))
     }
     
-    /// Constrained on the x axis, so it only moves right or left.
-    func move(to point: CGPoint) {
-        position = CGPoint(x: point.x, y: position.y)
-    }
-    
 }
