@@ -38,6 +38,8 @@ class SliderKnob {
         node = SKShapeNode(circleOfRadius: radius)
         
         node.fillColor = SKColor.white
+        node.strokeColor = SKColor.gray
+        node.lineWidth = 1.5
         node.position = position
     }
     

@@ -51,7 +51,8 @@ class SliderTrack {
         node = SKShapeNode(rect: rect, cornerRadius: 4)
         
         node.fillColor = SKColor.white
-        node.fillColor = SKColor.white
+        node.strokeColor = SKColor.gray
+        node.lineWidth = 1.5
     }
     
 }
