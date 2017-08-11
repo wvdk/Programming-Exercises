@@ -25,7 +25,7 @@ class SliderTrack {
     }
     
     /// The size of the track.
-    var size = CGSize(width: 300, height: 100) {
+    var size = CGSize(width: 200, height: 10) {
         didSet {
             updateNode()
         }
@@ -38,16 +38,15 @@ class SliderTrack {
         updateNode()
     }
     
-
     /// Creates a track at `position` of (0, 0).
     convenience init() {
         self.init(position: CGPoint(x: 0, y: 0))
     }
     
     private func updateNode() {
-        let width = 200
-        let height = 10
-        let rect = CGRect(x: position.x - CGFloat(width / 2), y: position.y - CGFloat(height / 2), width: 200, height: 10)
+        let width = size.width
+        let height = size.height
+        let rect = CGRect(x: position.x - width / 2, y: position.y - height / 2, width: width, height: height)
         
         node = SKShapeNode(rect: rect, cornerRadius: 4)
         
