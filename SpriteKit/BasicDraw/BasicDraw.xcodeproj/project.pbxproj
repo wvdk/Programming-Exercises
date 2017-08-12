@@ -12,6 +12,7 @@
 		DECA80511F3E24180093C5E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80501F3E24180093C5E9 /* ViewController.swift */; };
 		DECA80531F3E24180093C5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECA80521F3E24180093C5E9 /* Assets.xcassets */; };
 		DECA80561F3E24180093C5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECA80541F3E24180093C5E9 /* Main.storyboard */; };
+		DECA805F1F3EBC200093C5E9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA805E1F3EBC200093C5E9 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DECA80551F3E24180093C5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DECA80571F3E24180093C5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DECA80581F3E24180093C5E9 /* BasicDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicDraw.entitlements; sourceTree = "<group>"; };
+		DECA805E1F3EBC200093C5E9 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				DECA80481F3E24180093C5E9 /* AppDelegate.swift */,
 				DECA80501F3E24180093C5E9 /* ViewController.swift */,
 				DECA804E1F3E24180093C5E9 /* GameScene.swift */,
+				DECA805E1F3EBC200093C5E9 /* Shape.swift */,
 				DECA80521F3E24180093C5E9 /* Assets.xcassets */,
 				DECA80541F3E24180093C5E9 /* Main.storyboard */,
 				DECA80571F3E24180093C5E9 /* Info.plist */,
@@ -139,6 +142,7 @@
 				DECA80511F3E24180093C5E9 /* ViewController.swift in Sources */,
 				DECA804F1F3E24180093C5E9 /* GameScene.swift in Sources */,
 				DECA80491F3E24180093C5E9 /* AppDelegate.swift in Sources */,
+				DECA805F1F3EBC200093C5E9 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
