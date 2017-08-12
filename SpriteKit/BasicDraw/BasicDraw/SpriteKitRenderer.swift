@@ -7,9 +7,17 @@
 //
 
 import Foundation
+import SpriteKit
 
 /// Turns a Shape data structure into an SKNodes hirerarchy
-///
-struct SpriteKitRenderer {
+struct SpriteKitRenderer: Renderer {
+    
+    typealias Render = SKNode
+    
+    func render(shape: Shape) -> Render {
+        dump(shape)
+        
+        return SKNode()
+    }
     
 }
