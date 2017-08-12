@@ -11,11 +11,11 @@ import SpriteKit
 
 struct Shape {
     
+    /// An array containing normal Shapes or recursive Shapes
+    var children: [Shape] = []
     
-    // child
-    // can contain normal Shapes or recursive Shapes
-    
-    // transform for child
+    // On hold:
+//    var childTransforms: [ShapeTransform] = []
     
     
 }
