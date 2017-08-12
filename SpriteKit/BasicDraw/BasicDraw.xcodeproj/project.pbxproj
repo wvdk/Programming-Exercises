@@ -13,6 +13,8 @@
 		DECA80531F3E24180093C5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECA80521F3E24180093C5E9 /* Assets.xcassets */; };
 		DECA80561F3E24180093C5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECA80541F3E24180093C5E9 /* Main.storyboard */; };
 		DECA805F1F3EBC200093C5E9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA805E1F3EBC200093C5E9 /* Shape.swift */; };
+		DECA80611F3EBFED0093C5E9 /* SpriteKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80601F3EBFED0093C5E9 /* SpriteKitRenderer.swift */; };
+		DECA80631F3EC0D40093C5E9 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80621F3EC0D40093C5E9 /* Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		DECA80571F3E24180093C5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DECA80581F3E24180093C5E9 /* BasicDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicDraw.entitlements; sourceTree = "<group>"; };
 		DECA805E1F3EBC200093C5E9 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		DECA80601F3EBFED0093C5E9 /* SpriteKitRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitRenderer.swift; sourceTree = "<group>"; };
+		DECA80621F3EC0D40093C5E9 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				DECA80501F3E24180093C5E9 /* ViewController.swift */,
 				DECA804E1F3E24180093C5E9 /* GameScene.swift */,
 				DECA805E1F3EBC200093C5E9 /* Shape.swift */,
+				DECA80601F3EBFED0093C5E9 /* SpriteKitRenderer.swift */,
+				DECA80621F3EC0D40093C5E9 /* Renderer.swift */,
 				DECA80521F3E24180093C5E9 /* Assets.xcassets */,
 				DECA80541F3E24180093C5E9 /* Main.storyboard */,
 				DECA80571F3E24180093C5E9 /* Info.plist */,
@@ -143,6 +149,8 @@
 				DECA804F1F3E24180093C5E9 /* GameScene.swift in Sources */,
 				DECA80491F3E24180093C5E9 /* AppDelegate.swift in Sources */,
 				DECA805F1F3EBC200093C5E9 /* Shape.swift in Sources */,
+				DECA80631F3EC0D40093C5E9 /* Renderer.swift in Sources */,
+				DECA80611F3EBFED0093C5E9 /* SpriteKitRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

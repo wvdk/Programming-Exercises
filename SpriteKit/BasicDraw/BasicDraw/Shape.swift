@@ -11,4 +11,11 @@ import SpriteKit
 
 struct Shape {
     
+    
+    // child
+    // can contain normal Shapes or recursive Shapes
+    
+    // transform for child
+    
+    
 }
