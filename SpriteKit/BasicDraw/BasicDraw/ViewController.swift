@@ -13,6 +13,7 @@ import GameplayKit
 class ViewController: NSViewController {
 
     @IBOutlet var skView: SKView!
+    var shapesInventory: ShapesInventory = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()

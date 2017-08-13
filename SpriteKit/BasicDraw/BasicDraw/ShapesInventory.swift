@@ -8,6 +8,5 @@
 
 import Foundation
 
-struct ShapesInventory {
-    
-}
+typealias ShapeName = String
+typealias ShapesInventory = [ShapeName: Shape]
