@@ -13,8 +13,10 @@ protocol Renderer {
     
     associatedtype Render
     
+    /// A dictionary containing name / reference pairs for each shape.
     var shapesInventory: ShapesInventory { get set }
     
+    /// The function which renders the shapes into something which can be displayed or exported. We are using an associated type called "Render", which you will need to add to your class. E.g. "typealias Render = SKNode".
     func render(shapeNamed: ShapeName, depth: Int) -> Render
     
 }
