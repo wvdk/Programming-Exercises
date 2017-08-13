@@ -28,10 +28,13 @@ class GameScene: SKScene {
         addChild(squareShape)
         
         
+        
+        
         let size = CGSize(width: 100, height: 100)
         let shapePosition = CGPoint(x: 100, y: 100)
-        let myShape = Shape(size: size, position: shapePosition, children: [])
+        var myShape = Shape(size: size, position: shapePosition, children: [])
         
+        myShape.children = [myShape]
         
         
         

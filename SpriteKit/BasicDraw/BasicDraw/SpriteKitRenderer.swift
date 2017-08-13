@@ -15,15 +15,26 @@ struct SpriteKitRenderer: Renderer {
     typealias Render = SKNode
     
     func render(shape: Shape) -> Render {
-
-        let rect = CGRect(x: shape.position.x, y: shape.position.y, width: shape.size.width, height: shape.size.height)
-        let n = SKShapeNode(rect: rect)
         
-        n.fillColor = .blue
+        let rect = CGRect(x: shape.position.x, y: shape.position.y, width: shape.size.width, height: shape.size.height)
+        let topLevelNode = SKShapeNode(rect: rect)
+        
+        topLevelNode.fillColor = .blue
         
         dump(shape)
         
-        return n
+        
+        for childShape in shape.children {
+            let rect = CGRect(x: childShape.position.x, y: childShape.position.y, width: childShape.size.width, height: childShape.size.height)
+            let childNode = SKShapeNode(rect: rect)
+            
+            topLevelNode.addChild(childNode)
+            
+        }
+        
+       
+        
+        return topLevelNode
     }
     
 }
