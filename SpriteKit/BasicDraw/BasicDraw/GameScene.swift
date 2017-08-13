@@ -35,9 +35,8 @@ class GameScene: SKScene {
         var myShape = Shape(size: size, position: shapePosition, children: [])
         
         myShape.children = [myShape]
-        
-        
-        
+        myShape.children = [myShape]
+
         let renderer = SpriteKitRenderer()
         
         let rendered = renderer.render(shape: myShape)
