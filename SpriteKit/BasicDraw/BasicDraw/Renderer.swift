@@ -15,6 +15,6 @@ protocol Renderer {
     
     var shapesInventory: ShapesInventory { get set }
     
-    func render(shapeNamed: ShapeName) -> Render
+    func render(shapeNamed: ShapeName, depth: Int) -> Render
     
 }

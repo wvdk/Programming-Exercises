@@ -24,27 +24,15 @@ class ViewController: NSViewController {
         
         shapesInventory["square"] = Shape(size: size, position: shapePosition, children: ["square"])
         
-        
-        
-        
-        
-        
-        
-//        let renderer = SpriteKitRenderer()
-        
-//        let rendered = renderer.render(shape: myShape)
-        
-//        addChild(rendered)
-        
-        
-        
-        
-        
+        let renderer = SpriteKitRenderer(shapesInventory: shapesInventory)
+        let rendered = renderer.render(shapeNamed: "square")
 
         if let view = self.skView {            
             let scene = GameScene(size: view.frame.size)
             
             scene.scaleMode = .aspectFit
+            
+            scene.addChild(rendered)
             
             view.presentScene(scene)
             
