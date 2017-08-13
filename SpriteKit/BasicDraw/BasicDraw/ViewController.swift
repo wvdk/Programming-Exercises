@@ -14,22 +14,25 @@ class ViewController: NSViewController {
 
     @IBOutlet var skView: SKView!
     var shapesInventory: ShapesInventory = [:]
+    var rootShape: ShapeName?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         let size = CGSize(width: 100, height: 100)
         let shapePosition = CGPoint(x: 100, y: 100)
-        var myShape = Shape(size: size, position: shapePosition, children: [])
         
-        myShape.children = [myShape]
-        myShape.children = [myShape]
+        shapesInventory["square"] = Shape(size: size, position: shapePosition, children: ["square"])
         
-        let renderer = SpriteKitRenderer()
         
-        let rendered = renderer.render(shape: myShape)
+        
+        
+        
+        
+        
+//        let renderer = SpriteKitRenderer()
+        
+//        let rendered = renderer.render(shape: myShape)
         
 //        addChild(rendered)
         

@@ -9,18 +9,17 @@
 import Foundation
 import SpriteKit
 
-/*
-
+/********************************************
  Coordinate system:
- 
-                     (x: 10, y: 10)
-         |-----------
-         |-----------
-         |-----------
-         |___________
-(x: 0, y: 0)
- 
- */
+  (x: 0, y: 10)           (x: 10, y: 10)
+              |||||||||||||
+              |||||||||||||
+              |||||||||||||
+              |||||||||||||
+              |||||||||||||
+  (x: 0, y: 0)            (x: 10, y: 0)
+********************************************/
+
 struct Shape {
     
     let size: CGSize
@@ -29,7 +28,7 @@ struct Shape {
     let position: CGPoint
     
     /// An array containing normal Shapes or recursive Shapes
-    var children: [Shape] = []
+    var children: [ShapeName] = []
     
     // On hold:
 //    var childTransforms: [ShapeTransform] = []

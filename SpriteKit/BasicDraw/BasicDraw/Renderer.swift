@@ -13,6 +13,8 @@ protocol Renderer {
     
     associatedtype Render
     
-    func render(shape: Shape) -> Render
+    var shapesInventory: ShapesInventory { get set }
+    
+    func render(shapeNamed: ShapeName) -> Render
     
 }

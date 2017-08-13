@@ -12,9 +12,15 @@ import SpriteKit
 /// Turns a Shape data structure into an SKNodes hirerarchy
 struct SpriteKitRenderer: Renderer {
     
+    var shapesInventory: ShapesInventory
+    
     typealias Render = SKNode
     
-    func render(shape: Shape) -> Render {
+    func render(shapeNamed: ShapeName) -> Render {
+        guard let shape = shapesInventory[shapeNamed] else {
+            return SKLabelNode(text: "Shape not found in shapes inventory.")
+        }
+        
         let shapeX = shape.position.x
         let shapeY = shape.position.y
         let rect = CGRect(x: shapeX, y: shapeY, width: shape.size.width, height: shape.size.height)
@@ -22,8 +28,8 @@ struct SpriteKitRenderer: Renderer {
         
         shapeNode.fillColor = .blue
         
-        for childShape in shape.children {
-            let childNode = render(shape: childShape)
+        for childShapeName in shape.children {
+            let childNode = render(shapeNamed: childShapeName)
             
             childNode.position = CGPoint(x: shapeY, y: shapeX)
             
