@@ -12,11 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
 
     override func didMove(to view: SKView) {
-        let sideBarContainer = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 125, height: frame.size.height + 1))
         
-        sideBarContainer.fillColor = .white
-        
-        addChild(sideBarContainer)
     }
     
     override func mouseDown(with event: NSEvent) {
