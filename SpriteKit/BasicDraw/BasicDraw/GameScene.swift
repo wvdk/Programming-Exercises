@@ -12,40 +12,11 @@ import GameplayKit
 class GameScene: SKScene {
 
     override func didMove(to view: SKView) {
-        let sideBarContainer = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 200, height: frame.size.height + 1))
+        let sideBarContainer = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 125, height: frame.size.height + 1))
         
         sideBarContainer.fillColor = .white
         
         addChild(sideBarContainer)
-        
-        
-        let squareShape = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 100, height: 100))
-
-        squareShape.fillColor = .red
-        
-        squareShape.position = CGPoint(x: 50, y: frame.size.height - 150)
-        
-        addChild(squareShape)
-        
-        
-        
-        
-        let size = CGSize(width: 100, height: 100)
-        let shapePosition = CGPoint(x: 100, y: 100)
-        var myShape = Shape(size: size, position: shapePosition, children: [])
-        
-        myShape.children = [myShape]
-        myShape.children = [myShape]
-
-        let renderer = SpriteKitRenderer()
-        
-        let rendered = renderer.render(shape: myShape)
-        
-        addChild(rendered)
-        
-        
-        
-        
     }
     
     override func mouseDown(with event: NSEvent) {
