@@ -28,7 +28,7 @@ struct SpriteKitRenderer: Renderer {
         
         shapeNode.fillColor = .blue
         
-        if depth < 5 {
+        if depth < 500 {
             for childShapeName in shape.children {
                 let childNode = render(shapeNamed: childShapeName, depth: depth + 1)
                 

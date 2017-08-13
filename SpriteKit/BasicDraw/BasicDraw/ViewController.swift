@@ -20,7 +20,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         let size = CGSize(width: 100, height: 100)
-        let shapePosition = CGPoint(x: 100, y: 100)
+        let shapePosition = CGPoint(x: 75, y: 90)
         
         shapesInventory["square"] = Shape(size: size, position: shapePosition, children: ["square"])
         
