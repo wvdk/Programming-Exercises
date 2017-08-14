@@ -1,5 +1,5 @@
 //
-//  Render.swift
+//  RenderedNode.swift
 //  BasicDraw
 //
 //  Created by Wesley Van der Klomp on 8/14/17.
