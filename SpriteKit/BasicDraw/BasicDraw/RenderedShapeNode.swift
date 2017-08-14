@@ -1,5 +1,5 @@
 //
-//  RenderedNode.swift
+//  RenderedShapeNode.swift
 //  BasicDraw
 //
 //  Created by Wesley Van der Klomp on 8/14/17.
@@ -9,6 +9,8 @@
 import Foundation
 import SpriteKit
 
-class RenderedNode: SKNode {
+class RenderedShapeNode: SKShapeNode {
+    
+    
     
 }

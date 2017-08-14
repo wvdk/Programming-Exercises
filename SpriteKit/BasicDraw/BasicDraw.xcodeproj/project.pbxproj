@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE3E5CD71F4216C60021B07B /* RenderedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E5CD61F4216C60021B07B /* RenderedNode.swift */; };
+		DE3E5CD71F4216C60021B07B /* RenderedShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3E5CD61F4216C60021B07B /* RenderedShapeNode.swift */; };
 		DECA80491F3E24180093C5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80481F3E24180093C5E9 /* AppDelegate.swift */; };
 		DECA804F1F3E24180093C5E9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA804E1F3E24180093C5E9 /* GameScene.swift */; };
 		DECA80511F3E24180093C5E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80501F3E24180093C5E9 /* ViewController.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE3E5CD61F4216C60021B07B /* RenderedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderedNode.swift; sourceTree = "<group>"; };
+		DE3E5CD61F4216C60021B07B /* RenderedShapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderedShapeNode.swift; sourceTree = "<group>"; };
 		DECA80451F3E24180093C5E9 /* BasicDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DECA80481F3E24180093C5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DECA804E1F3E24180093C5E9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				DECA804E1F3E24180093C5E9 /* GameScene.swift */,
 				DECA805E1F3EBC200093C5E9 /* Shape.swift */,
 				DECA80621F3EC0D40093C5E9 /* Renderer.swift */,
-				DE3E5CD61F4216C60021B07B /* RenderedNode.swift */,
+				DE3E5CD61F4216C60021B07B /* RenderedShapeNode.swift */,
 				DECA80601F3EBFED0093C5E9 /* SpriteKitRenderer.swift */,
 				DECA80641F4086850093C5E9 /* ShapesInventory.swift */,
 				DECA80521F3E24180093C5E9 /* Assets.xcassets */,
@@ -158,7 +158,7 @@
 				DECA805F1F3EBC200093C5E9 /* Shape.swift in Sources */,
 				DECA80631F3EC0D40093C5E9 /* Renderer.swift in Sources */,
 				DECA80611F3EBFED0093C5E9 /* SpriteKitRenderer.swift in Sources */,
-				DE3E5CD71F4216C60021B07B /* RenderedNode.swift in Sources */,
+				DE3E5CD71F4216C60021B07B /* RenderedShapeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
