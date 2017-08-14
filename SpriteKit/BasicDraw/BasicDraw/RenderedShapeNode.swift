@@ -12,11 +12,21 @@ import SpriteKit
 class RenderedShapeNode: SKShapeNode {
     
     override func mouseDown(with event: NSEvent) {
-        print("mouse down...")
+        movePosition(event: event)
     }
     
     override func mouseDragged(with event: NSEvent) {
-        print("mouse moved...")
+        movePosition(event: event)
+    }
+    
+    private func movePosition(event: NSEvent) {
+        print("move on shape named \"\(name)\"")
+        
+        if let scene = scene {
+            let p = event.location(in: scene)
+            
+            self.position = p
+        }
     }
     
 }
