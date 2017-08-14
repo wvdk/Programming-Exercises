@@ -11,6 +11,12 @@ import SpriteKit
 
 class RenderedShapeNode: SKShapeNode {
     
+    override func mouseDown(with event: NSEvent) {
+        print("mouse down...")
+    }
     
+    override func mouseMoved(with event: NSEvent) {
+        print("mouse moved...")
+    }
     
 }
