@@ -14,11 +14,11 @@ struct SpriteKitRenderer: Renderer {
     
     var shapesInventory: ShapesInventory
     
-    typealias Render = RenderedNode
+    typealias Render = RenderedShapeNode
     
     func render(shapeNamed: ShapeName, depth: Int = 0) -> Render {
         guard let shape = shapesInventory[shapeNamed] else {
-            let node = RenderedNode()
+            let node = RenderedShapeNode()
           
             node.addChild(SKLabelNode(text: "Shape not found in shapes inventory."))
             
@@ -28,8 +28,8 @@ struct SpriteKitRenderer: Renderer {
         let shapeX = shape.position.x
         let shapeY = shape.position.y
         let rect = CGRect(x: shapeX, y: shapeY, width: shape.size.width, height: shape.size.height)
-        let shapeNode = SKShapeNode(rect: rect)
-        
+        let shapeNode = RenderedShapeNode(rect: rect)
+
         shapeNode.fillColor = .blue
         
         if depth < 500 {
@@ -42,10 +42,7 @@ struct SpriteKitRenderer: Renderer {
             }
         }
         
-        let renderedNode = RenderedNode()
-        renderedNode.addChild(renderedNode)
-        
-        return renderedNode
+        return shapeNode
     }
     
 }
