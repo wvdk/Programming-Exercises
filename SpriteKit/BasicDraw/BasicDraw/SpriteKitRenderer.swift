@@ -31,6 +31,7 @@ struct SpriteKitRenderer: Renderer {
         let shapeNode = RenderedShapeNode(rect: rect)
 
         shapeNode.fillColor = .blue
+        shapeNode.isUserInteractionEnabled = true
         
         if depth < 500 {
             for childShapeName in shape.children {
