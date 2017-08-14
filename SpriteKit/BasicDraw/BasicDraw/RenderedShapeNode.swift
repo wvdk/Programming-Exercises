@@ -15,7 +15,7 @@ class RenderedShapeNode: SKShapeNode {
         print("mouse down...")
     }
     
-    override func mouseMoved(with event: NSEvent) {
+    override func mouseDragged(with event: NSEvent) {
         print("mouse moved...")
     }
     
