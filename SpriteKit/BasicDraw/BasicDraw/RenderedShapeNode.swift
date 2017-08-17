@@ -11,6 +11,8 @@ import SpriteKit
 
 class RenderedShapeNode: SKShapeNode {
     
+    var owningShape: Shape? = nil
+    
     override func mouseDown(with event: NSEvent) {
         movePosition(event: event)
     }
@@ -23,9 +25,12 @@ class RenderedShapeNode: SKShapeNode {
         print("move on shape named \"\(name)\"")
         
         if let scene = scene {
-            let p = event.location(in: scene)
-            
-            self.position = p
+            if owningShape != nil {
+                let p = event.location(in: scene)
+
+                owningShape.position = p
+
+            }
         }
     }
     

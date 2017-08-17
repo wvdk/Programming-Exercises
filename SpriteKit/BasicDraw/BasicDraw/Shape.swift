@@ -25,7 +25,7 @@ struct Shape {
     let size: CGSize
     
     /// Relative to parent
-    let position: CGPoint
+    var position: CGPoint
     
     /// An array containing normal Shapes or recursive Shapes
     var children: [ShapeName] = []
