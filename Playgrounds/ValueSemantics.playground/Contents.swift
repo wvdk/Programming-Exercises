@@ -19,7 +19,7 @@ for i in 0..<littleArray.count {
     
     currentLittleStruct.variableNumber = 123
     
-    littleArray[i] = currentLittleStruct
+//    littleArray[i] = currentLittleStruct
 }
 
 print(littleArray)
