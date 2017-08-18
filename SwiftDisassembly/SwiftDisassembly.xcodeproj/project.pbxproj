@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE0C836C1F4729AD00522AEE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C836B1F4729AD00522AEE /* main.swift */; };
+		DEA1AD941F472AEE00A66EA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1AD931F472AEE00A66EA3 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DE0C83661F4729AD00522AEE /* CopyFiles */ = {
+		DEA1AD8E1F472AEE00A66EA3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DE0C83681F4729AD00522AEE /* LookingAtDissassembly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LookingAtDissassembly; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0C836B1F4729AD00522AEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DEA1AD901F472AEE00A66EA3 /* SwiftDisassembly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDisassembly; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA1AD931F472AEE00A66EA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE0C83651F4729AD00522AEE /* Frameworks */ = {
+		DEA1AD8D1F472AEE00A66EA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE0C835F1F4729AD00522AEE = {
+		DEA1AD871F472AEE00A66EA3 = {
 			isa = PBXGroup;
 			children = (
-				DE0C836A1F4729AD00522AEE /* LookingAtDissassembly */,
-				DE0C83691F4729AD00522AEE /* Products */,
+				DEA1AD921F472AEE00A66EA3 /* SwiftDisassembly */,
+				DEA1AD911F472AEE00A66EA3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DE0C83691F4729AD00522AEE /* Products */ = {
+		DEA1AD911F472AEE00A66EA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE0C83681F4729AD00522AEE /* LookingAtDissassembly */,
+				DEA1AD901F472AEE00A66EA3 /* SwiftDisassembly */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE0C836A1F4729AD00522AEE /* LookingAtDissassembly */ = {
+		DEA1AD921F472AEE00A66EA3 /* SwiftDisassembly */ = {
 			isa = PBXGroup;
 			children = (
-				DE0C836B1F4729AD00522AEE /* main.swift */,
+				DEA1AD931F472AEE00A66EA3 /* main.swift */,
 			);
-			path = LookingAtDissassembly;
+			path = SwiftDisassembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE0C83671F4729AD00522AEE /* LookingAtDissassembly */ = {
+		DEA1AD8F1F472AEE00A66EA3 /* SwiftDisassembly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE0C836F1F4729AD00522AEE /* Build configuration list for PBXNativeTarget "LookingAtDissassembly" */;
+			buildConfigurationList = DEA1AD971F472AEE00A66EA3 /* Build configuration list for PBXNativeTarget "SwiftDisassembly" */;
 			buildPhases = (
-				DE0C83641F4729AD00522AEE /* Sources */,
-				DE0C83651F4729AD00522AEE /* Frameworks */,
-				DE0C83661F4729AD00522AEE /* CopyFiles */,
+				DEA1AD8C1F472AEE00A66EA3 /* Sources */,
+				DEA1AD8D1F472AEE00A66EA3 /* Frameworks */,
+				DEA1AD8E1F472AEE00A66EA3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LookingAtDissassembly;
-			productName = LookingAtDissassembly;
-			productReference = DE0C83681F4729AD00522AEE /* LookingAtDissassembly */;
+			name = SwiftDisassembly;
+			productName = SwiftDisassembly;
+			productReference = DEA1AD901F472AEE00A66EA3 /* SwiftDisassembly */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE0C83601F4729AD00522AEE /* Project object */ = {
+		DEA1AD881F472AEE00A66EA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Wesley Van der Klomp";
 				TargetAttributes = {
-					DE0C83671F4729AD00522AEE = {
+					DEA1AD8F1F472AEE00A66EA3 = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
-			buildConfigurationList = DE0C83631F4729AD00522AEE /* Build configuration list for PBXProject "LookingAtDissassembly" */;
+			buildConfigurationList = DEA1AD8B1F472AEE00A66EA3 /* Build configuration list for PBXProject "SwiftDisassembly" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DE0C835F1F4729AD00522AEE;
-			productRefGroup = DE0C83691F4729AD00522AEE /* Products */;
+			mainGroup = DEA1AD871F472AEE00A66EA3;
+			productRefGroup = DEA1AD911F472AEE00A66EA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE0C83671F4729AD00522AEE /* LookingAtDissassembly */,
+				DEA1AD8F1F472AEE00A66EA3 /* SwiftDisassembly */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE0C83641F4729AD00522AEE /* Sources */ = {
+		DEA1AD8C1F472AEE00A66EA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0C836C1F4729AD00522AEE /* main.swift in Sources */,
+				DEA1AD941F472AEE00A66EA3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DE0C836D1F4729AD00522AEE /* Debug */ = {
+		DEA1AD951F472AEE00A66EA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		DE0C836E1F4729AD00522AEE /* Release */ = {
+		DEA1AD961F472AEE00A66EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +232,7 @@
 			};
 			name = Release;
 		};
-		DE0C83701F4729AD00522AEE /* Debug */ = {
+		DEA1AD981F472AEE00A66EA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
@@ -241,7 +241,7 @@
 			};
 			name = Debug;
 		};
-		DE0C83711F4729AD00522AEE /* Release */ = {
+		DEA1AD991F472AEE00A66EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
@@ -253,25 +253,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE0C83631F4729AD00522AEE /* Build configuration list for PBXProject "LookingAtDissassembly" */ = {
+		DEA1AD8B1F472AEE00A66EA3 /* Build configuration list for PBXProject "SwiftDisassembly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE0C836D1F4729AD00522AEE /* Debug */,
-				DE0C836E1F4729AD00522AEE /* Release */,
+				DEA1AD951F472AEE00A66EA3 /* Debug */,
+				DEA1AD961F472AEE00A66EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE0C836F1F4729AD00522AEE /* Build configuration list for PBXNativeTarget "LookingAtDissassembly" */ = {
+		DEA1AD971F472AEE00A66EA3 /* Build configuration list for PBXNativeTarget "SwiftDisassembly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE0C83701F4729AD00522AEE /* Debug */,
-				DE0C83711F4729AD00522AEE /* Release */,
+				DEA1AD981F472AEE00A66EA3 /* Debug */,
+				DEA1AD991F472AEE00A66EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DE0C83601F4729AD00522AEE /* Project object */;
+	rootObject = DEA1AD881F472AEE00A66EA3 /* Project object */;
 }
