@@ -28,7 +28,7 @@ class RenderedShapeNode: SKShapeNode {
             if owningShape != nil {
                 let p = event.location(in: scene)
 
-                owningShape.position = p
+                owningShape?.position = p
 
             }
         }
