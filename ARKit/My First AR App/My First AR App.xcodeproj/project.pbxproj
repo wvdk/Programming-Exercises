@@ -281,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				INFOPLIST_FILE = "My First AR App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.My-First-AR-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				INFOPLIST_FILE = "My First AR App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.My-First-AR-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
