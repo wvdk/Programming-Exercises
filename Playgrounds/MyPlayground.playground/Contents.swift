@@ -1,24 +1,36 @@
+import Foundation
 
-import UIKit
-import PlaygroundSupport
-//
-//let url = URL(string: "https://api.dronestre.am/data")!
-//let task = URLSession.shared.dataTask(with: url, completionHandler: {
-//    (data, response, error) in
-//    print("blah blah blah")
-//    print(response)
-//})
-//
-//task.resume()
-//
-//PlaygroundPage.current.needsIndefiniteExecution = true
-//
-//
-//
-//
-//
-
-
-func yFor(x: Int) -> Int {
-    return 0
+enum TaskPriority {
+    case level1
+    case level2
+    case level3
 }
+
+struct Task {
+    
+    var isDone: Bool
+    var title: String
+    var priority: TaskPriority
+    var created: Date
+    
+    init(title: String) {
+        self.isDone = false
+        self.title = title
+        self.priority = .level2
+        self.created = Date()
+    }
+    
+    init(title: String, priority: TaskPriority) {
+        self.init(title: title)
+        
+        self.priority = priority
+    }
+    
+}
+
+var myTask = Task(title: "Wash dishes")
+
+myTask.priority = .level1
+myTask.isDone = true
+
+
