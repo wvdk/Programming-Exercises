@@ -10,8 +10,9 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    var whiteRectGenerationDelay: TimeInterval = 0.05
-    var clearScreenDelay: TimeInterval = 10
+    // Patern values. Updated by the startPattern___ methods.
+    var whiteRectGenerationDelay: TimeInterval = 1
+    var clearScreenDelay: TimeInterval = 1
     
     lazy var spin = SKAction(named: "Spin")!
     lazy var moveLeft = SKAction(named: "MoveLeft")!
@@ -24,14 +25,14 @@ class GameScene: SKScene {
         
         self.startPatternOne()
         
-        start({ [weak self] in
-            self?.startPatternTwo()
-            
-            start({
-                self?.startPatternOne()
-            }, after: 5)
-            
-        }, after: 5)
+//        start({ [weak self] in
+//            self?.startPatternTwo()
+//
+//            start({
+//                self?.startPatternOne()
+//            }, after: 5)
+//
+//        }, after: 5)
         
         self.recursivelyTriggerWhiteRectGeneration(after: whiteRectGenerationDelay)
         self.recursivelyTriggerClearScreen(after: clearScreenDelay)
