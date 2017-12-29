@@ -22,9 +22,6 @@ class GameViewController: UIViewController {
             view.ignoresSiblingOrder = true
             view.showsFPS = true
             view.showsNodeCount = true
-            
-            print("View frame: \(view.frame)")
-            print("Scene size: \(scene.size)")
         }
     }
 
