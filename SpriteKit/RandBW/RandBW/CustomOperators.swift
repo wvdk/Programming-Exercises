@@ -26,4 +26,3 @@ func +||- (right: Int, left: Int) -> Int {
 //func +||- <Numeric> (right: Numeric, left: Numeric) -> Numeric {
 //    return flipACoin() ? (right + left) : (right - left)
 //}
-
