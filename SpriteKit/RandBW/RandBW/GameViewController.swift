@@ -16,8 +16,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            let scene = GameScene()
-            scene.size = view.frame.size
+            let scene = GameScene(size: view.frame.size)
             view.presentScene(scene)
             view.ignoresSiblingOrder = true
             view.showsFPS = true
