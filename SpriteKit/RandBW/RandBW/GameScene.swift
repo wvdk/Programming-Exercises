@@ -17,8 +17,17 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
+
+        recursivelyTriggerSquares(after: 0.3)
         
-        makeSquares()
+    }
+    
+    func recursivelyTriggerSquares(after delay: TimeInterval) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
+            self?.makeSquares()
+            
+            self?.recursivelyTriggerSquares(after: delay)
+        })
     }
     
     func getRandomAction() -> SKAction {
@@ -35,6 +44,8 @@ class GameScene: SKScene {
             myFirstNode.size = CGSize(width: 100, height: 100)
             
             self.addChild(myFirstNode)
+            
+
             
             myFirstNode.run(getRandomAction())
         }
