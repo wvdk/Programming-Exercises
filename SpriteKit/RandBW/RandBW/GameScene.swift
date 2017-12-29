@@ -11,24 +11,38 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    let whiteRectGenerationDelay: TimeInterval = 0.05
+    let clearScreenDelay: TimeInterval = 0.5
+    
     lazy var spin = SKAction(named: "Spin")!
     lazy var moveLeft = SKAction(named: "MoveLeft")!
     lazy var moveRight = SKAction(named: "MoveRight")!
     
-    let masterDelayConstant: TimeInterval =  0.05
-    
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
 
-        recursivelyTriggerSquares(after: masterDelayConstant)
+        self.recursivelyTriggerWhiteRectGeneration(after: whiteRectGenerationDelay)
+        self.recursivelyTriggerClearScreen(after: clearScreenDelay)
     }
     
-    func recursivelyTriggerSquares(after delay: TimeInterval) {
+    func recursivelyTriggerWhiteRectGeneration(after delay: TimeInterval) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
             guard let `self` = self else { return }
-            self.makeSquares()
-            self.recursivelyTriggerSquares(after: self.masterDelayConstant +||- 0.1)
+            self.generateRandomWhiteRects()
+            self.recursivelyTriggerWhiteRectGeneration(after: self.whiteRectGenerationDelay +||- 0.1)
         })
+    }
+    
+    func recursivelyTriggerClearScreen(after delay: TimeInterval) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
+            guard let `self` = self else { return }
+            self.clearScreen()
+            self.recursivelyTriggerClearScreen(after: self.clearScreenDelay +||- random())
+        })
+    }
+    
+    func clearScreen() {
+        self.removeAllChildren()
     }
     
     func getRandomAction() -> SKAction {
@@ -37,29 +51,27 @@ class GameScene: SKScene {
         return randomActionList.randomItem()
     }
     
-    func makeSquares() {
+    func generateRandomWhiteRects() {
         for i in 0...10 {
-            let myFirstNode = SKSpriteNode()
-            myFirstNode.color = .white
-            myFirstNode.position = CGPoint(x: self.size.width / 2, y: CGFloat(i * 100))
-            myFirstNode.size = CGSize(width: 20 + Int(arc4random_uniform(UInt32(30))), height: 100)
+            let whiteRect = SKSpriteNode()
+            whiteRect.color = .white
+            whiteRect.position = CGPoint(x: self.size.width / 2, y: CGFloat(i * 100))
+            whiteRect.size = CGSize(width: 20 + Int(arc4random_uniform(UInt32(30))), height: 100)
             
-            self.addChild(myFirstNode)
+            self.addChild(whiteRect)
             
-
-            
-            myFirstNode.run(getRandomAction())
+            whiteRect.run(getRandomAction())
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        makeSquares()
+        self.clearScreen()
     }
 
     override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)
         
-        removeAnyOutOfFrameChildren()
+        self.removeAnyOutOfFrameChildren()
     }
     
 }
