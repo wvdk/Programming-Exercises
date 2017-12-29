@@ -11,8 +11,8 @@ import SpriteKit
 class GameScene: SKScene {
     
     // Patern values. Updated by the startPattern___ methods.
-    var whiteRectGenerationDelay: TimeInterval = 1
-    var clearScreenDelay: TimeInterval = 1
+    var whiteRectGenerationDelay: TimeInterval? = 1
+    var clearScreenDelay: TimeInterval? = 1
     
     lazy var spin = SKAction(named: "Spin")!
     lazy var moveLeft = SKAction(named: "MoveLeft")!
@@ -58,7 +58,7 @@ class GameScene: SKScene {
     /// Mostly black screen with a lot of short lifespan white rects along center Y.
     func startPatternOne() {
         self.whiteRectGenerationDelay = 0.05
-        self.clearScreenDelay = 10
+        self.clearScreenDelay = nil
     }
 
     /// Mostly white screen with a lot of long lifespan white rects spilling out from center Y.
@@ -67,19 +67,27 @@ class GameScene: SKScene {
         self.clearScreenDelay = 0.01
     }
     
-    func recursivelyTriggerWhiteRectGeneration(after delay: TimeInterval) {
+    func recursivelyTriggerWhiteRectGeneration(after delay: TimeInterval?) {
+        guard let delay = delay else { return }
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
             guard let `self` = self else { return }
             self.generateRandomWhiteRects()
-            self.recursivelyTriggerWhiteRectGeneration(after: self.whiteRectGenerationDelay +||- 0.1)
+            
+            guard let delay = self.whiteRectGenerationDelay else { return }
+            self.recursivelyTriggerWhiteRectGeneration(after: delay +||- 0.1)
         })
     }
     
-    func recursivelyTriggerClearScreen(after delay: TimeInterval) {
+    func recursivelyTriggerClearScreen(after delay: TimeInterval?) {
+        guard let delay = delay else { return }
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
             guard let `self` = self else { return }
             self.clearScreen()
-            self.recursivelyTriggerClearScreen(after: self.clearScreenDelay +||- (random() * 0.3))
+            
+            guard let delay = self.clearScreenDelay else { return }
+            self.recursivelyTriggerClearScreen(after: delay +||- (random() * 0.3))
         })
     }
     
