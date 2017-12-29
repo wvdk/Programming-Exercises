@@ -16,3 +16,8 @@ func flipACoin() -> Bool {
 func random() -> Double {
     return Double(arc4random_uniform(UInt32(10))) * 0.1
 }
+
+/// Runs the provided black after a delay.
+func start(_ closure: @escaping () -> (), after delay: TimeInterval) {
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: closure)
+}
