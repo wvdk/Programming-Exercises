@@ -16,4 +16,13 @@ extension SKNode {
         return paddedFrame
     }
     
+    /// Removes any children who's bounds are out of frame.
+    func removeAnyOutOfFrameChildren() {
+        for child in self.children {
+            if !self.paddedFrame(for: child).contains(child.position) {
+                child.removeFromParent()
+            }
+        }
+    }
+    
 }

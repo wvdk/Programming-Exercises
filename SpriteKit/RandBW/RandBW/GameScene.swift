@@ -47,11 +47,7 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)
         
-        for child in super.children {
-            if !self.paddedFrame(for: child).contains(child.position) {
-                child.removeFromParent()
-            }
-        }
+        removeAnyOutOfFrameChildren()
     }
     
 }
