@@ -12,18 +12,45 @@ import GameplayKit
 class GameScene: SKScene {
     
     lazy var spin = SKAction(named: "Spin")!
+    lazy var moveLeft = SKAction(named: "MoveLeft")!
+    lazy var moveRight = SKAction(named: "MoveRight")!
     
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
         
-        let myFirstNode = SKSpriteNode()
-        myFirstNode.color = .white
-        myFirstNode.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
-        myFirstNode.size = CGSize(width: 100, height: 100)
+        makeSquares()
+    }
+    
+    func getRandomAction() -> SKAction {
+        let randomActionList = [moveLeft, moveRight]
         
-        self.addChild(myFirstNode)
-        
-        myFirstNode.run(spin)
+        return randomActionList.randomItem()
+    }
+    
+    func makeSquares() {
+        for i in 0...10 {
+            let myFirstNode = SKSpriteNode()
+            myFirstNode.color = .white
+            myFirstNode.position = CGPoint(x: self.size.width / 2, y: CGFloat(i * 100))
+            myFirstNode.size = CGSize(width: 100, height: 100)
+            
+            self.addChild(myFirstNode)
+            
+            myFirstNode.run(getRandomAction())
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        makeSquares()
+    }
+
+}
+
+extension Array {
+    
+    func randomItem() -> Element {
+        let randomIndex = Int(arc4random_uniform(UInt32(self.count)))
+        return self[randomIndex]
     }
     
 }
