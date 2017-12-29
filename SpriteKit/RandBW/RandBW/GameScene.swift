@@ -76,18 +76,5 @@ func flipACoin() -> Bool {
     return randomNumber > 0
 }
 
-precedencegroup RandomAdditionOrSubtractionPrecedence {
-    lowerThan: AdditionPrecedence
-    associativity: left
-}
 
-infix operator +||-: RandomAdditionOrSubtractionPrecedence
-
-func +||- (right: Double, left: Double) -> Double {
-    return flipACoin() ? (right + left) : (right - left)
-}
-
-func +||- (right: Int, left: Int) -> Int {
-    return flipACoin() ? (right + left) : (right - left)
-}
 
