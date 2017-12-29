@@ -1,36 +1,47 @@
 import Foundation
 
-enum TaskPriority {
-    case level1
-    case level2
-    case level3
+class Video {
+    var id
+    var isCurrentlyPosting
+    var localFileUrl
+    var unrenderedVideo: URL?
+    var remoteDownloadUrl?
+    var metadataURL: URL?
+
+    let size: CGSize
+    let fps: Double
+
+    var thumbnailImageLarge?
+    var thumbnailImageSmall?
+    
+    var previewVideoLarge?
+    var previewVideoSmall?
+
+    let postedByUser: UserData
+    let segments: [SegmentData]?
+    var rigs: [SceneRig] = []
+    var planes: [(center: Vector3, extent: Vector3, transform: SCNMatrix4)] = []
+    var selectedEffect: MagicEffect?
+    let jointFrames: [RawJointsFrame]
+    var allGestures: [RawGesture]
+    var rawDabGestures: [RawGesture] { ... }
+    var rawMoneyGestures: [RawGesture] { ... }
+    var rawHelloGestures: [RawGesture] { ... }
+    var rawLitGestures: [RawGesture] { ... }
+    var rawKissGestures: [RawGesture] { ... }
+    var rawBoxingGestures: [RawGesture] { ... }
+    var rawBooshGestures: [RawGesture] { ... }
+    var detectedGesture: RawGesture? { ... }
 }
 
-struct Task {
-    
-    var isDone: Bool
-    var title: String
-    var priority: TaskPriority
-    var created: Date
-    
-    init(title: String) {
-        self.isDone = false
-        self.title = title
-        self.priority = .level2
-        self.created = Date()
-    }
-    
-    init(title: String, priority: TaskPriority) {
-        self.init(title: title)
-        
-        self.priority = priority
-    }
-    
-}
 
-var myTask = Task(title: "Wash dishes")
 
-myTask.priority = .level1
-myTask.isDone = true
+
+
+
+
+
+
+
 
 

@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEC5A8241FCA471E00928304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC5A8231FCA471E00928304 /* AppDelegate.swift */; };
-		DEC5A8261FCA471E00928304 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DEC5A8251FCA471E00928304 /* Scene.sks */; };
-		DEC5A8281FCA471E00928304 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC5A8271FCA471E00928304 /* Scene.swift */; };
-		DEC5A82A1FCA471E00928304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC5A8291FCA471E00928304 /* ViewController.swift */; };
-		DEC5A82D1FCA471E00928304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC5A82B1FCA471E00928304 /* Main.storyboard */; };
-		DEC5A82F1FCA471E00928304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC5A82E1FCA471E00928304 /* Assets.xcassets */; };
-		DEC5A8321FCA471E00928304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC5A8301FCA471E00928304 /* LaunchScreen.storyboard */; };
+		DE2B8F711FF6B8BD00CCA1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B8F701FF6B8BD00CCA1F9 /* AppDelegate.swift */; };
+		DE2B8F731FF6B8BD00CCA1F9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F721FF6B8BD00CCA1F9 /* GameScene.sks */; };
+		DE2B8F751FF6B8BD00CCA1F9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F741FF6B8BD00CCA1F9 /* Actions.sks */; };
+		DE2B8F771FF6B8BD00CCA1F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B8F761FF6B8BD00CCA1F9 /* GameScene.swift */; };
+		DE2B8F791FF6B8BD00CCA1F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B8F781FF6B8BD00CCA1F9 /* GameViewController.swift */; };
+		DE2B8F7C1FF6B8BD00CCA1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7A1FF6B8BD00CCA1F9 /* Main.storyboard */; };
+		DE2B8F7E1FF6B8BD00CCA1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7D1FF6B8BD00CCA1F9 /* Assets.xcassets */; };
+		DE2B8F811FF6B8BD00CCA1F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7F1FF6B8BD00CCA1F9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEC5A8201FCA471E00928304 /* SpriteKit AR App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit AR App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC5A8231FCA471E00928304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEC5A8251FCA471E00928304 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
-		DEC5A8271FCA471E00928304 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		DEC5A8291FCA471E00928304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEC5A82C1FCA471E00928304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DEC5A82E1FCA471E00928304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEC5A8311FCA471E00928304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DEC5A8331FCA471E00928304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE2B8F6D1FF6B8BD00CCA1F9 /* RandBW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandBW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2B8F701FF6B8BD00CCA1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE2B8F721FF6B8BD00CCA1F9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DE2B8F741FF6B8BD00CCA1F9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		DE2B8F761FF6B8BD00CCA1F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DE2B8F781FF6B8BD00CCA1F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DE2B8F7B1FF6B8BD00CCA1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE2B8F7D1FF6B8BD00CCA1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE2B8F801FF6B8BD00CCA1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE2B8F821FF6B8BE00CCA1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DEC5A81D1FCA471E00928304 /* Frameworks */ = {
+		DE2B8F6A1FF6B8BD00CCA1F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +41,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DEC5A8171FCA471E00928304 = {
+		DE2B8F641FF6B8BD00CCA1F9 = {
 			isa = PBXGroup;
 			children = (
-				DEC5A8221FCA471E00928304 /* SpriteKit AR App */,
-				DEC5A8211FCA471E00928304 /* Products */,
+				DE2B8F6F1FF6B8BD00CCA1F9 /* RandBW */,
+				DE2B8F6E1FF6B8BD00CCA1F9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DEC5A8211FCA471E00928304 /* Products */ = {
+		DE2B8F6E1FF6B8BD00CCA1F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEC5A8201FCA471E00928304 /* SpriteKit AR App.app */,
+				DE2B8F6D1FF6B8BD00CCA1F9 /* RandBW.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEC5A8221FCA471E00928304 /* SpriteKit AR App */ = {
+		DE2B8F6F1FF6B8BD00CCA1F9 /* RandBW */ = {
 			isa = PBXGroup;
 			children = (
-				DEC5A8231FCA471E00928304 /* AppDelegate.swift */,
-				DEC5A8251FCA471E00928304 /* Scene.sks */,
-				DEC5A8271FCA471E00928304 /* Scene.swift */,
-				DEC5A8291FCA471E00928304 /* ViewController.swift */,
-				DEC5A82B1FCA471E00928304 /* Main.storyboard */,
-				DEC5A82E1FCA471E00928304 /* Assets.xcassets */,
-				DEC5A8301FCA471E00928304 /* LaunchScreen.storyboard */,
-				DEC5A8331FCA471E00928304 /* Info.plist */,
+				DE2B8F701FF6B8BD00CCA1F9 /* AppDelegate.swift */,
+				DE2B8F721FF6B8BD00CCA1F9 /* GameScene.sks */,
+				DE2B8F741FF6B8BD00CCA1F9 /* Actions.sks */,
+				DE2B8F761FF6B8BD00CCA1F9 /* GameScene.swift */,
+				DE2B8F781FF6B8BD00CCA1F9 /* GameViewController.swift */,
+				DE2B8F7A1FF6B8BD00CCA1F9 /* Main.storyboard */,
+				DE2B8F7D1FF6B8BD00CCA1F9 /* Assets.xcassets */,
+				DE2B8F7F1FF6B8BD00CCA1F9 /* LaunchScreen.storyboard */,
+				DE2B8F821FF6B8BE00CCA1F9 /* Info.plist */,
 			);
-			path = "SpriteKit AR App";
+			path = RandBW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEC5A81F1FCA471E00928304 /* SpriteKit AR App */ = {
+		DE2B8F6C1FF6B8BD00CCA1F9 /* RandBW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEC5A8361FCA471E00928304 /* Build configuration list for PBXNativeTarget "SpriteKit AR App" */;
+			buildConfigurationList = DE2B8F851FF6B8BE00CCA1F9 /* Build configuration list for PBXNativeTarget "RandBW" */;
 			buildPhases = (
-				DEC5A81C1FCA471E00928304 /* Sources */,
-				DEC5A81D1FCA471E00928304 /* Frameworks */,
-				DEC5A81E1FCA471E00928304 /* Resources */,
+				DE2B8F691FF6B8BD00CCA1F9 /* Sources */,
+				DE2B8F6A1FF6B8BD00CCA1F9 /* Frameworks */,
+				DE2B8F6B1FF6B8BD00CCA1F9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SpriteKit AR App";
-			productName = "SpriteKit AR App";
-			productReference = DEC5A8201FCA471E00928304 /* SpriteKit AR App.app */;
+			name = RandBW;
+			productName = RandBW;
+			productReference = DE2B8F6D1FF6B8BD00CCA1F9 /* RandBW.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DEC5A8181FCA471E00928304 /* Project object */ = {
+		DE2B8F651FF6B8BD00CCA1F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Wesley Van der Klomp";
 				TargetAttributes = {
-					DEC5A81F1FCA471E00928304 = {
+					DE2B8F6C1FF6B8BD00CCA1F9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DEC5A81B1FCA471E00928304 /* Build configuration list for PBXProject "SpriteKit AR App" */;
+			buildConfigurationList = DE2B8F681FF6B8BD00CCA1F9 /* Build configuration list for PBXProject "RandBW" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,56 +117,57 @@
 				en,
 				Base,
 			);
-			mainGroup = DEC5A8171FCA471E00928304;
-			productRefGroup = DEC5A8211FCA471E00928304 /* Products */;
+			mainGroup = DE2B8F641FF6B8BD00CCA1F9;
+			productRefGroup = DE2B8F6E1FF6B8BD00CCA1F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEC5A81F1FCA471E00928304 /* SpriteKit AR App */,
+				DE2B8F6C1FF6B8BD00CCA1F9 /* RandBW */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DEC5A81E1FCA471E00928304 /* Resources */ = {
+		DE2B8F6B1FF6B8BD00CCA1F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC5A8261FCA471E00928304 /* Scene.sks in Resources */,
-				DEC5A8321FCA471E00928304 /* LaunchScreen.storyboard in Resources */,
-				DEC5A82F1FCA471E00928304 /* Assets.xcassets in Resources */,
-				DEC5A82D1FCA471E00928304 /* Main.storyboard in Resources */,
+				DE2B8F7C1FF6B8BD00CCA1F9 /* Main.storyboard in Resources */,
+				DE2B8F731FF6B8BD00CCA1F9 /* GameScene.sks in Resources */,
+				DE2B8F7E1FF6B8BD00CCA1F9 /* Assets.xcassets in Resources */,
+				DE2B8F811FF6B8BD00CCA1F9 /* LaunchScreen.storyboard in Resources */,
+				DE2B8F751FF6B8BD00CCA1F9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DEC5A81C1FCA471E00928304 /* Sources */ = {
+		DE2B8F691FF6B8BD00CCA1F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC5A82A1FCA471E00928304 /* ViewController.swift in Sources */,
-				DEC5A8281FCA471E00928304 /* Scene.swift in Sources */,
-				DEC5A8241FCA471E00928304 /* AppDelegate.swift in Sources */,
+				DE2B8F771FF6B8BD00CCA1F9 /* GameScene.swift in Sources */,
+				DE2B8F791FF6B8BD00CCA1F9 /* GameViewController.swift in Sources */,
+				DE2B8F711FF6B8BD00CCA1F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEC5A82B1FCA471E00928304 /* Main.storyboard */ = {
+		DE2B8F7A1FF6B8BD00CCA1F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEC5A82C1FCA471E00928304 /* Base */,
+				DE2B8F7B1FF6B8BD00CCA1F9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DEC5A8301FCA471E00928304 /* LaunchScreen.storyboard */ = {
+		DE2B8F7F1FF6B8BD00CCA1F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEC5A8311FCA471E00928304 /* Base */,
+				DE2B8F801FF6B8BD00CCA1F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DEC5A8341FCA471E00928304 /* Debug */ = {
+		DE2B8F831FF6B8BE00CCA1F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		DEC5A8351FCA471E00928304 /* Release */ = {
+		DE2B8F841FF6B8BE00CCA1F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,32 +282,30 @@
 			};
 			name = Release;
 		};
-		DEC5A8371FCA471E00928304 /* Debug */ = {
+		DE2B8F861FF6B8BE00CCA1F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
-				INFOPLIST_FILE = "SpriteKit AR App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = RandBW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.SpriteKit-AR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = vdk.wes.RandBW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DEC5A8381FCA471E00928304 /* Release */ = {
+		DE2B8F871FF6B8BE00CCA1F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
-				INFOPLIST_FILE = "SpriteKit AR App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = RandBW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.SpriteKit-AR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = vdk.wes.RandBW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEC5A81B1FCA471E00928304 /* Build configuration list for PBXProject "SpriteKit AR App" */ = {
+		DE2B8F681FF6B8BD00CCA1F9 /* Build configuration list for PBXProject "RandBW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEC5A8341FCA471E00928304 /* Debug */,
-				DEC5A8351FCA471E00928304 /* Release */,
+				DE2B8F831FF6B8BE00CCA1F9 /* Debug */,
+				DE2B8F841FF6B8BE00CCA1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEC5A8361FCA471E00928304 /* Build configuration list for PBXNativeTarget "SpriteKit AR App" */ = {
+		DE2B8F851FF6B8BE00CCA1F9 /* Build configuration list for PBXNativeTarget "RandBW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEC5A8371FCA471E00928304 /* Debug */,
-				DEC5A8381FCA471E00928304 /* Release */,
+				DE2B8F861FF6B8BE00CCA1F9 /* Debug */,
+				DE2B8F871FF6B8BE00CCA1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DEC5A8181FCA471E00928304 /* Project object */;
+	rootObject = DE2B8F651FF6B8BD00CCA1F9 /* Project object */;
 }
