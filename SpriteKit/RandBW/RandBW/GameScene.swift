@@ -12,18 +12,37 @@ import GameplayKit
 class GameScene: SKScene {
     
     let whiteRectGenerationDelay: TimeInterval = 0.05
-    let clearScreenDelay: TimeInterval = 0.5
+    let clearScreenDelay: TimeInterval = 10
     
     lazy var spin = SKAction(named: "Spin")!
     lazy var moveLeft = SKAction(named: "MoveLeft")!
     lazy var moveRight = SKAction(named: "MoveRight")!
     
+    /// MARK: - Lifecycle functions
+    
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
-
+        
         self.recursivelyTriggerWhiteRectGeneration(after: whiteRectGenerationDelay)
         self.recursivelyTriggerClearScreen(after: clearScreenDelay)
     }
+    
+    /// Resets the whole scene
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.clearScreen()
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        super.update(currentTime)
+        
+        self.removeAnyOutOfFrameChildren()
+    }
+    
+    func clearScreen() {
+        self.removeAllChildren()
+    }
+    
+    // MARK: - Temporal functions
     
     func recursivelyTriggerWhiteRectGeneration(after delay: TimeInterval) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
@@ -41,10 +60,8 @@ class GameScene: SKScene {
         })
     }
     
-    func clearScreen() {
-        self.removeAllChildren()
-    }
-    
+    /// MARK: - Drawing functions
+
     func getRandomAction() -> SKAction {
         let randomActionList = [moveLeft, moveRight]
         
@@ -63,15 +80,5 @@ class GameScene: SKScene {
             whiteRect.run(getRandomAction())
         }
     }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.clearScreen()
-    }
 
-    override func update(_ currentTime: TimeInterval) {
-        super.update(currentTime)
-        
-        self.removeAnyOutOfFrameChildren()
-    }
-    
 }
