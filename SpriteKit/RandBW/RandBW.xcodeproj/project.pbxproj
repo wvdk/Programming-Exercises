@@ -15,6 +15,7 @@
 		DE2B8F7C1FF6B8BD00CCA1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7A1FF6B8BD00CCA1F9 /* Main.storyboard */; };
 		DE2B8F7E1FF6B8BD00CCA1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7D1FF6B8BD00CCA1F9 /* Assets.xcassets */; };
 		DE2B8F811FF6B8BD00CCA1F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2B8F7F1FF6B8BD00CCA1F9 /* LaunchScreen.storyboard */; };
+		DE3B31151FF6D09400C736DF /* SKNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B31141FF6D09400C736DF /* SKNodeExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DE2B8F7D1FF6B8BD00CCA1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2B8F801FF6B8BD00CCA1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE2B8F821FF6B8BE00CCA1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE3B31141FF6D09400C736DF /* SKNodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		DE2B8F6F1FF6B8BD00CCA1F9 /* RandBW */ = {
 			isa = PBXGroup;
 			children = (
+				DE3B31141FF6D09400C736DF /* SKNodeExtensions.swift */,
 				DE0D48681FF6C75B00F08BB3 /* ArrayExtensions.swift */,
 				DE2B8F701FF6B8BD00CCA1F9 /* AppDelegate.swift */,
 				DE2B8F741FF6B8BD00CCA1F9 /* Actions.sks */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2B8F771FF6B8BD00CCA1F9 /* GameScene.swift in Sources */,
+				DE3B31151FF6D09400C736DF /* SKNodeExtensions.swift in Sources */,
 				DE2B8F791FF6B8BD00CCA1F9 /* GameViewController.swift in Sources */,
 				DE2B8F711FF6B8BD00CCA1F9 /* AppDelegate.swift in Sources */,
 				DE0D48691FF6C75B00F08BB3 /* ArrayExtensions.swift in Sources */,
