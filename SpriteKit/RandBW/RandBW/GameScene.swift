@@ -18,15 +18,22 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
 
-        recursivelyTriggerSquares(after: 0.3)
+        recursivelyTriggerSquares(after: 0.1)
         
+        print( 10 +||- 5 )
+        print( 10 +||- 5 )
+        print( 10 +||- 5 )
+        print( 10 +||- 5 )
+        print( 10 +||- 5 )
+        print( 10 +||- 5 )
+
     }
     
     func recursivelyTriggerSquares(after delay: TimeInterval) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
             self?.makeSquares()
             
-            self?.recursivelyTriggerSquares(after: delay)
+            self?.recursivelyTriggerSquares(after: delay +||- 0.5)
         })
     }
     
@@ -41,7 +48,7 @@ class GameScene: SKScene {
             let myFirstNode = SKSpriteNode()
             myFirstNode.color = .white
             myFirstNode.position = CGPoint(x: self.size.width / 2, y: CGFloat(i * 100))
-            myFirstNode.size = CGSize(width: 100, height: 100)
+            myFirstNode.size = CGSize(width: 20 + Int(arc4random_uniform(UInt32(30))), height: 100)
             
             self.addChild(myFirstNode)
             
@@ -65,8 +72,22 @@ class GameScene: SKScene {
 
 /// Produces a random Bool.
 func flipACoin() -> Bool {
-    let randomNumber = arc4random_uniform(10)
-    return randomNumber >= 5
+    let randomNumber = arc4random_uniform(2)
+    return randomNumber > 0
 }
 
+precedencegroup RandomAdditionOrSubtractionPrecedence {
+    lowerThan: AdditionPrecedence
+    associativity: left
+}
+
+infix operator +||-: RandomAdditionOrSubtractionPrecedence
+
+func +||- (right: Double, left: Double) -> Double {
+    return flipACoin() ? (right + left) : (right - left)
+}
+
+func +||- (right: Int, left: Int) -> Int {
+    return flipACoin() ? (right + left) : (right - left)
+}
 
