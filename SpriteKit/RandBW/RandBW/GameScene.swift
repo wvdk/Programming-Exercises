@@ -15,25 +15,19 @@ class GameScene: SKScene {
     lazy var moveLeft = SKAction(named: "MoveLeft")!
     lazy var moveRight = SKAction(named: "MoveRight")!
     
+    let masterDelayConstant: TimeInterval =  0.05
+    
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
 
-        recursivelyTriggerSquares(after: 0.1)
-        
-        print( 10 +||- 5 )
-        print( 10 +||- 5 )
-        print( 10 +||- 5 )
-        print( 10 +||- 5 )
-        print( 10 +||- 5 )
-        print( 10 +||- 5 )
-
+        recursivelyTriggerSquares(after: masterDelayConstant)
     }
     
     func recursivelyTriggerSquares(after delay: TimeInterval) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay, execute: { [weak self] in
-            self?.makeSquares()
-            
-            self?.recursivelyTriggerSquares(after: delay +||- 0.5)
+            guard let `self` = self else { return }
+            self.makeSquares()
+            self.recursivelyTriggerSquares(after: self.masterDelayConstant +||- 0.1)
         })
     }
     
