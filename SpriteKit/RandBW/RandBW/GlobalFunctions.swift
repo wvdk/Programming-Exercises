@@ -10,6 +10,5 @@ import Foundation
 
 /// Produces a random Bool.
 func flipACoin() -> Bool {
-    let randomNumber = arc4random_uniform(2)
-    return randomNumber > 0
+    return arc4random_uniform(2) > 0
 }
