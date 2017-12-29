@@ -63,4 +63,10 @@ class GameScene: SKScene {
     
 }
 
+/// Produces a random Bool.
+func flipACoin() -> Bool {
+    let randomNumber = arc4random_uniform(10)
+    return randomNumber >= 5
+}
+
 
