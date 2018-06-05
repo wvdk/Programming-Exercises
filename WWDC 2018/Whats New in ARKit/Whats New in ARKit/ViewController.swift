@@ -33,11 +33,78 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-
-        // Run the view's session
-        sceneView.session.run(configuration)
+//        // Create a session configuration
+//        let configuration = ARWorldTrackingConfiguration()
+//
+//        // Run the view's session
+//        sceneView.session.run(configuration)
+//
+        let session = sceneView.session
+//
+//        session.getCurrentWorldMap { (worldMap, error) in
+//            guard let worldMap = worldMap else {
+//
+//                return
+//            }
+//        }
+//
+//        configuration.environmentTexturing = .automatic // enables the room's cube map (mtltexture) saving and background hallucination
+//        // If set to .manual you can add your own manually
+//
+//        session.run(configuration)
+//
+//
+//
+//
+//
+//
+//
+//        // Note:
+//        // world tracking status - available on ARFrame
+//
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // Image Detection (added in 1.5)
+        
+        // Recognition of know static 2D  images
+        // You can add these images it should detect to xcassets (or in the bumdle and add them at runtime)
+        
+        
+        // File/Asset > ARReferenceImage > ARImageTrackingConfiguration > ARSession
+        
+        
+        // ARImageAnchor
+        // isTracked
+        
+        // Lot of images and shapes are easier to recognize
+        // XCode assets will give a warning if it's not good
+        
+        
+        let configuration = ARImageTrackingConfiguration()
+        
+        configuration.trackingImages = []
+        configuration.maximumNumberOfTrackedImages = 2
+        session.run(configuration)
+        
+        
+        // I think you can use either ARImageTrackingConfiguration or ARWOrldTracking and set them both up to do Image Tracking
+        
+        
+        
+        
+        // Then we also have Object Detection (for 3D objects)
+        
+        
+        
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
