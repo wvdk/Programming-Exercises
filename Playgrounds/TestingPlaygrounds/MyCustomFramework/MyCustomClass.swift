@@ -8,9 +8,9 @@
 
 import Foundation
 
-class MyCustomClass {
+public class MyCustomClass {
     
-    static func printMyName() {
+    public static func printMyName() {
         print("Wes")
     }
     
