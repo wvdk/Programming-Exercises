@@ -27,3 +27,5 @@ class ViewController: UIViewController {
 
 }
 
+let ABC = "ABC"
+
