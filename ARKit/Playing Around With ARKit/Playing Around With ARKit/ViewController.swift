@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         // Set the view's delegate
         sceneView.delegate = self
-        sceneView.session.delegate = self
+//        sceneView.session.delegate = self
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
