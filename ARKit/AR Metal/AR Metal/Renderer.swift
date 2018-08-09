@@ -12,11 +12,13 @@ import MetalKit
 import ARKit
 
 protocol RenderDestinationProvider {
+    
     var currentRenderPassDescriptor: MTLRenderPassDescriptor? { get }
     var currentDrawable: CAMetalDrawable? { get }
     var colorPixelFormat: MTLPixelFormat { get set }
     var depthStencilPixelFormat: MTLPixelFormat { get set }
     var sampleCount: Int { get set }
+    
 }
 
 // The max number of command buffers in flight

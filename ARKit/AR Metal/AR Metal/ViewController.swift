@@ -12,9 +12,10 @@ import MetalKit
 import ARKit
 
 extension MTKView : RenderDestinationProvider {
+    
 }
 
-class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
+class ViewController: UIViewController {
     
     var session: ARSession!
     var renderer: Renderer!
@@ -79,19 +80,26 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
             session.add(anchor: anchor)
         }
     }
-    
+
+}
+
+
+extension ViewController: MTKViewDelegate {
     // MARK: - MTKViewDelegate
-    
+
     // Called whenever view changes orientation or layout is changed
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
         renderer.drawRectResized(size: size)
     }
-    
+
     // Called whenever the view needs to render
     func draw(in view: MTKView) {
         renderer.update()
     }
     
+}
+
+extension ViewController: ARSessionDelegate {
     // MARK: - ARSessionDelegate
     
     func session(_ session: ARSession, didFailWithError error: Error) {
@@ -108,4 +116,5 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
 }
