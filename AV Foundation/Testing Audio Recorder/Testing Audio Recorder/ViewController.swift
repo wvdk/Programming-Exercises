@@ -44,10 +44,25 @@ class ViewController: UIViewController {
             AVNumberOfChannelsKey: 1,
             AVSampleRateKey: 44100.0
         ])
+        
+        
+        print("wid: --- viewDidLoad() ------------------ ")
+        
+        print("wid: initializing audio recorder")
+        print("wid: ")
+        print("wid: audioRecordr.url: \(audioRecorder.url)")
+        print("wid: ")
+        print("wid: directory: \(directory)")
+        print("wid: ")
+        print("wid: url: \(url)")
+        print("wid: ")
+        print("wid: ")
+
 
     }
 
     @IBAction func startRecording(_ sender: Any) {
+
         print("wid: ")
         print("wid: --- shutterButtonDown() ------------------------")
         print("wid: ")
