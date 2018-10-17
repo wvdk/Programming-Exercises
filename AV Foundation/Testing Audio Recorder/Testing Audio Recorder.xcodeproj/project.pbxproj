@@ -12,6 +12,7 @@
 		DEC414782177B528000F02F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC414762177B528000F02F2 /* Main.storyboard */; };
 		DEC4147A2177B52A000F02F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC414792177B52A000F02F2 /* Assets.xcassets */; };
 		DEC4147D2177B52A000F02F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC4147B2177B52A000F02F2 /* LaunchScreen.storyboard */; };
+		DEC414852177BE2A000F02F2 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC414842177BE2A000F02F2 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DEC414792177B52A000F02F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC4147C2177B52A000F02F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEC4147E2177B52A000F02F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC414842177BE2A000F02F2 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DEC414722177B528000F02F2 /* AppDelegate.swift */,
 				DEC414742177B528000F02F2 /* ViewController.swift */,
+				DEC414842177BE2A000F02F2 /* SoundManager.swift */,
 				DEC414762177B528000F02F2 /* Main.storyboard */,
 				DEC414792177B52A000F02F2 /* Assets.xcassets */,
 				DEC4147B2177B52A000F02F2 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				DEC414752177B528000F02F2 /* ViewController.swift in Sources */,
 				DEC414732177B528000F02F2 /* AppDelegate.swift in Sources */,
+				DEC414852177BE2A000F02F2 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

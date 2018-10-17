@@ -24,26 +24,25 @@ public extension FileManager {
 
 class ViewController: UIViewController {
 
-    var audioRecorder: AVAudioRecorder! = nil
+    var audioRecorder: AVAudioRecorder
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let uuid = UUID().uuidString
-        let directory = FileManager.default.documentDirectory().appendingPathComponent("recordings").appendingPathComponent(uuid)
-        if !FileManager.default.fileExists(atPath: directory.path) {
-            try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
-            print("Creating a directory for: \(uuid)")
-        }
-        let url = URL(fileURLWithPath: "capturedAudio.m4a", isDirectory: false, relativeTo: directory)
+    required init?(coder aDecoder: NSCoder) {
         
-        audioRecorder = try? AVAudioRecorder(url: url, settings: [
+        SoundManager.shared.setupRecordingAudioSession()
+        
+        let documentDirectory = FileManager.default.documentDirectory()
+        //        if !FileManager.default.fileExists(atPath: directory.path) {
+        //            try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
+        //            print("Creating a directory for: \(uuid)")
+        //        }
+        let url = URL(fileURLWithPath: "capturedAudio.m4a", isDirectory: false, relativeTo: documentDirectory)
+        
+        audioRecorder = try! AVAudioRecorder(url: url, settings: [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVEncoderBitRateKey: 128000,
             AVNumberOfChannelsKey: 1,
             AVSampleRateKey: 44100.0
-        ])
+            ])
         
         
         print("wid: --- viewDidLoad() ------------------ ")
@@ -52,11 +51,29 @@ class ViewController: UIViewController {
         print("wid: ")
         print("wid: audioRecordr.url: \(audioRecorder.url)")
         print("wid: ")
-        print("wid: directory: \(directory)")
+        print("wid: documentDirectory: \(documentDirectory)")
         print("wid: ")
         print("wid: url: \(url)")
         print("wid: ")
+        print("wid: prep to record. Success: \(audioRecorder.prepareToRecord())")
         print("wid: ")
+        print("wid: audio recorder settings: \(audioRecorder.settings)")
+        print("wid: ")
+        print("wid: ")
+        print("wid: ")
+        print("wid: ")
+        
+        
+        super.init(coder: aDecoder)
+        
+      
+        
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
 
 
     }
@@ -73,6 +90,8 @@ class ViewController: UIViewController {
         print("wid: ")
         print("wid: Starting to record.")
         audioRecorder.record()
+        print("wid: ")
+        print("wid: isRecording: \(audioRecorder.isRecording)")
         print("wid: ")
         print("wid: audio recorder settings: \(audioRecorder.settings)")
         print("wid: ")
