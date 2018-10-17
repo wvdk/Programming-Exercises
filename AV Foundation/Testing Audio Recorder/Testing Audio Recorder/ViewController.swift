@@ -26,9 +26,21 @@ class ViewController: UIViewController {
 
     var audioRecorder: AVAudioRecorder
     
+    var audioPlayer: AVAudioPlayer
+    
     required init?(coder aDecoder: NSCoder) {
         
-        SoundManager.shared.setupRecordingAudioSession()
+        do {
+            try? AVAudioSession.sharedInstance().setActive(false)
+            //                try self.audioSession.setCategory(convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord), with: [.mixWithOthers, .defaultToSpeaker, .allowBluetooth])
+            
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.record, mode: AVAudioSession.Mode.videoRecording, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Error: could not set audio session category. \(error)")
+        }
+        
+//        SoundManager.shared.setupRecordingAudioSession()
         
         let documentDirectory = FileManager.default.documentDirectory()
         //        if !FileManager.default.fileExists(atPath: directory.path) {
@@ -37,13 +49,20 @@ class ViewController: UIViewController {
         //        }
         let url = URL(fileURLWithPath: "capturedAudio.m4a", isDirectory: false, relativeTo: documentDirectory)
         
-        audioRecorder = try! AVAudioRecorder(url: url, settings: [
+//        audioRecorder = try! AVAudioRecorder(url: url, settings: [
+//            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+//            AVEncoderBitRateKey: 128000,
+//            AVNumberOfChannelsKey: 1,
+//            AVSampleRateKey: 44100.0
+//            ])
+        
+        let settings: [String: Any] = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVEncoderBitRateKey: 128000,
             AVNumberOfChannelsKey: 1,
             AVSampleRateKey: 44100.0
-            ])
-        
+        ]
+        audioRecorder = try! AVAudioRecorder(url: url, format: AVAudioFormat(settings: settings)!)
         
         print("wid: --- viewDidLoad() ------------------ ")
         
@@ -64,10 +83,9 @@ class ViewController: UIViewController {
         print("wid: ")
         
         
+        audioPlayer = try! AVAudioPlayer(contentsOf: url)
+        
         super.init(coder: aDecoder)
-        
-      
-        
         
     }
     
@@ -114,6 +132,10 @@ class ViewController: UIViewController {
         
         print("wid: ")
         audioRecorder.stop()
+    }
+    
+    @IBAction func playRecording(_ sender: Any) {
+        
     }
     
 }
