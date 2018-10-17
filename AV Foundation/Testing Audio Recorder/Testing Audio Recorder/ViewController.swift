@@ -26,51 +26,55 @@ class ViewController: UIViewController {
 
     var audioRecorder: AVAudioRecorder
     
-    var audioPlayer: AVAudioPlayer
-    
     required init?(coder aDecoder: NSCoder) {
         
         do {
             try? AVAudioSession.sharedInstance().setActive(false)
-            //                try self.audioSession.setCategory(convertFromAVAudioSessionCategory(AVAudioSession.Category.playAndRecord), with: [.mixWithOthers, .defaultToSpeaker, .allowBluetooth])
-            
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.record, mode: AVAudioSession.Mode.videoRecording, options: [])
+
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.videoRecording, options: [])
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Error: could not set audio session category. \(error)")
         }
         
-//        SoundManager.shared.setupRecordingAudioSession()
-        
-        let documentDirectory = FileManager.default.documentDirectory()
-        //        if !FileManager.default.fileExists(atPath: directory.path) {
-        //            try? FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
-        //            print("Creating a directory for: \(uuid)")
-        //        }
-        let url = URL(fileURLWithPath: "capturedAudio.m4a", isDirectory: false, relativeTo: documentDirectory)
-        
-//        audioRecorder = try! AVAudioRecorder(url: url, settings: [
-//            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-//            AVEncoderBitRateKey: 128000,
-//            AVNumberOfChannelsKey: 1,
-//            AVSampleRateKey: 44100.0
-//            ])
+        let url = URL(fileURLWithPath: "capturedAudio.m4a", isDirectory: false, relativeTo: FileManager.default.documentDirectory())
         
         let settings: [String: Any] = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVEncoderBitRateKey: 128000,
+            AVLinearPCMBitDepthKey: 16,
             AVNumberOfChannelsKey: 1,
+            AVLinearPCMIsBigEndianKey: false,
+            AVLinearPCMIsFloatKey: false,
             AVSampleRateKey: 44100.0
         ]
+        
+//        let settings: [String: Any] = [
+//            AVFormatIDKey: Int(kAudioFormatLinearPCM),
+//            AVEncoderBitRateKey: 128000,
+//            AVLinearPCMBitDepthKey: 16,
+//            AVNumberOfChannelsKey: 2,
+////            AVLinearPCMIsBigEndianKey: false,
+////            AVLinearPCMIsFloatKey: false,
+//            AVSampleRateKey: 44100.0
+//        ]
+
+//        recorderSettings = [[NSMutableDictionary alloc] init];
+//        [recorderSettings setValue :[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+//        [recorderSettings setValue:[NSNumber numberWithInt: 2] forKey:AVNumberOfChannelsKey];
+//        [recorderSettings setValue :[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+//        [recorderSettings setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
+//        [recorderSettings setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
+
+        
         audioRecorder = try! AVAudioRecorder(url: url, format: AVAudioFormat(settings: settings)!)
         
-        print("wid: --- viewDidLoad() ------------------ ")
         
+        print("wid: --- viewDidLoad() ------------------ ")
+        print("wid: ")
         print("wid: initializing audio recorder")
         print("wid: ")
-        print("wid: audioRecordr.url: \(audioRecorder.url)")
-        print("wid: ")
-        print("wid: documentDirectory: \(documentDirectory)")
+        print("wid: audioRecorder.url: \(audioRecorder.url)")
         print("wid: ")
         print("wid: url: \(url)")
         print("wid: ")
@@ -78,26 +82,21 @@ class ViewController: UIViewController {
         print("wid: ")
         print("wid: audio recorder settings: \(audioRecorder.settings)")
         print("wid: ")
+        print("wid: input is available: \(AVAudioSession.sharedInstance().isInputAvailable)")
         print("wid: ")
-        print("wid: ")
-        print("wid: ")
-        
-        
-        audioPlayer = try! AVAudioPlayer(contentsOf: url)
-        
+
         super.init(coder: aDecoder)
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        audioRecorder.delegate = self
 
-
+        startRecording(self)
 
     }
 
     @IBAction func startRecording(_ sender: Any) {
-
+        stopRecording(self)
+        print("wid: ")
+        print("wid: ")
         print("wid: ")
         print("wid: --- shutterButtonDown() ------------------------")
         print("wid: ")
@@ -105,9 +104,12 @@ class ViewController: UIViewController {
         print("wid: ")
         print("wid: enable metering")
         audioRecorder.isMeteringEnabled = true
+        audioRecorder.updateMeters()
+        print("wid: channelAssignments \(audioRecorder.channelAssignments)")
+        print("wid: isRecording: \(audioRecorder.isRecording)")
         print("wid: ")
         print("wid: Starting to record.")
-        audioRecorder.record()
+        audioRecorder.record(forDuration: 5)
         print("wid: ")
         print("wid: isRecording: \(audioRecorder.isRecording)")
         print("wid: ")
@@ -117,6 +119,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopRecording(_ sender: Any) {
+        print("wid: ")
+        print("wid: ")
+        print("wid: ")
         print("wid: ")
         print("wid: --- stopRecording() ----------------------------")
         print("wid: ")
@@ -134,10 +139,36 @@ class ViewController: UIViewController {
         audioRecorder.stop()
     }
     
+    var audioPlayer: AVAudioPlayer! = nil
+    
     @IBAction func playRecording(_ sender: Any) {
-        
+        print("wid: ")
+        print("wid: ")
+        print("wid: ")
+        print("wid: ")
+        print("wid: --- playRecording() --------------")
+        print("wid: ")
+        audioPlayer = try! AVAudioPlayer(contentsOf: audioRecorder.url)
+        print("wid: prepare to play success: \(audioPlayer.prepareToPlay())")
+        print("wid: play success: \(audioPlayer.play())")
+        print("wid: isPlaying: \(audioPlayer.isPlaying)")
     }
     
 }
 
+extension ViewController: AVAudioRecorderDelegate {
+    
+    func audioRecorderBeginInterruption(_ recorder: AVAudioRecorder) {
+        print("wid: audioRecorderBeginInterruption ")
+    }
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        print("wid: audioRecorderDidFinishRecording successfully: \(flag)")
+    }
+    
+    func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
+        print("wid: \(error)")
+    }
+    
+}
 
