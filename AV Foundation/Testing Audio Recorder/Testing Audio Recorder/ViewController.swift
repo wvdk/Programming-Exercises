@@ -48,11 +48,38 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startRecording(_ sender: Any) {
-        
+        print("wid: ")
+        print("wid: --- shutterButtonDown() ------------------------")
+        print("wid: ")
+        print("wid: \(AVAudioSession.sharedInstance().mode)")
+        print("wid: ")
+        print("wid: enable metering")
+        audioRecorder.isMeteringEnabled = true
+        print("wid: ")
+        print("wid: Starting to record.")
+        audioRecorder.record()
+        print("wid: ")
+        print("wid: audio recorder settings: \(audioRecorder.settings)")
+        print("wid: ")
+
     }
     
     @IBAction func stopRecording(_ sender: Any) {
+        print("wid: ")
+        print("wid: --- stopRecording() ----------------------------")
+        print("wid: ")
+        print("wid: ")
+        audioRecorder.updateMeters()
+        let averagePower = audioRecorder.averagePower(forChannel: 0)
+        print("wid: avg. power: \(averagePower)")
+        let peakPower = audioRecorder.peakPower(forChannel: 0)
+        print("wid: peak power: \(peakPower)")
+        print("wid: ")
+        print("wid: isMeteringEnabled: \(audioRecorder.isMeteringEnabled)")
+        print("wid: isRecording: \(audioRecorder.isRecording)")
         
+        print("wid: ")
+        audioRecorder.stop()
     }
     
 }
