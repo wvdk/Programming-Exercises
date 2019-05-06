@@ -11,11 +11,13 @@ import MultipeerConnectivity
 
 class ViewController: UIViewController {
 
+    let serviceBrowser = MCNearbyServiceBrowser(peer: MCPeerID(displayName: "WesMac"), serviceType: "wes-testing-mpc")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let serviceBrowser = MCNearbyServiceBrowser(peer: MCPeerID(displayName: "WesMac"), serviceType: "wes-testing-mpc")
         serviceBrowser.delegate = self
+        serviceBrowser.startBrowsingForPeers()
         
         // Do any additional setup after loading the view.
     }
