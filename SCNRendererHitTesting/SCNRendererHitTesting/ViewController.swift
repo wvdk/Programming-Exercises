@@ -5,12 +5,13 @@ import SceneKit
 class ViewController: UIViewController {
 
     var renderer: SCNRenderer!
-    
+    let mtkView = MTKView(frame: .zero)
+    let renderingSize = CGSize(width: 720, height: 1280)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Set up the metal view
-        let mtkView = MTKView(frame: .zero)
         view.addSubview(mtkView)
         mtkView.translatesAutoresizingMaskIntoConstraints = false
         mtkView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -18,7 +19,8 @@ class ViewController: UIViewController {
         mtkView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         mtkView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         mtkView.device = MTLCreateSystemDefaultDevice()!
-        mtkView.autoResizeDrawable = true
+        mtkView.autoResizeDrawable = false
+        mtkView.contentMode = .scaleAspectFill
         mtkView.colorPixelFormat = .bgra8Unorm
         mtkView.delegate = self
         mtkView.clearColor = MTLClearColor(red: 81/255, green: 128/255, blue: 183/255, alpha: 1.0)
@@ -58,6 +60,12 @@ class ViewController: UIViewController {
         // Question: How should one convert the locationInView point into something that can be passed into the hitTest(_:options:) method so that it will return expected results (e.g. a center of screen tap returns the box node)?
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        mtkView.drawableSize = renderingSize
+    }
+    
 }
 
 extension ViewController: MTKViewDelegate {
@@ -73,7 +81,7 @@ extension ViewController: MTKViewDelegate {
 
         commandBuffer.pushDebugGroup("Renderer.SceneKit")
         renderer.render(atTime: 0,
-                        viewport: UIScreen.main.nativeBounds,
+                        viewport: CGRect(x: 0, y: 0, width: renderingSize.width, height: renderingSize.height),
                         commandBuffer: commandBuffer,
                         passDescriptor: renderPassDescriptor)
         commandBuffer.popDebugGroup()
