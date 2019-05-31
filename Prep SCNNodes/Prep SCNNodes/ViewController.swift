@@ -7,6 +7,7 @@ class ViewController: UIViewController {
     var renderer: SCNRenderer!
     let mtkView = MTKView(frame: .zero)
     let renderingSize = CGSize(width: 720, height: 1280)
+    let scene = SCNScene()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +29,13 @@ class ViewController: UIViewController {
         mtkView.addGestureRecognizer(tapGestureRecognizer)
         
         // Set up the scene
-        let scene = SCNScene()
         let box = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.1)
         box.materials.first?.diffuse.contents = UIColor(red: 255/255, green: 216/255, blue: 134/255, alpha: 1.0)
         let boxNode = SCNNode(geometry: box)
         boxNode.position = SCNVector3(0, 0, 0)
         scene.rootNode.addChildNode(boxNode)
+        
+
         
         // Set up the camera
         let cameraNode = SCNNode()
@@ -48,16 +50,15 @@ class ViewController: UIViewController {
     }
     
     @objc func mtkViewPressed(_ sender: UITapGestureRecognizer) {
-        let locationInView = sender.location(in: sender.view)
-        print("\nMTKView was pressed at location in view: \(locationInView)")
+        print("adding cards")
+        for i in 0...10 {
+            let card = Card()
+            card.scale = SCNVector3(10, 10, 10)
+            scene.rootNode.addChildNode(card)
+        }
         
-        let nativeScale = UIScreen.main.nativeScale
-        let scaledPoint = CGPoint(x: locationInView.x * nativeScale, y: locationInView.y * nativeScale)
-        let hitTestResults = renderer.hitTest(scaledPoint, options: [SCNHitTestOption.boundingBoxOnly : true])
-        
-        print("Hit test results: \(hitTestResults)")
-        
-        // Question: How should one convert the locationInView point into something that can be passed into the hitTest(_:options:) method so that it will return expected results (e.g. a center of screen tap returns the box node)?
+        print("added cards")
+        print("\n")
     }
     
     override func viewDidAppear(_ animated: Bool) {
