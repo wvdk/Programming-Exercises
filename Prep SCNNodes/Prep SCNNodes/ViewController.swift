@@ -28,13 +28,13 @@ class ViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(mtkViewPressed(_:)))
         mtkView.addGestureRecognizer(tapGestureRecognizer)
         
-        // Set up the scene
-        let box = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.1)
-        box.materials.first?.diffuse.contents = UIColor(red: 255/255, green: 216/255, blue: 134/255, alpha: 1.0)
-        let boxNode = SCNNode(geometry: box)
-        boxNode.position = SCNVector3(0, 0, 0)
-        scene.rootNode.addChildNode(boxNode)
-        
+//        // Set up the scene
+//        let box = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.1)
+//        box.materials.first?.diffuse.contents = UIColor(red: 255/255, green: 216/255, blue: 134/255, alpha: 1.0)
+//        let boxNode = SCNNode(geometry: box)
+//        boxNode.position = SCNVector3(0, 0, 0)
+//        scene.rootNode.addChildNode(boxNode)
+//
 
         
         // Set up the camera
@@ -50,10 +50,15 @@ class ViewController: UIViewController {
     }
     
     @objc func mtkViewPressed(_ sender: UITapGestureRecognizer) {
+//        print("removing cards")
+//        scene.rootNode.childNodes.forEach {
+//            $0.removeFromParentNode()
+//        }
         print("adding cards")
-        for i in 0...10 {
+        
+        for i in 0...100 {
             let card = Card()
-            card.scale = SCNVector3(10, 10, 10)
+            card.scale = SCNVector3(5, 5, 5)
             scene.rootNode.addChildNode(card)
         }
         
