@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* 1-3. Modify the temprature conversion program to print a heading above the table. */
+
 /* print Fahrenheit-Celsuis table 
     for fahr = 0, 20, ..., 300 */
 int main()
