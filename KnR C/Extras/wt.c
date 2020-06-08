@@ -7,7 +7,6 @@ int main()
 
     char c;
     while ((c = getchar()) != EOF && c != 'q' ) {
-        
-	putchar(c);
+        putchar(c);
     }
 }
