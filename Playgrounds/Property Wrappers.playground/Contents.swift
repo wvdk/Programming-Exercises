@@ -6,16 +6,23 @@ var str = "Hello, playground"
 
 struct Car {
     
+    
     var topSpeed: Int {
         get {
-            return self.topSpeed
+            return _topSpeed
         }
         set {
-            topSpeed = newValue
+            _topSpeed = newValue
         }
     }
+    private var _topSpeed: Int = 0
     
 }
 
-let car = Car()
+var car = Car()
+
+print(car.topSpeed)
+
+car.topSpeed = 100
+
 print(car.topSpeed)
