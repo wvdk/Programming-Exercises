@@ -4,25 +4,55 @@ var str = "Hello, playground"
 
 // https://www.vadimbulavin.com/swift-5-property-wrappers/
 
-struct Car {
+@propertyWrapper
+struct BoundedSpeed {
     
+    private var value: Int
     
-    var topSpeed: Int {
+    init(wrappedValue: Int) {
+        self.value = wrappedValue
+    }
+    
+    var wrappedValue: Int {
         get {
-            return _topSpeed
+            return value
         }
         set {
-            _topSpeed = newValue
+            print("Incoming value is \(newValue)")
+
+            if newValue > 100 {
+                self.value = 100
+            } else if newValue < 0 {
+                self.value = 0
+            } else {
+                self.value = newValue
+            }
+
+            print("Setting value to \(self.value)")
         }
     }
-    private var _topSpeed: Int = 0
     
 }
 
-var car = Car()
+struct Car {
+    
+    
+    @BoundedSpeed public var topSpeed: Int
+    
+}
+
+var car = Car(topSpeed: 50)
 
 print(car.topSpeed)
 
 car.topSpeed = 100
+
+print(car.topSpeed)
+
+car.topSpeed = -10
+
+print(car.topSpeed)
+
+car.topSpeed = 110
 
 print(car.topSpeed)
