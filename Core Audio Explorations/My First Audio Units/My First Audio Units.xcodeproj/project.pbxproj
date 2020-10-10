@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DE56DCA925315143007055F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56DCA825315143007055F3 /* main.m */; };
+		DE56DCB325315173007055F3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE56DCB225315173007055F3 /* AudioToolbox.framework */; };
+		DE56DCB525315178007055F3 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE56DCB425315178007055F3 /* AudioUnit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		DE56DCA525315143007055F3 /* My First Audio Units */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "My First Audio Units"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE56DCA825315143007055F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE56DCB225315173007055F3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DE56DCB425315178007055F3 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE56DCB325315173007055F3 /* AudioToolbox.framework in Frameworks */,
+				DE56DCB525315178007055F3 /* AudioUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				DE56DCA725315143007055F3 /* My First Audio Units */,
 				DE56DCA625315143007055F3 /* Products */,
+				DE56DCB125315173007055F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				DE56DCA825315143007055F3 /* main.m */,
 			);
 			path = "My First Audio Units";
+			sourceTree = "<group>";
+		};
+		DE56DCB125315173007055F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE56DCB425315178007055F3 /* AudioUnit.framework */,
+				DE56DCB225315173007055F3 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
