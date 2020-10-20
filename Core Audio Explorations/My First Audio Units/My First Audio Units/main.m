@@ -66,15 +66,23 @@ int    main(int argc, const char *argv[])
     CFRelease(inputFileURL);
     
     // Build a basic fileplayer->speakers graph
+//    CreateMyAUGraph(&player);
+    
     // Configure the file player
-    // Insert Listing 7.4 here
+//    Float64 fileDuration = PrepareFileAU(&player);
     
     // Start playing
+    CheckError(AUGraphStart(player.graph), "AUGraphStart failed");
+    
     // Sleep until the file is finished
-    // Insert Listing 7.5 here
+//    usleep ((int)(fileDuration * 1000.00 * 1000.00));
     
     // Cleanup
-    // Insert Listing 7.6 here
+cleanup:
+    AUGraphStop(player.graph);
+    AUGraphUninitialize(player.graph);
+    AUGraphClose(player.graph);
+    AudioFileClose(player.inputFile);
     
     return 0;
 }
