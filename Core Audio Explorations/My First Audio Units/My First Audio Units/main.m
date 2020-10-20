@@ -5,7 +5,7 @@
 //  Created by Wesley Van der Klomp on 10/9/20.
 //
 
-#define kInputFileLocation CFSTR("/Users/wes/Developer/Programming-Exercises/Core\ Audio\ Explorations/Piano\ 1.m4a")
+#define kInputFileLocation CFSTR("/Users/wes/Developer/Programming-Exercises/Core Audio Explorations/Piano 1.m4a")
 
 #import <Foundation/Foundation.h>
 #include <AudioToolbox/AudioToolbox.h>
