@@ -33,10 +33,9 @@ var str = "Hello, playground"
  
  */
 
-
-
 func reshape(inputMatrix input: [[Int]], targetRowCount r: Int, targetColumnCount c: Int) -> [[Int]] {
     
+    // TODO: Guard against invalid r and c values. Return the input when invalid.
     
     // 1. Flatten input
     var flatInput: [Int] = []
@@ -47,17 +46,20 @@ func reshape(inputMatrix input: [[Int]], targetRowCount r: Int, targetColumnCoun
         }
     }
     
-    
     // 2. Assemble result
     var result: [[Int]] = []
     
+    var inputIndex = 0
+    
     for i in 0..<r {
-        
         result.append([])
         
         for j in 0..<c {
-            let nextElement = flatInput[i+j]
+            let nextElement = flatInput[inputIndex]
+            
             result[i].append(nextElement)
+            
+            inputIndex += 1
         }
     }
     
@@ -71,4 +73,5 @@ result1 == [[1,2,3,4]]
 let result2 = reshape(inputMatrix: [[1,2], [3,4]], targetRowCount: 2, targetColumnCount: 2)
 result2 == [[1,2], [3,4]]
 
-[[1,2], [3,4]] == [[1,2], [3,4]]
+let result3 = reshape(inputMatrix: [[1,2], [3,4]], targetRowCount: 4, targetColumnCount: 1)
+result3 == [[1], [2], [3], [4]]
