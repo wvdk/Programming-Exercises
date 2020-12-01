@@ -46,6 +46,41 @@ static void CheckError(OSStatus error, const char *operation)
 }
 
 // Insert Listing 7.7 - 7.13 here
+void CreateMyAUGraph(MyAUGraphPlayer *player)
+{
+    CheckError(NewAUGraph(&player->graph),
+               "NewAUGraph failed");
+    
+    // Generate description that matches output device (speakers)
+    AudioComponentDescription outputcd = {0};
+    outputcd.componentType = kAudioUnitType_Output;
+    outputcd.componentType = kAudioUnitSubType_DefaultOutput;
+    outputcd.componentManufacturer = kAudioUnitManufacturer_Apple;
+
+    // Adds a node with above description to the graph
+    AUNode outputNode;
+    CheckError(AUGraphAddNode(player->graph,
+                              &outputcd,
+                              &outputNode),
+               "AUGraphAddNode [kAudioUnitSubType_DefaultOutput] failed");
+    
+    // Generate description that matches a generator AU type:
+    // audio file player
+    AudioComponentDescription fileplayercd = {0};
+    fileplayercd.componentType = kAudioUnitType_Generator;
+    fileplayercd.componentSubType = kAudioUnitSubType_AudioFilePlayer;
+    fileplayercd.componentManufacturer = kAudioUnitManufacturer_Apple;
+    
+    // Adds a node with above description to the graph
+    AUNode fileNode;
+    CheckError(AUGraphAddNode(player->graph,
+                              &fileplayercd,
+                              &fileNode),
+               "AUGraphAddNode [kAudioUnitSubType_AudioFilePlayer] failed");
+    
+
+}
+
 // Insert Listing 7.14 -7.17 here
 
 #pragma mark main function
@@ -66,16 +101,16 @@ int    main(int argc, const char *argv[])
     CFRelease(inputFileURL);
     
     // Build a basic fileplayer->speakers graph
-//    CreateMyAUGraph(&player);
+    CreateMyAUGraph(&player);
     
     // Configure the file player
-//    Float64 fileDuration = PrepareFileAU(&player);
+    Float64 fileDuration = PrepareFileAU(&player);
     
     // Start playing
     CheckError(AUGraphStart(player.graph), "AUGraphStart failed");
     
     // Sleep until the file is finished
-//    usleep ((int)(fileDuration * 1000.00 * 1000.00));
+    usleep ((int)(fileDuration * 1000.00 * 1000.00));
     
     // Cleanup
 cleanup:
