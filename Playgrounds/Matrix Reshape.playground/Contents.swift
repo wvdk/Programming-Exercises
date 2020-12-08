@@ -1,7 +1,6 @@
-import UIKit
+import Foundation
 
 var str = "Hello, playground"
-
 
 /**
  
@@ -35,7 +34,6 @@ var str = "Hello, playground"
 
 func reshape(inputMatrix input: [[Int]], targetRowCount r: Int, targetColumnCount c: Int) -> [[Int]] {
     
-    // TODO: Guard against invalid r and c values. Return the input when invalid.
     
     // 1. Flatten input
     var flatInput: [Int] = []
@@ -44,6 +42,11 @@ func reshape(inputMatrix input: [[Int]], targetRowCount r: Int, targetColumnCoun
         for element in row {
             flatInput.append(element)
         }
+    }
+    
+    // 1.5. Guard against invalid r and c values. Return the input when invalid.
+    guard r*c < flatInput.count else {
+        return input
     }
     
     // 2. Assemble result
