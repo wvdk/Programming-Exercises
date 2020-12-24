@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEA6313225953DDC00132EA6 /* ScrundingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6313125953DDC00132EA6 /* ScrundingerApp.swift */; };
+		DEA6313225953DDC00132EA6 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6313125953DDC00132EA6 /* ScrumdingerApp.swift */; };
 		DEA6313425953DDC00132EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6313325953DDC00132EA6 /* ContentView.swift */; };
 		DEA6313625953DDE00132EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313525953DDE00132EA6 /* Assets.xcassets */; };
 		DEA6313925953DDE00132EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEA6312E25953DDC00132EA6 /* Scrundinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrundinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA6313125953DDC00132EA6 /* ScrundingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrundingerApp.swift; sourceTree = "<group>"; };
+		DEA6312E25953DDC00132EA6 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA6313125953DDC00132EA6 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		DEA6313325953DDC00132EA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEA6313525953DDE00132EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		DEA6312525953DDC00132EA6 = {
 			isa = PBXGroup;
 			children = (
-				DEA6313025953DDC00132EA6 /* Scrundinger */,
+				DEA6313025953DDC00132EA6 /* Scrumdinger */,
 				DEA6312F25953DDC00132EA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +44,21 @@
 		DEA6312F25953DDC00132EA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEA6312E25953DDC00132EA6 /* Scrundinger.app */,
+				DEA6312E25953DDC00132EA6 /* Scrumdinger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEA6313025953DDC00132EA6 /* Scrundinger */ = {
+		DEA6313025953DDC00132EA6 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				DEA6313125953DDC00132EA6 /* ScrundingerApp.swift */,
+				DEA6313125953DDC00132EA6 /* ScrumdingerApp.swift */,
 				DEA6313325953DDC00132EA6 /* ContentView.swift */,
 				DEA6313525953DDE00132EA6 /* Assets.xcassets */,
 				DEA6313A25953DDE00132EA6 /* Info.plist */,
 				DEA6313725953DDE00132EA6 /* Preview Content */,
 			);
-			path = Scrundinger;
+			path = Scrumdinger;
 			sourceTree = "<group>";
 		};
 		DEA6313725953DDE00132EA6 /* Preview Content */ = {
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEA6312D25953DDC00132EA6 /* Scrundinger */ = {
+		DEA6312D25953DDC00132EA6 /* Scrumdinger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA6313D25953DDE00132EA6 /* Build configuration list for PBXNativeTarget "Scrundinger" */;
+			buildConfigurationList = DEA6313D25953DDE00132EA6 /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
 			buildPhases = (
 				DEA6312A25953DDC00132EA6 /* Sources */,
 				DEA6312B25953DDC00132EA6 /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = Scrundinger;
+			name = Scrumdinger;
 			productName = Scrundinger;
-			productReference = DEA6312E25953DDC00132EA6 /* Scrundinger.app */;
+			productReference = DEA6312E25953DDC00132EA6 /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEA6312925953DDC00132EA6 /* Build configuration list for PBXProject "Scrundinger" */;
+			buildConfigurationList = DEA6312925953DDC00132EA6 /* Build configuration list for PBXProject "Scrumdinger" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEA6312D25953DDC00132EA6 /* Scrundinger */,
+				DEA6312D25953DDC00132EA6 /* Scrumdinger */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA6313425953DDC00132EA6 /* ContentView.swift in Sources */,
-				DEA6313225953DDC00132EA6 /* ScrundingerApp.swift in Sources */,
+				DEA6313225953DDC00132EA6 /* ScrumdingerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +268,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrundinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Scrundinger/Info.plist;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wes.Scrundinger;
+				PRODUCT_BUNDLE_IDENTIFIER = wes.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,16 +290,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrundinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Scrundinger/Info.plist;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wes.Scrundinger;
+				PRODUCT_BUNDLE_IDENTIFIER = wes.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEA6312925953DDC00132EA6 /* Build configuration list for PBXProject "Scrundinger" */ = {
+		DEA6312925953DDC00132EA6 /* Build configuration list for PBXProject "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA6313B25953DDE00132EA6 /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA6313D25953DDE00132EA6 /* Build configuration list for PBXNativeTarget "Scrundinger" */ = {
+		DEA6313D25953DDE00132EA6 /* Build configuration list for PBXNativeTarget "Scrumdinger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA6313E25953DDE00132EA6 /* Debug */,

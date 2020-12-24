@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Scrundinger
+//  Scrumdinger
 //
 //  Created by Wesley Van der Klomp on 12/24/20.
 //
