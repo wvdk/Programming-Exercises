@@ -41,13 +41,15 @@ struct DetailView: View {
             isPresented = true
         })
         .fullScreenCover(isPresented: $isPresented) {
-            EditView()
-                .navigationTitle("Edit")
-                .navigationBarItems(leading: Button("Cancel") {
-                    isPresented = false
-                }, trailing: Button("Done") {
-                    isPresented = false
-                })
+            NavigationView {
+                EditView()
+                    .navigationTitle("Edit")
+                    .navigationBarItems(leading: Button("Cancel") {
+                        isPresented = false
+                    }, trailing: Button("Done") {
+                        isPresented = false
+                    })
+            }
         }
     }
 }
