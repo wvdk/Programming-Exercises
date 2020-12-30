@@ -16,6 +16,7 @@
 		DEA6313425953DDC00132EA6 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6313325953DDC00132EA6 /* MeetingView.swift */; };
 		DEA6313625953DDE00132EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313525953DDE00132EA6 /* Assets.xcassets */; };
 		DEA6313925953DDE00132EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */; };
+		DEC41FC8259D15AD008DE363 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41FC7259D15AD008DE363 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DEA6313525953DDE00132EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEA6313A25953DDE00132EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC41FC7259D15AD008DE363 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		DEA6313025953DDC00132EA6 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				DEC41FC7259D15AD008DE363 /* EditView.swift */,
 				DE5AD8A52597C5CC00A1DF3B /* CardView.swift */,
 				DE5AD89E2597C47700A1DF3B /* Models */,
 				DEA6313125953DDC00132EA6 /* ScrumdingerApp.swift */,
@@ -163,6 +166,7 @@
 			files = (
 				DEA6313425953DDC00132EA6 /* MeetingView.swift in Sources */,
 				DE5AD8AA259954B800A1DF3B /* ScrumsView.swift in Sources */,
+				DEC41FC8259D15AD008DE363 /* EditView.swift in Sources */,
 				DE5AD8A02597C48300A1DF3B /* DailyScrum.swift in Sources */,
 				DE5AD8AE25995CA700A1DF3B /* DetailView.swift in Sources */,
 				DE5AD8A32597C56800A1DF3B /* Color+Codable.swift in Sources */,
