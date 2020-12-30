@@ -2,7 +2,6 @@ import SwiftUI
 
 struct DailyScrum: Identifiable {
     var id: UUID
-    
     var title: String
     var attendees: [String]
     var lengthInMinutes: Int
@@ -18,7 +17,6 @@ struct DailyScrum: Identifiable {
 }
 
 extension DailyScrum {
-    
     static var data: [DailyScrum] {
         [
             DailyScrum(title: "Design", attendees: ["Cathy", "Daisy", "Simon", "Jonathan"], lengthInMinutes: 10, color: Color("Design")),
@@ -26,5 +24,17 @@ extension DailyScrum {
             DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 1, color: Color("Web Dev"))
         ]
     }
+}
+
+extension DailyScrum {
+    struct Data {
+        var title: String = ""
+        var attendees: [String] = []
+        var lengthInMinutes: Double = 5.0
+        var color: Color = .random
+    }
     
+    var data: Data {
+        return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
 }

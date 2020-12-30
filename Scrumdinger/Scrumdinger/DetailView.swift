@@ -36,6 +36,7 @@ struct DetailView: View {
             }
         }
         .listStyle(InsetGroupedListStyle())
+        .navigationTitle(scrum.title)
     }
 }
 
