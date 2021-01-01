@@ -17,6 +17,7 @@
 		DEA6313625953DDE00132EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313525953DDE00132EA6 /* Assets.xcassets */; };
 		DEA6313925953DDE00132EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */; };
 		DEC41FC8259D15AD008DE363 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41FC7259D15AD008DE363 /* EditView.swift */; };
+		DEC41FCB259EA3A2008DE363 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41FCA259EA3A2008DE363 /* MeetingHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DEA6313825953DDE00132EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEA6313A25953DDE00132EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC41FC7259D15AD008DE363 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		DEC41FCA259EA3A2008DE363 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DEA6313725953DDE00132EA6 /* Preview Content */,
 				DE5AD8A9259954B800A1DF3B /* ScrumsView.swift */,
 				DE5AD8AD25995CA700A1DF3B /* DetailView.swift */,
+				DEC41FCA259EA3A2008DE363 /* MeetingHeaderView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				DEA6313425953DDC00132EA6 /* MeetingView.swift in Sources */,
 				DE5AD8AA259954B800A1DF3B /* ScrumsView.swift in Sources */,
 				DEC41FC8259D15AD008DE363 /* EditView.swift in Sources */,
+				DEC41FCB259EA3A2008DE363 /* MeetingHeaderView.swift in Sources */,
 				DE5AD8A02597C48300A1DF3B /* DailyScrum.swift in Sources */,
 				DE5AD8AE25995CA700A1DF3B /* DetailView.swift in Sources */,
 				DE5AD8A32597C56800A1DF3B /* Color+Codable.swift in Sources */,
