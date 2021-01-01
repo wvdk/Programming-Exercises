@@ -1,10 +1,3 @@
-//
-//  MeetingView.swift
-//  Scrumdinger
-//
-//  Created by Wesley Van der Klomp on 12/24/20.
-//
-
 import SwiftUI
 
 struct MeetingView: View {
