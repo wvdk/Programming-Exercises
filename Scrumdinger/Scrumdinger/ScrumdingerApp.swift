@@ -6,7 +6,9 @@ struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ScrumsView(scrums: $data.scrums)
+                ScrumsView(scrums: $data.scrums, saveAction: {
+                    data.save()
+                })
             }
             .onAppear {
                 data.load()
