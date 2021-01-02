@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE30C4B225A130E2009A5E04 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30C4B125A130E2009A5E04 /* HistoryView.swift */; };
 		DE5AD8A02597C48300A1DF3B /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AD89F2597C48300A1DF3B /* DailyScrum.swift */; };
 		DE5AD8A32597C56800A1DF3B /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AD8A22597C56800A1DF3B /* Color+Codable.swift */; };
 		DE5AD8A62597C5CC00A1DF3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5AD8A52597C5CC00A1DF3B /* CardView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE30C4B125A130E2009A5E04 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DE5AD89F2597C48300A1DF3B /* DailyScrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		DE5AD8A22597C56800A1DF3B /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		DE5AD8A52597C5CC00A1DF3B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Models/CardView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				DE5AD89E2597C47700A1DF3B /* Models */,
 				DEA6313125953DDC00132EA6 /* ScrumdingerApp.swift */,
 				DEA6313325953DDC00132EA6 /* MeetingView.swift */,
+				DE30C4B125A130E2009A5E04 /* HistoryView.swift */,
 				DE925C7D25A1262100BB5B75 /* MeetingTimerView.swift */,
 				DEC41FD5259EC20F008DE363 /* MeetingFooterView.swift */,
 				DEA6313525953DDE00132EA6 /* Assets.xcassets */,
@@ -210,6 +213,7 @@
 				DEC41FC8259D15AD008DE363 /* EditView.swift in Sources */,
 				DEC41FD2259EABFA008DE363 /* AVPlayer+Ding.swift in Sources */,
 				DE925C7B25A1201800BB5B75 /* ScrumData.swift in Sources */,
+				DE30C4B225A130E2009A5E04 /* HistoryView.swift in Sources */,
 				DE925C7E25A1262100BB5B75 /* MeetingTimerView.swift in Sources */,
 				DEC41FD6259EC20F008DE363 /* MeetingFooterView.swift in Sources */,
 				DEC41FCB259EA3A2008DE363 /* MeetingHeaderView.swift in Sources */,
