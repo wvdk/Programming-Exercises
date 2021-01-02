@@ -14,7 +14,7 @@ struct MeetingView: View {
                 .fill(scrum.color)
             VStack {
                 MeetingHeaderView(secondsElapsed: $scrumTimer.secondsElapsed, secondsRemaining: $scrumTimer.secondsRemaining, scrumColor: scrum.color)
-                MeetingTimerView(speakers: $scrumTimer.speakers, scrumColor: scrum.color)
+                MeetingTimerView(speakers: $scrumTimer.speakers, isRecording: $isRecording, scrumColor: scrum.color)
                 MeetingFooterView(speakers: $scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
