@@ -1,6 +1,6 @@
-When working on real projects I tend to create lots of little test apps - I think Agile people call them "spikes" or whatever - to get familiar with new frameworks/technologies, troubleshoot issues, and try out ideas. I keep all this stuff around because I occasionally find it useful to come back to. The only value I can see it providing you is as an example of how one developer likes to work.
+When working on real projects I tend to create lots of little test apps to get familiar with new frameworks, troubleshoot issues, try out ideas, etc. I keep all this stuff around because I occasionally find it useful to come back to. The only value I can see it providing you is as an example of how one developer likes to work.
 
-It's a dumping ground and extremely disorganized by design. I don't recommend you use any of this for any purpose - it's not good code.
+It's a dumping ground and extremely disorganized by design. I don't recommend you use any of this for any purpose - it is not very good code.
 
 ---
 
